@@ -1,0 +1,1440 @@
+<title>Pass Index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#F7F6F2; --surface:#FFFFFF; --raised:#FFFFFF; --ink:#1D2024; --dim:#6E6A60;
+  --line:#E5E2D8; --line-soft:#EFEDE6; --accent:#0F6B52; --accent-soft:#E6F1EC;
+  --model:#0F6B52; --model-bg:#E6F1EC;
+  --tool:#33557C; --tool-bg:#E7EDF5;
+  --agent:#8C5E12; --agent-bg:#F5EEDD;
+  --chip:#F1EFE8; --warn:#8A4B08; --warn-bg:#F7EBD9;
+  --shadow:0 1px 2px rgba(24,22,18,.05), 0 8px 24px -16px rgba(24,22,18,.35);
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#101315; --surface:#181C1F; --raised:#1E2327; --ink:#ECEAE3; --dim:#9A968C;
+    --line:#282D32; --line-soft:#22272B; --accent:#5CC59C; --accent-soft:#1E2E28;
+    --model:#5CC59C; --model-bg:#1E2E28;
+    --tool:#8FB6DF; --tool-bg:#1D2731;
+    --agent:#DCAC5F; --agent-bg:#2E271A;
+    --chip:#232830; --warn:#DCAC5F; --warn-bg:#2E271A;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 28px -20px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#101315; --surface:#181C1F; --raised:#1E2327; --ink:#ECEAE3; --dim:#9A968C;
+  --line:#282D32; --line-soft:#22272B; --accent:#5CC59C; --accent-soft:#1E2E28;
+  --model:#5CC59C; --model-bg:#1E2E28;
+  --tool:#8FB6DF; --tool-bg:#1D2731;
+  --agent:#DCAC5F; --agent-bg:#2E271A;
+  --chip:#232830; --warn:#DCAC5F; --warn-bg:#2E271A;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 28px -20px rgba(0,0,0,.9);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:16px/1.55 "Spline Sans",system-ui,-apple-system,sans-serif;
+  overflow-wrap:anywhere}
+.mono{font-family:"Spline Sans Mono",ui-monospace,SFMono-Regular,monospace;
+  font-variant-numeric:tabular-nums}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:var(--accent)}
+
+/* ---- top bar: sticky, thumb-friendly, safe-area aware ---- */
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:saturate(150%) blur(12px);border-bottom:1px solid var(--line-soft);
+  padding:calc(10px + env(safe-area-inset-top)) 16px 10px}
+.bar-in{position:relative;max-width:1180px;margin:0 auto;display:flex;flex-direction:column;
+  gap:10px;padding-right:132px}
+.brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.brand h1{margin:0;font-size:20px;font-weight:700;letter-spacing:-.02em}
+.brand .sub{color:var(--dim);font-size:13px}
+.search{position:relative;display:flex;align-items:center}
+.search svg{position:absolute;left:12px;width:17px;height:17px;color:var(--dim);pointer-events:none}
+#q{flex:1;min-width:0;height:44px;border:1px solid var(--line);border-radius:12px;
+  background:var(--surface);color:var(--ink);font-size:16px;padding:0 40px 0 36px}
+#q::placeholder{color:var(--dim)}
+#q:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.clear{position:absolute;right:6px;width:32px;height:32px;border:0;border-radius:8px;
+  background:transparent;color:var(--dim);font-size:18px;line-height:1;display:none}
+.clear.on{display:block}
+/* What you could pick, while you are still typing it. */
+.suggest{position:absolute;top:calc(100% + 6px);left:0;right:0;z-index:30;margin:0;padding:4px;
+  list-style:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;
+  box-shadow:var(--shadow-lg,var(--shadow));max-height:min(60vh,420px);overflow-y:auto}
+.suggest li{display:flex;align-items:baseline;gap:8px;padding:8px 10px;border-radius:8px;
+  cursor:pointer;font-size:14px}
+.suggest li.on,.suggest li:hover{background:var(--chip)}
+.suggest .hit{font-weight:500;color:var(--ink)}
+.suggest .hit b{color:var(--accent);font-weight:700}
+.suggest .via{color:var(--dim);font-size:12px;min-width:0;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap}
+.suggest .kind{margin-left:auto;color:var(--dim);font-size:11.5px;white-space:nowrap}
+.tabs{display:flex;gap:4px;background:var(--chip);border-radius:12px;padding:4px;
+  overflow-x:auto;scrollbar-width:none;
+  /* the row scrolls on a phone; the fading edge says so */
+  -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent);
+  mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent)}
+.tabs.end{-webkit-mask-image:none;mask-image:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:0 0 auto;min-height:38px;border:0;background:transparent;color:var(--dim);
+  font-weight:500;padding:0 14px;border-radius:9px;white-space:nowrap}
+/* The three Top views come first and read as their own group. */
+.tabs .sep{flex:0 0 auto;width:1px;align-self:stretch;margin:4px 6px;background:var(--line)}
+.tabs button.on{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.counts{color:var(--dim);font-size:13px}
+/* The sort sits on the counts line: it belongs to the list below, not to
+   the views above, and putting it in the tab row would read as a seventh
+   view. */
+.sortrow{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sorts{display:flex;gap:2px;flex-wrap:wrap}
+.sorts button{min-height:30px;border:0;background:transparent;color:var(--dim);
+  font-size:12.5px;font-weight:500;padding:0 9px;border-radius:8px;white-space:nowrap}
+.sorts button.on{background:var(--chip);color:var(--ink)}
+/* Only price sorts both ways, so only price wears an arrow. */
+.sorts .dir{font-size:11px;opacity:.8;margin-left:3px}
+.tabnote{margin:0;color:var(--dim);font-size:12.5px;line-height:1.4}
+
+/* ---- benchmarks: a standing is a rank, a score and a date ---- */
+.bench{display:grid;grid-template-columns:auto 1fr auto;gap:10px 12px;align-items:center;
+  padding:10px 0;border-top:1px solid var(--line-soft)}
+.bench:first-of-type{border-top:0}
+.bench .rank{font-weight:700;font-size:15px;white-space:nowrap;min-width:74px}
+.bench .rank.gold{color:var(--accent)}
+.bench .of{display:block;color:var(--dim);font-weight:400;font-size:11.5px}
+.bench .what{min-width:0}
+.bench .suite{font-weight:500}
+.bench .measurer{color:var(--dim);font-size:11.5px}
+.bench .field{display:block;position:relative;height:3px;margin-top:6px;max-width:180px;
+  border-radius:2px;background:var(--line)}
+.bench .field .mark{position:absolute;top:-2px;width:7px;height:7px;margin-left:-3px;
+  border-radius:50%;background:var(--accent)}
+.bench .score{text-align:right;white-space:nowrap;font-weight:600}
+.bench .score .m{display:block;color:var(--dim);font-size:11px;font-weight:400}
+.bench-src{grid-column:1/-1;color:var(--dim);font-size:11.5px;margin-top:-4px}
+
+/* ---- a provider's shelf ---- */
+/* A phone reads the shelf in two lines: what it is, then what it costs.
+   A wide screen puts the price on the right where the eye scans a column. */
+.shelf{display:grid;grid-template-columns:1fr;gap:4px;align-items:baseline;width:100%;
+  text-align:left;background:transparent;border:0;border-top:1px solid var(--line-soft);
+  padding:11px 2px;min-height:44px}
+@media (min-width:560px){
+  .shelf{grid-template-columns:1fr auto;gap:8px 14px}
+  .shelf-lanes{grid-column:1/-1}
+}
+.shelf:first-of-type{border-top:0}
+@media (hover:hover){.shelf:hover .shelf-name{color:var(--accent)}}
+.shelf-name{display:flex;align-items:center;gap:7px;font-weight:500;min-width:0}
+.shelf-name .ic{color:var(--dim)}
+.shelf-price{white-space:nowrap;font-weight:600;padding-left:23px}
+@media (min-width:560px){.shelf-price{padding-left:0}}
+.shelf-price .unit{color:var(--dim);font-weight:400;font-size:11.5px;margin-left:4px}
+.shelf-lanes{color:var(--dim);font-size:11.5px;padding-left:23px}
+
+/* ---- shell ---- */
+.wrap{max-width:1180px;margin:0 auto;padding:14px 16px calc(40px + env(safe-area-inset-bottom))}
+[hidden]{display:none!important}
+.note{display:flex;gap:8px;background:var(--warn-bg);color:var(--warn);border-radius:12px;
+  padding:10px 14px;font-size:13.5px;font-weight:500;margin-bottom:14px}
+.grid{display:grid;gap:16px}
+.list{display:flex;flex-direction:column;gap:10px}
+
+/* ---- entity card ---- */
+.card{display:block;width:100%;text-align:left;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);padding:14px;
+  content-visibility:auto;contain-intrinsic-size:92px;transition:border-color .12s,transform .12s}
+.card:active{transform:scale(.995)}
+@media (hover:hover){.card:hover{border-color:var(--accent)}}
+.card.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.card .top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.card .name{font-weight:600;letter-spacing:-.01em;line-height:1.3}
+.card .price-line{margin-top:8px;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.card .price{font-weight:600;font-size:16px;letter-spacing:-.01em}
+.card .unit{color:var(--dim);font-weight:400;font-size:11.5px;letter-spacing:0}
+.card .foot{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:5px;
+  color:var(--dim);font-size:12px}
+.reg{font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 8px;border-radius:99px;white-space:nowrap}
+.reg.model{color:var(--model);background:var(--model-bg)}
+.reg.tool{color:var(--tool);background:var(--tool-bg)}
+.reg.agent{color:var(--agent);background:var(--agent-bg)}
+.dot{width:3px;height:3px;border-radius:50%;background:currentColor;opacity:.5}
+
+/* ---- detail ---- */
+.detail{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;box-shadow:var(--shadow)}
+.back{display:inline-flex;align-items:center;gap:6px;min-height:40px;border:0;padding:0;
+  background:transparent;color:var(--accent);font-weight:500;margin-bottom:4px}
+.detail h2{margin:0;font-size:23px;letter-spacing:-.02em;line-height:1.2;text-wrap:balance}
+.io{color:var(--dim);margin:6px 0 0;font-size:14px}
+.io b{color:var(--ink);font-weight:500}
+.tasks{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.tasks .task{border:1px solid var(--line);background:var(--chip);color:var(--ink);
+  font-size:12px;font-weight:500;padding:4px 10px;border-radius:99px;cursor:pointer}
+.tasks .task:hover{border-color:var(--accent);color:var(--accent)}
+.attrs{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.attr{background:var(--chip);color:var(--dim);border-radius:8px;padding:4px 10px;font-size:12.5px}
+.attr b{color:var(--ink);font-weight:500}
+.sect{margin-top:22px}
+.sect h3{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);
+  margin:0 0 10px;font-weight:600}
+.offer{background:var(--raised);border:1px solid var(--line-soft);border-radius:12px;
+  padding:12px;margin-bottom:10px}
+.offer:last-child{margin-bottom:0}
+.offer.best{border-color:var(--accent)}
+.offer .head{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.offer .prov{font-weight:600}
+.tag{font-size:11px;font-weight:500;border-radius:6px;padding:2px 7px;white-space:nowrap}
+.tag.way{color:var(--accent);background:var(--accent-soft)}
+.tag.variant{color:var(--dim);background:var(--chip)}
+.tag.maker{color:var(--dim);background:transparent;padding-left:0}
+.tag.best{color:var(--accent);background:var(--accent-soft);font-weight:600}
+.comps{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:8px;margin-top:10px}
+.comp{border:1px solid var(--line-soft);border-radius:10px;padding:8px 10px;background:var(--surface)}
+.comp .v{font-size:15px;font-weight:600;display:block}
+.comp .k{color:var(--dim);font-size:11.5px}
+.mets{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.met{background:var(--chip);border-radius:10px;padding:7px 10px}
+.met .v{font-weight:600}
+.met .k{color:var(--dim);font-size:11.5px}
+.none{color:var(--dim);font-size:13.5px;margin-top:8px}
+.src{margin-top:10px;color:var(--dim);font-size:11.5px;display:flex;gap:6px;flex-wrap:wrap;
+  align-items:center}
+.src a{color:var(--dim);text-decoration:underline;text-underline-offset:2px}
+.alias-row{display:flex;gap:8px;padding:5px 0;font-size:13px;color:var(--dim);flex-wrap:wrap}
+.alias-row b{color:var(--ink);font-weight:500}
+.empty{color:var(--dim);text-align:center;padding:48px 16px}
+.more{width:100%;min-height:44px;border:1px dashed var(--line);border-radius:12px;
+  background:transparent;color:var(--dim);font-weight:500}
+
+/* ---- phone: one thing at a time ---- */
+@media (max-width:899px){
+  .pane-detail{position:fixed;inset:0;z-index:30;background:var(--paper);overflow-y:auto;
+    padding:calc(12px + env(safe-area-inset-top)) 14px calc(28px + env(safe-area-inset-bottom));
+    -webkit-overflow-scrolling:touch}
+  .pane-detail .detail{border:0;box-shadow:none;background:transparent;padding:0}
+  body.detail-open{overflow:hidden}
+}
+/* ---- desktop: list beside detail ---- */
+@media (min-width:900px){
+  /* one row for the whole bar: the page below it gets the height back */
+  .bar-in{display:grid;grid-template-columns:auto auto minmax(200px,1fr);
+    align-items:center;gap:16px}
+  .brand{flex-direction:column;gap:0;align-items:flex-start}
+  .brand .sub{font-size:12.5px}
+  .tabs{justify-self:start;-webkit-mask-image:none;mask-image:none}
+  .tabs button{flex:0 0 auto}
+  .sortrow{grid-column:1/-1;margin-top:-4px}
+  .tabnote{grid-column:1/-1;margin-top:-6px}
+  .grid{grid-template-columns:minmax(300px,360px) 1fr;align-items:start}
+  /* The list is the column that stays put; the detail flows with the page.
+     A sticky detail taller than the viewport pins itself and puts its own
+     bottom out of reach. */
+  .list{position:sticky;top:150px;max-height:calc(100vh - 180px);overflow-y:auto;
+    padding-right:4px}
+  .back{display:none}
+}
+
+/* ---- icons ---- */
+.ic{width:16px;height:16px;flex:0 0 auto;fill:none;stroke:currentColor;stroke-width:1.9;
+  stroke-linecap:round;stroke-linejoin:round}
+.ic.lg{width:18px;height:18px}
+/* A plain underlined word, weighing nothing on the page until it is wanted. */
+.coverage-link{position:absolute;top:9px;right:50px;border:0;background:transparent;
+  color:var(--dim);font-size:13px;text-decoration:underline;text-underline-offset:3px;
+  text-decoration-color:var(--line);padding:2px 0}
+.coverage-link:hover{color:var(--ink);text-decoration-color:currentColor}
+
+/* ---- coverage sheet ---- */
+dialog#coverage{border:0;padding:0;background:transparent;color:var(--ink);max-width:none;
+  max-height:none;width:100%;height:100%;margin:0}
+dialog#coverage::backdrop{background:rgba(10,12,14,.55);backdrop-filter:blur(3px)}
+.sheet{position:absolute;left:0;right:0;bottom:0;max-height:88%;overflow-y:auto;
+  background:var(--surface);border-top-left-radius:18px;border-top-right-radius:18px;
+  padding:18px 18px calc(24px + env(safe-area-inset-bottom));box-shadow:var(--shadow)}
+.sheet h2{margin:0 0 2px;font-size:20px;letter-spacing:-.02em}
+.sheet .lede{margin:0 0 16px;color:var(--dim);font-size:13.5px}
+.sheet-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border:0;
+  border-radius:99px;background:var(--chip);color:var(--dim);font-size:18px;line-height:1}
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;
+  margin-bottom:18px}
+.figure{background:var(--raised);border:1px solid var(--line-soft);border-radius:12px;padding:12px}
+.figure .n{display:block;font-size:22px;font-weight:700;letter-spacing:-.02em}
+.figure .k{color:var(--dim);font-size:12px}
+.rowset{border-top:1px solid var(--line-soft);padding-top:12px;margin-top:6px}
+.rowset h3{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);
+  margin:0 0 8px;font-weight:600}
+.kv{display:flex;justify-content:space-between;gap:12px;padding:5px 0;font-size:13.5px}
+.kv .k{color:var(--dim)}
+.kv .v{font-weight:600}
+.bars{display:flex;flex-direction:column;gap:7px}
+.bar-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;font-size:13px}
+.bar-row .track{grid-column:1/-1;height:5px;border-radius:99px;background:var(--chip);overflow:hidden}
+.bar-row .fill{display:block;height:100%;border-radius:99px;background:var(--accent)}
+@media (min-width:700px){
+  .sheet{position:relative;margin:6vh auto;max-width:620px;border-radius:18px;max-height:82vh}
+}
+
+/* The theme control lives in the top-right corner as an icon, nothing else. */
+.theme{position:absolute;top:0;right:0;display:inline-flex;align-items:center;
+  justify-content:center;width:38px;height:38px;border:1px solid var(--line);
+  border-radius:99px;background:var(--surface);color:var(--dim)}
+.theme:hover{color:var(--ink);border-color:var(--accent)}
+.reg{display:inline-flex;align-items:center;gap:5px}
+.reg .ic{width:12px;height:12px;stroke-width:2.1}
+.tag{display:inline-flex;align-items:center;gap:5px}
+.tag .ic{width:12px;height:12px;stroke-width:2.1}
+
+/* ---- price block: one line per meter, the pair read as a pair ---- */
+.meters{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.meter{display:grid;grid-template-columns:minmax(64px,auto) 1fr;gap:10px;align-items:baseline}
+.meter .lbl{color:var(--dim);font-size:12px;text-transform:lowercase}
+.meter .vals{display:flex;gap:10px;flex-wrap:wrap;align-items:baseline}
+.pair{display:inline-flex;align-items:baseline;gap:6px}
+.pair .v{font-size:15.5px;font-weight:600}
+.pair .arrow{color:var(--dim);font-size:12px}
+.pair .side{color:var(--dim);font-size:11.5px}
+.per{color:var(--dim);font-size:11.5px}
+.extra{color:var(--dim);font-size:12px}
+.extra b{color:var(--ink);font-weight:600}
+.lane{display:grid;grid-template-columns:minmax(78px,auto) 1fr;gap:10px;align-items:start;
+  padding:8px 0;border-top:1px dashed var(--line-soft)}
+.lane:first-of-type{border-top:0;padding-top:2px}
+.routes{margin-top:10px;border-top:1px solid var(--line-soft);padding-top:8px}
+.routes>summary{cursor:pointer;list-style:none;color:var(--dim);font-size:12px;
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.routes>summary::-webkit-details-marker{display:none}
+.routes>summary::before{content:"▸";color:var(--dim);font-size:10px}
+.routes[open]>summary::before{content:"▾"}
+.routes>summary b{color:var(--ink);font-weight:500}
+.routes>summary .spread{font-variant-numeric:tabular-nums}
+.lane .lane-name{color:var(--dim);font-size:12px;padding-top:2px}
+.lane .lane-name.std{color:var(--ink);font-weight:500}
+.lane .lane-note{display:block;color:var(--accent);font-size:11px;margin-top:2px}
+@media (max-width:420px){
+  .meter,.lane{grid-template-columns:1fr;gap:2px}
+  .lane{gap:4px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="i-search"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></g>
+    <g id="i-model"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"/><path d="m3 12 9 4.5 9-4.5"/><path d="m3 16.5 9 4.5 9-4.5"/></g>
+    <g id="i-tool"><path d="M14.5 6.5a3.5 3.5 0 0 0 4.6 4.6l-7.8 7.8a2.3 2.3 0 0 1-3.2-3.2l7.8-7.8Z"/><path d="M18 3.5 20.5 6"/></g>
+    <g id="i-agent"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 14h.01M15 14h.01"/></g>
+    <g id="i-api"><path d="m8 8-4 4 4 4M16 8l4 4-4 4"/></g>
+    <g id="i-cloud"><path d="M7 18a4 4 0 0 1-.4-8A5.5 5.5 0 0 1 17.3 11 3.5 3.5 0 0 1 17 18H7Z"/></g>
+    <g id="i-aggregator"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="12" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M8.2 7.4 15.8 11M8.2 16.6 15.8 13"/></g>
+    <g id="i-local"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M2 20h20"/></g>
+    <g id="i-mcp"><path d="M9 3v6M15 3v6"/><path d="M6 9h12v3a6 6 0 0 1-12 0V9Z"/><path d="M12 18v3"/></g>
+    <g id="i-maker"><path d="m12 3 2.6 5.6 6 .8-4.4 4.2 1.1 6-5.3-2.9L6.7 19.6l1.1-6L3.4 9.4l6-.8L12 3Z"/></g>
+    <g id="i-best"><path d="m13 3-8 11h6l-1 7 8-11h-6l1-7Z"/></g>
+    <g id="i-back"><path d="M15 5 8 12l7 7"/></g>
+    <g id="i-link"><path d="M14 5h5v5"/><path d="M19 5 11 13"/><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></g>
+    <g id="i-auto"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor" stroke="none"/></g>
+    <g id="i-light"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></g>
+    <g id="i-dark"><path d="M20 13.5A8 8 0 0 1 10.5 4a8.2 8.2 0 1 0 9.5 9.5Z"/></g>
+  </defs>
+</svg>
+
+<div class="bar">
+  <div class="bar-in">
+    <div class="brand">
+      <h1>Pass Index</h1>
+      <span class="sub">The State of AI</span>
+    </div>
+    <button class="coverage-link" id="coverage-open">Coverage</button>
+    <button class="theme" id="theme" aria-label="Theme" title="Theme: follows your system">
+      <svg class="ic lg" viewBox="0 0 24 24"><use href="#i-auto" id="theme-ic"/></svg>
+    </button>
+    <nav class="tabs" id="tabs" aria-label="Catalogue views"></nav>
+    <div class="search">
+      <svg class="ic" viewBox="0 0 24 24"><use href="#i-search"/></svg>
+      <input id="q" type="search" inputmode="search" autocomplete="off"
+        placeholder="Search model, provider, alias…">
+      <button class="clear" id="clear" aria-label="Clear search">×</button>
+      <ul class="suggest" id="suggest" role="listbox" hidden></ul>
+    </div>
+    <div class="sortrow">
+      <nav class="sorts" id="sorts" aria-label="Sort the list"></nav>
+      <span class="counts" id="counts"></span>
+    </div>
+    <p class="tabnote" id="tabnote" hidden></p>
+  </div>
+</div>
+
+<dialog id="coverage"><div class="sheet" id="coverage-body"></div></dialog>
+
+<div class="wrap">
+  <div class="note" id="banner" hidden></div>
+  <div class="grid">
+    <div class="list" id="list"></div>
+    <div class="pane-detail" id="pane" hidden><div class="detail" id="detail"></div></div>
+  </div>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const DB = JSON.parse(document.getElementById('data').textContent);
+const UNITS = {
+  mtok_in:"Mtok in", mtok_out:"Mtok out",
+  mtok_cache_read:"Mtok cached", mtok_cache_write:"Mtok cache write",
+  // A model that meters audio or image tokens apart prices a different unit,
+  // so each modality gets its own label rather than sharing "Mtok in".
+  mtok_in_audio:"Mtok in · audio", mtok_out_audio:"Mtok out · audio",
+  mtok_cache_read_audio:"Mtok cached · audio",
+  mtok_in_image:"Mtok in · image", mtok_out_image:"Mtok out · image",
+  mtok_cache_read_image:"Mtok cached · image",
+  mtok_out_reasoning:"Mtok out · reasoning",
+  image_in:"image in", second_in:"second in", second_out:"second out",
+  call:"call", second:"second", minute:"minute", attempt:"attempt", result:"result",
+  gigabyte:"GB", character:"character", image:"image", page:"page", script_page:"page"};
+// The dimension a buyer quotes first, in the order they reach for it.
+const LEAD_DIMS = ["mtok_in","mtok_out","mtok_in_audio","mtok_out_audio","mtok_in_image",
+  "mtok_out_image","call","result","minute","image","second","character","page"];
+// Navigation, in the order it is read.
+const REGS = [["top","Top"],["all","All"],["model","Models"],["tool","Tools"],
+  ["agent","Agents"],["providers","Providers"]];
+// What "Top" means, stated on the page: the catalogue holds no quality
+// figure it did not observe, so the only honest ranking is how widely the
+// market carries a thing.
+// The note describes what Top holds, not how it is ordered: the reader can
+// now order any view themselves.
+const TOP_NOTE = "Everything at least two providers carry — breadth of supply, not a quality ranking.";
+const TOP_LIMIT = 24;
+const TOP_MIN_PROVIDERS = 2;
+const PAGE = 40;
+
+let reg = "top", query = "", selected = null, selectedProvider = null, shown = PAGE;
+// How the list is ordered. Only price reads both ways: a reader looks for
+// the cheapest and, less often, for what the top of the market costs. A
+// name has one order, and "who is most widely sold" is the same question
+// however you phrase it, so those sort one way and say so by wearing no
+// arrow. The default is the order the catalogue opened with.
+let sortBy = "count", cheapFirst = true;
+
+const esc = s => String(s??"").replace(/[&<>"]/g,
+  c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money = m => {
+  const d = m/1e6;
+  if (!(d > 0)) return "$0";
+  // Two significant figures however small: a sandbox metered at $0.000015 a
+  // second is a real price, and four decimal places printed it as "$0" —
+  // which sorting by price put right at the top of the list.
+  const places = d >= 100 ? 0 : d >= 1 ? 2 : Math.min(8, 1 - Math.floor(Math.log10(d)));
+  const s = d.toFixed(places);
+  return "$" + (s.includes(".") ? s.replace(/\.?0+$/,"") : s);
+};
+const provName = id => (DB.providers.find(p=>p.id===id)||{}).name || id;
+const derivedName = id => (DB.entities.find(x=>x.id===id)||{}).name || id;
+const leadRank = d => { const i = LEAD_DIMS.indexOf(d); return i < 0 ? LEAD_DIMS.length : i; };
+const leadComponent = o => LEAD_DIMS.map(d => o.components.find(c => c.dimension === d))
+  .find(Boolean) ?? o.components[0];
+// The site of a URL, so a page-long API query string does not eat the card.
+const site = url => { try { return new URL(url).hostname.replace(/^www\./,""); }
+  catch { return url.split("/")[0]; } };
+
+// ---- how a price reads ---------------------------------------------------
+// A meter is one thing a provider charges for. Some come as a pair (tokens in
+// and tokens out), some price only what comes back (a result, a resolved
+// call), some only the act of asking (a call, a page). The shape of the row
+// follows what the provider actually publishes rather than a fixed template.
+const METERS = [
+  {key:"mtok",       label:"tokens",        per:"Mtok",
+   in:"mtok_in", out:"mtok_out", extra:[["mtok_cache_read","cached"],["mtok_cache_write","cache write"]]},
+  {key:"mtok_audio", label:"audio tokens",  per:"Mtok",
+   in:"mtok_in_audio", out:"mtok_out_audio", extra:[["mtok_cache_read_audio","cached"]]},
+  {key:"mtok_image", label:"image tokens",  per:"Mtok",
+   in:"mtok_in_image", out:"mtok_out_image", extra:[["mtok_cache_read_image","cached"]]},
+  {key:"call",       label:"per call",      single:"call"},
+  {key:"result",     label:"per result",    single:"result"},
+  {key:"attempt",    label:"per attempt",   single:"attempt"},
+  {key:"minute",     label:"per minute",    single:"minute"},
+  {key:"second",     label:"per second",    single:"second"},
+  {key:"image",      label:"per image",     single:"image"},
+  {key:"page",       label:"per page",      single:"page"},
+  {key:"script_page",label:"per page",      single:"script_page"},
+  {key:"character",  label:"per character", single:"character"},
+  {key:"gigabyte",   label:"per GB",        single:"gigabyte"},
+];
+
+// The meters an offering actually has, in the order a reader reads them.
+function metersOf(o){
+  const by = new Map(o.components.map(c => [c.dimension, c]));
+  const rows = [];
+  for (const m of METERS) {
+    if (m.single) {
+      const c = by.get(m.single);
+      if (c) rows.push({meter:m, single:c});
+      continue;
+    }
+    const [inC, outC] = [by.get(m.in), by.get(m.out)];
+    const extra = (m.extra||[]).map(([d,l]) => by.get(d) && {c:by.get(d), label:l}).filter(Boolean);
+    if (inC || outC || extra.length) rows.push({meter:m, in:inC, out:outC, extra});
+  }
+  // A dimension no meter claims still shows, rather than vanishing.
+  const claimed = new Set(rows.flatMap(r => r.single
+    ? [r.single.dimension]
+    : [r.in?.dimension, r.out?.dimension, ...r.extra.map(x => x.c.dimension)]).filter(Boolean));
+  for (const c of o.components) {
+    if (!claimed.has(c.dimension))
+      rows.push({meter:{label:UNITS[c.dimension]||c.dimension, single:c.dimension}, single:c});
+  }
+  return rows;
+}
+
+function meterRow(r){
+  if (r.single) {
+    return `<div class="meter"><span class="lbl">${esc(r.meter.label)}</span>
+      <span class="vals"><span class="pair"><span class="v mono">${money(r.single.micros_per_unit)}</span></span></span></div>`;
+  }
+  const vals = [];
+  if (r.in && r.out) {
+    vals.push(`<span class="pair"><span class="v mono">${money(r.in.micros_per_unit)}</span>
+      <span class="arrow">→</span><span class="v mono">${money(r.out.micros_per_unit)}</span>
+      <span class="side">in / out</span></span>`);
+  } else if (r.in) {
+    vals.push(`<span class="pair"><span class="v mono">${money(r.in.micros_per_unit)}</span>
+      <span class="side">in</span></span>`);
+  } else if (r.out) {
+    vals.push(`<span class="pair"><span class="v mono">${money(r.out.micros_per_unit)}</span>
+      <span class="side">out</span></span>`);
+  }
+  if (r.meter.per) vals.push(`<span class="per">per ${esc(r.meter.per)}</span>`);
+  for (const x of r.extra)
+    vals.push(`<span class="extra">${esc(x.label)} <b class="mono">${money(x.c.micros_per_unit)}</b></span>`);
+  return `<div class="meter"><span class="lbl">${esc(r.meter.label)}</span>
+    <span class="vals">${vals.join("")}</span></div>`;
+}
+
+// The one figure a card can carry: the pair if the provider prices a pair,
+// otherwise whichever single side it prices.
+function headlineOf(o){
+  for (const r of metersOf(o)) {
+    if (r.single)
+      return {text: money(r.single.micros_per_unit), unit: r.meter.label,
+              dimension: r.single.dimension, price: r.single.micros_per_unit};
+    if (r.in && r.out)
+      return {text: `${money(r.in.micros_per_unit)} → ${money(r.out.micros_per_unit)}`,
+              unit: `per ${r.meter.per} in / out`, dimension: r.meter.in,
+              price: r.in.micros_per_unit};
+    const one = r.in ?? r.out;
+    if (one)
+      return {text: money(one.micros_per_unit),
+              unit: `per ${r.meter.per} ${r.in ? "in" : "out"}`,
+              dimension: one.dimension, price: one.micros_per_unit};
+    // A meter of nothing but cache rates still has a figure worth quoting.
+    const x = r.extra?.[0];
+    if (x)
+      return {text: money(x.c.micros_per_unit), unit: `${x.label} per ${r.meter.per}`,
+              dimension: x.c.dimension, price: x.c.micros_per_unit};
+  }
+  return null;
+}
+
+// The unit this entity is mostly priced in — the one a reader can compare
+// across its providers.
+function commonDimension(offerings){
+  const count = new Map();
+  for (const o of offerings) {
+    const h = headlineOf(o);
+    if (h) count.set(h.dimension, (count.get(h.dimension) ?? 0) + 1);
+  }
+  let best = null;
+  for (const [dim, n] of count) {
+    if (!best || n > best.n || (n === best.n && leadRank(dim) < leadRank(best.dim)))
+      best = {dim, n};
+  }
+  return best;
+}
+
+// A way to buy that can be compared with another. A labelled lane is usually
+// a different deal on different terms — batch, priority, a region tier — so
+// it stays out of the comparison. A reseller's lane is not that: its label is
+// the upstream serving the request, and every one of them is a full-price way
+// to buy the same weights today.
+function comparableWay(o){
+  return !o.variant || o.way === "aggregator";
+}
+
+// The cheapest offering, decided inside one unit and one lane, and a price per
+// call cannot be weighed against a price per minute — so when the providers do
+// not share a unit, nothing is called cheapest.
+function cheapest(e){
+  const standard = e.offerings.filter(comparableWay);
+  const pool = standard.length ? standard : e.offerings;
+  const common = commonDimension(pool);
+  if (!common) return null;
+  const comparable = pool.filter(o => headlineOf(o)?.dimension === common.dim);
+  let best = null;
+  for (const o of comparable) {
+    const h = headlineOf(o);
+    if (!best || h.price < best.h.price) best = {o, h};
+  }
+  // One offering is not a comparison; quote it, but do not crown it.
+  return best ? {...best, comparable: comparable.length > 1} : null;
+}
+
+const providerCount = e => new Set(e.offerings.map(o => o.provider_id)).size;
+
+// ---- how the list is ordered ---------------------------------------------
+// The freshest date anything on the row was read: a price figure or a
+// standing. Computed once per entity — renderProviders asks for it across
+// the whole catalogue and would otherwise walk every component per row.
+const freshness = new Map();
+function updatedAt(e){
+  let t = freshness.get(e.id);
+  if (t !== undefined) return t;
+  t = "";
+  for (const o of e.offerings) for (const c of o.components) if (c.taken_at > t) t = c.taken_at;
+  for (const b of e.benchmarks ?? []) if (b.taken_at > t) t = b.taken_at;
+  freshness.set(e.id, t);
+  return t;
+}
+
+// The number the card actually prints. Sorting by a figure a reader cannot
+// see would be a different list from the one in front of them.
+const leadPrice = e => cheapest(e)?.h.price ?? null;
+
+// A row with no declared price is not the most expensive row; it is a row
+// with no price. It goes last whichever way the arrow points.
+function byPrice(a, b){
+  const [x, y] = [leadPrice(a), leadPrice(b)];
+  if (x === null || y === null) return (x === null) - (y === null);
+  return cheapFirst ? x - y : y - x;
+}
+
+function sortEntities(rows){
+  const byName = (a,b) => a.name.localeCompare(b.name);
+  const cmp = {
+    price:   (a,b) => byPrice(a,b) || byName(a,b),
+    name:    byName,
+    count:   (a,b) => providerCount(b) - providerCount(a) || byName(a,b),
+    updated: (a,b) => (updatedAt(b) < updatedAt(a) ? -1 : updatedAt(b) > updatedAt(a) ? 1 : 0)
+                      || byName(a,b),
+  }[sortBy] ?? byName;
+  return rows.sort(cmp);
+}
+
+// Top is the whole catalogue, widest supply first: the rows a reader can
+// start working from without knowing the market yet. The filter is what
+// makes it Top; the order is whatever the reader asked for.
+function topRows(){
+  return sortEntities(DB.entities
+    .filter(e => matchesQuery(e) && providerCount(e) >= TOP_MIN_PROVIDERS));
+}
+
+// Everything a row can be found by, in one string.
+const hays = new Map();
+function haystack(e){
+  let h = hays.get(e.id);
+  if (h === undefined) {
+    h = [e.name, e.family, e.version, e.id,
+         ...(e.attrs?.tasks ?? []), e.attrs?.license ?? "",
+         ...e.offerings.map(o=>o.provider), ...e.aliases.map(a=>a.alias)].join(" ").toLowerCase();
+    hays.set(e.id, h);
+  }
+  return h;
+}
+
+// Every word must land, in any order. A reader who remembers "sonnet" and
+// "4.6" but not that the maker writes "Claude Sonnet 4.6" was getting
+// nothing back from a single-substring match.
+const words = q => q.split(/\s+/).filter(Boolean);
+const matchesQuery = e => {
+  if (!query) return true;
+  const hay = haystack(e);
+  return words(query).every(w => hay.includes(w));
+};
+
+const matches = e => {
+  if (reg !== "all" && e.register !== reg) return false;
+  return matchesQuery(e);
+};
+
+// Scroll the list column only. scrollIntoView would drag the whole page with
+// it, which on a deep link left the header stranded mid-screen.
+function scrollListTo(card){
+  if (!card) return;
+  const list = document.getElementById('list');
+  const top = card.offsetTop - list.offsetTop;
+  if (top < list.scrollTop || top > list.scrollTop + list.clientHeight - card.offsetHeight)
+    list.scrollTop = Math.max(0, top - 12);
+}
+
+function renderTabs(){
+  const el = document.getElementById('tabs');
+  el.innerHTML = REGS.map(([k,label]) =>
+    `<button class="${k===reg?'on':''}" data-reg="${k}">${label}</button>`).join("");
+  const atEnd = () => el.classList.toggle('end', el.scrollLeft + el.clientWidth >= el.scrollWidth - 2);
+  el.onscroll = atEnd; atEnd();
+  const on = el.querySelector('.on');
+  if (on) el.scrollLeft = Math.max(0, on.offsetLeft - 8);
+}
+
+const REG_ICON = {model:"i-model", tool:"i-tool", agent:"i-agent"};
+const WAY_ICON = {api:"i-api", cloud:"i-cloud", aggregator:"i-aggregator",
+  local:"i-local", mcp:"i-mcp", subscription:"i-api"};
+const icon = (id, cls) => `<svg class="ic ${cls||""}" viewBox="0 0 24 24"><use href="#${id}"/></svg>`;
+
+function card(e){
+  const best = cheapest(e);
+  const provs = new Set(e.offerings.map(o=>o.provider)).size;
+  const price = best
+    ? `<span class="price mono">${best.h.text}
+         <span class="unit">${esc(best.h.unit)}</span></span>`
+    : `<span class="price unit">no declared price</span>`;
+  // Three lines, each answering one question: what it is, what it costs,
+  // who sells it.
+  return `<button class="card ${e.id===selected?'on':''}" data-id="${esc(e.id)}">
+    <div class="top"><span class="name">${esc(e.name)}</span>
+      <span class="reg ${e.register}">${icon(REG_ICON[e.register])}${e.register}</span></div>
+    <div class="price-line">${price}</div>
+    <div class="foot">${provs ? `<span>${provs} provider${provs>1?"s":""}</span>` : ""}
+      ${e.maker ? `<span class="dot"></span><span>${esc(provName(e.maker))}</span>` : ""}</div>
+  </button>`;
+}
+
+// ---- providers as a view of their own ------------------------------------
+// What a provider actually sells, read off the offerings that name it.
+// Memoised: the list view asks for every provider's shelf to count it, to
+// price it and to draw it, and each pass walks the whole catalogue.
+const shelves = new Map();
+function providerShelf(id){
+  if (shelves.has(id)) return shelves.get(id);
+  const rows = shelfOf(id);
+  shelves.set(id, rows);
+  return rows;
+}
+
+function shelfOf(id){
+  const rows = [];
+  for (const e of DB.entities) {
+    const mine = e.offerings.filter(o => o.provider_id === id);
+    if (!mine.length) continue;
+    const std = mine.find(o => !o.variant) ?? mine[0];
+    // This provider's own reading date, not the entity's: another seller
+    // refreshing its price says nothing about how current this one is.
+    let fresh = "";
+    for (const o of mine) for (const c of o.components) if (c.taken_at > fresh) fresh = c.taken_at;
+    rows.push({entity:e, offering:std, lanes:mine.length, head:headlineOf(std), fresh});
+  }
+  rows.sort((a,b) => a.entity.register.localeCompare(b.entity.register)
+    || (a.head?.price ?? Infinity) - (b.head?.price ?? Infinity)
+    || a.entity.name.localeCompare(b.entity.name));
+  return rows;
+}
+
+// The cheapest thing on a provider's shelf, and what it is charged by. Two
+// providers metering different units are not really comparable, so the unit
+// is printed beside the figure rather than left to be assumed.
+function providerFloor(id){
+  let best = null;
+  for (const r of providerShelf(id))
+    if (r.head && (!best || r.head.price < best.price)) best = r.head;
+  return best;
+}
+
+function providerListCard(p){
+  const shelf = providerShelf(p.id);
+  const regs = new Set(shelf.map(r => r.entity.register));
+  const ways = new Set(shelf.map(r => r.offering.way));
+  const way = [...ways][0] || "api";
+  const floor = providerFloor(p.id);
+  return `<button class="card ${p.id===selectedProvider?'on':''}" data-provider="${esc(p.id)}">
+    <div class="top"><span class="name">${esc(p.name)}</span>
+      <span class="reg model">${icon(WAY_ICON[way]||"i-api")}${esc(p.kind||"provider")}</span></div>
+    <div class="price-line"><span class="price">${shelf.length}</span>
+      <span class="unit">${shelf.length===1?"entity":"entities"}</span></div>
+    <div class="foot">${[...regs].map(r => `<span>${esc(r)}s</span>`).join('<span class="dot"></span>')}
+      ${floor ? `<span class="dot"></span><span><b class="mono">${esc(floor.text)}</b>
+         ${esc(floor.unit)}</span>` : ""}</div>
+  </button>`;
+}
+
+function renderProvider(p){
+  const pane = document.getElementById('pane');
+  const el = document.getElementById('detail');
+  pane.hidden = !p;
+  document.body.classList.toggle('detail-open', !!p && window.innerWidth < 900);
+  if (!p) { el.innerHTML = ""; return; }
+  const shelf = providerShelf(p.id);
+  const byRegister = new Map();
+  for (const r of shelf) {
+    if (!byRegister.has(r.entity.register)) byRegister.set(r.entity.register, []);
+    byRegister.get(r.entity.register).push(r);
+  }
+  const sections = [...byRegister.entries()].map(([register, rows]) => `
+    <div class="sect"><h3>${esc(register)}s · ${rows.length}</h3>
+      ${rows.map(r => `<button class="shelf" data-id="${esc(r.entity.id)}">
+        <span class="shelf-name">${icon(REG_ICON[r.entity.register])}${esc(r.entity.name)}</span>
+        <span class="shelf-price mono">${r.head ? esc(r.head.text) : "—"}
+          <span class="unit">${r.head ? esc(r.head.unit) : "no declared price"}</span></span>
+        ${r.lanes > 1 ? `<span class="shelf-lanes">${r.lanes} lanes</span>` : ""}
+      </button>`).join("")}</div>`).join("");
+  el.innerHTML = `
+    <button class="back" id="back">${icon("i-back")} All providers</button>
+    <h2>${esc(p.name)}</h2>
+    <p class="io">${esc(p.kind || "provider")} · ${shelf.length} entit${shelf.length===1?"y":"ies"}
+      ${p.url ? `· <a href="${esc(p.url)}" target="_blank" rel="noreferrer">${esc(site(p.url))}${icon("i-link")}</a>` : ""}</p>
+    ${sections || `<div class="none">Nothing in the catalogue names this provider yet.</div>`}`;
+  document.getElementById('back').onclick = () => {
+    selectedProvider = null; location.hash = ""; render();
+  };
+  el.querySelectorAll('.shelf').forEach(b => b.addEventListener('click', () => {
+    selected = b.dataset.id; selectedProvider = null;
+    reg = DB.entities.find(e => e.id === selected)?.register ?? "all";
+    location.hash = "e/" + selected; render();
+  }));
+}
+
+// How old a figure is, because a stale price is worse than a missing one.
+function age(taken_at){
+  const days = Math.round((Date.now() - Date.parse(taken_at + "T00:00:00Z")) / 86400000);
+  if (!isFinite(days)) return "";
+  if (days <= 0) return "today";
+  if (days === 1) return "yesterday";
+  if (days < 30) return `${days} days ago`;
+  if (days < 365) return `${Math.round(days/30)} months ago`;
+  return `${(days/365).toFixed(1)} years ago`;
+}
+
+// One card per provider: the same provider selling three lanes of one model
+// is one row of the comparison, not three.
+function providerCard(group, e, bestOffering){
+  const {provider, provider_id, way, offerings} = group;
+  const isMaker = provider_id === e.maker;
+  const isBest = offerings.some(o => o === bestOffering);
+  // A reseller does not sell you an average — it sells you a routing policy.
+  // So the row keeps the price you pay when you pin nothing, and the spread
+  // across the upstreams it can route you to; the upstreams themselves fold
+  // away until you ask.
+  const routed = way === "aggregator" && offerings.length > 2;
+  let cheapestRoute = null;
+  if (routed) {
+    for (const o of offerings.filter(o => o.variant)) {
+      const h = headlineOf(o);
+      if (h && (!cheapestRoute || h.price < headlineOf(cheapestRoute).price)) cheapestRoute = o;
+    }
+  }
+  const laneOf = o => {
+    const rows = metersOf(o);
+    const body = rows.length
+      ? `<div class="meters">${rows.map(meterRow).join("")}</div>`
+      : `<div class="none">${o.way === "local"
+          ? "Open weights on your own hardware — no price to declare."
+          : "No declared price."}</div>`;
+    const mets = o.metrics.length ? `<div class="mets">${o.metrics.map(m => `
+        <div class="met"><span class="v mono">${m.value}</span>
+        <span class="k">${esc(m.metric)}</span></div>`).join("")}</div>` : "";
+    const c = o.components[0];
+    const src = c ? `<div class="src mono"><span>${esc(c.basis)}</span><span class="dot"></span>
+        <a href="${esc(c.source)}" title="${esc(c.source)}" target="_blank" rel="noreferrer">
+          ${esc(site(c.source))}${icon("i-link")}</a>
+        <span class="dot"></span><span>${esc(c.taken_at)} · ${esc(age(c.taken_at))}</span></div>` : "";
+    return `<div class="lane">
+      <span class="lane-name ${o.variant?"":"std"}">${esc(o.variant || "standard")}${
+        o === cheapestRoute ? `<span class="lane-note">cheapest route</span>` : ""}</span>
+      <div>${body}${mets}${src}</div></div>`;
+  };
+  // Lead with what a buyer would actually pick: the route you get by pinning
+  // nothing, and the cheapest upstream on offer. Everything else folds away.
+  let shown = offerings, folded = [];
+  if (routed) {
+    const std = offerings.find(o => !o.variant);
+    const lead = [std, cheapestRoute].filter(Boolean).filter((o, i, a) => a.indexOf(o) === i);
+    shown = lead.length ? lead : offerings.slice(0, 1);
+    folded = offerings.filter(o => !shown.includes(o));
+  }
+  const lanes = shown.map(laneOf).join("");
+  const routes = folded.length
+    ? routeSummary(offerings.filter(o => o.variant), shown.find(o => !o.variant), folded)
+    : "";
+  return `<div class="offer ${isBest?"best":""}">
+    <div class="head">${icon(WAY_ICON[way]||"i-api","lg")}
+      <span class="prov">${esc(provider)}</span>
+      <span class="tag way">${esc(way)}</span>
+      ${isMaker?`<span class="tag maker">${icon("i-maker")}maker</span>`:""}
+      ${isBest?`<span class="tag best">${icon("i-best")}cheapest</span>`:""}</div>
+    ${lanes}${routes}</div>`;
+}
+
+// What a reseller's upstreams cost, stated as a spread rather than a mean:
+// the mean of eighteen routes is a number nobody can pay, while the cheapest
+// and dearest bound what this provider can actually charge you.
+function routeSummary(folded, standard, rest){
+  const head = standard ? headlineOf(standard) : null;
+  const dim = head ? head.dimension
+    : (headlineOf(folded[0]) || {}).dimension;
+  const priced = folded.map(o => headlineOf(o)).filter(h => h && h.dimension === dim);
+  let spread = "";
+  if (priced.length) {
+    const lo = Math.min(...priced.map(h => h.price));
+    const hi = Math.max(...priced.map(h => h.price));
+    const unit = priced[0].unit;
+    spread = lo === hi
+      ? `<span class="spread">${money(lo)}</span> ${esc(unit)}`
+      : `<span class="spread">${money(lo)} – ${money(hi)}</span> ${esc(unit)}`;
+  }
+  const note = standard ? "routed by default above" : "no default route published";
+  return `<details class="routes"><summary><b>${folded.length} upstream${folded.length>1?"s":""}</b>
+      ${spread}<span class="dot"></span><span>${note}</span></summary>
+    ${rest.map(o => `<div class="lane">
+      <span class="lane-name">${esc(o.variant)}</span>
+      <div><div class="meters">${metersOf(o).map(meterRow).join("")}</div></div></div>`).join("")}
+  </details>`;
+}
+
+// Offerings grouped by the provider and the way in, standard lane first.
+function providerGroups(e, commonDim){
+  const groups = new Map();
+  for (const o of e.offerings) {
+    const key = o.provider_id + "|" + o.way;
+    if (!groups.has(key))
+      groups.set(key, {provider:o.provider, provider_id:o.provider_id, way:o.way, offerings:[]});
+    groups.get(key).offerings.push(o);
+  }
+  for (const g of groups.values())
+    g.offerings.sort((a,b) => (a.variant?1:0) - (b.variant?1:0)
+      || a.variant.localeCompare(b.variant));
+  // Rank on the standard lane, and only on the unit the entity is compared
+  // in: a provider selling only labelled lanes, or pricing something else
+  // entirely, is not cheaper — it is selling a different thing.
+  const rank = g => {
+    const prices = g.offerings.filter(comparableWay).map(headlineOf)
+      .filter(h => h && (!commonDim || h.dimension === commonDim))
+      .map(h => h.price);
+    return prices.length ? Math.min(...prices) : Infinity;
+  };
+  return [...groups.values()].sort((a,b) => rank(a) - rank(b) || a.provider.localeCompare(b.provider));
+}
+
+function renderDetail(e){
+  const pane = document.getElementById('pane');
+  const el = document.getElementById('detail');
+  pane.hidden = !e;
+  document.body.classList.toggle('detail-open', !!e && window.innerWidth < 900);
+  if (!e) { el.innerHTML = ""; return; }
+  // What the thing is FOR reads as its own row of chips, and each one is a
+  // way into the rest of the catalogue: modality cannot tell a reranker
+  // from a chat model, and the tag can.
+  const tasks = (e.attrs.tasks ?? []).map(t =>
+    `<button class="task" data-task="${esc(t)}">${esc(t)}</button>`).join("");
+  const attrs = Object.entries(e.attrs).filter(([k]) => k !== "tasks").map(([k,v]) =>
+    `<span class="attr">${esc(k)} <b>${esc(v)}</b></span>`).join("");
+  const derived = e.derived_from
+    ? `<span class="attr">derived from <b>${esc(derivedName(e.derived_from))}</b></span>` : "";
+  const best = cheapest(e);
+  const bestOffering = best && best.comparable ? best.o : null;
+  const groups = providerGroups(e, best && best.h.dimension);
+  const providersLine = `${groups.length} provider${groups.length>1?"s":""}`;
+
+// Every standing the catalogue holds, per suite, ordered the way the suite
+// scores. A board's rank belongs to the board's whole field; ours belongs to
+// what we recorded — mixing the two produced "6th of 4", so they stay apart.
+const SUITE_HELD = (() => {
+  const rows = new Map();
+  for (const e of DB.entities)
+    for (const b of e.benchmarks ?? []) {
+      if (!rows.has(b.suite)) rows.set(b.suite, []);
+      rows.get(b.suite).push({entity: e.id, value: b.value, low: !!b.lower_is_better});
+    }
+  for (const list of rows.values()) {
+    // Read the suite's direction once: asking list[0] inside the comparator
+    // asks a different row each swap, which sorted some suites backwards.
+    const low = list.some(r => r.low);
+    list.sort((a, b) => (low ? a.value - b.value : b.value - a.value));
+  }
+  return rows;
+})();
+
+// Where this entity sits among the standings we actually carry for the suite.
+function heldPlace(entityId, b){
+  const list = SUITE_HELD.get(b.suite);
+  if (!list || list.length < 2) return null;
+  const i = list.findIndex(r => r.entity === entityId && r.value === b.value);
+  return i < 0 ? null : {rank: i + 1, of: list.length};
+}
+
+// English for a place, because "1st" reads as a result and "#1" reads as an id.
+function ordinal(n){
+  const t = n % 100, o = n % 10;
+  const suffix = t >= 11 && t <= 13 ? "th" : o === 1 ? "st" : o === 2 ? "nd" : o === 3 ? "rd" : "th";
+  return `${n}${suffix}`;
+}
+
+// A place is only worth reading next to the field it was won in. The board's
+// place comes with the board's field when the board publishes it; our own
+// ordering is quoted separately and always says it is ours.
+function standing(entityId, b){
+  const here = heldPlace(entityId, b);
+  const place = b.rank ? ordinal(b.rank) : here ? ordinal(here.rank) : "—";
+  const field = b.rank
+    ? (b.out_of ? `of ${b.out_of}` : here ? `${ordinal(here.rank)} of ${here.of} here` : "")
+    : here ? `of ${here.of} here` : "";
+  const shareOf = b.rank && b.out_of ? {r: b.rank, n: b.out_of}
+    : here ? {r: here.rank, n: here.of} : null;
+  const share = shareOf && shareOf.n > 1 ? (shareOf.r - 1) / (shareOf.n - 1) : null;
+  return {place, field, share};
+}
+  // Benchmarks: what independent measurers published about these weights.
+  // A rank without its date is a lie a week later, so both always travel.
+  const benchmarks = (e.benchmarks ?? []).length ? `<div class="sect">
+    <h3>Benchmarks · ${e.benchmarks.length}</h3>
+    ${e.benchmarks.map(b => { const st = standing(e.id, b); return `<div class="bench">
+      <span class="rank ${b.rank === 1 ? "gold" : ""}">${st.place}
+        ${st.field ? `<span class="of">${esc(st.field)}</span>` : ""}</span>
+      <span class="what"><span class="suite">${esc(b.suite_name ?? b.suite)}</span>
+        ${b.measurer ? `<span class="measurer"> · ${esc(b.measurer)}</span>` : ""}
+        ${st.share !== null ? `<span class="field" title="where in the field">
+          <span class="mark" style="left:${(st.share*100).toFixed(1)}%"></span></span>` : ""}</span>
+      <span class="score mono">${esc(String(b.value))}
+        <span class="m">${esc(b.metric)}${b.lower_is_better ? " · lower is better" : ""}</span></span>
+      <span class="bench-src mono">${esc(b.basis)} ·
+        <a href="${esc(b.source)}" title="${esc(b.source)}" target="_blank" rel="noreferrer">
+          ${esc(site(b.source))}${icon("i-link")}</a> ·
+        ${esc(b.taken_at)} · ${esc(age(b.taken_at))}</span>
+    </div>`; }).join("")}</div>` : "";
+  const aliases = e.aliases.length ? `<div class="sect"><h3>Known as</h3>
+    ${e.aliases.map(a => `<div class="alias-row"><span>${esc(provName(a.source))}</span>
+      <b class="mono">${esc(a.alias)}</b></div>`).join("")}</div>` : "";
+  el.innerHTML = `
+    <button class="back" id="back">${icon("i-back")} All entities</button>
+    <h2>${esc(e.name)}</h2>
+    <p class="io"><b>${esc(e.input_kind)}</b> in → <b>${esc(e.output_kind)}</b> out${
+      e.maker ? ` · made by ${esc(provName(e.maker))}` : ""}</p>
+    ${tasks ? `<div class="tasks">${tasks}</div>` : ""}
+    <div class="attrs">${attrs}${derived}</div>
+    <div class="sect"><h3>Providers &amp; prices · ${providersLine}</h3>
+      ${groups.map(g => providerCard(g, e, bestOffering)).join("")}</div>
+    ${benchmarks}${aliases}`;
+  document.getElementById('back').onclick = () => { selected = null; location.hash = ""; render(); };
+  // A tag is a question — "what else does this" — so clicking one asks it.
+  el.querySelectorAll('.task').forEach(b => b.addEventListener('click', () => {
+    const q = b.dataset.task;
+    document.getElementById('q').value = q;
+    query = q; shown = PAGE; reg = "all"; selected = null;
+    document.getElementById('clear').classList.add('on');
+    location.hash = ""; render();
+  }));
+}
+
+// A provider row carries the same four answers: what its cheapest thing
+// costs, its name, how much it sells, and when it was last read.
+function sortProviders(a, b){
+  const byName = (x,y) => x.p.name.localeCompare(y.p.name);
+  if (sortBy === "name") return byName(a,b);
+  if (sortBy === "updated") return (a.fresh < b.fresh) - (a.fresh > b.fresh) || byName(a,b);
+  if (sortBy === "price") {
+    const [x, y] = [a.floor?.price ?? null, b.floor?.price ?? null];
+    if (x === null || y === null) return (x === null) - (y === null) || byName(a,b);
+    return (cheapFirst ? x - y : y - x) || byName(a,b);
+  }
+  return b.n - a.n || byName(a,b);
+}
+
+// ---- the sort control -----------------------------------------------------
+// In the providers view the count is of entities, not of providers: asking
+// how many providers a provider has is not a question.
+const SORTS = [["price","Price"], ["name","Name"], ["count","Providers"], ["updated","Updated"]];
+
+function renderSorts(){
+  const el = document.getElementById('sorts');
+  const providers = reg === "providers";
+  el.innerHTML = SORTS.map(([k,label]) => {
+    if (providers && k === "count") label = "Entities";
+    const arrow = k === "price" && sortBy === "price"
+      ? `<span class="dir">${cheapFirst ? "↑" : "↓"}</span>` : "";
+    return `<button class="${k===sortBy?'on':''}" data-sort="${k}">${label}${arrow}</button>`;
+  }).join("");
+}
+
+document.getElementById('sorts').addEventListener('click', ev => {
+  const b = ev.target.closest('button');
+  if (!b) return;
+  // Price is the one that reads both ways, so clicking it again turns it
+  // over instead of doing nothing.
+  if (b.dataset.sort === sortBy && sortBy === "price") cheapFirst = !cheapFirst;
+  else sortBy = b.dataset.sort;
+  shown = PAGE;
+  render();
+});
+
+function render(){
+  renderTabs();
+  renderSorts();
+  const note = document.getElementById('tabnote');
+  const top = reg === "top";
+  note.hidden = !top;
+  note.textContent = TOP_NOTE;
+  if (reg === "providers") return renderProviders();
+  const rows = top ? topRows() : sortEntities(DB.entities.filter(matches));
+  document.getElementById('counts').textContent =
+    `${rows.length} of ${DB.entities.length} entities · ${DB.providers.length} providers`;
+  const page = rows.slice(0, shown);
+  document.getElementById('list').innerHTML = (page.map(card).join("")
+    + (rows.length > shown
+        ? `<button class="more" id="more">Show ${Math.min(PAGE, rows.length-shown)} more</button>` : ""))
+    || `<div class="empty">Nothing matches “${esc(query)}”.</div>`;
+  // On a wide screen the detail pane always shows something; on a phone it
+  // opens only when a card is tapped, so the list stays the whole screen.
+  const wide = window.innerWidth >= 900;
+  if (wide && !rows.find(e => e.id === selected)) selected = rows[0]?.id ?? null;
+  renderDetail(DB.entities.find(e => e.id === selected));
+  // A link straight to an entity should show it in the list too, even when
+  // it sits past the first page of cards.
+  if (wide && selected) {
+    const at = rows.findIndex(e => e.id === selected);
+    if (at >= shown) { shown = Math.ceil((at + 1) / PAGE) * PAGE; return render(); }
+    scrollListTo(document.querySelector('.card.on'));
+  }
+}
+
+function renderProviders(){
+  const rows = DB.providers
+    .filter(p => !query || (p.name + " " + (p.kind||"") + " " + p.id).toLowerCase().includes(query))
+    .map(p => ({p, n: providerShelf(p.id).length, floor: providerFloor(p.id),
+                fresh: providerShelf(p.id).reduce((t,r) => r.fresh > t ? r.fresh : t, "")}))
+    .filter(x => x.n > 0)
+    .sort(sortProviders);
+  document.getElementById('counts').textContent =
+    `${rows.length} of ${DB.providers.length} providers · ${DB.entities.length} entities`;
+  const page = rows.slice(0, shown);
+  document.getElementById('list').innerHTML = (page.map(x => providerListCard(x.p)).join("")
+    + (rows.length > shown
+        ? `<button class="more" id="more">Show ${Math.min(PAGE, rows.length-shown)} more</button>` : ""))
+    || `<div class="empty">Nothing matches “${esc(query)}”.</div>`;
+  const wide = window.innerWidth >= 900;
+  if (wide && !rows.find(x => x.p.id === selectedProvider))
+    selectedProvider = rows[0]?.p.id ?? null;
+  renderProvider(DB.providers.find(p => p.id === selectedProvider));
+  if (wide && selectedProvider) scrollListTo(document.querySelector('.card.on'));
+}
+
+document.getElementById('list').addEventListener('click', ev => {
+  const card = ev.target.closest('.card');
+  if (card && card.dataset.provider) {
+    selectedProvider = card.dataset.provider;
+    location.hash = "p/" + selectedProvider; render();
+    document.getElementById('pane').scrollTop = 0; return;
+  }
+  if (card) { selected = card.dataset.id; location.hash = "e/" + selected; render();
+    document.getElementById('pane').scrollTop = 0; return; }
+  if (ev.target.closest('#more')) { shown += PAGE; render(); }
+});
+document.getElementById('tabs').addEventListener('click', ev => {
+  const b = ev.target.closest('button');
+  if (!b) return;
+  reg = b.dataset.reg; shown = PAGE;
+  if (reg !== "providers") { selectedProvider = null; if (location.hash.startsWith("#p/")) location.hash = ""; }
+  render();
+});
+// ---- suggestions ----------------------------------------------------------
+// A reader half-remembers a name: two words out of four, or the API string
+// rather than the printed name. The list below already answers that, but a
+// short list of what they could mean answers it before they finish typing —
+// and shows WHY each row matched, since a hit on an alias is otherwise
+// invisible.
+const SUGGEST_MAX = 8;
+let picks = [], pickAt = -1;
+
+function hl(s, ws){
+  const low = s.toLowerCase(), marks = new Uint8Array(s.length);
+  for (const w of ws)
+    for (let i = low.indexOf(w); i >= 0; i = low.indexOf(w, i + w.length))
+      marks.fill(1, i, i + w.length);
+  let out = "", i = 0;
+  while (i < s.length) {
+    let j = i;
+    while (j < s.length && marks[j] === marks[i]) j++;
+    const seg = esc(s.slice(i, j));
+    out += marks[i] ? `<b>${seg}</b>` : seg;
+    i = j;
+  }
+  return out;
+}
+
+function suggestionsFor(q){
+  const ws = words(q);
+  if (!ws.length) return [];
+  const rows = [];
+  const nameHit = name => {
+    const low = name.toLowerCase();
+    if (!ws.every(w => low.includes(w))) return null;
+    return low.startsWith(q) ? 0 : 1;      // what you started typing comes first
+  };
+  for (const e of DB.entities) {
+    const r = nameHit(e.name);
+    if (r !== null) { rows.push({rank:r, e, via:null}); continue; }
+    if (!matchesQuery(e)) continue;
+    // Matched on something other than the name — say which, or the row
+    // looks like a mistake.
+    const alias = e.aliases.find(a => ws.every(w => a.alias.toLowerCase().includes(w)));
+    const prov = e.offerings.find(o => ws.every(w => (o.provider||"").toLowerCase().includes(w)));
+    rows.push({rank:2, e, via: alias ? alias.alias : prov ? provName(prov.provider_id) : null});
+  }
+  for (const p of DB.providers) {
+    const r = nameHit(p.name);
+    if (r !== null && providerShelf(p.id).length) rows.push({rank:r, p, via:null});
+  }
+  rows.sort((a,b) => a.rank - b.rank
+    || (b.e ? providerCount(b.e) : providerShelf(b.p.id).length)
+     - (a.e ? providerCount(a.e) : providerShelf(a.p.id).length)
+    || (a.e?.name ?? a.p.name).localeCompare(b.e?.name ?? b.p.name));
+  return rows.slice(0, SUGGEST_MAX);
+}
+
+function renderSuggest(){
+  const el = document.getElementById('suggest');
+  const ws = words(query);
+  picks = query ? suggestionsFor(query) : [];
+  if (pickAt >= picks.length) pickAt = -1;
+  el.hidden = !picks.length;
+  el.innerHTML = picks.map((s, i) => {
+    const name = s.e ? s.e.name : s.p.name;
+    const kind = s.e ? s.e.register : "provider";
+    return `<li role="option" class="${i===pickAt?'on':''}" data-at="${i}">
+      <span class="hit">${hl(name, ws)}</span>
+      ${s.via ? `<span class="via">${hl(s.via, ws)}</span>` : ""}
+      <span class="kind">${esc(kind)}</span></li>`;
+  }).join("");
+}
+
+function closeSuggest(){
+  picks = []; pickAt = -1;
+  document.getElementById('suggest').hidden = true;
+}
+
+function takeSuggestion(i){
+  const s = picks[i];
+  if (!s) return;
+  const name = s.e ? s.e.name : s.p.name;
+  input.value = name; query = name.toLowerCase(); shown = PAGE;
+  document.getElementById('clear').classList.add('on');
+  if (s.e) {
+    selected = s.e.id; selectedProvider = null;
+    reg = s.e.register; location.hash = "e/" + selected;
+  } else {
+    selectedProvider = s.p.id; selected = null;
+    reg = "providers"; location.hash = "p/" + selectedProvider;
+  }
+  closeSuggest();
+  render();
+  document.getElementById('pane').scrollTop = 0;
+}
+
+const input = document.getElementById('q');
+input.addEventListener('input', ev => {
+  query = ev.target.value.trim().toLowerCase();
+  shown = PAGE; pickAt = -1;
+  document.getElementById('clear').classList.toggle('on', !!query);
+  render();
+  renderSuggest();
+});
+input.addEventListener('focus', () => { if (query) renderSuggest(); });
+input.addEventListener('blur', () => setTimeout(closeSuggest, 120));
+input.addEventListener('keydown', ev => {
+  if (ev.key === "Escape" && picks.length) { ev.stopPropagation(); closeSuggest(); return; }
+  if (!picks.length) return;
+  if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
+    ev.preventDefault();
+    // Positions run 0..n where 0 is "nothing highlighted", so the arrows
+    // wrap through the typed text rather than skipping past it.
+    const n = picks.length, at = pickAt + 1;
+    pickAt = (at + (ev.key === "ArrowDown" ? 1 : n)) % (n + 1) - 1;
+    renderSuggest();
+  } else if (ev.key === "Enter") {
+    // Enter with nothing highlighted means "the list below is my answer".
+    if (pickAt >= 0) { ev.preventDefault(); takeSuggestion(pickAt); }
+    else closeSuggest();
+  }
+});
+// mousedown, not click: the input blurs first and the row would be gone.
+document.getElementById('suggest').addEventListener('mousedown', ev => {
+  const li = ev.target.closest('li');
+  if (li) { ev.preventDefault(); takeSuggestion(+li.dataset.at); }
+});
+document.getElementById('clear').addEventListener('click', () => {
+  input.value = ""; query = ""; shown = PAGE;
+  document.getElementById('clear').classList.remove('on');
+  closeSuggest();
+  input.focus(); render();
+});
+// The phone back button closes the detail instead of leaving the page.
+addEventListener('hashchange', () => {
+  const h = location.hash;
+  if (h.startsWith("#p/")) {
+    const id = h.slice(3);
+    selectedProvider = DB.providers.some(p => p.id === id) ? id : null;
+    if (selectedProvider) reg = "providers";
+  } else {
+    selectedProvider = null;
+    const id = h.startsWith("#e/") ? h.slice(3) : null;
+    selected = id && DB.entities.some(e => e.id === id) ? id : null;
+  }
+  render();
+});
+addEventListener('resize', () => render());
+addEventListener('keydown', ev => {
+  if (ev.key === "Escape" && (selected || selectedProvider) && window.innerWidth < 900) {
+    selected = null; selectedProvider = null; location.hash = ""; render();
+  }
+});
+
+// ---- coverage: what is in here, and how fresh it is ----------------------
+// Everything below is counted off the same data the page renders, so the
+// sheet can never claim more than the catalogue holds.
+function coverageFacts(){
+  const registers = new Map(), ways = new Map(), sources = new Map(), bases = new Map();
+  const dates = [];
+  let offerings = 0, figures = 0, aliases = 0, multi = 0, scored = 0, scores = 0;
+  const suites = new Map();
+  for (const e of DB.entities) {
+    registers.set(e.register, (registers.get(e.register) ?? 0) + 1);
+    aliases += e.aliases.length;
+    if (new Set(e.offerings.map(o => o.provider_id)).size > 1) multi++;
+    if ((e.benchmarks ?? []).length) scored++;
+    for (const b of e.benchmarks ?? []) {
+      scores++;
+      const key = b.suite_name ?? b.suite;
+      suites.set(key, (suites.get(key) ?? 0) + 1);
+      dates.push(b.taken_at);
+    }
+    for (const o of e.offerings) {
+      offerings++;
+      ways.set(o.way, (ways.get(o.way) ?? 0) + 1);
+      for (const c of [...o.components, ...o.metrics]) {
+        figures++;
+        bases.set(c.basis, (bases.get(c.basis) ?? 0) + 1);
+        sources.set(site(c.source), (sources.get(site(c.source)) ?? 0) + 1);
+        dates.push(c.taken_at);
+      }
+    }
+  }
+  dates.sort();
+  const rank = m => [...m.entries()].sort((a,b) => b[1] - a[1]);
+  return {registers:rank(registers), ways:rank(ways), sources:rank(sources), bases:rank(bases),
+          suites:rank(suites), scored, scores,
+          offerings, figures, aliases, multi,
+          newest:dates[dates.length-1], oldest:dates[0],
+          providers:DB.providers.length, entities:DB.entities.length};
+}
+
+function bars(rows, total){
+  return `<div class="bars">${rows.map(([k,n]) => `
+    <div class="bar-row"><span>${esc(k)}</span><span class="mono">${n}</span>
+      <span class="track"><span class="fill" style="width:${Math.max(2, n/total*100).toFixed(1)}%"></span></span>
+    </div>`).join("")}</div>`;
+}
+
+function openCoverage(){
+  const f = coverageFacts();
+  const topSources = f.sources.slice(0, 8);
+  document.getElementById('coverage-body').innerHTML = `
+    <button class="sheet-close" id="coverage-close" aria-label="Close">×</button>
+    <h2>Coverage</h2>
+    <p class="lede">Everything the catalogue holds right now, counted from the same
+      rows the page shows you.</p>
+    <div class="figures">
+      <div class="figure"><span class="n mono">${f.entities}</span><span class="k">entities</span></div>
+      <div class="figure"><span class="n mono">${f.providers}</span><span class="k">providers</span></div>
+      <div class="figure"><span class="n mono">${f.offerings}</span><span class="k">offerings</span></div>
+      <div class="figure"><span class="n mono">${f.figures}</span><span class="k">figures</span></div>
+    </div>
+    <div class="rowset"><h3>Freshness</h3>
+      <div class="kv"><span class="k">Newest figure</span>
+        <span class="v mono">${esc(f.newest ?? "—")} · ${esc(age(f.newest))}</span></div>
+      <div class="kv"><span class="k">Oldest figure</span>
+        <span class="v mono">${esc(f.oldest ?? "—")} · ${esc(age(f.oldest))}</span></div>
+      <div class="kv"><span class="k">Every figure carries</span>
+        <span class="v">its source and the date it was read</span></div>
+    </div>
+    <div class="rowset"><h3>What is counted</h3>
+      <div class="kv"><span class="k">Carried by more than one provider</span>
+        <span class="v mono">${f.multi}</span></div>
+      <div class="kv"><span class="k">Names the sources use</span>
+        <span class="v mono">${f.aliases}</span></div>
+      ${f.bases.map(([b,n]) => `<div class="kv"><span class="k">${esc(b)} figures</span>
+        <span class="v mono">${n}</span></div>`).join("")}
+      ${f.bases.some(([b]) => b === "measured") ? ""
+        : `<div class="kv"><span class="k">measured figures</span>
+             <span class="v">none yet — nothing here is observed, only declared</span></div>`}
+    </div>
+    <div class="rowset"><h3>Benchmarks</h3>
+      <div class="kv"><span class="k">Suites</span><span class="v mono">${f.suites.length}</span></div>
+      <div class="kv"><span class="k">Published standings</span><span class="v mono">${f.scores}</span></div>
+      <div class="kv"><span class="k">Entities with a standing</span>
+        <span class="v mono">${f.scored}<span class="k"> of ${f.entities}</span></span></div>
+      ${f.suites.length ? bars(f.suites.slice(0, 10), Math.max(1, f.scores))
+        : `<p class="lede" style="margin:6px 0 0">None collected yet.</p>`}</div>
+    <div class="rowset"><h3>Registers</h3>${bars(f.registers, f.entities)}</div>
+    <div class="rowset"><h3>Ways in</h3>${bars(f.ways, f.offerings)}</div>
+    <div class="rowset"><h3>Sources · ${f.sources.length}</h3>${bars(topSources, f.figures)}
+      ${f.sources.length > topSources.length
+        ? `<p class="lede" style="margin:10px 0 0">and ${f.sources.length - topSources.length} more.</p>` : ""}</div>`;
+  const dlg = document.getElementById('coverage');
+  dlg.showModal();
+  document.getElementById('coverage-close').onclick = () => dlg.close();
+}
+document.getElementById('coverage-open').addEventListener('click', openCoverage);
+// A tap outside the sheet closes it, the way a sheet is expected to behave.
+document.getElementById('coverage').addEventListener('click', ev => {
+  if (!ev.target.closest('.sheet')) ev.currentTarget.close();
+});
+
+// ---- theme: follows the system, and remembers a choice against it --------
+const THEMES = [
+  {key:"auto",  icon:"i-auto",  label:"Auto",  hint:"Theme: follows your system"},
+  {key:"light", icon:"i-light", label:"Light", hint:"Theme: light"},
+  {key:"dark",  icon:"i-dark",  label:"Dark",  hint:"Theme: dark"},
+];
+function applyTheme(key){
+  const t = THEMES.find(t => t.key === key) ?? THEMES[0];
+  if (t.key === "auto") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", t.key);
+  document.getElementById("theme-ic").setAttribute("href", "#" + t.icon);
+  document.getElementById("theme").title = t.hint;
+  try { localStorage.setItem("pass-index-theme", t.key); } catch {}
+  return t.key;
+}
+let theme = (() => { try { return localStorage.getItem("pass-index-theme") || "auto"; }
+  catch { return "auto"; } })();
+applyTheme(theme);
+document.getElementById("theme").addEventListener("click", () => {
+  const at = THEMES.findIndex(t => t.key === theme);
+  theme = applyTheme(THEMES[(at + 1) % THEMES.length].key);
+});
+
+// The banner states what the data is, computed from the data itself.
+(function(){
+  const sources = DB.entities.flatMap(e => e.offerings.flatMap(o =>
+    o.components.map(c => c.source).concat(o.metrics.map(m => m.source))));
+  const seed = sources.filter(s => s.startsWith('seed://')).length;
+  if (!seed) return;
+  const banner = document.getElementById('banner');
+  banner.hidden = false;
+  banner.textContent = seed === sources.length
+    ? "Seed fixtures — a structure test. Every figure’s source is seed://fixture."
+    : "Mixed data — every figure carries its source and date; rows labelled seed://fixture are fixtures, the rest are collected from providers.";
+})();
+
+if (location.hash.startsWith("#e/")) {
+  const id = location.hash.slice(3);
+  if (DB.entities.some(e => e.id === id)) {
+    selected = id;
+    reg = DB.entities.find(e => e.id === id).register;
+  }
+} else if (location.hash.startsWith("#p/")) {
+  const id = location.hash.slice(3);
+  if (DB.providers.some(p => p.id === id)) { selectedProvider = id; reg = "providers"; }
+}
+render();
+</script>

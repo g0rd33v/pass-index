@@ -1,0 +1,2875 @@
+{
+ "providers": [
+  {
+   "id": "prov_mistral",
+   "name": "Mistral",
+   "url": "https://mistral.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_deepseek",
+   "name": "DeepSeek",
+   "url": "https://api-docs.deepseek.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_moonshot",
+   "name": "Moonshot AI",
+   "url": "https://platform.kimi.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_zhipu",
+   "name": "Zhipu AI / Z.ai",
+   "url": "https://z.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_alibaba",
+   "name": "Alibaba Model Studio",
+   "url": "https://www.alibabacloud.com",
+   "kind": "vendor"
+  }
+ ],
+ "entities": [
+  {
+   "id": "ent_mistral-medium-3.5",
+   "register": "model",
+   "name": "Mistral Medium 3.5",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "medium-3.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_mistral-small-4",
+   "register": "model",
+   "name": "Mistral Small 4",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "small-4",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_mistral-large-3",
+   "register": "model",
+   "name": "Mistral Large 3",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "large-3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-5.2",
+   "register": "model",
+   "name": "GLM 5.2",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "5.2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_ministral-3-3b",
+   "register": "model",
+   "name": "Ministral 3 (3B)",
+   "maker": "prov_mistral",
+   "family": "ministral",
+   "version": "3-3b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_ministral-3-8b",
+   "register": "model",
+   "name": "Ministral 3 (8B)",
+   "maker": "prov_mistral",
+   "family": "ministral",
+   "version": "3-8b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_ministral-3-14b",
+   "register": "model",
+   "name": "Ministral 3 (14B)",
+   "maker": "prov_mistral",
+   "family": "ministral",
+   "version": "3-14b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_codestral",
+   "register": "model",
+   "name": "Codestral",
+   "maker": "prov_mistral",
+   "family": "codestral",
+   "version": null,
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_mistral-embed",
+   "register": "model",
+   "name": "Mistral Embed",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "embed",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_codestral-embed",
+   "register": "model",
+   "name": "Codestral Embed",
+   "maker": "prov_mistral",
+   "family": "codestral",
+   "version": "embed",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_mistral-ocr",
+   "register": "model",
+   "name": "OCR 4.1",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "ocr",
+   "input_kind": "document page",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_mistral-document-ai",
+   "register": "model",
+   "name": "Document AI",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "document-ai",
+   "input_kind": "document page",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_voxtral-mini-transcribe",
+   "register": "model",
+   "name": "Voxtral Mini Transcribe 2",
+   "maker": "prov_mistral",
+   "family": "voxtral",
+   "version": "mini-transcribe",
+   "input_kind": "audio",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_voxtral-tts",
+   "register": "model",
+   "name": "Voxtral TTS",
+   "maker": "prov_mistral",
+   "family": "voxtral",
+   "version": "tts",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_code-execution",
+   "register": "tool",
+   "name": "Code execution",
+   "maker": null,
+   "family": "code",
+   "version": null,
+   "input_kind": "code",
+   "output_kind": "execution result",
+   "attrs": {}
+  },
+  {
+   "id": "ent_web-search",
+   "register": "tool",
+   "name": "Web search",
+   "maker": null,
+   "family": "search",
+   "version": null,
+   "input_kind": "query",
+   "output_kind": "result links",
+   "attrs": {}
+  },
+  {
+   "id": "ent_image-generation",
+   "register": "tool",
+   "name": "Image generation",
+   "maker": null,
+   "family": "image",
+   "version": null,
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_deepseek-v4-flash",
+   "register": "model",
+   "name": "DeepSeek V4 Flash",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v4-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_deepseek-v4-pro",
+   "register": "model",
+   "name": "DeepSeek V4 Pro",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v4-pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_deepseek-v4-flash-vision-exp",
+   "register": "model",
+   "name": "DeepSeek V4 Flash Vision",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v4-flash-vision-exp",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_kimi-k3",
+   "register": "model",
+   "name": "Kimi K3",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_kimi-k2.7-code",
+   "register": "model",
+   "name": "Kimi K2.7 Code",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k2.7-code",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_kimi-k2.6",
+   "register": "model",
+   "name": "Kimi K2.6",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k2.6",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_kimi-k2.5",
+   "register": "model",
+   "name": "Kimi K2.5",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k2.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_moonshot-v1-8k",
+   "register": "model",
+   "name": "Moonshot V1 8K",
+   "maker": "prov_moonshot",
+   "family": "moonshot",
+   "version": "v1-8k",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 8192
+   }
+  },
+  {
+   "id": "ent_moonshot-v1-32k",
+   "register": "model",
+   "name": "Moonshot V1 32K",
+   "maker": "prov_moonshot",
+   "family": "moonshot",
+   "version": "v1-32k",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_moonshot-v1-128k",
+   "register": "model",
+   "name": "Moonshot V1 128K",
+   "maker": "prov_moonshot",
+   "family": "moonshot",
+   "version": "v1-128k",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_moonshot-v1-8k-vision-preview",
+   "register": "model",
+   "name": "Moonshot V1 8K Vision Preview",
+   "maker": "prov_moonshot",
+   "family": "moonshot",
+   "version": "v1-8k-vision-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 8192
+   }
+  },
+  {
+   "id": "ent_moonshot-v1-32k-vision-preview",
+   "register": "model",
+   "name": "Moonshot V1 32K Vision Preview",
+   "maker": "prov_moonshot",
+   "family": "moonshot",
+   "version": "v1-32k-vision-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_moonshot-v1-128k-vision-preview",
+   "register": "model",
+   "name": "Moonshot V1 128K Vision Preview",
+   "maker": "prov_moonshot",
+   "family": "moonshot",
+   "version": "v1-128k-vision-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_glm-5.3",
+   "register": "model",
+   "name": "GLM-5.3",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "5.3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-5.1",
+   "register": "model",
+   "name": "GLM-5.1",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "5.1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-5",
+   "register": "model",
+   "name": "GLM-5",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-5-turbo",
+   "register": "model",
+   "name": "GLM-5-Turbo",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "5-turbo",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4.7",
+   "register": "model",
+   "name": "GLM-4.7",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.7",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4.7-flashx",
+   "register": "model",
+   "name": "GLM-4.7-FlashX",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.7-flashx",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4.6",
+   "register": "model",
+   "name": "GLM-4.6",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.6",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4.5",
+   "register": "model",
+   "name": "GLM-4.5",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4.5-x",
+   "register": "model",
+   "name": "GLM-4.5-X",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.5-x",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4.5-air",
+   "register": "model",
+   "name": "GLM-4.5-Air",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.5-air",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4.5-airx",
+   "register": "model",
+   "name": "GLM-4.5-AirX",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.5-airx",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4-32b-0414-128k",
+   "register": "model",
+   "name": "GLM-4-32B-0414-128K",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4-32b-0414-128k",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-5v-turbo",
+   "register": "model",
+   "name": "GLM-5V-Turbo",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "5v-turbo",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4.6v",
+   "register": "model",
+   "name": "GLM-4.6V",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.6v",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-ocr",
+   "register": "model",
+   "name": "GLM-OCR",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "ocr",
+   "input_kind": "document page",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4.6v-flashx",
+   "register": "model",
+   "name": "GLM-4.6V-FlashX",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.6v-flashx",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4.5v",
+   "register": "model",
+   "name": "GLM-4.5V",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.5v",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-image",
+   "register": "model",
+   "name": "GLM-Image",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "image",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_cogview-4",
+   "register": "model",
+   "name": "CogView-4",
+   "maker": "prov_zhipu",
+   "family": "cogview",
+   "version": "4",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_cogvideox-3",
+   "register": "model",
+   "name": "CogVideoX-3",
+   "maker": "prov_zhipu",
+   "family": "cogvideox",
+   "version": "3",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_viduq1-text",
+   "register": "model",
+   "name": "ViduQ1-Text",
+   "maker": "prov_zhipu",
+   "family": "viduq",
+   "version": "1-text",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_viduq1-image",
+   "register": "model",
+   "name": "ViduQ1-Image",
+   "maker": "prov_zhipu",
+   "family": "viduq",
+   "version": "1-image",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_viduq1-start-end",
+   "register": "model",
+   "name": "ViduQ1-Start-End",
+   "maker": "prov_zhipu",
+   "family": "viduq",
+   "version": "1-start-end",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-asr-2512",
+   "register": "model",
+   "name": "GLM-ASR-2512",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "asr-2512",
+   "input_kind": "audio",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3.7-max",
+   "register": "model",
+   "name": "Qwen3.7-Max",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.7-max",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen-max",
+   "register": "model",
+   "name": "Qwen-Max",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "max",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3-max",
+   "register": "model",
+   "name": "Qwen3-Max",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-max",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3.7-plus",
+   "register": "model",
+   "name": "Qwen3.7-Plus",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.7-plus",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen-plus",
+   "register": "model",
+   "name": "Qwen-Plus",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "plus",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3.6-flash",
+   "register": "model",
+   "name": "Qwen3.6-Flash",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.6-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen-flash",
+   "register": "model",
+   "name": "Qwen-Flash",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3-coder-plus",
+   "register": "model",
+   "name": "Qwen3-Coder-Plus",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-coder-plus",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwq-plus",
+   "register": "model",
+   "name": "QwQ-Plus",
+   "maker": "prov_alibaba",
+   "family": "qwq",
+   "version": "plus",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen-image-2.0-pro",
+   "register": "model",
+   "name": "Qwen-Image 2.0 Pro",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "image-2.0-pro",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen-image-2.0",
+   "register": "model",
+   "name": "Qwen-Image 2.0",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "image-2.0",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  }
+ ],
+ "aliases": [
+  {
+   "source": "prov_mistral",
+   "alias": "mistral-medium-latest",
+   "entity": "ent_mistral-medium-3.5"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "mistral-small-latest",
+   "entity": "ent_mistral-small-4"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "mistral-large-latest",
+   "entity": "ent_mistral-large-3"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "zai-glm-5-2",
+   "entity": "ent_glm-5.2"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "ministral-3b-latest",
+   "entity": "ent_ministral-3-3b"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "ministral-8b-latest",
+   "entity": "ent_ministral-3-8b"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "ministral-14b-latest",
+   "entity": "ent_ministral-3-14b"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "codestral-latest",
+   "entity": "ent_codestral"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "mistral-embed",
+   "entity": "ent_mistral-embed"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "codestral-embed",
+   "entity": "ent_codestral-embed"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "mistral-ocr-latest",
+   "entity": "ent_mistral-ocr"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "Document AI",
+   "entity": "ent_mistral-document-ai"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "voxtral-mini-latest",
+   "entity": "ent_voxtral-mini-transcribe"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "voxtral-mini-tts-latest",
+   "entity": "ent_voxtral-tts"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "Agent tool: code execution",
+   "entity": "ent_code-execution"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "Agent tool: web search",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_mistral",
+   "alias": "Agent tool: image generation",
+   "entity": "ent_image-generation"
+  },
+  {
+   "source": "prov_deepseek",
+   "alias": "deepseek-v4-flash",
+   "entity": "ent_deepseek-v4-flash"
+  },
+  {
+   "source": "prov_deepseek",
+   "alias": "deepseek-v4-pro",
+   "entity": "ent_deepseek-v4-pro"
+  },
+  {
+   "source": "prov_deepseek",
+   "alias": "deepseek-v4-flash-vision-exp",
+   "entity": "ent_deepseek-v4-flash-vision-exp"
+  },
+  {
+   "source": "prov_moonshot",
+   "alias": "kimi-k3",
+   "entity": "ent_kimi-k3"
+  },
+  {
+   "source": "prov_moonshot",
+   "alias": "kimi-k2.7-code",
+   "entity": "ent_kimi-k2.7-code"
+  },
+  {
+   "source": "prov_moonshot",
+   "alias": "kimi-k2.7-code-highspeed",
+   "entity": "ent_kimi-k2.7-code"
+  },
+  {
+   "source": "prov_moonshot",
+   "alias": "kimi-k2.6",
+   "entity": "ent_kimi-k2.6"
+  },
+  {
+   "source": "prov_moonshot",
+   "alias": "kimi-k2.5",
+   "entity": "ent_kimi-k2.5"
+  },
+  {
+   "source": "prov_moonshot",
+   "alias": "moonshot-v1-8k",
+   "entity": "ent_moonshot-v1-8k"
+  },
+  {
+   "source": "prov_moonshot",
+   "alias": "moonshot-v1-32k",
+   "entity": "ent_moonshot-v1-32k"
+  },
+  {
+   "source": "prov_moonshot",
+   "alias": "moonshot-v1-128k",
+   "entity": "ent_moonshot-v1-128k"
+  },
+  {
+   "source": "prov_moonshot",
+   "alias": "moonshot-v1-8k-vision-preview",
+   "entity": "ent_moonshot-v1-8k-vision-preview"
+  },
+  {
+   "source": "prov_moonshot",
+   "alias": "moonshot-v1-32k-vision-preview",
+   "entity": "ent_moonshot-v1-32k-vision-preview"
+  },
+  {
+   "source": "prov_moonshot",
+   "alias": "moonshot-v1-128k-vision-preview",
+   "entity": "ent_moonshot-v1-128k-vision-preview"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-5.3",
+   "entity": "ent_glm-5.3"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-5.2",
+   "entity": "ent_glm-5.2"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-5.1",
+   "entity": "ent_glm-5.1"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-5",
+   "entity": "ent_glm-5"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-5-Turbo",
+   "entity": "ent_glm-5-turbo"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-4.7",
+   "entity": "ent_glm-4.7"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-4.7-FlashX",
+   "entity": "ent_glm-4.7-flashx"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-4.6",
+   "entity": "ent_glm-4.6"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-4.5",
+   "entity": "ent_glm-4.5"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-4.5-X",
+   "entity": "ent_glm-4.5-x"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-4.5-Air",
+   "entity": "ent_glm-4.5-air"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-4.5-AirX",
+   "entity": "ent_glm-4.5-airx"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-4-32B-0414-128K",
+   "entity": "ent_glm-4-32b-0414-128k"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-5V-Turbo",
+   "entity": "ent_glm-5v-turbo"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-4.6V",
+   "entity": "ent_glm-4.6v"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-OCR",
+   "entity": "ent_glm-ocr"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-4.6V-FlashX",
+   "entity": "ent_glm-4.6v-flashx"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-4.5V",
+   "entity": "ent_glm-4.5v"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-Image",
+   "entity": "ent_glm-image"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "CogView-4",
+   "entity": "ent_cogview-4"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "CogVideoX-3",
+   "entity": "ent_cogvideox-3"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "ViduQ1-Text",
+   "entity": "ent_viduq1-text"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "ViduQ1-Image",
+   "entity": "ent_viduq1-image"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "ViduQ1-Start-End",
+   "entity": "ent_viduq1-start-end"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "GLM-ASR-2512",
+   "entity": "ent_glm-asr-2512"
+  },
+  {
+   "source": "prov_zhipu",
+   "alias": "Web Search",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "qwen3.7-max",
+   "entity": "ent_qwen3.7-max"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "qwen-max",
+   "entity": "ent_qwen-max"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "qwen3-max",
+   "entity": "ent_qwen3-max"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "qwen3.7-plus",
+   "entity": "ent_qwen3.7-plus"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "qwen-plus",
+   "entity": "ent_qwen-plus"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "qwen3.6-flash",
+   "entity": "ent_qwen3.6-flash"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "qwen-flash",
+   "entity": "ent_qwen-flash"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "qwen3-coder-plus",
+   "entity": "ent_qwen3-coder-plus"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "qwq-plus",
+   "entity": "ent_qwq-plus"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "deepseek-v4-pro",
+   "entity": "ent_deepseek-v4-pro"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "qwen-image-2.0-pro",
+   "entity": "ent_qwen-image-2.0-pro"
+  },
+  {
+   "source": "prov_alibaba",
+   "alias": "qwen-image-2.0",
+   "entity": "ent_qwen-image-2.0"
+  }
+ ],
+ "offerings": [
+  {
+   "entity": "ent_mistral-medium-3.5",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-small-4",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-large-3",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5.2",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_ministral-3-3b",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_ministral-3-8b",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_ministral-3-14b",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_codestral",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.9
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-embed",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_codestral-embed",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-ocr",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "page",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.004
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-document-ai",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "page",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.005
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_voxtral-mini-transcribe",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.003
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_voxtral-tts",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.6e-05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_code-execution",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_image-generation",
+   "provider": "prov_mistral",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://mistral.ai/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v4-flash",
+   "provider": "prov_deepseek",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.44
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.014
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.32
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v4-pro",
+   "provider": "prov_deepseek",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.32
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.044
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.96
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v4-flash-vision-exp",
+   "provider": "prov_deepseek",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.44
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.014
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.32
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k3",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k3",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k3",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k3",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.7-code",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k27-code.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.95
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k27-code.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.19
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k27-code.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.7-code",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "fast",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k27-code.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.9
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k27-code.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.38
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k27-code.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 8.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.6",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k26.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.95
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k26.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.16
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k26.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.5",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k25.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k25.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-k25.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.7-code",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/batch.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.57
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.kimi.ai/docs/pricing/batch.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.114
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/batch.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.6",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/batch.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.57
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.kimi.ai/docs/pricing/batch.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/batch.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.5",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/batch.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.36
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.kimi.ai/docs/pricing/batch.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/batch.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.8
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_moonshot-v1-8k",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_moonshot-v1-32k",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_moonshot-v1-128k",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_moonshot-v1-8k-vision-preview",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_moonshot-v1-32k-vision-preview",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_moonshot-v1-128k-vision-preview",
+   "provider": "prov_moonshot",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.kimi.ai/docs/pricing/chat-v1.md",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5.3",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.26
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5.2",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.26
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5.1",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.26
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5-turbo",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.24
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4.7",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.11
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4.7-flashx",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.07
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4.6",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.11
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4.5",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.11
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4.5-x",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.45
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 8.9
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4.5-air",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4.5-airx",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.1
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.22
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4-32b-0414-128k",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5v-turbo",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.24
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4.6v",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.9
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-ocr",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4.6v-flashx",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.004
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4.5v",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.11
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.8
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-image",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.015
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_cogview-4",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_cogvideox-3",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "result",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_viduq1-text",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "result",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_viduq1-image",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "result",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_viduq1-start-end",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "result",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-asr-2512",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_zhipu",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://docs.z.ai/guides/overview/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.7-max",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen-max",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.6
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-max",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in<=32k",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-max",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in-32k-128k",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-max",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in-128k-256k",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.7-plus",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in<=256k",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.7-plus",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in-256k-1m",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.8
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen-plus",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in<=256k",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen-plus",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in-256k-1m",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.6-flash",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in<=256k",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.6-flash",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in-256k-1m",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen-flash",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in<=256k",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen-flash",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in-256k-1m",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-coder-plus",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in<=32k",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-coder-plus",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in-32k-128k",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.8
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 9.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-coder-plus",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in-128k-256k",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-coder-plus",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "in-256k-1m",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 60.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwq-plus",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.8
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v4-pro",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.8
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen-image-2.0-pro",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen-image-2.0",
+   "provider": "prov_alibaba",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.035
+    }
+   ],
+   "metrics": []
+  }
+ ]
+}

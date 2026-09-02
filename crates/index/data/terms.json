@@ -1,0 +1,1740 @@
+[
+ {
+  "slug": "token",
+  "term": "Token",
+  "kind": "what you are billed for",
+  "short": "The unit a language model reads and writes, and the unit almost all of them are billed by: roughly three-quarters of an English word.",
+  "body": "A model does not see letters or words. Text is cut into tokens — common words are one, rarer ones are several, and a space usually rides along with the word after it. Prices are quoted per million tokens, separately for what you send and what comes back, because generating is far more expensive than reading. As a working figure: 750 English words is about 1,000 tokens, and code and non-Latin scripts run higher.",
+  "also": [
+   "tokens",
+   "tokenizer"
+  ],
+  "see": [
+   {
+    "label": "Every price in the catalogue",
+    "href": "/index"
+   }
+  ]
+ },
+ {
+  "slug": "context-window",
+  "term": "Context window",
+  "kind": "how it works",
+  "short": "How much a model can hold in mind at once — everything you send plus everything it writes back, counted in tokens.",
+  "body": "Exceed it and the oldest part of the conversation falls out or the request is refused. A million-token window sounds like it removes the problem, and it does not: you pay for every token you put in it on every single call, so sending a whole codebase each turn is a bill rather than a technique. The useful question is not how large the window is but how much of it you must refill each time.",
+  "also": [
+   "window",
+   "long context"
+  ],
+  "see": [
+   {
+    "label": "Models by what they can hold",
+    "href": "/index/models"
+   }
+  ]
+ },
+ {
+  "slug": "output-token",
+  "term": "Output token",
+  "kind": "what you are billed for",
+  "short": "A token the model writes, priced several times higher than one you send.",
+  "body": "The gap is usually four to five times and sometimes twenty. It is why a chatty system prompt is cheap and a verbose answer is not, and why the two figures are always printed apart on this site rather than blended into one number.",
+  "also": [
+   "completion tokens"
+  ],
+  "see": [
+   {
+    "label": "Models under a dollar an output million",
+    "href": "/index/1dollar"
+   }
+  ]
+ },
+ {
+  "slug": "prompt-caching",
+  "term": "Prompt caching",
+  "kind": "what you are billed for",
+  "short": "Paying once to have the model remember the beginning of your prompt, then paying a fraction of the rate each time you reuse it.",
+  "body": "Agents and chat send the same long preamble on every call. Caching writes it into the model's working state once — usually at a premium — and reads it back at a tenth of the input rate or less for a few minutes. It changes the economics of anything with a fixed system prompt, and it is the reason cache read and cache write appear as their own rates on a card here.",
+  "also": [
+   "cache read",
+   "cache write",
+   "KV cache"
+  ],
+  "see": []
+ },
+ {
+  "slug": "mtok",
+  "term": "Per million tokens",
+  "kind": "how it is sold",
+  "short": "The standard way an API model is priced: dollars per million tokens, quoted apart for input and output.",
+  "body": "It became the convention because per-thousand made the numbers awkward once prices fell. When you see $3 → $15, that is three dollars per million tokens sent and fifteen per million written.",
+  "also": [
+   "Mtok",
+   "per 1M tokens"
+  ],
+  "see": [
+   {
+    "label": "The whole catalogue",
+    "href": "/index"
+   }
+  ]
+ },
+ {
+  "slug": "batch-api",
+  "term": "Batch",
+  "kind": "how it is sold",
+  "short": "A queue: you hand over the work, the seller runs it when there is room, and you pay about half.",
+  "body": "The trade is time — a batch job returns within hours rather than seconds. It suits anything nobody is waiting for: classification over an archive, evaluation runs, bulk translation. It is a different product from the live rate, which is why this site never quotes a batch price as the price of a model.",
+  "also": [
+   "batch queue",
+   "async"
+  ],
+  "see": []
+ },
+ {
+  "slug": "open-weights",
+  "term": "Open weights",
+  "kind": "how it is sold",
+  "short": "The trained parameters are published, so you can download the model and run it on your own machines.",
+  "body": "Open weights is not open source: the training data and code are almost never included, and the licence may still restrict what you do. What it buys you is independence — no third party between you and the model, no withdrawal, and the ability to run it in a jurisdiction of your choosing. What it costs you is that hosting is now your problem.",
+  "also": [
+   "open source model",
+   "weights"
+  ],
+  "see": [
+   {
+    "label": "Everything with open weights",
+    "href": "/index/licence/open"
+   }
+  ]
+ },
+ {
+  "slug": "moe",
+  "term": "Mixture of experts",
+  "kind": "what it is made of",
+  "short": "A model split into many specialised parts, of which only a few run for any given token.",
+  "body": "A mixture of experts with 400 billion parameters might compute with 30 billion at a time. That makes it cheap to run and expensive to hold: you need memory for all of it and compute for a fraction. It is why model names carry two numbers — 397B A17B means 397 billion in total, 17 billion active.",
+  "also": [
+   "MoE",
+   "sparse model",
+   "active parameters"
+  ],
+  "see": []
+ },
+ {
+  "slug": "quantisation",
+  "term": "Quantisation",
+  "kind": "what it is made of",
+  "short": "Storing a model's numbers with less precision so it fits in less memory and runs faster.",
+  "body": "Weights are trained at 16 bits and can usually be squeezed to 8 or 4 with little measurable loss. FP8, INT4, AWQ and GGUF are all names for doing this in different ways. Two sellers offering the same model at different prices are often offering it at different precisions, which is why the lane is printed beside the rate here.",
+  "also": [
+   "FP8",
+   "INT4",
+   "AWQ",
+   "GGUF",
+   "quantization"
+  ],
+  "see": []
+ },
+ {
+  "slug": "distillation",
+  "term": "Distillation",
+  "kind": "what it is made of",
+  "short": "Training a small model to imitate a large one, so it answers nearly as well at a fraction of the cost.",
+  "body": "Most of the cheap models worth using are distilled from something much larger. It is also why a small model can beat a bigger one on a leaderboard: it was taught by a better teacher.",
+  "also": [
+   "distilled model",
+   "student model"
+  ],
+  "see": [
+   {
+    "label": "Models under a dollar",
+    "href": "/index/1dollar"
+   }
+  ]
+ },
+ {
+  "slug": "fine-tuning",
+  "term": "Fine-tuning",
+  "kind": "how it works",
+  "short": "Continuing a model's training on your own examples so it adopts a format, a tone or a domain.",
+  "body": "It changes behaviour, not knowledge — for facts you want retrieval instead. Sellers charge for the training run and then for a dedicated endpoint, so a fine-tune has a standing cost that a prompt does not.",
+  "also": [
+   "LoRA",
+   "adapter",
+   "SFT"
+  ],
+  "see": []
+ },
+ {
+  "slug": "rag",
+  "term": "Retrieval-augmented generation",
+  "kind": "how it works",
+  "short": "Finding the relevant documents first and putting them into the prompt, so the model answers from your material rather than from memory.",
+  "body": "The standard shape of every question-answering product: embed the corpus, search it at query time, paste what comes back into the context, and cite it. It is what embedding models and vector databases exist to serve, and it is the cheapest way to make a model right about something it was never trained on.",
+  "also": [
+   "RAG",
+   "retrieval"
+  ],
+  "see": [
+   {
+    "label": "Embedding models",
+    "href": "/index/for/embedding"
+   },
+   {
+    "label": "Reranking models",
+    "href": "/index/for/rerank"
+   }
+  ]
+ },
+ {
+  "slug": "embedding",
+  "term": "Embedding",
+  "kind": "how it works",
+  "short": "A list of numbers standing for a piece of text, arranged so that similar meanings sit close together.",
+  "body": "Search, clustering, deduplication and recommendation all reduce to measuring the distance between embeddings. They are sold per million input tokens like any other model, and they are cheap: a few cents where a chat model charges dollars.",
+  "also": [
+   "vector",
+   "embeddings"
+  ],
+  "see": [
+   {
+    "label": "Embedding models",
+    "href": "/index/for/embedding"
+   }
+  ]
+ },
+ {
+  "slug": "reranking",
+  "term": "Reranking",
+  "kind": "how it works",
+  "short": "A second pass that re-orders search results by reading the query and each candidate together.",
+  "body": "Vector search is fast and approximate; a reranker is slow and accurate. Running the cheap one over millions and the expensive one over the top fifty is the standard arrangement, and it is usually the single largest quality gain available to a retrieval system.",
+  "also": [
+   "cross-encoder",
+   "rerank"
+  ],
+  "see": [
+   {
+    "label": "Reranking models",
+    "href": "/index/for/rerank"
+   }
+  ]
+ },
+ {
+  "slug": "function-calling",
+  "term": "Function calling",
+  "kind": "how it works",
+  "short": "The model replies with a structured request to run one of your functions, instead of with prose.",
+  "body": "You describe the tools, it picks one and fills in the arguments, your code runs it and hands back the result. Every agent is built on this. Support is uneven and the difference between a model that calls tools reliably and one that nearly does is the difference between a product and a demo.",
+  "also": [
+   "tool use",
+   "tool calling"
+  ],
+  "see": [
+   {
+    "label": "Agents",
+    "href": "/index/agents"
+   }
+  ]
+ },
+ {
+  "slug": "structured-output",
+  "term": "Structured output",
+  "kind": "how it works",
+  "short": "Forcing the model's answer to match a schema you supply, so it parses every time.",
+  "body": "Implemented by constraining what the model is allowed to emit next, not by asking it nicely. Where a seller supports it properly the guarantee is absolute, which removes an entire class of retry logic.",
+  "also": [
+   "JSON mode",
+   "grammar",
+   "constrained decoding"
+  ],
+  "see": []
+ },
+ {
+  "slug": "reasoning-model",
+  "term": "Reasoning model",
+  "kind": "how it works",
+  "short": "A model trained to work through a problem in steps before answering, spending tokens on thinking that you pay for and usually do not see.",
+  "body": "It buys accuracy on mathematics, code and multi-step problems, and costs both money and latency. Most sellers expose an effort setting; the difference between low and high effort on the same model can be a factor of ten in cost.",
+  "also": [
+   "chain of thought",
+   "thinking",
+   "test-time compute"
+  ],
+  "see": [
+   {
+    "label": "Models measured on reasoning",
+    "href": "/index/for/reasoning"
+   }
+  ]
+ },
+ {
+  "slug": "agent",
+  "term": "Agent",
+  "kind": "how it works",
+  "short": "A program that runs a model in a loop with tools, deciding what to do next until the job is done.",
+  "body": "The distinction from a chatbot is that nobody is waiting turn by turn: it plans, acts, reads what happened and continues. That makes cost hard to predict, because the number of model calls is decided at run time rather than by you.",
+  "also": [
+   "agentic",
+   "autonomous agent"
+  ],
+  "see": [
+   {
+    "label": "Agents in the catalogue",
+    "href": "/index/agents"
+   }
+  ]
+ },
+ {
+  "slug": "mcp",
+  "term": "Model Context Protocol",
+  "kind": "a protocol",
+  "short": "An open standard for connecting a model to tools and data, so a client and a tool server that have never met can work together.",
+  "body": "Published by Anthropic in late 2024 and now supported widely. It matters commercially because it turns integrations from N×M bespoke connections into a market of servers anybody can plug in, which is why the catalogue tracks the servers as products in their own right.",
+  "also": [
+   "MCP",
+   "MCP server"
+  ],
+  "see": [
+   {
+    "label": "Tools",
+    "href": "/index/tools"
+   }
+  ]
+ },
+ {
+  "slug": "http-402",
+  "term": "HTTP 402",
+  "kind": "a protocol",
+  "short": "The HTTP status code reserved in 1997 for \"Payment Required\" and left unused for twenty-five years.",
+  "body": "Every other 4xx code was specified and adopted; 402 sat in the standard marked \"reserved for future use\" because nobody agreed on how a server should ask a client for money. It is now being revived as the basis for machine-to-machine payment, where the client is an agent with a wallet rather than a person with a card.",
+  "also": [
+   "402",
+   "Payment Required"
+  ],
+  "see": []
+ },
+ {
+  "slug": "x402",
+  "term": "x402",
+  "kind": "a protocol",
+  "short": "A scheme for paying over HTTP: the server answers 402 with what it wants, the client pays, and retries the same request with the receipt attached.",
+  "body": "Proposed by Coinbase in 2025 and built on stablecoin settlement, though the design does not require any particular rail. It exists because agents cannot sign up, enter a card and wait for an invoice: they need to buy one call, now, without an account. Whether it becomes the way agents pay is unsettled; that the problem is real is not.",
+  "also": [
+   "402 payments",
+   "agent payments"
+  ],
+  "see": []
+ },
+ {
+  "slug": "openai-compatible",
+  "term": "OpenAI-compatible API",
+  "kind": "a protocol",
+  "short": "Speaking the shape of OpenAI's chat endpoint, so that code written for one seller runs against another by changing a base URL.",
+  "body": "It became the de facto standard because it was first and good enough. Nearly every gateway and most model vendors offer it, which is what makes the seller column on this site useful: for the same model at a lower price, the switch is usually a configuration change.",
+  "also": [
+   "/v1/chat/completions",
+   "compatible endpoint"
+  ],
+  "see": [
+   {
+    "label": "Companies",
+    "href": "/index/providers"
+   }
+  ]
+ },
+ {
+  "slug": "gateway",
+  "term": "Gateway",
+  "kind": "how it is sold",
+  "short": "A company that resells many providers' models behind one API and one bill.",
+  "body": "You gain a single integration, failover and one invoice; you pay a margin and add a hop of latency, and your data passes through somebody else. This site files them as aggregators and lists them beneath the companies that actually run the model.",
+  "also": [
+   "aggregator",
+   "router",
+   "LLM gateway"
+  ],
+  "see": [
+   {
+    "label": "Companies",
+    "href": "/index/providers"
+   }
+  ]
+ },
+ {
+  "slug": "inference",
+  "term": "Inference",
+  "kind": "how it works",
+  "short": "Running a trained model to get an answer — as opposed to training, which produced it.",
+  "body": "Essentially everything sold in this catalogue is inference. Training costs are borne once by the maker; inference is what you buy, by the token, the second or the call.",
+  "also": [
+   "serving"
+  ],
+  "see": []
+ },
+ {
+  "slug": "ttft",
+  "term": "Time to first token",
+  "kind": "how it is measured",
+  "short": "How long you wait before the answer starts appearing.",
+  "body": "It governs whether an interface feels alive, and it is largely independent of how fast the rest streams. A model that begins in 200ms and writes slowly reads better than one that thinks for four seconds and then bursts.",
+  "also": [
+   "TTFT",
+   "latency"
+  ],
+  "see": []
+ },
+ {
+  "slug": "throughput",
+  "term": "Tokens per second",
+  "kind": "how it is measured",
+  "short": "How fast the answer streams once it has started.",
+  "body": "Around 20 tokens a second matches comfortable reading. Below that a person waits; far above it the number only matters if a program, not a person, is consuming the output. Sellers of the same open-weight model compete mostly on this and on price.",
+  "also": [
+   "tok/s",
+   "throughput"
+  ],
+  "see": []
+ },
+ {
+  "slug": "benchmark",
+  "term": "Benchmark",
+  "kind": "how it is measured",
+  "short": "A fixed set of questions every model is asked, so their answers can be compared.",
+  "body": "Useful and never sufficient. A benchmark measures what it measures; models are trained knowing it exists; and a rank means little without the size of the field, which is why this site always prints \"3rd of 152\" rather than \"3rd\".",
+  "also": [
+   "eval",
+   "leaderboard"
+  ],
+  "see": [
+   {
+    "label": "Every board we read",
+    "href": "/index/coverage"
+   }
+  ]
+ },
+ {
+  "slug": "elo",
+  "term": "Elo",
+  "kind": "how it is measured",
+  "short": "A rating derived from head-to-head wins, borrowed from chess and used where quality cannot be scored directly.",
+  "body": "Human voters see two anonymous answers and pick one; ratings move by how surprising each result was. It measures preference rather than correctness, which is its strength for open questions and its weakness for factual ones.",
+  "also": [
+   "Arena score",
+   "Bradley-Terry"
+  ],
+  "see": []
+ },
+ {
+  "slug": "hallucination",
+  "term": "Hallucination",
+  "kind": "how it works",
+  "short": "A confident, fluent, wrong answer.",
+  "body": "A language model predicts plausible text, and a plausible falsehood scores as well as the truth unless something anchors it. Retrieval, tools and citation reduce it; no amount of prompting removes it. The practical rule is to make the model quote a source rather than trust it to recall one.",
+  "also": [
+   "confabulation"
+  ],
+  "see": [
+   {
+    "label": "Retrieval-augmented generation",
+    "href": "/index/tech/rag"
+   }
+  ]
+ },
+ {
+  "slug": "prompt-injection",
+  "term": "Prompt injection",
+  "kind": "how it works",
+  "short": "Text inside a document, a web page or a tool result that the model reads as an instruction rather than as content.",
+  "body": "The model cannot tell your instructions from the ones an attacker left in a file it was asked to summarise. It is the defining security problem of agents, because an agent with tools can act on what it reads. Treat everything a model retrieves as untrusted, and never let a tool result authorise an action.",
+  "also": [
+   "injection",
+   "jailbreak"
+  ],
+  "see": []
+ },
+ {
+  "slug": "guardrail",
+  "term": "Guardrail",
+  "kind": "how it works",
+  "short": "A separate, usually small model that inspects what goes in or comes out and blocks what should not pass.",
+  "body": "Cheaper and more predictable than trying to make one model both capable and refusing. Sold as its own category, priced per million tokens like anything else.",
+  "also": [
+   "safety classifier",
+   "moderation"
+  ],
+  "see": [
+   {
+    "label": "Guard models",
+    "href": "/index/for/guard"
+   }
+  ]
+ },
+ {
+  "slug": "frontier-model",
+  "term": "Frontier model",
+  "kind": "how it is sold",
+  "short": "The most capable model a maker sells, priced accordingly.",
+  "body": "The phrase has no technical definition; it means whatever sits at the top of a maker's own range. Worth knowing because the gap between a frontier model and the tier below it is usually a few points on a benchmark and a factor of ten on the bill.",
+  "also": [
+   "flagship model"
+  ],
+  "see": [
+   {
+    "label": "The best there is, per kind of work",
+    "href": "/index/top"
+   }
+  ]
+ },
+ {
+  "slug": "slm",
+  "term": "Small language model",
+  "kind": "how it is sold",
+  "short": "A model small enough to run on ordinary hardware, typically under about 15 billion parameters.",
+  "body": "Fast, cheap, private, and good enough for classification, extraction, routing and structured output. Most production systems that look like one large model are in fact a small one doing the volume and a large one handling the hard cases.",
+  "also": [
+   "SLM",
+   "small model"
+  ],
+  "see": [
+   {
+    "label": "What your own machine can hold",
+    "href": "/index/lists"
+   }
+  ]
+ },
+ {
+  "slug": "vector-database",
+  "term": "Vector database",
+  "kind": "what it is made of",
+  "short": "A store that finds the nearest embeddings to a query rather than exact matches.",
+  "body": "The index behind retrieval. Approximate by design — HNSW and its relatives trade a little recall for a great deal of speed — and increasingly a feature of ordinary databases rather than a product of its own.",
+  "also": [
+   "HNSW",
+   "ANN",
+   "vector store"
+  ],
+  "see": [
+   {
+    "label": "Embedding models",
+    "href": "/index/for/embedding"
+   }
+  ]
+ },
+ {
+  "slug": "chunking",
+  "term": "Chunking",
+  "kind": "how it works",
+  "short": "Cutting documents into pieces small enough to embed and retrieve usefully.",
+  "body": "The least glamorous and most consequential decision in a retrieval system. Cut too small and an answer loses its context; too large and the search returns mostly irrelevance. Most retrieval failures blamed on the model are chunking failures.",
+  "also": [
+   "splitting"
+  ],
+  "see": []
+ },
+ {
+  "slug": "speculative-decoding",
+  "term": "Speculative decoding",
+  "kind": "how it works",
+  "short": "A small model guesses the next several tokens and the large one checks them all at once, which is faster than generating them one at a time.",
+  "body": "Purely an implementation trick: the output is identical to what the large model would have produced. It is one reason the same model runs at different speeds and prices at different sellers.",
+  "also": [
+   "draft model"
+  ],
+  "see": []
+ },
+ {
+  "slug": "multimodal",
+  "term": "Multimodal",
+  "kind": "how it works",
+  "short": "A model that takes or returns more than text — images, audio, video, files.",
+  "body": "Modalities are priced apart because they cost apart: an image becomes hundreds or thousands of tokens depending on its size, and audio is usually billed by the second instead. This site records what each thing takes and returns as its own field for that reason.",
+  "also": [
+   "vision",
+   "omni"
+  ],
+  "see": [
+   {
+    "label": "What goes in and what comes out",
+    "href": "/index/lists"
+   }
+  ]
+ },
+ {
+  "slug": "tts",
+  "term": "Speech generation",
+  "kind": "how it works",
+  "short": "Turning text into speech, sold by the character, the second or the token depending on the seller.",
+  "body": "The market split in two: cheap, fast voices for interfaces, and expensive, controllable ones for published audio. Cloning a real voice is gated behind consent at every serious vendor.",
+  "also": [
+   "TTS",
+   "text to speech",
+   "voice synthesis"
+  ],
+  "see": [
+   {
+    "label": "Speech generation models",
+    "href": "/index/for/speak"
+   }
+  ]
+ },
+ {
+  "slug": "stt",
+  "term": "Speech recognition",
+  "kind": "how it works",
+  "short": "Turning speech into text, usually sold by the minute or the second of audio.",
+  "body": "The prices differ by two orders of magnitude across sellers of the same open model, which makes it one of the clearest cases for comparing companies rather than models.",
+  "also": [
+   "STT",
+   "ASR",
+   "transcription"
+  ],
+  "see": [
+   {
+    "label": "Transcription models",
+    "href": "/index/for/transcribe"
+   }
+  ]
+ },
+ {
+  "slug": "realtime-api",
+  "term": "Realtime API",
+  "kind": "how it is sold",
+  "short": "A streaming, two-way connection carrying audio in and audio out, so a model can hold a spoken conversation.",
+  "body": "Billed by audio tokens in each direction, at rates well above text. It is a different product from stringing together transcription, a chat model and speech: the model hears tone and can be interrupted.",
+  "also": [
+   "speech to speech",
+   "voice agent"
+  ],
+  "see": [
+   {
+    "label": "Live voice",
+    "href": "/index/top"
+   }
+  ]
+ },
+ {
+  "slug": "rate-limit",
+  "term": "Rate limit",
+  "kind": "how it is sold",
+  "short": "A ceiling on how much you may send per minute or per day, independent of what you are willing to pay.",
+  "body": "Usually expressed as requests per minute and tokens per minute, and raised as you spend more. It is the constraint that decides whether a free tier is a product or a demonstration, which is why the allowances are recorded beside them here.",
+  "also": [
+   "RPM",
+   "TPM",
+   "quota"
+  ],
+  "see": [
+   {
+    "label": "What is given away",
+    "href": "/index/free"
+   }
+  ]
+ },
+ {
+  "slug": "free-tier",
+  "term": "Free tier",
+  "kind": "how it is sold",
+  "short": "An allowance a company gives away, capped by requests, tokens or time.",
+  "body": "Different in kind from a low price: an allowance is a decision the seller can reverse tomorrow, and it usually comes with terms about training on your data. This site keeps free allowances out of price ranges for that reason.",
+  "also": [
+   "free allowance"
+  ],
+  "see": [
+   {
+    "label": "Everything given away",
+    "href": "/index/free"
+   }
+  ]
+ },
+ {
+  "slug": "self-hosting",
+  "term": "Self-hosting",
+  "kind": "how it is sold",
+  "short": "Running an open-weight model on hardware you control.",
+  "body": "You trade a per-token bill for a fixed one, and gain control of your data and your region. It pays off at volume and above all where the data cannot leave; below that it is usually more expensive once somebody's time is counted.",
+  "also": [
+   "on-premise",
+   "local"
+  ],
+  "see": [
+   {
+    "label": "Open weights",
+    "href": "/index/licence/open"
+   }
+  ]
+ },
+ {
+  "slug": "api-key",
+  "term": "API key",
+  "kind": "how it is sold",
+  "short": "The string that identifies you to a seller and against which you are billed.",
+  "body": "Treat it as a payment instrument, because it is one. Keys leaked into repositories are the most common way people discover what their model spend can reach.",
+  "also": [
+   "secret key"
+  ],
+  "see": []
+ },
+ {
+  "slug": "sla",
+  "term": "Service level agreement",
+  "kind": "how it is sold",
+  "short": "A contractual promise about uptime and support, with money attached when it is missed.",
+  "body": "The line between a model you can build a business on and one you can prototype with. It is also most of what an enterprise price buys beyond the tokens themselves.",
+  "also": [
+   "SLA",
+   "uptime"
+  ],
+  "see": [
+   {
+    "label": "Sold by conversation",
+    "href": "/index/waiting"
+   }
+  ]
+ },
+ {
+  "slug": "zdr",
+  "term": "Zero data retention",
+  "kind": "how it is sold",
+  "short": "A mode in which the seller keeps nothing after answering — no logs, no training, no abuse review copy.",
+  "body": "Usually a separate lane at a separate price, and often the reason a regulated buyer can use a model at all. Where a seller offers it, this site records it as its own way of buying.",
+  "also": [
+   "ZDR",
+   "no retention"
+  ],
+  "see": []
+ },
+ {
+  "slug": "transformer",
+  "term": "Transformer",
+  "kind": "what it is made of",
+  "short": "The architecture nearly every modern model uses: layers that let each token look at every other token and decide which ones matter.",
+  "body": "Introduced in 2017. Its two useful properties are that it trains in parallel, which made scale affordable, and that its cost grows with the square of the sequence length, which is why long context is expensive and why most of the last five years of engineering has gone into working around that one fact.",
+  "also": [
+   "attention is all you need"
+  ],
+  "see": []
+ },
+ {
+  "slug": "attention",
+  "term": "Attention",
+  "kind": "what it is made of",
+  "short": "The mechanism by which a model decides, for each word it is producing, which earlier words to weigh.",
+  "body": "It is the reason a model can carry a pronoun back to the right noun forty sentences earlier. Every token attends to every other, so doubling the input roughly quadruples the work; the many named variants below all exist to cheat that.",
+  "also": [
+   "self-attention",
+   "cross-attention"
+  ],
+  "see": []
+ },
+ {
+  "slug": "kv-cache",
+  "term": "KV cache",
+  "kind": "how it works",
+  "short": "The model's working memory of the conversation so far, kept on the GPU so it does not recompute the whole prompt for every new token.",
+  "body": "It is the main consumer of GPU memory during serving, and it grows with the context length and the number of concurrent users. Prompt caching sells you access to a KV cache that outlives your request; provisioned throughput sells you the memory to hold one.",
+  "also": [
+   "key-value cache"
+  ],
+  "see": [
+   {
+    "label": "Prompt caching",
+    "href": "/index/tech/prompt-caching"
+   }
+  ]
+ },
+ {
+  "slug": "rope",
+  "term": "RoPE",
+  "kind": "what it is made of",
+  "short": "The usual way a model is told where each token sits in the sequence, by rotating its representation by an angle proportional to its position.",
+  "body": "It matters commercially because it can be stretched after training: most of the models that grew from 8k to 128k context did so by scaling RoPE rather than by retraining, which is also why quality often sags in the last quarter of a very long window.",
+  "also": [
+   "rotary embeddings",
+   "position encoding"
+  ],
+  "see": [
+   {
+    "label": "Context window",
+    "href": "/index/tech/context-window"
+   }
+  ]
+ },
+ {
+  "slug": "sliding-window",
+  "term": "Sliding-window attention",
+  "kind": "what it is made of",
+  "short": "Letting each token attend only to a few thousand neighbours instead of the whole sequence, so cost grows with length rather than with its square.",
+  "body": "The standard trade for long context: cheap and fast, at the price of the model genuinely forgetting the far past unless a few layers are left global.",
+  "also": [
+   "local attention",
+   "SWA"
+  ],
+  "see": []
+ },
+ {
+  "slug": "mamba",
+  "term": "State space model",
+  "kind": "what it is made of",
+  "short": "An alternative to attention that carries a fixed-size summary forward, so cost grows in a straight line with length.",
+  "body": "Mamba is the best-known. They are excellent at very long sequences and weaker at the precise recall attention gives, so most shipped models that use them are hybrids.",
+  "also": [
+   "Mamba",
+   "SSM"
+  ],
+  "see": []
+ },
+ {
+  "slug": "diffusion-model",
+  "term": "Diffusion model",
+  "kind": "what it is made of",
+  "short": "A model that starts from noise and removes it step by step until an image, a video or a sound emerges.",
+  "body": "Almost all image and video generation works this way. The number of steps is the quality-for-money dial, which is why sellers price the same model differently by resolution and by a quality setting.",
+  "also": [
+   "denoising",
+   "latent diffusion"
+  ],
+  "see": [
+   {
+    "label": "Image models",
+    "href": "/index/for/image"
+   }
+  ]
+ },
+ {
+  "slug": "autoregressive",
+  "term": "Autoregressive",
+  "kind": "how it works",
+  "short": "Producing an answer one token at a time, each conditioned on all the ones before.",
+  "body": "It is why output is billed per token and why it streams: the model genuinely does not know the end of its sentence when it starts. It is also why output costs more than input, which can be read in one pass.",
+  "also": [
+   "next-token prediction"
+  ],
+  "see": [
+   {
+    "label": "Output token",
+    "href": "/index/tech/output-token"
+   }
+  ]
+ },
+ {
+  "slug": "parameters",
+  "term": "Parameters",
+  "kind": "what it is made of",
+  "short": "The trained numbers that constitute a model, counted in billions.",
+  "body": "A rough guide to capability and a precise guide to what it takes to run: at four-bit precision reckon about 0.65 GB of memory per billion. For a mixture of experts the total tells you the memory and the active count tells you the speed.",
+  "also": [
+   "7B",
+   "70B",
+   "weights"
+  ],
+  "see": [
+   {
+    "label": "What your own machine can hold",
+    "href": "/index/lists"
+   }
+  ]
+ },
+ {
+  "slug": "pretraining",
+  "term": "Pretraining",
+  "kind": "how it works",
+  "short": "The first and by far the most expensive stage: reading a very large body of text to learn language and world knowledge.",
+  "body": "Costs tens to hundreds of millions of dollars and is done once. Everything a buyer interacts with — instruction tuning, alignment, fine-tuning — is comparatively cheap work layered on top of it.",
+  "also": [
+   "base model",
+   "foundation model"
+  ],
+  "see": []
+ },
+ {
+  "slug": "instruction-tuning",
+  "term": "Instruction tuning",
+  "kind": "how it works",
+  "short": "Teaching a base model to follow instructions rather than merely continue text.",
+  "body": "The difference between a model that completes your question with three more questions and one that answers it. An \"Instruct\" or \"Chat\" suffix on a model name means this has been done.",
+  "also": [
+   "SFT",
+   "supervised fine-tuning",
+   "instruct"
+  ],
+  "see": []
+ },
+ {
+  "slug": "rlhf",
+  "term": "RLHF",
+  "kind": "how it works",
+  "short": "Training a model on human preferences: people rank two answers, a reward model learns the pattern, and the model is tuned to score well against it.",
+  "body": "It is what makes a model helpful and polite rather than merely fluent, and it is also where refusal behaviour and house style come from. Expensive, because it needs human judgement at scale.",
+  "also": [
+   "reinforcement learning from human feedback"
+  ],
+  "see": []
+ },
+ {
+  "slug": "dpo",
+  "term": "DPO",
+  "kind": "how it works",
+  "short": "A cheaper way to train on preferences that skips the reward model and optimises the model directly against pairs of better and worse answers.",
+  "body": "Most open-weight models released since 2024 are aligned this way or with one of its descendants, because it is simpler and needs far less compute than RLHF.",
+  "also": [
+   "direct preference optimisation",
+   "ORPO",
+   "KTO"
+  ],
+  "see": []
+ },
+ {
+  "slug": "lora",
+  "term": "LoRA",
+  "kind": "how it works",
+  "short": "Fine-tuning by training a small pair of matrices alongside the frozen model instead of changing the model itself.",
+  "body": "A LoRA adapter is a few megabytes where the model is hundreds of gigabytes, so one GPU can hold one base model and serve a thousand customers' adapters. That is why fine-tuning is cheap to buy where it once was not.",
+  "also": [
+   "adapter",
+   "QLoRA",
+   "PEFT"
+  ],
+  "see": [
+   {
+    "label": "Fine-tuning",
+    "href": "/index/tech/fine-tuning"
+   }
+  ]
+ },
+ {
+  "slug": "synthetic-data",
+  "term": "Synthetic data",
+  "kind": "how it works",
+  "short": "Training data written by another model rather than by people.",
+  "body": "Now the majority of post-training data at most labs, because it is cheap, targeted and free of licensing questions. The risk is that a model trained on its own kind narrows: it gets better at the shapes it already knows and no better at the world.",
+  "also": [
+   "model-generated data"
+  ],
+  "see": []
+ },
+ {
+  "slug": "contamination",
+  "term": "Benchmark contamination",
+  "kind": "how it is measured",
+  "short": "A benchmark's questions having leaked into a model's training data, so its score measures memory rather than ability.",
+  "body": "Unavoidable at scale — the tests are published on the internet the models are trained on. It is the main reason a leaderboard from a year ago tells you little, and why boards with held-out or continuously refreshed questions are worth more than famous ones.",
+  "also": [
+   "data contamination",
+   "leakage"
+  ],
+  "see": [
+   {
+    "label": "Every board we read",
+    "href": "/index/coverage"
+   }
+  ]
+ },
+ {
+  "slug": "vllm",
+  "term": "vLLM",
+  "kind": "how it works",
+  "short": "The most widely used open server for running language models, notable for handling many concurrent users on one GPU efficiently.",
+  "body": "If you self-host, this or something like it is what actually answers the request. Its scheduling is a large part of why a company can sell an open model for a fraction of what it costs you to run the same weights badly.",
+  "also": [
+   "SGLang",
+   "TGI",
+   "inference server"
+  ],
+  "see": [
+   {
+    "label": "Self-hosting",
+    "href": "/index/tech/self-hosting"
+   }
+  ]
+ },
+ {
+  "slug": "continuous-batching",
+  "term": "Continuous batching",
+  "kind": "how it works",
+  "short": "Slotting new requests into a running batch as older ones finish, instead of waiting for the whole batch to complete.",
+  "body": "The single largest efficiency win in serving, and the reason a busy provider can charge less per token than a quiet one. It costs you nothing and explains most of the price gap between sellers of identical weights.",
+  "also": [
+   "in-flight batching"
+  ],
+  "see": []
+ },
+ {
+  "slug": "llama-cpp",
+  "term": "llama.cpp",
+  "kind": "how it works",
+  "short": "A small, dependency-free engine for running models on ordinary computers, including on a laptop's CPU.",
+  "body": "It made local models practical for people without a data-centre card, and its GGUF format is the de facto standard for distributing quantised weights. Ollama and most desktop apps are wrappers around it.",
+  "also": [
+   "Ollama",
+   "local inference"
+  ],
+  "see": [
+   {
+    "label": "Open weights",
+    "href": "/index/licence/open"
+   }
+  ]
+ },
+ {
+  "slug": "gguf",
+  "term": "GGUF",
+  "kind": "what it is made of",
+  "short": "The file format for a quantised model meant to be run locally, holding the weights and everything needed to load them in one file.",
+  "body": "If you download a model to run on your own machine you will almost certainly download a GGUF. The suffix — Q4_K_M and its relatives — names the precision and therefore the trade between size and quality.",
+  "also": [
+   "Q4_K_M",
+   "quantised weights"
+  ],
+  "see": [
+   {
+    "label": "Quantisation",
+    "href": "/index/tech/quantisation"
+   }
+  ]
+ },
+ {
+  "slug": "safetensors",
+  "term": "Safetensors",
+  "kind": "what it is made of",
+  "short": "The standard format for distributing model weights, designed so that loading a file cannot execute code.",
+  "body": "It replaced Python pickle files, which could and did carry malware. If you are handling weights from anywhere but the maker, this is the format you want them in.",
+  "also": [
+   "tensor format"
+  ],
+  "see": []
+ },
+ {
+  "slug": "provisioned-throughput",
+  "term": "Provisioned throughput",
+  "kind": "how it is sold",
+  "short": "Renting a fixed slice of a seller's hardware by the hour or the month instead of paying per token.",
+  "body": "It buys guaranteed capacity and predictable latency, and it is billed whether you use it or not. It becomes cheaper than per-token pricing only at steady, high volume — and the break-even is usually much higher than people expect.",
+  "also": [
+   "reserved capacity",
+   "committed throughput"
+  ],
+  "see": []
+ },
+ {
+  "slug": "cold-start",
+  "term": "Cold start",
+  "kind": "how it works",
+  "short": "The delay when a model has to be loaded onto a GPU before it can answer, because nobody has asked for it recently.",
+  "body": "Seconds to minutes, depending on the model's size. It is the hidden cost of serving a long tail of models, and the reason a rarely used model on a serverless platform can feel broken while a popular one on the same platform is instant.",
+  "also": [
+   "scale to zero"
+  ],
+  "see": []
+ },
+ {
+  "slug": "gpu-hour",
+  "term": "GPU hour",
+  "kind": "what you are billed for",
+  "short": "One hour of one accelerator, the unit underneath every per-token price.",
+  "body": "Renting the card yourself makes sense when you can keep it busy; a token price is somebody else solving that problem and taking a margin for it. Comparing the two honestly means knowing your utilisation, which is usually far lower than assumed.",
+  "also": [
+   "H100",
+   "A100",
+   "B200",
+   "TPU"
+  ],
+  "see": []
+ },
+ {
+  "slug": "bm25",
+  "term": "BM25",
+  "kind": "how it works",
+  "short": "The classic keyword search ranking function: rare words that match count for more than common ones.",
+  "body": "Forty years old and still hard to beat on exact terms — product codes, names, error strings — where embeddings are weakest. Nearly every serious retrieval system runs it alongside vector search rather than instead of it.",
+  "also": [
+   "keyword search",
+   "lexical search"
+  ],
+  "see": []
+ },
+ {
+  "slug": "hybrid-search",
+  "term": "Hybrid search",
+  "kind": "how it works",
+  "short": "Running keyword search and vector search together and merging the two result lists.",
+  "body": "The default architecture, because the two fail differently: embeddings miss exact identifiers, keywords miss paraphrase. Merging is usually done with reciprocal rank fusion, which needs no tuning.",
+  "also": [
+   "RRF",
+   "fusion"
+  ],
+  "see": [
+   {
+    "label": "Retrieval-augmented generation",
+    "href": "/index/tech/rag"
+   }
+  ]
+ },
+ {
+  "slug": "colbert",
+  "term": "Late interaction",
+  "kind": "how it works",
+  "short": "Keeping one embedding per token instead of one per document, and comparing them individually at query time.",
+  "body": "More accurate than a single vector per document and far more expensive to store. ColBERT is the best-known; it sits between plain vector search and a reranker in both cost and quality.",
+  "also": [
+   "ColBERT",
+   "multi-vector"
+  ],
+  "see": [
+   {
+    "label": "Reranking",
+    "href": "/index/tech/reranking"
+   }
+  ]
+ },
+ {
+  "slug": "recall-at-k",
+  "term": "Recall@k",
+  "kind": "how it is measured",
+  "short": "The share of the right answers that appear in the first k results.",
+  "body": "The number that decides whether a retrieval system can work at all: if the answer is not in what you retrieved, no model can produce it. Measure this before blaming the model for a wrong answer.",
+  "also": [
+   "NDCG",
+   "MRR",
+   "precision"
+  ],
+  "see": []
+ },
+ {
+  "slug": "hyde",
+  "term": "HyDE",
+  "kind": "how it works",
+  "short": "Asking a model to write a hypothetical answer, then searching with that instead of with the question.",
+  "body": "Works because an answer resembles the documents you are looking for more than a question does. One extra model call for a measurable gain on vague queries.",
+  "also": [
+   "hypothetical document embeddings",
+   "query expansion"
+  ],
+  "see": []
+ },
+ {
+  "slug": "react",
+  "term": "ReAct",
+  "kind": "how it works",
+  "short": "The basic agent loop: think, act with a tool, read the result, repeat.",
+  "body": "Named in a 2022 paper and now the default shape of nearly every agent framework. Everything since is a refinement of it — planning ahead, running steps in parallel, or letting one agent hand work to another.",
+  "also": [
+   "agent loop",
+   "reason and act"
+  ],
+  "see": [
+   {
+    "label": "Agents",
+    "href": "/index/agents"
+   }
+  ]
+ },
+ {
+  "slug": "a2a",
+  "term": "Agent2Agent",
+  "kind": "a protocol",
+  "short": "An open protocol for agents built by different vendors to discover one another and hand over work.",
+  "body": "Announced by Google in 2025 and donated to the Linux Foundation. Where MCP connects an agent to tools, A2A connects an agent to another agent — the difference between calling a function and delegating a task.",
+  "also": [
+   "A2A",
+   "agent interoperability"
+  ],
+  "see": [
+   {
+    "label": "Agents",
+    "href": "/index/agents"
+   }
+  ]
+ },
+ {
+  "slug": "computer-use",
+  "term": "Computer use",
+  "kind": "how it works",
+  "short": "A model driving a screen: it is shown a screenshot, and it replies with clicks, keystrokes and scrolls.",
+  "body": "It works with software that has no API, which is most software. It is slow, it is billed by the image as well as the token, and it inherits every security problem of an agent that can read the screen and act on what it reads.",
+  "also": [
+   "browser agent",
+   "GUI agent"
+  ],
+  "see": [
+   {
+    "label": "Prompt injection",
+    "href": "/index/tech/prompt-injection"
+   }
+  ]
+ },
+ {
+  "slug": "human-in-the-loop",
+  "term": "Human in the loop",
+  "kind": "how it works",
+  "short": "Requiring a person to approve before an agent does something it cannot undo.",
+  "body": "The one control that reliably limits the damage an agent can do. Deciding which actions need it is a product decision, not a technical one: sending, paying, deleting and publishing are the usual list.",
+  "also": [
+   "approval",
+   "HITL"
+  ],
+  "see": []
+ },
+ {
+  "slug": "agent-memory",
+  "term": "Agent memory",
+  "kind": "how it works",
+  "short": "What an agent carries between runs, as opposed to what fits in one context window.",
+  "body": "Usually a store it writes to and searches, so it is retrieval with a different name. The hard part is not storing but forgetting: an agent that remembers everything retrieves noise.",
+  "also": [
+   "long-term memory"
+  ],
+  "see": [
+   {
+    "label": "Retrieval-augmented generation",
+    "href": "/index/tech/rag"
+   }
+  ]
+ },
+ {
+  "slug": "subagent",
+  "term": "Subagent",
+  "kind": "how it works",
+  "short": "An agent spawned by another to do one bounded piece of work and report back.",
+  "body": "Buys a clean context per task and parallelism; costs coordination, and multiplies the bill by the number of agents. The token spend of a fan-out is decided at run time, which is why agent products are hard to price.",
+  "also": [
+   "orchestration",
+   "fan-out"
+  ],
+  "see": []
+ },
+ {
+  "slug": "token-budget",
+  "term": "Token budget",
+  "kind": "what you are billed for",
+  "short": "A ceiling you set on how much a single task may spend.",
+  "body": "The only reliable way to bound the cost of an agent, because the agent decides how many calls it makes. Any agent product without one is selling you an open tab.",
+  "also": [
+   "spend cap"
+  ],
+  "see": []
+ },
+ {
+  "slug": "mmlu",
+  "term": "MMLU",
+  "kind": "how it is measured",
+  "short": "A multiple-choice exam of about 16,000 questions across 57 subjects, from law to microbiology.",
+  "body": "The benchmark that defined the last generation and is now largely saturated — the good models cluster within a point or two, which measures nothing. MMLU-Pro is the harder replacement.",
+  "also": [
+   "MMLU-Pro"
+  ],
+  "see": [
+   {
+    "label": "Every board we read",
+    "href": "/index/coverage"
+   }
+  ]
+ },
+ {
+  "slug": "gpqa",
+  "term": "GPQA",
+  "kind": "how it is measured",
+  "short": "Graduate-level science questions written to be hard for anyone who is not a specialist, and unsearchable on the web.",
+  "body": "The \"Diamond\" subset is the one usually quoted. It resists contamination better than most, which is why it stayed useful longer.",
+  "also": [
+   "GPQA Diamond"
+  ],
+  "see": []
+ },
+ {
+  "slug": "swe-bench",
+  "term": "SWE-bench",
+  "kind": "how it is measured",
+  "short": "Real GitHub issues from real repositories: the model must produce a patch that makes the project's own tests pass.",
+  "body": "The most credible coding benchmark because it is graded by execution rather than by resemblance. \"Verified\" is the human-checked subset of 500 tasks that most figures refer to.",
+  "also": [
+   "SWE-bench Verified"
+  ],
+  "see": [
+   {
+    "label": "Coding models",
+    "href": "/index/for/code"
+   }
+  ]
+ },
+ {
+  "slug": "humaneval",
+  "term": "HumanEval",
+  "kind": "how it is measured",
+  "short": "164 small Python functions the model must write from a docstring, graded by running the tests.",
+  "body": "Historically important, now saturated and too easy to be informative. Quoted scores above 90 tell you almost nothing about whether a model can work in a real codebase.",
+  "also": [
+   "pass@1"
+  ],
+  "see": []
+ },
+ {
+  "slug": "arc-agi",
+  "term": "ARC-AGI",
+  "kind": "how it is measured",
+  "short": "Visual puzzles where each task follows a rule the solver has never seen, designed so memorisation cannot help.",
+  "body": "The benchmark most resistant to scale for the longest time, and therefore the one watched as a proxy for genuine reasoning rather than recall. Its prize competition publishes cost per task alongside score, which is unusual and useful.",
+  "also": [
+   "ARC prize",
+   "abstraction and reasoning"
+  ],
+  "see": []
+ },
+ {
+  "slug": "lmarena",
+  "term": "LMArena",
+  "kind": "how it is measured",
+  "short": "A site where people compare two anonymous answers and vote, producing an Elo rating for each model.",
+  "body": "The closest thing to a measure of what people actually prefer, and correspondingly easy to game with style: models that write longer, friendlier answers score above their weight. Read it beside a graded benchmark, never instead of one.",
+  "also": [
+   "Chatbot Arena",
+   "arena"
+  ],
+  "see": [
+   {
+    "label": "Elo",
+    "href": "/index/tech/elo"
+   }
+  ]
+ },
+ {
+  "slug": "pass-at-k",
+  "term": "pass@k",
+  "kind": "how it is measured",
+  "short": "The chance that at least one of k attempts is correct.",
+  "body": "pass@1 is what a user experiences. A large gap between pass@1 and pass@10 means the model can solve the problem but not reliably, which is exactly the case where letting an agent retry is worth the money.",
+  "also": [
+   "k samples"
+  ],
+  "see": []
+ },
+ {
+  "slug": "llm-as-judge",
+  "term": "LLM as judge",
+  "kind": "how it is measured",
+  "short": "Using a strong model to grade another model's answers against a rubric.",
+  "body": "Cheap, fast, and biased in known ways: it favours longer answers, its own family's style, and whichever answer it sees first. Usable when the biases are controlled for, misleading when they are not.",
+  "also": [
+   "model grading",
+   "rubric"
+  ],
+  "see": []
+ },
+ {
+  "slug": "eval-set",
+  "term": "Eval set",
+  "kind": "how it is measured",
+  "short": "Your own collection of cases with known good answers, used to decide whether a change helped.",
+  "body": "Fifty examples from your own traffic will tell you more about which model to buy than every public leaderboard combined. It is also the only thing that catches a regression when a seller silently updates a model behind the same name.",
+  "also": [
+   "golden set",
+   "regression suite"
+  ],
+  "see": []
+ },
+ {
+  "slug": "vlm",
+  "term": "Vision-language model",
+  "kind": "how it works",
+  "short": "A model that reads images alongside text — screenshots, documents, charts, photographs.",
+  "body": "Images are converted into tokens, so a high-resolution page can cost as much as several thousand words. Most document processing that used to need OCR and a layout engine is now one call to one of these.",
+  "also": [
+   "VLM",
+   "multimodal model",
+   "vision"
+  ],
+  "see": [
+   {
+    "label": "Image recognition",
+    "href": "/index/for/extract"
+   }
+  ]
+ },
+ {
+  "slug": "ocr",
+  "term": "OCR",
+  "kind": "how it works",
+  "short": "Reading text out of an image or a scan.",
+  "body": "Once a specialised product, now largely absorbed into vision models, though dedicated engines remain cheaper and more predictable at volume and better at preserving layout.",
+  "also": [
+   "document AI",
+   "text extraction"
+  ],
+  "see": [
+   {
+    "label": "OCR models",
+    "href": "/index/for/ocr"
+   }
+  ]
+ },
+ {
+  "slug": "image-tokens",
+  "term": "Image tokens",
+  "kind": "what you are billed for",
+  "short": "The unit an image becomes when a model reads it: a picture is cut into patches, and each patch costs like a token.",
+  "body": "It is why sending a screenshot can cost more than sending a page of text, and why resizing an image before you send it is a real saving rather than a micro-optimisation.",
+  "also": [
+   "patches",
+   "tiles"
+  ],
+  "see": []
+ },
+ {
+  "slug": "cfg",
+  "term": "Guidance scale",
+  "kind": "how it works",
+  "short": "A dial on an image model controlling how literally it follows the prompt.",
+  "body": "Low values wander and look natural; high values obey and look strained. It is the setting most responsible for images that are technically correct and visibly artificial.",
+  "also": [
+   "CFG",
+   "classifier-free guidance"
+  ],
+  "see": []
+ },
+ {
+  "slug": "seed",
+  "term": "Seed",
+  "kind": "how it works",
+  "short": "The number that fixes the randomness, so the same prompt and the same seed give the same result.",
+  "body": "The only way to make generation reproducible, and therefore the only way to iterate on a prompt and know that what changed was the prompt.",
+  "also": [
+   "deterministic generation"
+  ],
+  "see": []
+ },
+ {
+  "slug": "inpainting",
+  "term": "Inpainting",
+  "kind": "how it works",
+  "short": "Regenerating part of an image while leaving the rest untouched.",
+  "body": "How editing is actually done: you mask a region and describe what should be there. Sold as its own operation at its own price by most image providers.",
+  "also": [
+   "outpainting",
+   "masking",
+   "edit"
+  ],
+  "see": [
+   {
+    "label": "Image models",
+    "href": "/index/for/image"
+   }
+  ]
+ },
+ {
+  "slug": "voice-cloning",
+  "term": "Voice cloning",
+  "kind": "how it works",
+  "short": "Building a synthetic voice from a sample of a real one, sometimes from seconds of audio.",
+  "body": "Every reputable vendor gates it behind proof of consent, and several jurisdictions now regulate it directly. The technical barrier disappeared years ago; what remains is entirely a rights question.",
+  "also": [
+   "voice likeness",
+   "speaker adaptation"
+  ],
+  "see": [
+   {
+    "label": "Speech generation",
+    "href": "/index/for/speak"
+   }
+  ]
+ },
+ {
+  "slug": "diarisation",
+  "term": "Diarisation",
+  "kind": "how it works",
+  "short": "Working out who spoke when, so a transcript is split by speaker.",
+  "body": "Usually sold as an option on top of transcription and priced separately. It is the difference between a wall of text and a usable record of a meeting.",
+  "also": [
+   "speaker diarization",
+   "who spoke when"
+  ],
+  "see": [
+   {
+    "label": "Transcription models",
+    "href": "/index/for/transcribe"
+   }
+  ]
+ },
+ {
+  "slug": "vad",
+  "term": "Voice activity detection",
+  "kind": "how it works",
+  "short": "Deciding, moment to moment, whether anyone is speaking.",
+  "body": "It decides when a voice agent starts listening and — harder — when it may interrupt or be interrupted. Most of what makes a spoken agent feel natural or maddening is here rather than in the model.",
+  "also": [
+   "VAD",
+   "endpointing",
+   "barge-in"
+  ],
+  "see": [
+   {
+    "label": "Realtime API",
+    "href": "/index/tech/realtime-api"
+   }
+  ]
+ },
+ {
+  "slug": "lip-sync",
+  "term": "Lip sync",
+  "kind": "how it works",
+  "short": "Reshaping a face in video so its mouth matches supplied audio.",
+  "body": "The basis of dubbing and of synthetic presenters, sold by the minute of finished video. Consent for the face is a separate matter from consent for the voice, and serious vendors gate both.",
+  "also": [
+   "dubbing",
+   "talking head"
+  ],
+  "see": []
+ },
+ {
+  "slug": "data-residency",
+  "term": "Data residency",
+  "kind": "a rule you must follow",
+  "short": "A requirement that data be stored and processed inside a named country or region.",
+  "body": "It decides which sellers you may use before price enters the conversation. Most large providers now sell region-pinned endpoints at a premium, which is why regional lanes appear as their own rates on this site.",
+  "also": [
+   "region",
+   "in-region",
+   "sovereignty"
+  ],
+  "see": []
+ },
+ {
+  "slug": "dpa",
+  "term": "Data processing agreement",
+  "kind": "a rule you must follow",
+  "short": "The contract governing what a seller may do with the data you send it.",
+  "body": "The clause that matters most is whether your inputs may be used for training; the second is how long they are retained. Both differ between a seller's free tier and its paid one, often sharply.",
+  "also": [
+   "DPA",
+   "sub-processor"
+  ],
+  "see": [
+   {
+    "label": "Zero data retention",
+    "href": "/index/tech/zdr"
+   }
+  ]
+ },
+ {
+  "slug": "soc2",
+  "term": "SOC 2",
+  "kind": "a rule you must follow",
+  "short": "An audit report on how a company handles security, availability and confidentiality.",
+  "body": "Type II — which covers a period rather than a moment — is the one enterprise buyers ask for. Its absence is usually what keeps a good small vendor out of a large company.",
+  "also": [
+   "SOC 2 Type II",
+   "ISO 27001"
+  ],
+  "see": []
+ },
+ {
+  "slug": "eu-ai-act",
+  "term": "EU AI Act",
+  "kind": "a rule you must follow",
+  "short": "The European Union's law on artificial intelligence, which sorts systems by risk and attaches duties to each level.",
+  "body": "Obligations arrive in stages through 2025 to 2027. For most buyers the practical consequences are transparency about AI-generated content, documentation of what a system does, and heavier duties if it is used in hiring, credit, education or policing.",
+  "also": [
+   "AI Act",
+   "high-risk system"
+  ],
+  "see": []
+ },
+ {
+  "slug": "gdpr",
+  "term": "GDPR",
+  "kind": "a rule you must follow",
+  "short": "The European data protection regulation, which applies whenever you process personal data about people in the EU.",
+  "body": "It reaches AI through the same doors as everything else: a lawful basis to process, a limit on purpose, and a person's right to have their data erased — which is difficult to honour once it is in a training set.",
+  "also": [
+   "right to erasure"
+  ],
+  "see": []
+ },
+ {
+  "slug": "hipaa",
+  "term": "HIPAA",
+  "kind": "a rule you must follow",
+  "short": "The United States law governing health information.",
+  "body": "Using a model on patient data requires the seller to sign a business associate agreement; most will, on their enterprise tier only. The free and standard tiers of nearly every provider are not eligible.",
+  "also": [
+   "BAA",
+   "PHI"
+  ],
+  "see": []
+ },
+ {
+  "slug": "indemnity",
+  "term": "Copyright indemnity",
+  "kind": "a rule you must follow",
+  "short": "A promise by the seller to defend you if what their model produces is claimed to infringe someone's copyright.",
+  "body": "Offered by most large vendors on paid tiers and by almost nobody on free ones. It is one of the clearer things an enterprise price actually buys.",
+  "also": [
+   "IP indemnification"
+  ],
+  "see": []
+ },
+ {
+  "slug": "c2pa",
+  "term": "C2PA",
+  "kind": "a protocol",
+  "short": "A standard for attaching tamper-evident provenance to a file: what made it, when, and what was done to it since.",
+  "body": "Adopted by camera makers, editing software and several image models. It is the leading answer to \"was this generated\", and it works by signing what is true rather than by detecting what is false.",
+  "also": [
+   "content credentials",
+   "provenance"
+  ],
+  "see": []
+ },
+ {
+  "slug": "watermarking",
+  "term": "Watermarking",
+  "kind": "how it works",
+  "short": "Marking generated content so it can later be identified as generated.",
+  "body": "For images it is a signal hidden in the pixels; for text it is a statistical bias in word choice. Text watermarks survive light editing and not paraphrase, so they are evidence rather than proof.",
+  "also": [
+   "SynthID"
+  ],
+  "see": []
+ },
+ {
+  "slug": "credit",
+  "term": "Credit",
+  "kind": "how it is sold",
+  "short": "A seller's own unit of account, bought in advance and spent at rates the seller sets.",
+  "body": "It makes comparison hard, which is not an accident. Where a product is sold in credits this catalogue records what a credit costs and what it buys, because the two together are the price and either alone is not.",
+  "also": [
+   "credits",
+   "compute units"
+  ],
+  "see": []
+ },
+ {
+  "slug": "seat",
+  "term": "Seat",
+  "kind": "how it is sold",
+  "short": "A licence for one named person, billed monthly.",
+  "body": "The usual shape for tools and assistants, and the one that stops making sense the moment agents rather than people do the work. Several vendors are visibly caught between the two models.",
+  "also": [
+   "per-user pricing"
+  ],
+  "see": [
+   {
+    "label": "Subscriptions",
+    "href": "/index/subscriptions"
+   }
+  ]
+ },
+ {
+  "slug": "committed-spend",
+  "term": "Committed spend",
+  "kind": "how it is sold",
+  "short": "A discount in exchange for promising a minimum over a year.",
+  "body": "Standard above a few thousand dollars a month, and typically 10 to 30 per cent. What you give up is the ability to move when something cheaper appears — which, at the rate this market moves, is not a small thing.",
+  "also": [
+   "enterprise agreement",
+   "volume discount"
+  ],
+  "see": []
+ },
+ {
+  "slug": "egress",
+  "term": "Egress",
+  "kind": "what you are billed for",
+  "short": "What a cloud charges to move data out of it.",
+  "body": "Rarely relevant for text and very relevant for audio, video and image work at scale. It is the cost most often left out of a comparison between running something yourself and buying it.",
+  "also": [
+   "data transfer"
+  ],
+  "see": []
+ },
+ {
+  "slug": "micropayment",
+  "term": "Micropayment",
+  "kind": "how it is sold",
+  "short": "A payment small enough that conventional card fees would exceed it.",
+  "body": "The reason machine-to-machine payment needed a new mechanism at all: a card network cannot economically settle a tenth of a cent, and an agent buying one API call at a time needs exactly that.",
+  "also": [
+   "pay per call"
+  ],
+  "see": [
+   {
+    "label": "x402",
+    "href": "/index/tech/x402"
+   }
+  ]
+ },
+ {
+  "slug": "red-teaming",
+  "term": "Red teaming",
+  "kind": "how it works",
+  "short": "Deliberately attacking your own system to find what makes it misbehave before somebody else does.",
+  "body": "For models this means hunting for prompts that produce harmful output; for agents it means hunting for inputs that make them take actions they should not. The second is now the larger risk and gets the smaller share of the attention.",
+  "also": [
+   "adversarial testing"
+  ],
+  "see": [
+   {
+    "label": "Prompt injection",
+    "href": "/index/tech/prompt-injection"
+   }
+  ]
+ },
+ {
+  "slug": "alignment",
+  "term": "Alignment",
+  "kind": "how it works",
+  "short": "The work of making a model's behaviour match what its makers intend.",
+  "body": "In practice it covers refusing harmful requests, telling the truth about uncertainty, and following instructions rather than reinterpreting them. It is a training outcome, not a filter bolted on afterwards, which is why models differ in character as much as in capability.",
+  "also": [
+   "safety training",
+   "constitutional AI"
+  ],
+  "see": []
+ },
+ {
+  "slug": "refusal",
+  "term": "Refusal",
+  "kind": "how it works",
+  "short": "A model declining to answer.",
+  "body": "Both a safety feature and a defect, depending on whether the request was reasonable. Over-refusal is a measurable property and one of the clearest differences between otherwise similar models, so it is worth testing on your own traffic.",
+  "also": [
+   "over-refusal",
+   "false refusal"
+  ],
+  "see": []
+ },
+ {
+  "slug": "model-deprecation",
+  "term": "Deprecation",
+  "kind": "how it is sold",
+  "short": "A seller withdrawing a model, usually with a few months' notice.",
+  "body": "The risk that has no technical answer: the model you built on can be taken away, and your prompts and evaluations are tuned to it. It is the strongest practical argument for open weights and for keeping a second seller ready.",
+  "also": [
+   "sunset",
+   "retirement"
+  ],
+  "see": [
+   {
+    "label": "Open weights",
+    "href": "/index/licence/open"
+   }
+  ]
+ },
+ {
+  "slug": "silent-update",
+  "term": "Silent update",
+  "kind": "how it is sold",
+  "short": "The model behind a name changing without the name changing.",
+  "body": "Common with \"latest\" aliases and not unknown with pinned versions. It is why an eval set of your own is not a nicety: without one, a quality change arrives as user complaints.",
+  "also": [
+   "model drift",
+   "latest alias"
+  ],
+  "see": [
+   {
+    "label": "Eval set",
+    "href": "/index/tech/eval-set"
+   }
+  ]
+ }
+]

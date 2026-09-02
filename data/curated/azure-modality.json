@@ -1,0 +1,188 @@
+{
+ "providers": [],
+ "entities": [
+  {
+   "id": "ent_gpt-4o-realtime",
+   "register": "model",
+   "name": "GPT-4o Realtime",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4o-realtime",
+   "input_kind": "audio + text",
+   "output_kind": "audio + text"
+  }
+ ],
+ "aliases": [
+  {
+   "source": "prov_azure",
+   "alias": "4.3",
+   "entity": "ent_grok-4.3"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Code Fast 1",
+   "entity": "ent_grok-code-fast-1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Image 2",
+   "entity": "ent_gpt-image-2"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Image 2.5",
+   "entity": "ent_mai-image-2.5"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Image 2.5 Flash",
+   "entity": "ent_mai-image-2.5-flash"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Image 2.5 Pro",
+   "entity": "ent_mai-image-2.5-pro"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Image 2e",
+   "entity": "ent_mai-image-2e"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "MM3.5",
+   "entity": "ent_mistral-medium-3.5"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 4o tcrb d",
+   "entity": "ent_gpt-4o-transcribe-diarize"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt aud 0828",
+   "entity": "ent_gpt-audio"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt aud 1.5",
+   "entity": "ent_gpt-audio-1.5"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt aud mini",
+   "entity": "ent_gpt-audio-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt aud mn 1215",
+   "entity": "ent_gpt-audio-mini-1215"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt img 1 mini",
+   "entity": "ent_gpt-image-1-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt img 1.5",
+   "entity": "ent_gpt-image-1.5"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt rt 0828",
+   "entity": "ent_gpt-realtime"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt rt 1.5",
+   "entity": "ent_gpt-realtime-1.5"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt rt mini",
+   "entity": "ent_gpt-realtime-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt rt mn 1215",
+   "entity": "ent_gpt-realtime-mini-1215"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt-4o-aud-0603",
+   "entity": "ent_gpt-4o-audio-0603"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt-4o-aud-1217",
+   "entity": "ent_gpt-4o-audio-1217"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt-4o-rt-0603",
+   "entity": "ent_gpt-4o-realtime-0603"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt-4o-rt-1217",
+   "entity": "ent_gpt-4o-realtime-1217"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt-realtime-2",
+   "entity": "ent_gpt-realtime-2"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt-realtime-2.1",
+   "entity": "ent_gpt-realtime-2.1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt-realtime-2.1-mini",
+   "entity": "ent_gpt-realtime-2.1-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt4o mn trscb 1215",
+   "entity": "ent_gpt-4o-mini-transcribe"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt4o mn tts 1215",
+   "entity": "ent_gpt-4o-mini-tts"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt4o realtime",
+   "entity": "ent_gpt-4o-realtime"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt4o realtime prvw",
+   "entity": "ent_gpt-4o-realtime-preview"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt4o realtimePrvw",
+   "entity": "ent_gpt-4o-realtime-preview"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt4omini",
+   "entity": "ent_gpt-4o-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt4omini-aud1217",
+   "entity": "ent_gpt-4o-mini-audio-1217"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt4omini-rt",
+   "entity": "ent_gpt-4o-mini-realtime-1217"
+  }
+ ],
+ "offerings": []
+}

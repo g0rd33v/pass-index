@@ -1,0 +1,35 @@
+# Pass Index on the Labs Hub server. Layout on the host:
+#   /srv/pass-index/src   — source tree (the pass-index branch checkout)
+#   /srv/pass-index/data  — index.db (the catalogue)
+# First fill: docker compose exec pass-index seed /data/index.db
+services:
+  pass-index:
+    build:
+      context: /srv/pass-index/src
+      dockerfile: deploy/index/Dockerfile
+    image: pass-index:latest
+    container_name: pass-index
+    restart: unless-stopped
+    environment:
+      PASS_INDEX_DB: /data/index.db
+      PASS_INDEX_ADDR: 0.0.0.0:8185
+    ports:
+      # Same house pattern as pass-v1: 127.0.0.1 for host-local checks,
+      # 172.17.0.1 for the `web` nginx container. Neither is internet-reachable.
+      - "127.0.0.1:8185:8185"
+      - "172.17.0.1:8185:8185"
+    volumes:
+      - /srv/pass-index/data:/data
+      # The crawler's findings, read-only: the supplier writes, the index
+      # reads, and neither can touch the other's files.
+      - /srv/pass-index-crawler/findings:/crawler/findings:ro
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "5"
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://127.0.0.1:8185/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

@@ -1,0 +1,272 @@
+{
+ "bedrock": {
+  "id": "prov_bedrock",
+  "name": "AWS Bedrock",
+  "kind": "cloud",
+  "url": "https://aws.amazon.com/bedrock/"
+ },
+ "bedrock_converse": {
+  "id": "prov_bedrock",
+  "name": "AWS Bedrock",
+  "kind": "cloud",
+  "url": "https://aws.amazon.com/bedrock/"
+ },
+ "amazon-bedrock": {
+  "id": "prov_bedrock",
+  "name": "AWS Bedrock",
+  "kind": "cloud",
+  "url": "https://aws.amazon.com/bedrock/"
+ },
+ "azure": {
+  "id": "prov_azure",
+  "name": "Microsoft Azure AI",
+  "kind": "cloud",
+  "url": "https://azure.microsoft.com/products/ai-foundry"
+ },
+ "azure_ai": {
+  "id": "prov_azure",
+  "name": "Microsoft Azure AI",
+  "kind": "cloud",
+  "url": "https://azure.microsoft.com/products/ai-foundry"
+ },
+ "azure-ai": {
+  "id": "prov_azure",
+  "name": "Microsoft Azure AI",
+  "kind": "cloud",
+  "url": "https://azure.microsoft.com/products/ai-foundry"
+ },
+ "vertex_ai-language-models": {
+  "id": "prov_vertex",
+  "name": "Google Vertex AI",
+  "kind": "cloud",
+  "url": "https://cloud.google.com/vertex-ai"
+ },
+ "vertex_ai-chat-models": {
+  "id": "prov_vertex",
+  "name": "Google Vertex AI",
+  "kind": "cloud",
+  "url": "https://cloud.google.com/vertex-ai"
+ },
+ "google-vertex": {
+  "id": "prov_vertex",
+  "name": "Google Vertex AI",
+  "kind": "cloud",
+  "url": "https://cloud.google.com/vertex-ai"
+ },
+ "fireworks_ai": {
+  "id": "prov_fireworks",
+  "name": "Fireworks AI",
+  "kind": "aggregator",
+  "url": "https://fireworks.ai"
+ },
+ "fireworks-ai": {
+  "id": "prov_fireworks",
+  "name": "Fireworks AI",
+  "kind": "aggregator",
+  "url": "https://fireworks.ai"
+ },
+ "together_ai": {
+  "id": "prov_together",
+  "name": "Together AI",
+  "kind": "aggregator",
+  "url": "https://together.ai"
+ },
+ "togetherai": {
+  "id": "prov_together",
+  "name": "Together AI",
+  "kind": "aggregator",
+  "url": "https://together.ai"
+ },
+ "cloudflare": {
+  "id": "prov_cloudflare",
+  "name": "Cloudflare",
+  "kind": "aggregator",
+  "url": "https://developers.cloudflare.com/workers-ai/"
+ },
+ "cloudflare-workers-ai": {
+  "id": "prov_cloudflare",
+  "name": "Cloudflare",
+  "kind": "aggregator",
+  "url": "https://developers.cloudflare.com/workers-ai/"
+ },
+ "huggingface": {
+  "id": "prov_huggingface",
+  "name": "Hugging Face Inference Providers",
+  "kind": "aggregator",
+  "url": "https://huggingface.co/inference"
+ },
+ "sambanova": {
+  "id": "prov_sambanova",
+  "name": "SambaNova Cloud",
+  "kind": "aggregator",
+  "url": "https://sambanova.ai"
+ },
+ "baseten": {
+  "id": "prov_baseten",
+  "name": "Baseten",
+  "kind": "aggregator",
+  "url": "https://baseten.co"
+ },
+ "databricks": {
+  "id": "prov_databricks",
+  "name": "Databricks",
+  "kind": "cloud",
+  "url": "https://databricks.com/product/model-serving"
+ },
+ "oci": {
+  "id": "prov_oci",
+  "name": "Oracle Cloud Infrastructure",
+  "kind": "cloud",
+  "url": "https://oracle.com/artificial-intelligence/generative-ai/"
+ },
+ "watsonx": {
+  "id": "prov_watsonx",
+  "name": "IBM watsonx",
+  "kind": "cloud",
+  "url": "https://ibm.com/products/watsonx-ai"
+ },
+ "snowflake": {
+  "id": "prov_snowflake",
+  "name": "Snowflake Cortex",
+  "kind": "cloud",
+  "url": "https://snowflake.com/en/product/features/cortex/"
+ },
+ "gradient_ai": {
+  "id": "prov_digitalocean",
+  "name": "DigitalOcean",
+  "kind": "cloud",
+  "url": "https://digitalocean.com/products/gradient"
+ },
+ "digitalocean": {
+  "id": "prov_digitalocean",
+  "name": "DigitalOcean",
+  "kind": "cloud",
+  "url": "https://digitalocean.com/products/gradient"
+ },
+ "groq": {
+  "id": "prov_groq",
+  "name": "Groq",
+  "kind": "aggregator",
+  "url": "https://groq.com"
+ },
+ "cerebras": {
+  "id": "prov_cerebras",
+  "name": "Cerebras",
+  "kind": "aggregator",
+  "url": "https://cerebras.ai"
+ },
+ "friendliai": {
+  "id": "prov_friendli",
+  "name": "FriendliAI",
+  "kind": "aggregator",
+  "url": "https://friendli.ai"
+ },
+ "friendli": {
+  "id": "prov_friendli",
+  "name": "FriendliAI",
+  "kind": "aggregator",
+  "url": "https://friendli.ai"
+ },
+ "nscale": {
+  "id": "prov_nscale",
+  "name": "Nscale",
+  "kind": "aggregator",
+  "url": "https://nscale.com"
+ },
+ "hyperbolic": {
+  "id": "prov_hyperbolic",
+  "name": "Hyperbolic",
+  "kind": "aggregator",
+  "url": "https://hyperbolic.xyz"
+ },
+ "lambda_ai": {
+  "id": "prov_lambda",
+  "name": "Lambda",
+  "kind": "aggregator",
+  "url": "https://lambda.ai"
+ },
+ "lambda": {
+  "id": "prov_lambda",
+  "name": "Lambda",
+  "kind": "aggregator",
+  "url": "https://lambda.ai"
+ },
+ "crusoe": {
+  "id": "prov_crusoe",
+  "name": "Crusoe",
+  "kind": "cloud",
+  "url": "https://crusoe.ai"
+ },
+ "gmi-cloud": {
+  "id": "prov_gmi",
+  "name": "GMI Cloud",
+  "kind": "aggregator",
+  "url": "https://gmicloud.ai"
+ },
+ "io-net": {
+  "id": "prov_ionet",
+  "name": "IO.NET",
+  "kind": "aggregator",
+  "url": "https://io.net"
+ },
+ "clarifai": {
+  "id": "prov_clarifai",
+  "name": "Clarifai",
+  "kind": "aggregator",
+  "url": "https://clarifai.com"
+ },
+ "siliconflow": {
+  "id": "prov_siliconflow",
+  "name": "SiliconFlow",
+  "kind": "aggregator",
+  "url": "https://siliconflow.cn"
+ },
+ "ppinfra": {
+  "id": "prov_ppinfra",
+  "name": "PPIO",
+  "kind": "aggregator",
+  "url": "https://ppinfra.com"
+ },
+ "venice": {
+  "id": "prov_venice",
+  "name": "Venice AI",
+  "kind": "aggregator",
+  "url": "https://venice.ai"
+ },
+ "inference-net": {
+  "id": "prov_inferencenet",
+  "name": "Inference.net",
+  "kind": "aggregator",
+  "url": "https://inference.net"
+ },
+ "avian": {
+  "id": "prov_avian",
+  "name": "Avian",
+  "kind": "aggregator",
+  "url": "https://avian.io"
+ },
+ "eden-ai": {
+  "id": "prov_edenai",
+  "name": "Eden AI",
+  "kind": "aggregator",
+  "url": "https://edenai.co"
+ },
+ "github-copilot": {
+  "id": "prov_githubcopilot",
+  "name": "GitHub Copilot",
+  "kind": "aggregator",
+  "url": "https://github.com/features/copilot"
+ },
+ "arcee_ai": {
+  "id": "prov_arcee",
+  "name": "Arcee AI",
+  "kind": "vendor",
+  "url": "https://arcee.ai"
+ },
+ "arcee-ai": {
+  "id": "prov_arcee",
+  "name": "Arcee AI",
+  "kind": "vendor",
+  "url": "https://arcee.ai"
+ }
+}

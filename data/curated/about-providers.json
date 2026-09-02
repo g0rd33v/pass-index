@@ -1,0 +1,2546 @@
+{
+ "suites": [],
+ "benchmarks": [],
+ "docs": [
+  {
+   "subject": "prov_allenai",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Ai2, founded by Paul Allen and led by Ali Farhadi, conducts high-impact research and engineering to tackle key problems in artificial intelligence.",
+   "source_url": "https://allenai.org/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_allenai",
+   "kind": "sells",
+   "field": null,
+   "text": "Non-profit AI research institute releasing open-weight models (OLMo, Molmo, Tulu), open datasets, evaluation frameworks and research tools, plus a free playground",
+   "source_url": "https://allenai.org/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_allenai",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2014",
+   "source_url": "https://allenai.org/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_allenai",
+   "kind": "fact",
+   "field": "hq",
+   "text": "Seattle, United States",
+   "source_url": "https://allenai.org/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_allenai",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://allenai.org/",
+   "source_url": "https://allenai.org/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_allenai",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.allenai.org/",
+   "source_url": "https://allenai.org/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_allenai",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://allenai.org/favicon.ico",
+   "source_url": "https://allenai.org/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_alibaba",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Alibaba Cloud Model Studio is a one-stop model service platform; call models on demand with no infrastructure to manage.",
+   "source_url": "https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_alibaba",
+   "kind": "sells",
+   "field": null,
+   "text": "Cloud model-as-a-service platform: hosted inference APIs for the Qwen model family (Qwen-Max, Qwen-Plus, Qwen-Flash) plus third-party LLMs (DeepSeek, Kimi, GLM), covering text generation, image and video understanding/generation, speech recognition and synthesis, and embeddings; OpenAI-compatible API, online playground, pay-as-you-go billing.",
+   "source_url": "https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_alibaba",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.alibabacloud.com/en/product/modelstudio",
+   "source_url": "https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_alibaba",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://www.alibabacloud.com/help/en/model-studio/",
+   "source_url": "https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_alibaba",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.alibabacloud.com/",
+   "source_url": "https://www.alibabacloud.com/help/en/model-studio/what-is-model-studio",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_amazon",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Amazon's mission is to make customers' lives better and easier every day by relentlessly inventing on their behalf.\"",
+   "source_url": "https://www.aboutamazon.com/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_amazon",
+   "kind": "sells",
+   "field": null,
+   "text": "Online shopping, cloud computing, streaming entertainment, consumer electronics devices, advertising, healthcare and AI services; AWS AI services include Amazon Bedrock, SageMaker AI, AgentCore, Amazon Q, Amazon Connect, Kiro, and Trainium chips.",
+   "source_url": "https://www.aboutamazon.com/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_amazon",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.aboutamazon.com/about-us",
+   "source_url": "https://www.aboutamazon.com/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_amazon",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.aws.amazon.com/",
+   "source_url": "https://www.aboutamazon.com/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_amazon",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://aws.amazon.com/pricing/",
+   "source_url": "https://www.aboutamazon.com/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_amazon",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://health.aws.amazon.com/health/status",
+   "source_url": "https://www.aboutamazon.com/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_amazon",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://www.aboutamazon.com/_next/static/media/favicon-32x32.2b6b6c3a.png",
+   "source_url": "https://www.aboutamazon.com/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_anthropic",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"An AI safety and research company working to build reliable, interpretable, and steerable AI systems.\"",
+   "source_url": "https://www.anthropic.com/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_anthropic",
+   "kind": "sells",
+   "field": null,
+   "text": "Claude AI assistant (web, desktop, Claude Code, Cowork, Design, Science, Security, Chrome, Microsoft 365) and the Claude Platform API for developers.",
+   "source_url": "https://www.anthropic.com/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_anthropic",
+   "kind": "fact",
+   "field": "hq",
+   "text": "San Francisco, United States",
+   "source_url": "https://www.anthropic.com/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_anthropic",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.anthropic.com/",
+   "source_url": "https://www.anthropic.com/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_anthropic",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://platform.claude.com/docs",
+   "source_url": "https://www.anthropic.com/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_anthropic",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://claude.com/pricing",
+   "source_url": "https://www.anthropic.com/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_anthropic",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.anthropic.com/",
+   "source_url": "https://www.anthropic.com/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_anthropic",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://www.anthropic.com/favicon.ico",
+   "source_url": "https://www.anthropic.com/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_azure",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Microsoft Foundry is a unified platform to build, ground, and govern AI apps and agents that understand your business context.\"",
+   "source_url": "https://azure.microsoft.com/en-us/products/ai-foundry",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_azure",
+   "kind": "sells",
+   "field": null,
+   "text": "Cloud AI platform: Foundry Models (11,000+ foundation, open, reasoning, multimodal models), Foundry Agent Service, prebuilt tools (OCR, translation, speech, vision), Foundry IQ, Control Plane governance and observability, Foundry Local for edge.",
+   "source_url": "https://azure.microsoft.com/en-us/products/ai-foundry",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_azure",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://azure.microsoft.com/en-us/products/ai-foundry",
+   "source_url": "https://azure.microsoft.com/en-us/products/ai-foundry",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_azure",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://learn.microsoft.com/en-us/azure/ai-foundry/",
+   "source_url": "https://azure.microsoft.com/en-us/products/ai-foundry",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_azure",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://azure.microsoft.com/en-us/pricing/details/microsoft-foundry/",
+   "source_url": "https://azure.microsoft.com/en-us/products/ai-foundry",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_azure",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://azure.status.microsoft/en-us/status",
+   "source_url": "https://azure.microsoft.com/en-us/products/ai-foundry",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_azure",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/product-icon-Microsoft-Foundry-48x48",
+   "source_url": "https://azure.microsoft.com/en-us/products/ai-foundry",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_baidu",
+   "kind": "one_liner",
+   "field": null,
+   "text": "An enterprise-grade, all-in-one large model platform centered on Agent development.",
+   "source_url": "https://intl.cloud.baidu.com/product/qianfan.html",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_baidu",
+   "kind": "sells",
+   "field": null,
+   "text": "Model-as-a-service and agent development platform: unified API access to ERNIE models and open-source foundation models (DeepSeek, MiniMax, Kimi, GLM), model inference services, agent building tools, data intelligence services, and multi-language SDKs.",
+   "source_url": "https://intl.cloud.baidu.com/product/qianfan.html",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_baidu",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://intl.cloud.baidu.com/product/qianfan.html",
+   "source_url": "https://intl.cloud.baidu.com/product/qianfan.html",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_baidu",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://intl.cloud.baidu.com/doc/qianfan/index.html",
+   "source_url": "https://intl.cloud.baidu.com/product/qianfan.html",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_baidu",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://bce.bdstatic.com/img/favicon.ico",
+   "source_url": "https://intl.cloud.baidu.com/product/qianfan.html",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bedrock",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Amazon Bedrock: The platform for building generative AI applications and agents at production scale\"",
+   "source_url": "https://aws.amazon.com/bedrock/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bedrock",
+   "kind": "sells",
+   "field": null,
+   "text": "Managed access to hundreds of foundation models, agent build/deploy (AgentCore, Managed Agents), knowledge bases and fine-tuning, Guardrails safety, model distillation, prompt caching and routing.",
+   "source_url": "https://aws.amazon.com/bedrock/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bedrock",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://aws.amazon.com/bedrock/",
+   "source_url": "https://aws.amazon.com/bedrock/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bedrock",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html",
+   "source_url": "https://aws.amazon.com/bedrock/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bedrock",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://aws.amazon.com/bedrock/pricing/",
+   "source_url": "https://aws.amazon.com/bedrock/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bedrock",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://health.aws.amazon.com/health/status",
+   "source_url": "https://aws.amazon.com/bedrock/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bedrock",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico",
+   "source_url": "https://aws.amazon.com/bedrock/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bfl",
+   "kind": "one_liner",
+   "field": null,
+   "text": "The frontier AI research lab for visual intelligence \u2014 \"What hasn't been can now be.\"",
+   "source_url": "https://bfl.ai/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bfl",
+   "kind": "sells",
+   "field": null,
+   "text": "FLUX generative visual models (image and multimodal) via a hosted API and dashboard, open-weight models for self-hosting, a browser playground, and enterprise deployments",
+   "source_url": "https://bfl.ai/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bfl",
+   "kind": "fact",
+   "field": "hq",
+   "text": "Freiburg, Germany",
+   "source_url": "https://bfl.ai/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bfl",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://bfl.ai/",
+   "source_url": "https://bfl.ai/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bfl",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.bfl.ai",
+   "source_url": "https://bfl.ai/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bfl",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://bfl.ai/pricing",
+   "source_url": "https://bfl.ai/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bfl",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.bfl.ai",
+   "source_url": "https://bfl.ai/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bfl",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://bfl.ai/favicon.ico",
+   "source_url": "https://bfl.ai/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bland",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Enterprise Voice AI Platform for Phone Agents.",
+   "source_url": "https://www.bland.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bland",
+   "kind": "sells",
+   "field": null,
+   "text": "AI phone-call agents (inbound and outbound voice), plus SMS/iMessage/web-chat channels, IVR replacement, call transcription and call intelligence, on their own voice infrastructure",
+   "source_url": "https://www.bland.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bland",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2023",
+   "source_url": "https://www.bland.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bland",
+   "kind": "fact",
+   "field": "hq",
+   "text": "San Francisco, United States",
+   "source_url": "https://www.bland.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bland",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.bland.ai/",
+   "source_url": "https://www.bland.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bland",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://app.bland.ai/docs",
+   "source_url": "https://www.bland.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bland",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://app.bland.ai/pricing",
+   "source_url": "https://www.bland.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bland",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.bland.ai/",
+   "source_url": "https://www.bland.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bland",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://www.bland.ai/favicon.ico",
+   "source_url": "https://www.bland.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bytedance",
+   "kind": "one_liner",
+   "field": null,
+   "text": "The ByteDance Seed team, established 2023, is dedicated to discovering new approaches to general intelligence, pushing the boundaries of AI.",
+   "source_url": "https://seed.bytedance.com/en/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bytedance",
+   "kind": "sells",
+   "field": null,
+   "text": "AI research lab and model group inside ByteDance; research areas include LLMs, speech, vision, world models, infrastructure, AI Infra, and next-generation AI interactions. Operates labs in China, Singapore, the United States and other locations. Models are served commercially through Volcano Engine Ark.",
+   "source_url": "https://seed.bytedance.com/en/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bytedance",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2023",
+   "source_url": "https://seed.bytedance.com/en/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bytedance",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://seed.bytedance.com/en/",
+   "source_url": "https://seed.bytedance.com/en/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_bytedance",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/favicon_1/favicon.ico",
+   "source_url": "https://seed.bytedance.com/en/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cartesia",
+   "kind": "one_liner",
+   "field": null,
+   "text": "AI that learns and interacts like humans.",
+   "source_url": "https://cartesia.ai/careers",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cartesia",
+   "kind": "sells",
+   "field": null,
+   "text": "Voice AI models and platform: Sonic text-to-speech, Ink speech-to-text, and Line for building voice agents; research on state space models (Mamba, H-Nets)",
+   "source_url": "https://cartesia.ai/careers",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cartesia",
+   "kind": "fact",
+   "field": "hq",
+   "text": "San Francisco, United States",
+   "source_url": "https://cartesia.ai/careers",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cartesia",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://cartesia.ai/",
+   "source_url": "https://cartesia.ai/careers",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cartesia",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.cartesia.ai",
+   "source_url": "https://cartesia.ai/careers",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cartesia",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://cartesia.ai/pricing",
+   "source_url": "https://cartesia.ai/careers",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cartesia",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.cartesia.ai/",
+   "source_url": "https://cartesia.ai/careers",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cartesia",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://cartesia.ai/favicon.ico",
+   "source_url": "https://cartesia.ai/careers",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cohere",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Own your AI\" \u2014 foundational AI models and enterprise solutions with secure private and on-prem deployment.",
+   "source_url": "https://cohere.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cohere",
+   "kind": "sells",
+   "field": null,
+   "text": "Foundation models (Command generative, Embed, Rerank, Transcribe) via API, plus enterprise products (North workplace agent platform, Compass search) and private/VPC/on-premise deployments.",
+   "source_url": "https://cohere.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cohere",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2019",
+   "source_url": "https://cohere.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cohere",
+   "kind": "fact",
+   "field": "hq",
+   "text": "Toronto, Canada",
+   "source_url": "https://cohere.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cohere",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://cohere.com/",
+   "source_url": "https://cohere.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cohere",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.cohere.com/",
+   "source_url": "https://cohere.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cohere",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://cohere.com/pricing",
+   "source_url": "https://cohere.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cohere",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.cohere.com/",
+   "source_url": "https://cohere.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_cohere",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://cohere.com/logo.svg",
+   "source_url": "https://cohere.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_databricks",
+   "kind": "one_liner",
+   "field": null,
+   "text": "The data and AI company \u2014 the leading Data and AI Platform for enterprises.",
+   "source_url": "https://www.databricks.com/company/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_databricks",
+   "kind": "sells",
+   "field": null,
+   "text": "Enterprise data + AI cloud platform (lakehouse): data engineering and warehousing, Unity Catalog governance, BI, Lakebase serverless Postgres, Genie assistant, and Agent Bricks / Mosaic AI for building AI agents and applications",
+   "source_url": "https://www.databricks.com/company/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_databricks",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2013",
+   "source_url": "https://www.databricks.com/company/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_databricks",
+   "kind": "fact",
+   "field": "hq",
+   "text": "San Francisco, United States",
+   "source_url": "https://www.databricks.com/company/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_databricks",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.databricks.com/",
+   "source_url": "https://www.databricks.com/company/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_databricks",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.databricks.com/",
+   "source_url": "https://www.databricks.com/company/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_databricks",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://www.databricks.com/product/pricing",
+   "source_url": "https://www.databricks.com/company/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_databricks",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.databricks.com/",
+   "source_url": "https://www.databricks.com/company/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_databricks",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://www.databricks.com/sites/default/files/2023-11/databricks-og-universal.png",
+   "source_url": "https://www.databricks.com/company/about-us",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepgram",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Voice AI built for real conversations\" \u2014 a research-driven foundational AI company for voice technology.",
+   "source_url": "https://deepgram.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepgram",
+   "kind": "sells",
+   "field": null,
+   "text": "Voice AI APIs: speech-to-text (batch and streaming), text-to-speech, a Voice Agent API, and Audio Intelligence analysis; cloud plus on-premise/self-hosted deployment.",
+   "source_url": "https://deepgram.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepgram",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2015",
+   "source_url": "https://deepgram.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepgram",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://deepgram.com/",
+   "source_url": "https://deepgram.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepgram",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://developers.deepgram.com/home",
+   "source_url": "https://deepgram.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepgram",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://deepgram.com/pricing",
+   "source_url": "https://deepgram.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepgram",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.deepgram.com/",
+   "source_url": "https://deepgram.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepgram",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://cdn.sanity.io/images/10fppwnn/production/3c446251d322f9635751c565c123db9859b48347-146x32.svg",
+   "source_url": "https://deepgram.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepseek",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"\u63a2\u7d22\u672a\u81f3\u4e4b\u5883\" (\"Explore uncharted territories\"); API described as compatible with OpenAI/Anthropic formats.",
+   "source_url": "https://www.deepseek.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepseek",
+   "kind": "sells",
+   "field": null,
+   "text": "Own frontier LLMs served via a chat app, mobile app, and an OpenAI-compatible inference API with tool calls, context caching, and files.",
+   "source_url": "https://www.deepseek.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepseek",
+   "kind": "fact",
+   "field": "hq",
+   "text": "Hangzhou, China",
+   "source_url": "https://www.deepseek.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepseek",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.deepseek.com/",
+   "source_url": "https://www.deepseek.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepseek",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://api-docs.deepseek.com/",
+   "source_url": "https://www.deepseek.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepseek",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://api-docs.deepseek.com/quick_start/pricing",
+   "source_url": "https://www.deepseek.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_deepseek",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.deepseek.com/",
+   "source_url": "https://www.deepseek.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_elevenlabs",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Bringing technology to life\" \u2014 AI research and products that transform how we interact with technology.",
+   "source_url": "https://elevenlabs.io/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_elevenlabs",
+   "kind": "sells",
+   "field": null,
+   "text": "AI audio and voice: text-to-speech, speech-to-text, voice cloning and design, dubbing, sound effects and music generation, and conversational voice agents, all available as APIs.",
+   "source_url": "https://elevenlabs.io/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_elevenlabs",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://elevenlabs.io/",
+   "source_url": "https://elevenlabs.io/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_elevenlabs",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://elevenlabs.io/docs/overview/intro",
+   "source_url": "https://elevenlabs.io/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_elevenlabs",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://elevenlabs.io/pricing",
+   "source_url": "https://elevenlabs.io/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_elevenlabs",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.elevenlabs.io/",
+   "source_url": "https://elevenlabs.io/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_elevenlabs",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://elevenlabs.io/favicon.ico",
+   "source_url": "https://elevenlabs.io/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_exa",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"The world's data for AI agents\" \u2014 an applied AI lab building a perfect search engine.",
+   "source_url": "https://exa.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_exa",
+   "kind": "sells",
+   "field": null,
+   "text": "Web search and data APIs for AI agents: Search API, Contents API, Agent API, Monitors API, and Exa Connect, backed by their own web index/vector database.",
+   "source_url": "https://exa.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_exa",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://exa.ai/",
+   "source_url": "https://exa.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_exa",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://exa.ai/docs",
+   "source_url": "https://exa.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_exa",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://exa.ai/pricing",
+   "source_url": "https://exa.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_exa",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.exa.ai",
+   "source_url": "https://exa.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_exa",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://exa.ai/images/logo/exa-logo-blue.svg",
+   "source_url": "https://exa.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_intercom_fin",
+   "kind": "one_liner",
+   "field": null,
+   "text": "An advanced AI Agent that provides fast, accurate answers to customers 24/7 via live chat, email, SMS, WhatsApp, social and more.",
+   "source_url": "https://fin.ai/pricing/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_intercom_fin",
+   "kind": "sells",
+   "field": null,
+   "text": "AI customer-service agent (support, sales and ecommerce) across chat, email, voice and social; in-house Apex models; Fin Operator for back-office actions; Copilot for human agents; API, integrations and MCP",
+   "source_url": "https://fin.ai/pricing/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_intercom_fin",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://fin.ai/",
+   "source_url": "https://fin.ai/pricing/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_intercom_fin",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://fin.ai/pricing/",
+   "source_url": "https://fin.ai/pricing/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_intercom_fin",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://fin.ai/favicons/favicon-black-96x96.png",
+   "source_url": "https://fin.ai/pricing/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_fireworks",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Own Your Specialized Intelligence\" \u2014 \"Own your model. Own your future.\"",
+   "source_url": "https://fireworks.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_fireworks",
+   "kind": "sells",
+   "field": null,
+   "text": "Inference hosting (serverless, on-demand, reserved), model fine-tuning and training infrastructure, a hosted model library, and Fireworks Nexus routing for AI coding.",
+   "source_url": "https://fireworks.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_fireworks",
+   "kind": "fact",
+   "field": "hq",
+   "text": "San Mateo, United States",
+   "source_url": "https://fireworks.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_fireworks",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://fireworks.ai/",
+   "source_url": "https://fireworks.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_fireworks",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.fireworks.ai/",
+   "source_url": "https://fireworks.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_fireworks",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://fireworks.ai/pricing",
+   "source_url": "https://fireworks.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_fireworks",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.fireworks.ai/",
+   "source_url": "https://fireworks.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_fireworks",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://cdn.sanity.io/images/pv37i0yn/production/46d329cfd46294a5986218e94752d5d283cbe16c-343x44.svg",
+   "source_url": "https://fireworks.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_google",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"AI for every developer\" \u2014 \"Unlock AI models to build innovative apps and transform development workflows with tools across platforms.\"",
+   "source_url": "https://ai.google.dev/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_google",
+   "kind": "sells",
+   "field": null,
+   "text": "Gemini Developer API (text and multimodal models), Imagen image generation, Veo video generation, Gemma open models, Google AI Edge on-device deployment, and coding assistance tools.",
+   "source_url": "https://ai.google.dev/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_google",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://ai.google.dev/",
+   "source_url": "https://ai.google.dev/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_google",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://ai.google.dev/gemini-api/docs",
+   "source_url": "https://ai.google.dev/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_google",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://ai.google.dev/pricing",
+   "source_url": "https://ai.google.dev/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_google",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://www.gstatic.com/devrel-devsite/prod/v1acc34b77907f14029db47214a9900819f8c09315bec13906695eded017dc4b4/googledevai/images/lockup-new.svg",
+   "source_url": "https://ai.google.dev/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_groq",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Groq is the premier neocloud for fast inference\" \u2014 \"Fast LLM inference, OpenAI-compatible. Simple to integrate, easy to scale.\"",
+   "source_url": "https://groq.com/privacy-policy",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_groq",
+   "kind": "sells",
+   "field": null,
+   "text": "AI inference cloud (GroqCloud) on bare-metal LPU/LPX infrastructure; OpenAI-compatible LLM inference API with enterprise governance and controls.",
+   "source_url": "https://groq.com/privacy-policy",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_groq",
+   "kind": "fact",
+   "field": "hq",
+   "text": "Mountain View, United States",
+   "source_url": "https://groq.com/privacy-policy",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_groq",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://groq.com/",
+   "source_url": "https://groq.com/privacy-policy",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_groq",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://console.groq.com/docs/overview",
+   "source_url": "https://groq.com/privacy-policy",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_groq",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://groqstatus.com/",
+   "source_url": "https://groq.com/privacy-policy",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ibm",
+   "kind": "one_liner",
+   "field": null,
+   "text": "watsonx.ai: a next generation enterprise studio for AI builders to train, validate, tune and deploy AI models.",
+   "source_url": "https://www.ibm.com/products/watsonx-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ibm",
+   "kind": "sells",
+   "field": null,
+   "text": "Enterprise AI and cloud platform: watsonx studio for building/tuning/deploying models, Granite open models, data and governance tooling, consulting",
+   "source_url": "https://www.ibm.com/products/watsonx-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ibm",
+   "kind": "fact",
+   "field": "founded",
+   "text": "1911",
+   "source_url": "https://www.ibm.com/products/watsonx-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ibm",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.ibm.com/",
+   "source_url": "https://www.ibm.com/products/watsonx-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ibm",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://cloud.ibm.com/docs/watsonx-ai",
+   "source_url": "https://www.ibm.com/products/watsonx-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ibm",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://www.ibm.com/products/watsonx-ai/pricing",
+   "source_url": "https://www.ibm.com/products/watsonx-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ibm",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://cloud.ibm.com/status",
+   "source_url": "https://www.ibm.com/products/watsonx-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ibm",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://www.ibm.com/content/dam/adobe-cms/default-images/icon-192x192.png",
+   "source_url": "https://www.ibm.com/products/watsonx-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ideogram",
+   "kind": "one_liner",
+   "field": null,
+   "text": "A free-to-use AI tool that turns your ideas into stunning images, in a matter of seconds.",
+   "source_url": "https://docs.ideogram.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ideogram",
+   "kind": "sells",
+   "field": null,
+   "text": "AI image generation and editing \u2014 web app, iOS app, developer API and MCP server; models Ideogram 3.0/4.0 with strong text/typography rendering, editing, remix, background removal and custom brand models",
+   "source_url": "https://docs.ideogram.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ideogram",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://ideogram.ai/",
+   "source_url": "https://docs.ideogram.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ideogram",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://developer.ideogram.ai",
+   "source_url": "https://docs.ideogram.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ideogram",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.ideogram.ai/",
+   "source_url": "https://docs.ideogram.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_ideogram",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://ideogram.ai/favicon.ico",
+   "source_url": "https://docs.ideogram.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_meta",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Meta AI products, models and research; \"Your next build starts with Muse.\"",
+   "source_url": "https://developer.meta.com/ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_meta",
+   "kind": "sells",
+   "field": null,
+   "text": "Foundation models and developer access: Muse Spark (coding-optimized multimodal model), Muse Glimmer (30B open model for local agent workflows), Llama 3 and Llama 4 open models, the Meta Model API for self-serve API access, and Muse Code, a terminal-based coding agent. Open weights distributed via GitHub and Hugging Face.",
+   "source_url": "https://developer.meta.com/ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_meta",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2004",
+   "source_url": "https://developer.meta.com/ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_meta",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://ai.meta.com/",
+   "source_url": "https://developer.meta.com/ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_meta",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://dev.meta.ai/docs/",
+   "source_url": "https://developer.meta.com/ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_meta",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://static.xx.fbcdn.net/rsrc.php/y5/r/m4nf26cLQxS.ico",
+   "source_url": "https://developer.meta.com/ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_microsoft",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Microsoft's mission is to empower every person and every organization on the planet to achieve more.\"",
+   "source_url": "https://news.microsoft.com/facts-about-microsoft/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_microsoft",
+   "kind": "sells",
+   "field": null,
+   "text": "Cloud computing (Azure), productivity software (Microsoft 365), AI (Copilot), gaming (Xbox), and developer tools.",
+   "source_url": "https://news.microsoft.com/facts-about-microsoft/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_microsoft",
+   "kind": "fact",
+   "field": "founded",
+   "text": "1975",
+   "source_url": "https://news.microsoft.com/facts-about-microsoft/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_microsoft",
+   "kind": "fact",
+   "field": "hq",
+   "text": "Redmond, USA",
+   "source_url": "https://news.microsoft.com/facts-about-microsoft/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_microsoft",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.microsoft.com/en-us/about",
+   "source_url": "https://news.microsoft.com/facts-about-microsoft/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_microsoft",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png",
+   "source_url": "https://news.microsoft.com/facts-about-microsoft/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_minimax",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Building AGI with our mission Intelligence with Everyone; global leader in multi-modal models and AI-native products.",
+   "source_url": "https://www.minimax.io/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_minimax",
+   "kind": "sells",
+   "field": null,
+   "text": "Multimodal foundation models and AI-native products sold via API and subscription: MiniMax M3/M2.7/M2.5 language models, H3 video generation, Speech 2.8 speech synthesis, Music 3.0 music generation, plus MiniMax Code (coding agent platform), MiniMax Design, and the Audio and Talkie consumer voice apps.",
+   "source_url": "https://www.minimax.io/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_minimax",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2022",
+   "source_url": "https://www.minimax.io/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_minimax",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.minimax.io/",
+   "source_url": "https://www.minimax.io/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_minimax",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://platform.minimax.io/docs/api-reference/video-generation-v2-create",
+   "source_url": "https://www.minimax.io/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_minimax",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://platform.minimax.io/subscribe/token-plan",
+   "source_url": "https://www.minimax.io/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_minimax",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://filecdn.minimax.chat/public/58eca777-e31f-448a-9823-e2220e49b426.png",
+   "source_url": "https://www.minimax.io/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_mistral",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Frontier AI. In your hands.\" \u2014 \"We help organizations build tailored AI systems to solve the world's hardest problems.\"",
+   "source_url": "https://mistral.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_mistral",
+   "kind": "sells",
+   "field": null,
+   "text": "Frontier LLMs plus an API/console (Studio), agents (Vibe, Vibe for Code), custom model training and evaluation (Forge), and AI Cloud training/inference infrastructure.",
+   "source_url": "https://mistral.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_mistral",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2023",
+   "source_url": "https://mistral.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_mistral",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://mistral.ai/",
+   "source_url": "https://mistral.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_mistral",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.mistral.ai",
+   "source_url": "https://mistral.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_mistral",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://mistral.ai/pricing/api/",
+   "source_url": "https://mistral.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_moonshot",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Seeking the optimal conversion from energy to intelligence\" \u2014 \"Kimi LLM Open Platform: Build with Kimi API.\"",
+   "source_url": "https://platform.kimi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_moonshot",
+   "kind": "sells",
+   "field": null,
+   "text": "Own Kimi LLMs, the Kimi assistant/agent products, and a developer API platform with playground, agents, and coding tools.",
+   "source_url": "https://platform.kimi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_moonshot",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.moonshot.ai/",
+   "source_url": "https://platform.kimi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_moonshot",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://platform.kimi.ai/docs/overview",
+   "source_url": "https://platform.kimi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_moonshot",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://platform.kimi.ai/docs/pricing/chat",
+   "source_url": "https://platform.kimi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_nous",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Nous Research is a leader in the American open source AI movement, training world-class open source language models.",
+   "source_url": "https://nousresearch.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_nous",
+   "kind": "sells",
+   "field": null,
+   "text": "Open-source LLMs (Hermes family), Nous Portal with one account for Hermes Agent, an Inference API and Hermes Cloud, plus Nous Chat and distributed-training infrastructure",
+   "source_url": "https://nousresearch.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_nous",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://nousresearch.com/",
+   "source_url": "https://nousresearch.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_nous",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://portal.nousresearch.com/api-docs",
+   "source_url": "https://nousresearch.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_nous",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://portal.nousresearch.com/#pricing",
+   "source_url": "https://nousresearch.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_nous",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://nousresearch.com/favicon-32x32.png",
+   "source_url": "https://nousresearch.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_nvidia",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Experience the leading models to build enterprise generative AI apps now.",
+   "source_url": "https://build.nvidia.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_nvidia",
+   "kind": "sells",
+   "field": null,
+   "text": "NIM inference microservices and hosted model APIs: performance-optimized, portable containerized microservices with industry-standard APIs for deploying AI models across cloud, data center and local workstations, covering large language, retrieval, visual, multimodal, healthcare, route-optimization and climate-simulation models. NVIDIA also describes itself as having pioneered accelerated computing, engineering chips, systems and software.",
+   "source_url": "https://build.nvidia.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_nvidia",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://build.nvidia.com/",
+   "source_url": "https://build.nvidia.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_nvidia",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.api.nvidia.com/nim/",
+   "source_url": "https://build.nvidia.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_nvidia",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://build.nvidia.com/favicon.ico",
+   "source_url": "https://build.nvidia.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openai",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Docs and resources to help you build with, for, and on OpenAI.\" \u2014 OpenAI Developers",
+   "source_url": "https://developers.openai.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openai",
+   "kind": "sells",
+   "field": null,
+   "text": "APIs and models for building custom AI experiences, plus Codex (a coding agent) and plugins that extend ChatGPT and Codex; consumer ChatGPT.",
+   "source_url": "https://developers.openai.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openai",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://developers.openai.com/",
+   "source_url": "https://developers.openai.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openai",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://developers.openai.com/api/docs",
+   "source_url": "https://developers.openai.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openai",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://developers.openai.com/api/docs/pricing",
+   "source_url": "https://developers.openai.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openai",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.openai.com/",
+   "source_url": "https://developers.openai.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openai",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://developers.openai.com/favicon.png",
+   "source_url": "https://developers.openai.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openrouter",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"The Unified Interface For Every Model\" \u2014 a unified API to access all the major LLM models on the market.",
+   "source_url": "https://openrouter.ai/terms",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openrouter",
+   "kind": "sells",
+   "field": null,
+   "text": "Model routing / unified inference API aggregating 500+ AI models from 80+ providers (text, image, video, audio), with uptime optimization and custom data policies.",
+   "source_url": "https://openrouter.ai/terms",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openrouter",
+   "kind": "fact",
+   "field": "hq",
+   "text": "New York, United States",
+   "source_url": "https://openrouter.ai/terms",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openrouter",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://openrouter.ai/",
+   "source_url": "https://openrouter.ai/terms",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openrouter",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://openrouter.ai/docs/quickstart",
+   "source_url": "https://openrouter.ai/terms",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openrouter",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://openrouter.ai/pricing",
+   "source_url": "https://openrouter.ai/terms",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openrouter",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.openrouter.ai",
+   "source_url": "https://openrouter.ai/terms",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_openrouter",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://openrouter.ai/brand/v2/openrouter-dark.svg",
+   "source_url": "https://openrouter.ai/terms",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_perplexity",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Power your products with unparalleled real-time, web-wide research and Q&A capabilities.\"",
+   "source_url": "https://docs.perplexity.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_perplexity",
+   "kind": "sells",
+   "field": null,
+   "text": "AI answer engine plus a developer API platform: Search API, Agent API (web-grounded answers with citations), Sonar API, Embeddings API, and a model Router.",
+   "source_url": "https://docs.perplexity.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_perplexity",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.perplexity.ai/",
+   "source_url": "https://docs.perplexity.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_perplexity",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.perplexity.ai/",
+   "source_url": "https://docs.perplexity.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_perplexity",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://docs.perplexity.ai/getting-started/pricing",
+   "source_url": "https://docs.perplexity.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_perplexity",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.perplexity.com/",
+   "source_url": "https://docs.perplexity.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_perplexity",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://docs.perplexity.ai/logo/Perplexity_API_Platform.svg",
+   "source_url": "https://docs.perplexity.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_reka",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Reka AI builds natively multimodal models (Spark, Edge, Flash, Core) for video, image, audio, and text, used by enterprises in security, media, and defense.",
+   "source_url": "https://www.reka.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_reka",
+   "kind": "sells",
+   "field": null,
+   "text": "Multimodal foundation models and inference API (Reka Chat, Reka Vision for video understanding, Reka Clip for AI video editing), plus training-data and inference infrastructure",
+   "source_url": "https://www.reka.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_reka",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.reka.ai/",
+   "source_url": "https://www.reka.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_reka",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.reka.ai/",
+   "source_url": "https://www.reka.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_reka",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://docs.reka.ai/pricing",
+   "source_url": "https://www.reka.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_reka",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.reka.ai/",
+   "source_url": "https://www.reka.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_reka",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://framerusercontent.com/images/XekAjHcWv2prUE9pJiSj61CD54.jpg",
+   "source_url": "https://www.reka.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_serper",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"The World's Fastest & Cheapest Google Search API\" \u2014 results in 1-2 seconds.",
+   "source_url": "https://serper.dev/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_serper",
+   "kind": "sells",
+   "field": null,
+   "text": "Google SERP search API: web, images, news, maps, places, videos, shopping, scholar, patents and autocomplete endpoints returning structured JSON.",
+   "source_url": "https://serper.dev/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_serper",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://serper.dev/",
+   "source_url": "https://serper.dev/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_serper",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://serper.dev/favicon.ico",
+   "source_url": "https://serper.dev/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stability",
+   "kind": "one_liner",
+   "field": null,
+   "text": "The enterprise-ready partner for teams and creators, delivering professional-grade generative AI products.",
+   "source_url": "https://stability.ai/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stability",
+   "kind": "sells",
+   "field": null,
+   "text": "Generative media models and services: Stable Image, Stable Video, Stable Audio, Stable 3D, a Brand Studio creative platform, a developer Platform API, and self-hosted licences",
+   "source_url": "https://stability.ai/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stability",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://stability.ai/",
+   "source_url": "https://stability.ai/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stability",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://platform.stability.ai/docs/api-reference",
+   "source_url": "https://stability.ai/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stability",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://platform.stability.ai/pricing",
+   "source_url": "https://stability.ai/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stability",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.stability.ai/",
+   "source_url": "https://stability.ai/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stability",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://images.squarespace-cdn.com/content/v1/6213c340453c3f502425776e/a3485d53-7e65-42b5-bc62-e2e55f8409b9/stability-ai-white-dot-desktop.png",
+   "source_url": "https://stability.ai/company",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stepfun",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Founded April 2023 with the mission of \"intelligence leaps, multiplying everyone's possibilities\"; develops self-built Step foundation models including Step-1 and multimodal Step-1V.",
+   "source_url": "https://www.stepfun.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stepfun",
+   "kind": "sells",
+   "field": null,
+   "text": "Chinese foundation-model developer: Step family of text, multimodal, image and audio models served through the Step API open platform, plus a consumer assistant app",
+   "source_url": "https://www.stepfun.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stepfun",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2023",
+   "source_url": "https://www.stepfun.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stepfun",
+   "kind": "fact",
+   "field": "hq",
+   "text": "Shanghai, China",
+   "source_url": "https://www.stepfun.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stepfun",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.stepfun.com/",
+   "source_url": "https://www.stepfun.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stepfun",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://platform.stepfun.com/docs/zh/welcome",
+   "source_url": "https://www.stepfun.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stepfun",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://platform.stepfun.com/docs/zh/guides/pricing/details",
+   "source_url": "https://www.stepfun.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_stepfun",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://www.stepfun.com/step_favicon.svg",
+   "source_url": "https://www.stepfun.com/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tavily",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Connect your AI agents to the web\" \u2014 one secure API for real-time web access.",
+   "source_url": "https://www.tavily.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tavily",
+   "kind": "sells",
+   "field": null,
+   "text": "Web access API for AI agents: Search, Extract (LLM-ready content), Crawl, Map (URL discovery), and a Research agent; also an MCP server.",
+   "source_url": "https://www.tavily.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tavily",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://tavily.com/",
+   "source_url": "https://www.tavily.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tavily",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.tavily.com/",
+   "source_url": "https://www.tavily.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tavily",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://www.tavily.com/pricing",
+   "source_url": "https://www.tavily.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tavily",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.tavily.com/",
+   "source_url": "https://www.tavily.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tavily",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://cdn.sanity.io/images/5tlb0lxv/production/a6aa3b4863c0bf12915aa7b3b545e2d35ae1b371-111x36.svg",
+   "source_url": "https://www.tavily.com/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tencent",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Tencent Hunyuan is a family of general-purpose and multimodal large models developed fully in-house by Tencent, covering text, image, video, speech and 3D.",
+   "source_url": "https://cloud.tencent.com/product/hunyuan",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tencent",
+   "kind": "sells",
+   "field": null,
+   "text": "Cloud-hosted large model APIs: text generation, multimodal understanding, image generation, video generation, 3D model generation, ASR speech recognition, machine translation, and role-playing models, delivered through Tencent Cloud with a console, quick-start guides and API documentation.",
+   "source_url": "https://cloud.tencent.com/product/hunyuan",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tencent",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://cloud.tencent.com/product/hunyuan",
+   "source_url": "https://cloud.tencent.com/product/hunyuan",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tencent",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://cloud.tencent.com/document/product/1729/97732",
+   "source_url": "https://cloud.tencent.com/product/hunyuan",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tencent",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://cloud.tencent.com/document/product/1729/97731",
+   "source_url": "https://cloud.tencent.com/product/hunyuan",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tencent",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.tencentcloud.com/",
+   "source_url": "https://cloud.tencent.com/product/hunyuan",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_tencent",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://cloudcache.tencent-cloud.com/qcloud/favicon.ico",
+   "source_url": "https://cloud.tencent.com/product/hunyuan",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_thinking-machines",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Building a future where everyone has access to the knowledge and tools to make AI work for their unique needs and goals.",
+   "source_url": "https://thinkingmachines.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_thinking-machines",
+   "kind": "sells",
+   "field": null,
+   "text": "Frontier AI research and models: Inkling open-weights models and Tinker, a platform/API for fine-tuning and developing with models; research publications and open-source work",
+   "source_url": "https://thinkingmachines.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_thinking-machines",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://thinkingmachines.ai/",
+   "source_url": "https://thinkingmachines.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_thinking-machines",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://tinker-docs.thinkingmachines.ai/tinker/",
+   "source_url": "https://thinkingmachines.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_thinking-machines",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://thinkingmachines.ai/images/favicon-32x32.png",
+   "source_url": "https://thinkingmachines.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_together",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Build what's next on the AI Native Cloud. Full-stack AI platform for inference, fine-tuning, and GPU clusters \u2014 powered by cutting-edge research.\"",
+   "source_url": "https://www.together.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_together",
+   "kind": "sells",
+   "field": null,
+   "text": "AI cloud platform: serverless and batch inference, dedicated model and container inference, provisioned throughput, fine-tuning, GPU clusters, sandboxes, managed storage.",
+   "source_url": "https://www.together.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_together",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2022",
+   "source_url": "https://www.together.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_together",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.together.ai/",
+   "source_url": "https://www.together.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_together",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.together.ai/",
+   "source_url": "https://www.together.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_together",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://cdn.prod.website-files.com/69654e88dce9154b5f1206dd/69aaa5310313790ada6393ec_together-ai-logo.png",
+   "source_url": "https://www.together.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_upstage",
+   "kind": "one_liner",
+   "field": null,
+   "text": "We build intelligence for the future of work.",
+   "source_url": "https://www.upstage.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_upstage",
+   "kind": "sells",
+   "field": null,
+   "text": "LLMs (Solar Pro 4, Solar Mini, Syn Pro) via API and cloud deployment, Document AI (Document Parse, Information Extract), and Upstage Studio for building AI agents",
+   "source_url": "https://www.upstage.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_upstage",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2020",
+   "source_url": "https://www.upstage.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_upstage",
+   "kind": "fact",
+   "field": "hq",
+   "text": "Seoul, South Korea",
+   "source_url": "https://www.upstage.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_upstage",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://www.upstage.ai/",
+   "source_url": "https://www.upstage.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_upstage",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://console.upstage.ai/docs/getting-started",
+   "source_url": "https://www.upstage.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_upstage",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://www.upstage.ai/pricing",
+   "source_url": "https://www.upstage.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_upstage",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.upstage.ai/",
+   "source_url": "https://www.upstage.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_upstage",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://cdn.prod.website-files.com/6743d5190bb2b52f38e99e37/6743f495db2f0b0f43c196ae_Symbol_White.avif",
+   "source_url": "https://www.upstage.ai/about",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vapi",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Speak human to every customer\" \u2014 build and deploy voice agents at customer scale.",
+   "source_url": "https://vapi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vapi",
+   "kind": "sells",
+   "field": null,
+   "text": "Voice AI agent platform: API-first orchestration of STT, LLM and TTS providers, telephony/SIP integration, real-time monitoring, and enterprise controls.",
+   "source_url": "https://vapi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vapi",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://vapi.ai/",
+   "source_url": "https://vapi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vapi",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.vapi.ai/",
+   "source_url": "https://vapi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vapi",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://vapi.ai/pricing",
+   "source_url": "https://vapi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vapi",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.vapi.ai/",
+   "source_url": "https://vapi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vapi",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://vapi.ai/favicon.ico",
+   "source_url": "https://vapi.ai/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vertex",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Gemini Enterprise Agent Platform (formerly Vertex AI) is a comprehensive platform for developers to build, scale, govern and optimize agents.\"",
+   "source_url": "https://cloud.google.com/vertex-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vertex",
+   "kind": "sells",
+   "field": null,
+   "text": "Cloud AI platform for building, scaling, governing and optimizing AI agents and models on Google Cloud.",
+   "source_url": "https://cloud.google.com/vertex-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vertex",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://cloud.google.com/vertex-ai",
+   "source_url": "https://cloud.google.com/vertex-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vertex",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.cloud.google.com/vertex-ai/docs",
+   "source_url": "https://cloud.google.com/vertex-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vertex",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://cloud.google.com/vertex-ai/pricing",
+   "source_url": "https://cloud.google.com/vertex-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vertex",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.cloud.google.com/",
+   "source_url": "https://cloud.google.com/vertex-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_vertex",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://www.gstatic.com/cgc/supercloud_favicon.ico",
+   "source_url": "https://cloud.google.com/vertex-ai",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_writer",
+   "kind": "one_liner",
+   "field": null,
+   "text": "WRITER is the enterprise AI agent platform trusted by Fortune 500 companies, built to help teams execute and scale on-brand, compliant work.",
+   "source_url": "https://writer.com/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_writer",
+   "kind": "sells",
+   "field": null,
+   "text": "Enterprise generative AI platform: AI agents for business workflows, in-house Palmyra LLMs, developer API and app-building tools",
+   "source_url": "https://writer.com/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_writer",
+   "kind": "fact",
+   "field": "founded",
+   "text": "2020",
+   "source_url": "https://writer.com/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_writer",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://writer.com/",
+   "source_url": "https://writer.com/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_writer",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://dev.writer.com/",
+   "source_url": "https://writer.com/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_writer",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://writer.com/plans/",
+   "source_url": "https://writer.com/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_writer",
+   "kind": "fact",
+   "field": "status_url",
+   "text": "https://status.writer.com/",
+   "source_url": "https://writer.com/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_writer",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://writer.com/wp-content/uploads/2021/08/writer-w-logo-1.png?w=192",
+   "source_url": "https://writer.com/about/",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_xai",
+   "kind": "one_liner",
+   "field": null,
+   "text": "Intelligent, fast, and cost-effective models across code, text, voice, image, and video.",
+   "source_url": "https://docs.x.ai/docs/overview",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_xai",
+   "kind": "sells",
+   "field": null,
+   "text": "Grok model APIs: Code API for agentic coding, Responses API for text generation, chat, function calling and structured outputs, Voice API for text-to-speech and transcription, and Imagine APIs for image and video generation and editing.",
+   "source_url": "https://docs.x.ai/docs/overview",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_xai",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://x.ai/",
+   "source_url": "https://docs.x.ai/docs/overview",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_xai",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.x.ai/overview",
+   "source_url": "https://docs.x.ai/docs/overview",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_xai",
+   "kind": "fact",
+   "field": "pricing_url",
+   "text": "https://docs.x.ai/developers/pricing",
+   "source_url": "https://docs.x.ai/docs/overview",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_zhipu",
+   "kind": "one_liner",
+   "field": null,
+   "text": "\"Powering the Future with Z.ai\" \u2014 \"Advanced AI Chatbot & Agent powered by GLM.\"",
+   "source_url": "https://z.ai/model-api",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_zhipu",
+   "kind": "sells",
+   "field": null,
+   "text": "Own GLM-family models (LLM, multimodal, image, video) sold as API token bundles, plus a chat/agent product and a GLM Coding Plan subscription.",
+   "source_url": "https://z.ai/model-api",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_zhipu",
+   "kind": "fact",
+   "field": "home_url",
+   "text": "https://z.ai/",
+   "source_url": "https://z.ai/model-api",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_zhipu",
+   "kind": "fact",
+   "field": "docs_url",
+   "text": "https://docs.z.ai/",
+   "source_url": "https://z.ai/model-api",
+   "taken_at": "2026-08-25"
+  },
+  {
+   "subject": "prov_zhipu",
+   "kind": "fact",
+   "field": "logo_url",
+   "text": "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+   "source_url": "https://z.ai/model-api",
+   "taken_at": "2026-08-25"
+  }
+ ],
+ "providers": [],
+ "entities": [],
+ "aliases": [],
+ "offerings": []
+}

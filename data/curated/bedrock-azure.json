@@ -1,0 +1,3150 @@
+{
+ "providers": [
+  {
+   "id": "prov_bedrock",
+   "name": "AWS Bedrock",
+   "url": "https://aws.amazon.com/bedrock",
+   "kind": "cloud"
+  },
+  {
+   "id": "prov_azure",
+   "name": "Microsoft Azure AI",
+   "url": "https://azure.microsoft.com",
+   "kind": "cloud"
+  },
+  {
+   "id": "prov_anthropic",
+   "name": "Anthropic",
+   "url": "https://anthropic.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_amazon",
+   "name": "Amazon",
+   "url": "https://aws.amazon.com/ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_meta",
+   "name": "Meta",
+   "url": "https://ai.meta.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_mistral",
+   "name": "Mistral",
+   "url": "https://mistral.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_deepseek",
+   "name": "DeepSeek",
+   "url": "https://deepseek.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_openai",
+   "name": "OpenAI",
+   "url": "https://openai.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_microsoft",
+   "name": "Microsoft",
+   "url": "https://microsoft.com/ai",
+   "kind": "vendor"
+  }
+ ],
+ "entities": [
+  {
+   "id": "ent_claude-opus-5",
+   "register": "model",
+   "name": "Claude Opus 5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-sonnet-5",
+   "register": "model",
+   "name": "Claude Sonnet 5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "sonnet-5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-fable-5",
+   "register": "model",
+   "name": "Claude Fable 5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "fable-5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-opus-4.8",
+   "register": "model",
+   "name": "Claude Opus 4.8",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.8",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-opus-4.7",
+   "register": "model",
+   "name": "Claude Opus 4.7",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.7",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-sonnet-4.6",
+   "register": "model",
+   "name": "Claude Sonnet 4.6",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "sonnet-4.6",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-opus-4.6",
+   "register": "model",
+   "name": "Claude Opus 4.6",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.6",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-opus-4.5",
+   "register": "model",
+   "name": "Claude Opus 4.5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 200000
+   }
+  },
+  {
+   "id": "ent_claude-haiku-4.5",
+   "register": "model",
+   "name": "Claude Haiku 4.5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "haiku-4.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 200000
+   }
+  },
+  {
+   "id": "ent_claude-sonnet-4.5",
+   "register": "model",
+   "name": "Claude Sonnet 4.5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "sonnet-4.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 200000
+   }
+  },
+  {
+   "id": "ent_claude-sonnet-4",
+   "register": "model",
+   "name": "Claude Sonnet 4",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "sonnet-4",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 200000
+   }
+  },
+  {
+   "id": "ent_nova-2-lite",
+   "register": "model",
+   "name": "Amazon Nova 2 Lite",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "2-lite",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_nova-micro",
+   "register": "model",
+   "name": "Amazon Nova Micro",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "micro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_nova-lite",
+   "register": "model",
+   "name": "Amazon Nova Lite",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "lite",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 300000
+   }
+  },
+  {
+   "id": "ent_nova-pro",
+   "register": "model",
+   "name": "Amazon Nova Pro",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 300000
+   }
+  },
+  {
+   "id": "ent_nova-premier",
+   "register": "model",
+   "name": "Amazon Nova Premier",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "premier",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_nova-sonic",
+   "register": "model",
+   "name": "Amazon Nova Sonic",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "sonic",
+   "input_kind": "audio",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_nova-2-sonic",
+   "register": "model",
+   "name": "Amazon Nova 2 Sonic",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "2-sonic",
+   "input_kind": "audio",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_nova-reel",
+   "register": "model",
+   "name": "Amazon Nova Reel",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "reel",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_llama-4-maverick",
+   "register": "model",
+   "name": "Llama 4 Maverick 17B",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "4-maverick",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_llama-4-scout",
+   "register": "model",
+   "name": "Llama 4 Scout 17B",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "4-scout",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 10000000
+   }
+  },
+  {
+   "id": "ent_llama-3.3-70b",
+   "register": "model",
+   "name": "Llama 3.3 Instruct (70B)",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.3-70b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_llama-3.2-1b",
+   "register": "model",
+   "name": "Llama 3.2 Instruct (1B)",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.2-1b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_llama-3.2-3b",
+   "register": "model",
+   "name": "Llama 3.2 Instruct (3B)",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.2-3b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_llama-3.2-11b",
+   "register": "model",
+   "name": "Llama 3.2 Instruct (11B)",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.2-11b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_llama-3.2-90b",
+   "register": "model",
+   "name": "Llama 3.2 Instruct (90B)",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.2-90b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_llama-3.1-8b",
+   "register": "model",
+   "name": "Llama 3.1 Instruct (8B)",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.1-8b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_llama-3.1-70b",
+   "register": "model",
+   "name": "Llama 3.1 Instruct (70B)",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.1-70b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_mistral-7b",
+   "register": "model",
+   "name": "Mistral 7B",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "7b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32000
+   }
+  },
+  {
+   "id": "ent_mixtral-8x7b",
+   "register": "model",
+   "name": "Mixtral 8*7B",
+   "maker": "prov_mistral",
+   "family": "mixtral",
+   "version": "8x7b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32000
+   }
+  },
+  {
+   "id": "ent_mistral-small-2402",
+   "register": "model",
+   "name": "Mistral Small (24.02)",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "small-2402",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32000
+   }
+  },
+  {
+   "id": "ent_mistral-large-2402",
+   "register": "model",
+   "name": "Mistral Large (24.02)",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "large-2402",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32000
+   }
+  },
+  {
+   "id": "ent_pixtral-large",
+   "register": "model",
+   "name": "Pixtral Large (25.02)",
+   "maker": "prov_mistral",
+   "family": "pixtral",
+   "version": "large",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_mistral-large-3",
+   "register": "model",
+   "name": "Mistral Large 3",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "large-3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 256000
+   }
+  },
+  {
+   "id": "ent_devstral-2",
+   "register": "model",
+   "name": "Devstral 2 123B",
+   "maker": "prov_mistral",
+   "family": "devstral",
+   "version": "2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 256000
+   }
+  },
+  {
+   "id": "ent_magistral-small-1.2",
+   "register": "model",
+   "name": "Magistral Small 1.2",
+   "maker": "prov_mistral",
+   "family": "magistral",
+   "version": "small-1.2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_voxtral-mini-3b",
+   "register": "model",
+   "name": "Voxtral Mini 1.0",
+   "maker": "prov_mistral",
+   "family": "voxtral",
+   "version": "mini-3b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32000
+   }
+  },
+  {
+   "id": "ent_voxtral-small-24b",
+   "register": "model",
+   "name": "Voxtral Small 1.0",
+   "maker": "prov_mistral",
+   "family": "voxtral",
+   "version": "small-24b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32000
+   }
+  },
+  {
+   "id": "ent_ministral-3-3b",
+   "register": "model",
+   "name": "Ministral 3B 3.0",
+   "maker": "prov_mistral",
+   "family": "ministral",
+   "version": "3-3b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_ministral-3-8b",
+   "register": "model",
+   "name": "Ministral 8B 3.0",
+   "maker": "prov_mistral",
+   "family": "ministral",
+   "version": "3-8b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_ministral-3-14b",
+   "register": "model",
+   "name": "Ministral 14B 3.0",
+   "maker": "prov_mistral",
+   "family": "ministral",
+   "version": "3-14b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_deepseek-r1",
+   "register": "model",
+   "name": "DeepSeek-R1",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "r1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_deepseek-v3.2",
+   "register": "model",
+   "name": "DeepSeek v3.2",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v3.2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 164000
+   }
+  },
+  {
+   "id": "ent_gpt-5.6-sol",
+   "register": "model",
+   "name": "GPT-5.6 Sol",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.6-sol",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.6-terra",
+   "register": "model",
+   "name": "GPT-5.6 Terra",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.6-terra",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.6-luna",
+   "register": "model",
+   "name": "GPT-5.6 Luna",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.6-luna",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.5",
+   "register": "model",
+   "name": "GPT-5.5",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.4",
+   "register": "model",
+   "name": "GPT-5.4",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.4",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.4-mini",
+   "register": "model",
+   "name": "GPT-5.4 mini",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.4-mini",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.4-nano",
+   "register": "model",
+   "name": "GPT-5.4 nano",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.4-nano",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.4-pro",
+   "register": "model",
+   "name": "GPT-5.4 pro",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.4-pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4.1",
+   "register": "model",
+   "name": "GPT-4.1",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4.1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4.1-mini",
+   "register": "model",
+   "name": "GPT-4.1 mini",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4.1-mini",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4.1-nano",
+   "register": "model",
+   "name": "GPT-4.1 nano",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4.1-nano",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_mai-thinking-1",
+   "register": "model",
+   "name": "MAI-Thinking-1",
+   "maker": "prov_microsoft",
+   "family": "mai",
+   "version": "thinking-1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_mai-cyber-1-flash",
+   "register": "model",
+   "name": "MAI-Cyber-1-Flash",
+   "maker": "prov_microsoft",
+   "family": "mai",
+   "version": "cyber-1-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_phi-4",
+   "register": "model",
+   "name": "Phi-4",
+   "maker": "prov_microsoft",
+   "family": "phi",
+   "version": "4",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_phi-4-mini",
+   "register": "model",
+   "name": "Phi-4-Mini",
+   "maker": "prov_microsoft",
+   "family": "phi",
+   "version": "4-mini",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_phi-4-reasoning",
+   "register": "model",
+   "name": "Phi-4-reasoning",
+   "maker": "prov_microsoft",
+   "family": "phi",
+   "version": "4-reasoning",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_phi-4-mini-reasoning",
+   "register": "model",
+   "name": "Phi-4-mini-reasoning",
+   "maker": "prov_microsoft",
+   "family": "phi",
+   "version": "4-mini-reasoning",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  }
+ ],
+ "aliases": [
+  {
+   "source": "prov_bedrock",
+   "alias": "anthropic.claude-opus-5",
+   "entity": "ent_claude-opus-5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "anthropic.claude-sonnet-5",
+   "entity": "ent_claude-sonnet-5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "anthropic.claude-fable-5",
+   "entity": "ent_claude-fable-5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "anthropic.claude-opus-4-8",
+   "entity": "ent_claude-opus-4.8"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "anthropic.claude-opus-4-7",
+   "entity": "ent_claude-opus-4.7"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "anthropic.claude-sonnet-4-6",
+   "entity": "ent_claude-sonnet-4.6"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "anthropic.claude-opus-4-6-v1",
+   "entity": "ent_claude-opus-4.6"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "anthropic.claude-opus-4-5-20251101-v1:0",
+   "entity": "ent_claude-opus-4.5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "anthropic.claude-haiku-4-5-20251001-v1:0",
+   "entity": "ent_claude-haiku-4.5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "anthropic.claude-sonnet-4-5-20250929-v1:0",
+   "entity": "ent_claude-sonnet-4.5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "anthropic.claude-sonnet-4-20250514-v1:0",
+   "entity": "ent_claude-sonnet-4"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "amazon.nova-2-lite-v1:0",
+   "entity": "ent_nova-2-lite"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "amazon.nova-micro-v1:0",
+   "entity": "ent_nova-micro"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "amazon.nova-lite-v1:0",
+   "entity": "ent_nova-lite"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "amazon.nova-pro-v1:0",
+   "entity": "ent_nova-pro"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "amazon.nova-premier-v1:0",
+   "entity": "ent_nova-premier"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "amazon.nova-sonic-v1:0",
+   "entity": "ent_nova-sonic"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "amazon.nova-2-sonic-v1:0",
+   "entity": "ent_nova-2-sonic"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "amazon.nova-reel-v1:0",
+   "entity": "ent_nova-reel"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "meta.llama4-maverick-17b-instruct-v1:0",
+   "entity": "ent_llama-4-maverick"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "meta.llama4-scout-17b-instruct-v1:0",
+   "entity": "ent_llama-4-scout"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "meta.llama3-3-70b-instruct-v1:0",
+   "entity": "ent_llama-3.3-70b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "meta.llama3-2-1b-instruct-v1:0",
+   "entity": "ent_llama-3.2-1b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "meta.llama3-2-3b-instruct-v1:0",
+   "entity": "ent_llama-3.2-3b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "meta.llama3-2-11b-instruct-v1:0",
+   "entity": "ent_llama-3.2-11b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "meta.llama3-2-90b-instruct-v1:0",
+   "entity": "ent_llama-3.2-90b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "meta.llama3-1-8b-instruct-v1:0",
+   "entity": "ent_llama-3.1-8b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "meta.llama3-1-70b-instruct-v1:0",
+   "entity": "ent_llama-3.1-70b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.mistral-7b-instruct-v0:2",
+   "entity": "ent_mistral-7b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.mixtral-8x7b-instruct-v0:1",
+   "entity": "ent_mixtral-8x7b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.mistral-small-2402-v1:0",
+   "entity": "ent_mistral-small-2402"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.mistral-large-2402-v1:0",
+   "entity": "ent_mistral-large-2402"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.pixtral-large-2502-v1:0",
+   "entity": "ent_pixtral-large"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.mistral-large-3-675b-instruct",
+   "entity": "ent_mistral-large-3"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.devstral-2-123b",
+   "entity": "ent_devstral-2"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.magistral-small-2509",
+   "entity": "ent_magistral-small-1.2"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.voxtral-mini-3b-2507",
+   "entity": "ent_voxtral-mini-3b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.voxtral-small-24b-2507",
+   "entity": "ent_voxtral-small-24b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.ministral-3-3b-instruct",
+   "entity": "ent_ministral-3-3b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.ministral-3-8b-instruct",
+   "entity": "ent_ministral-3-8b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "mistral.ministral-3-14b-instruct",
+   "entity": "ent_ministral-3-14b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "deepseek.r1-v1:0",
+   "entity": "ent_deepseek-r1"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "deepseek.v3.2",
+   "entity": "ent_deepseek-v3.2"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.6 sol",
+   "entity": "ent_gpt-5.6-sol"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.6 terra",
+   "entity": "ent_gpt-5.6-terra"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.6 luna",
+   "entity": "ent_gpt-5.6-luna"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.5",
+   "entity": "ent_gpt-5.5"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.4",
+   "entity": "ent_gpt-5.4"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.4 mini",
+   "entity": "ent_gpt-5.4-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.4 nano",
+   "entity": "ent_gpt-5.4-nano"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.4 pro",
+   "entity": "ent_gpt-5.4-pro"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 4.1",
+   "entity": "ent_gpt-4.1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 4.1 mini",
+   "entity": "ent_gpt-4.1-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 4.1 nano",
+   "entity": "ent_gpt-4.1-nano"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "MAI-Thinking-1",
+   "entity": "ent_mai-thinking-1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "MAI-Cyber-1-Flash",
+   "entity": "ent_mai-cyber-1-flash"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Phi-4",
+   "entity": "ent_phi-4"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Phi-4-Mini",
+   "entity": "ent_phi-4-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Phi-4-reasoning",
+   "entity": "ent_phi-4-reasoning"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Phi-4-mini-reasoning",
+   "entity": "ent_phi-4-mini-reasoning"
+  }
+ ],
+ "offerings": [
+  {
+   "entity": "ent_claude-opus-5",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-5",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-5",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-fable-5",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 50.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.8",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.7",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.6",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.6",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.6",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.6",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.5",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.5",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-haiku-4.5",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-haiku-4.5",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.5",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.5",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-2-lite",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.33
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.75
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-2-lite",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.165
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.375
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-micro",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.035
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.14
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-micro",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0175
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.07
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-lite",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.24
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-lite",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.12
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-pro",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.8
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-pro",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-premier",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-premier",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch cross-region",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-sonic",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 13.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-2-sonic",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-reel",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.08
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-4-maverick",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.24
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.97
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-4-maverick",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.12
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.485
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-4-scout",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.17
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.66
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-4-scout",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.085
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.33
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.3-70b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.72
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.72
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.3-70b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.36
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.36
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.2-1b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.2-3b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.2-11b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.16
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.16
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.2-90b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.72
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.72
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.1-8b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.22
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.22
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.1-8b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.11
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.11
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.1-70b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.72
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.72
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.1-70b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.36
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.36
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-7b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mixtral-8x7b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.45
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.7
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-small-2402",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-small-2402",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-large-2402",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_pixtral-large",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-large-3",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_devstral-2",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_magistral-small-1.2",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_voxtral-mini-3b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_voxtral-small-24b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_ministral-3-3b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_ministral-3-8b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_ministral-3-14b",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-r1",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.35
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v3.2",
+   "provider": "prov_bedrock",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.62
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://aws.amazon.com/bedrock/pricing/",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.85
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.6-sol",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 30.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.6-terra",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.6-luna",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.5",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 30.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.5",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.13
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4-mini",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4-mini",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.375
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0375
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4-nano",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4-nano",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.625
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4-pro",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 30.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 180.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4-pro",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 90.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4.1",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 8.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4.1",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4.1-mini",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.6
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4.1-mini",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.8
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4.1-nano",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.025
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4.1-nano",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mai-thinking-1",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 8.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mai-cyber-1-flash",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_phi-4",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_phi-4-mini",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_phi-4-reasoning",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_phi-4-mini-reasoning",
+   "provider": "prov_azure",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://prices.azure.com/api/retail/prices?$filter=serviceName eq 'Foundry Models' and armRegionName eq 'eastus' and priceType eq 'Consumption'",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  }
+ ]
+}

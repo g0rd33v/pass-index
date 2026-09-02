@@ -1,0 +1,316 @@
+[
+ {
+  "plan": "Devin Pro",
+  "maker": "prov_cognition",
+  "maker_name": "Cognition",
+  "maker_url": "https://cognition.ai",
+  "usd": 20,
+  "limits": "increased quotas, frontier models, cloud agents, extra usage at API rates",
+  "grants": "Devin",
+  "source_url": "https://devin.ai/pricing",
+  "includes": []
+ },
+ {
+  "plan": "Devin Max",
+  "maker": "prov_cognition",
+  "maker_name": "Cognition",
+  "maker_url": "https://cognition.ai",
+  "usd": 200,
+  "limits": "significantly higher quotas than Pro",
+  "grants": "Devin",
+  "source_url": "https://devin.ai/pricing",
+  "includes": []
+ },
+ {
+  "plan": "Devin Teams",
+  "maker": "prov_cognition",
+  "maker_name": "Cognition",
+  "maker_url": "https://cognition.ai",
+  "usd": 40,
+  "limits": "per full developer seat, on top of $80 a month for the team; unlimited members",
+  "grants": "Devin",
+  "source_url": "https://devin.ai/pricing",
+  "includes": []
+ },
+ {
+  "plan": "Cursor Pro",
+  "maker": "prov_anysphere",
+  "maker_name": "Anysphere",
+  "maker_url": "https://cursor.com",
+  "usd": 20,
+  "limits": "one user",
+  "grants": "Cursor Agent",
+  "source_url": "https://cursor.com/pricing",
+  "includes": []
+ },
+ {
+  "plan": "Cursor Teams",
+  "maker": "prov_anysphere",
+  "maker_name": "Anysphere",
+  "maker_url": "https://cursor.com",
+  "usd": 40,
+  "limits": "per user, with team administration",
+  "grants": "Cursor Agent",
+  "source_url": "https://cursor.com/pricing",
+  "includes": []
+ },
+ {
+  "plan": "GitHub Copilot Pro",
+  "maker": "prov_githubcopilot",
+  "maker_name": "GitHub Copilot",
+  "maker_url": "https://github.com/features/copilot",
+  "usd": 10,
+  "limits": "one user",
+  "grants": "GitHub Copilot",
+  "source_url": "https://github.com/features/copilot/plans",
+  "includes": []
+ },
+ {
+  "plan": "GitHub Copilot Pro+",
+  "maker": "prov_githubcopilot",
+  "maker_name": "GitHub Copilot",
+  "maker_url": "https://github.com/features/copilot",
+  "usd": 39,
+  "limits": "one user, higher allowance",
+  "grants": "GitHub Copilot",
+  "source_url": "https://github.com/features/copilot/plans",
+  "includes": []
+ },
+ {
+  "plan": "GitHub Copilot Max",
+  "maker": "prov_githubcopilot",
+  "maker_name": "GitHub Copilot",
+  "maker_url": "https://github.com/features/copilot",
+  "usd": 100,
+  "limits": "one user, highest allowance",
+  "grants": "GitHub Copilot",
+  "source_url": "https://github.com/features/copilot/plans",
+  "includes": []
+ },
+ {
+  "plan": "GitHub Copilot Free",
+  "maker": "prov_githubcopilot",
+  "maker_name": "GitHub Copilot",
+  "maker_url": "https://github.com/features/copilot",
+  "usd": 0,
+  "limits": "2,000 completions and 50 chat requests a month",
+  "grants": "GitHub Copilot",
+  "source_url": "https://github.com/features/copilot/plans",
+  "includes": []
+ },
+ {
+  "plan": "Tabnine Code Assistant",
+  "maker": "prov_tabnine",
+  "maker_name": "Tabnine",
+  "maker_url": "https://tabnine.com",
+  "usd": 39,
+  "limits": "per user, billed annually",
+  "grants": "Tabnine",
+  "source_url": "https://www.tabnine.com/pricing/",
+  "includes": []
+ },
+ {
+  "plan": "Tabnine Agentic",
+  "maker": "prov_tabnine",
+  "maker_name": "Tabnine",
+  "maker_url": "https://tabnine.com",
+  "usd": 59,
+  "limits": "per user, billed annually",
+  "grants": "Tabnine",
+  "source_url": "https://www.tabnine.com/pricing/",
+  "includes": []
+ },
+ {
+  "plan": "ChatGPT Go",
+  "maker": "prov_openai",
+  "maker_name": "OpenAI",
+  "maker_url": "https://openai.com",
+  "usd": 8,
+  "limits": "more messages with tools, more uploads, more image creation, more voice and longer memory than Free; the plan may include ads",
+  "grants": "Codex",
+  "source_url": "https://openai.com/index/introducing-chatgpt-go/",
+  "includes": [
+   "GPT-5.6 Luna"
+  ]
+ },
+ {
+  "plan": "ChatGPT Plus",
+  "maker": "prov_openai",
+  "maker_name": "OpenAI",
+  "maker_url": "https://openai.com",
+  "usd": 20,
+  "limits": "advanced reasoning with GPT-5.6, expanded messages and uploads, expanded deep research, memory and context, projects, scheduled tasks and custom GPTs, and expanded Codex",
+  "grants": "Codex",
+  "source_url": "https://openai.com/index/introducing-chatgpt-go/",
+  "includes": [
+   "GPT-5.6 Sol",
+   "GPT-5.6 Luna"
+  ]
+ },
+ {
+  "plan": "ChatGPT Pro",
+  "maker": "prov_openai",
+  "maker_name": "OpenAI",
+  "maker_url": "https://openai.com",
+  "usd": 200,
+  "limits": "five or twenty times the usage of Plus, Pro reasoning, the maximum Codex tasks, unlimited and faster image creation, and maximum deep research",
+  "grants": "Codex",
+  "source_url": "https://openai.com/index/introducing-chatgpt-go/",
+  "includes": [
+   "GPT-5.6 Sol",
+   "GPT-5.6 Terra",
+   "GPT-5.6 Luna"
+  ]
+ },
+ {
+  "plan": "ChatGPT Free",
+  "maker": "prov_openai",
+  "maker_name": "OpenAI",
+  "maker_url": "https://openai.com",
+  "usd": 0,
+  "limits": "unlimited text chats with GPT-5.6 Luna, subject to abuse guardrails; limited messages with uploads, limited and slower image generation, limited voice, limited deep research, limited memory and limited Codex",
+  "grants": "Codex",
+  "source_url": "https://openai.com/chatgpt/pricing/",
+  "includes": [
+   "GPT-5.6 Luna"
+  ]
+ },
+ {
+  "plan": "Google AI Free",
+  "maker": "prov_google",
+  "maker_name": "Google",
+  "maker_url": "https://gemini.google",
+  "usd": 0,
+  "limits": "the Gemini app with access to 3.6 Flash and varying access to 3.1 Pro, image generation and editing, Deep Research, Gemini Live, Canvas, Gems, and limited Nano Banana Pro inside Flow",
+  "grants": null,
+  "source_url": "https://gemini.google/subscriptions/",
+  "includes": [
+   "Gemini 3.6 Flash",
+   "Gemini 3.1 Pro Preview"
+  ]
+ },
+ {
+  "plan": "Claude Free",
+  "maker": "prov_anthropic",
+  "maker_name": "Anthropic",
+  "maker_url": "https://anthropic.com",
+  "usd": 0,
+  "limits": "Fable, Opus, Sonnet and Haiku at half the weekly limits, with Claude Code, Cowork, Design and Science, memory, skills and connectors",
+  "grants": "Claude Code",
+  "source_url": "https://claude.com/pricing",
+  "includes": [
+   "Claude Fable 5",
+   "Claude Opus 5",
+   "Claude Sonnet 5",
+   "Claude Haiku 4.5"
+  ]
+ },
+ {
+  "plan": "Claude Pro",
+  "maker": "prov_anthropic",
+  "maker_name": "Anthropic",
+  "maker_url": "https://anthropic.com",
+  "usd": 20,
+  "limits": "one person, monthly billing",
+  "grants": "Claude Code",
+  "source_url": "https://claude.com/pricing",
+  "includes": [
+   "Claude Fable 5",
+   "Claude Opus 5",
+   "Claude Sonnet 5",
+   "Claude Haiku 4.5"
+  ]
+ },
+ {
+  "plan": "Claude Max 5x",
+  "maker": "prov_anthropic",
+  "maker_name": "Anthropic",
+  "maker_url": "https://anthropic.com",
+  "usd": 100,
+  "limits": "five times the Pro allowance",
+  "grants": "Claude Code",
+  "source_url": "https://claude.com/pricing",
+  "includes": [
+   "Claude Fable 5",
+   "Claude Opus 5",
+   "Claude Sonnet 5",
+   "Claude Haiku 4.5"
+  ]
+ },
+ {
+  "plan": "Claude Team",
+  "maker": "prov_anthropic",
+  "maker_name": "Anthropic",
+  "maker_url": "https://anthropic.com",
+  "usd": 25,
+  "limits": "per seat, monthly billing",
+  "grants": "Claude Code",
+  "source_url": "https://claude.com/pricing",
+  "includes": [
+   "Claude Fable 5",
+   "Claude Opus 5",
+   "Claude Sonnet 5",
+   "Claude Haiku 4.5"
+  ]
+ },
+ {
+  "plan": "Claude Team Premium",
+  "maker": "prov_anthropic",
+  "maker_name": "Anthropic",
+  "maker_url": "https://anthropic.com",
+  "usd": 125,
+  "limits": "per seat, monthly billing",
+  "grants": "Claude Code",
+  "source_url": "https://claude.com/pricing",
+  "includes": [
+   "Claude Fable 5",
+   "Claude Opus 5",
+   "Claude Sonnet 5",
+   "Claude Haiku 4.5"
+  ]
+ },
+ {
+  "plan": "Manus Starter",
+  "maker": "prov_manus",
+  "maker_name": "Manus",
+  "maker_url": "https://manus.im",
+  "usd": 20,
+  "limits": "4,000 credits a month, 300 refreshed daily, 20 concurrent tasks",
+  "grants": "Manus",
+  "source_url": "https://manus.im/pricing",
+  "includes": []
+ },
+ {
+  "plan": "Suno Free",
+  "maker": "prov_suno",
+  "maker_name": "Suno",
+  "maker_url": "https://suno.com",
+  "usd": 0,
+  "limits": "50 credits renewed daily, about ten songs; no commercial use, the v4.5-all model only, and a shared queue",
+  "grants": "Suno",
+  "source_url": "https://suno.com/pricing",
+  "includes": []
+ },
+ {
+  "plan": "Suno Pro",
+  "maker": "prov_suno",
+  "maker_name": "Suno",
+  "maker_url": "https://suno.com",
+  "usd": 8,
+  "limits": "2,500 credits a month, up to 500 songs",
+  "grants": "Suno",
+  "source_url": "https://suno.com/pricing",
+  "includes": []
+ },
+ {
+  "plan": "Suno Premier",
+  "maker": "prov_suno",
+  "maker_name": "Suno",
+  "maker_url": "https://suno.com",
+  "usd": 24,
+  "limits": "10,000 credits a month, up to 2,000 songs",
+  "grants": "Suno",
+  "source_url": "https://suno.com/pricing",
+  "includes": []
+ }
+]

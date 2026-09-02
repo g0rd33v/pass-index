@@ -1,0 +1,251 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pass Index · The State of AI</title>
+<meta name="description" content="__LEDE__">
+<link rel="canonical" href="https://pass.io/index">
+<style>__CSS__</style>
+<style id="v2" media="not all">__CSS_V2__</style>
+<script>if(location.search.indexOf("v2")>-1){document.getElementById("v2").media="all";
+ localStorage.setItem("style","v2")}
+else if(location.search.indexOf("v1")>-1){localStorage.removeItem("style")}
+else if(localStorage.getItem("style")==="v2"){document.getElementById("v2").media="all"}</script>
+</head><body>
+<header><a class="brand" href="/index">Pass Index</a><span class="sub">The State of AI</span><a class="cta" href="/signin?signin=/index">Sign in</a></header>
+<div class="bar"><div class="bar-in">
+  <div class="seek">
+    <input id="q" type="search" placeholder="Search a model, a company, an API string…"
+           autocomplete="off" role="combobox" aria-expanded="false" aria-controls="hits">
+    <ul id="hits" class="hits" hidden role="listbox"></ul>
+  </div>
+  <div class="top-row">
+    <nav class="tabs" id="tabs">
+      <a class="on" href="/index" data-reg="all">All</a>
+      <a href="/index/models" data-reg="model">Models</a>
+      <a href="/index/tools" data-reg="tool">Tools</a>
+      <a href="/index/agents" data-reg="agent">Agents</a>
+      <a href="/index/subscriptions" data-reg="subscription">Subscriptions</a>
+      <a href="/index/providers" data-reg="provider">Companies</a>
+    </nav>
+    <div class="sorts" id="sorts" hidden>
+      <button data-sort="price">Price</button>
+      <button data-sort="name">Name</button>
+      <button class="on" data-sort="sellers">Sellers</button>
+      <button data-sort="updated">Updated</button>
+    </div>
+    <span class="counts" id="counts">__COUNTS__</span>
+  </div>
+</div></div>
+<main><h1 class="quiet">Everything AI that is sold, and what it costs</h1>
+<p class="steer"><a href="/index/top">Start with the picks</a> — the best value, the
+best there is and the cheapest, for fourteen kinds of work. Or browse
+<a href="/index/lists">the lists</a>.</p>
+<ul class="rows" id="rows">__ROWS__</ul>
+<button class="more" id="more" hidden>Show more</button>
+<p class="hint" id="hint">__HINT__</p></main>
+<footer><a class="home" href="/">Pass Index</a>
+ · <a href="/index/top">Top</a>
+ · <a href="/index/free">Free</a>
+ · <a href="/index/sizes">Sizes</a>
+ · <a href="/index/lists">Lists</a>
+ · <a href="/index/providers">Companies</a>
+ · <a href="/index/models">Models</a>
+ · <a href="/index/tools">Tools</a>
+ · <a href="/index/agents">Agents</a>
+ · <a href="/index/subscriptions">Subscriptions</a>
+ · <a href="/index/waiting">B2B</a>
+ · <a href="/index/coverage">Status</a>
+<button id="theme" type="button" aria-label="Switch theme"><svg viewBox="0 0 24 24"
+ aria-hidden="true"><path id="ti" d=""/></svg></button></footer>
+<script>__THEME__</script>
+<script>
+// The page works before this runs: the rows above are real links. What this
+// adds is searching and ordering, and it needs an index of the catalogue —
+// small enough to be worth fetching on a phone, which the page itself was not.
+const PAGE = 40;
+let DB = null, rows = [], shown = PAGE, reg = "all", q = "", sort = "sellers", cheap = true;
+const el = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const UNIT = {mtok_in:"per Mtok in",mtok_out:"per Mtok out",image:"per image",call:"per call",
+  second:"per second",minute:"per minute",character:"per character",result:"per result",
+  page:"per page",mtok_in_audio:"per Mtok in, audio",mtok_out_audio:"per Mtok out, audio",
+  mtok_out_reasoning:"per Mtok out, reasoning",image_in:"per image in",
+  second_in:"per second in",second_out:"per second out",
+  month:"a month"};
+function money(m){
+  const d = m/1e6;
+  if (!(d>0)) return "";
+  const places = d>=100 ? 0 : d>=1 ? 2 : Math.min(8, 1-Math.floor(Math.log10(d)));
+  const s = d.toFixed(places);
+  return "$" + (s.includes(".") ? s.replace(/\.?0+$/,"") : s);
+}
+// A row carries what a reader would otherwise open the page for: the pair
+// in and out where it is metered by tokens, the range where several sell it.
+function figure(x){
+  if (x.o != null) return money(x.p) + '<span class="to">→</span>' + money(x.o);
+  if (x.x != null && x.x > x.p) return money(x.p) + '<span class="to">–</span>' + money(x.x);
+  return money(x.p);
+}
+// The server draws the first rows with a standing; the client redraws all of
+// them the moment the search index lands, so it has to draw the same row or
+// the figure vanishes as the page wakes.
+function ord(n){var s=["th","st","nd","rd"],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0]);}
+function stand(x){
+  if(!x.br||!x.bf||x.bf<2) return "";
+  return `<span class="st">${ord(x.br)} of ${x.bf.toLocaleString("en")}`
+       + (x.bn>1?`<i>· ${x.bn} boards</i>`:"") + `</span>`;
+}
+function unitOf(x){ return x.o != null ? "per Mtok in / out" : (UNIT[x.d] || x.d || ""); }
+function words(s){ return s.split(/\s+/).filter(Boolean); }
+function hay(x){ return (x._h ??= [x.n, x.m, x.h, ...(x.t ?? [])].join(" ").toLowerCase()); }
+function pick(){
+  // "All" is everything that is sold, not everything in the database. A
+  // company's count is how many things it carries and a product's is how
+  // many sell it; putting both in one column ranks DeepInfra above every
+  // model. Companies have their own tab for that reason.
+  // "All" with nothing typed is everything that is sold, not everything in
+  // the database: a company's count is how many things it carries and a
+  // product's is how many sell it, so mixing them ranks DeepInfra above
+  // every model. That only matters for the unfiltered list. Once somebody
+  // types, they are looking for a named thing — and the box promises a
+  // company — so the search runs over both.
+  const searching = words(q).length > 0;
+  const pool = reg === "provider" ? DB.companies
+             : reg === "all" ? (searching ? DB.things.concat(DB.companies) : DB.things)
+             : DB.things.filter(x => x.r === reg);
+  const ws = words(q);
+  const hits = ws.length ? pool.filter(x => ws.every(w => hay(x).includes(w))) : pool.slice();
+  const byName = (a,b) => a.n.localeCompare(b.n);
+  hits.sort(
+    sort === "name" ? byName :
+    sort === "sellers" ? ((a,b) => (b.s||0)-(a.s||0) || byName(a,b)) :
+    sort === "updated" ? ((a,b) => String(b.u||"").localeCompare(String(a.u||"")) || byName(a,b)) :
+    ((a,b) => {
+      const [x,y] = [a.p ?? null, b.p ?? null];
+      if (x === null || y === null) return (x===null)-(y===null) || byName(a,b);
+      return (cheap ? x-y : y-x) || byName(a,b);
+    }));
+  return hits;
+}
+function draw(){
+  rows = pick();
+  // Thirteen thousand four hundred and one reads as a number; 13401 reads as
+  // a serial. The rest of the site groups its figures, so this does too.
+  const n = x => x.toLocaleString("en");
+  el("counts").textContent = reg === "provider"
+    ? `${n(rows.length)} of ${n(DB.companies.length)} companies`
+    : reg === "all" && words(q).length
+    ? `${n(rows.length)} found`
+    : `${n(rows.length)} of ${n(DB.things.length)} things`;
+  el("rows").innerHTML = rows.slice(0, shown).map(x => `<li><a href="${esc(x.h)}"><span class="nm">${esc(x.n)}</span><span class="mk">${esc(x.m || x.k || "")}${stand(x)}</span>${
+    x.p ? `<span class="pr">${figure(x)}<span class="un">${esc(unitOf(x))}</span></span>` : ""
+  }<span class="sc${x.lm?" terms":""}">${x.lm ? esc(x.lm) : (x.s ? x.s + (x.r === "provider" ? " sold" : " selling") : "")}</span></a></li>`).join("");
+  el("more").hidden = rows.length <= shown;
+  el("hint").hidden = true;
+}
+// The tabs do two jobs from one link. A tap on a tab that is not the current
+// one filters the list where it stands; a tap on the one already chosen goes
+// to its own page, which is what the href always said it would do. So the
+// link is honest with a keyboard, honest with a middle click, and the second
+// tap is the way out to a dedicated address.
+//
+// A tap that lands before the search index has arrived is remembered rather
+// than lost: the page looks ready the moment it is painted, and answering
+// "wait" to a reader who cannot see why is worse than answering late.
+let pending = null;
+function choose(a){
+  reg = a.dataset.reg; shown = PAGE;
+  el("tabs").querySelectorAll("x").forEach(() => {});
+  el("tabs").querySelectorAll("a").forEach(x => x.classList.toggle("on", x === a));
+  draw();
+}
+document.getElementById("tabs").addEventListener("click", ev => {
+  const a = ev.target.closest("a"); if (!a) return;
+  if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button) return;   // a new tab is a new tab
+  if (a.classList.contains("on") && DB) return;   // already here: follow the link
+  ev.preventDefault();
+  if (!DB) { pending = a; a.classList.add("waiting"); return; }
+  choose(a);
+});
+
+// The search box answers two different questions and used to answer only one.
+// Typing narrows the list below, which is what you want when you are browsing.
+// But a reader who knows the name wants the page, not a list of one — so the
+// names themselves are offered as you type, and picking one goes there.
+let cursor = -1;
+function close(){
+  el("hits").hidden = true; el("hits").innerHTML = ""; cursor = -1;
+  el("q").setAttribute("aria-expanded", "false");
+}
+function matches(){
+  if (!DB || q.length < 2) return [];
+  const ws = words(q);
+  const pool = DB.things.concat(DB.companies);
+  const hit = pool.filter(x => ws.every(w => hay(x).includes(w)));
+  // What the reader most likely meant: a name that starts with what they
+  // typed, then a name that contains it, then everything else — and within
+  // each, whatever more companies sell.
+  const rank = x => {
+    const n = x.n.toLowerCase();
+    return n === q ? 0 : n.startsWith(q) ? 1 : n.includes(q) ? 2 : 3;
+  };
+  hit.sort((a,b) => rank(a)-rank(b) || (b.s||0)-(a.s||0) || a.n.length-b.n.length);
+  return hit.slice(0, 8);
+}
+function suggest(){
+  const hits = matches();
+  if (!hits.length) return close();
+  el("hits").innerHTML = hits.map((x,i) =>
+    `<li data-h="${esc(x.h)}" role="option" aria-selected="${i===cursor}"${i===cursor?' class="on"':''}>`
+    + `<span class="nm">${esc(x.n)}</span>`
+    + `<span class="mk">${esc(x.m || (x.r === "provider" ? "company" : x.r) || "")}</span></li>`
+  ).join("");
+  el("hits").hidden = false;
+  el("q").setAttribute("aria-expanded", "true");
+}
+function key(ev){
+  const n = el("hits").children.length;
+  if (ev.key === "Escape") return close();
+  if (ev.key === "Enter" && cursor >= 0 && n) {
+    ev.preventDefault();
+    location.href = el("hits").children[cursor].dataset.h;
+    return;
+  }
+  if (ev.key !== "ArrowDown" && ev.key !== "ArrowUp") return;
+  if (!n) return;
+  ev.preventDefault();
+  cursor = ev.key === "ArrowDown" ? (cursor + 1) % n : (cursor <= 0 ? n - 1 : cursor - 1);
+  [...el("hits").children].forEach((li,i) => {
+    li.classList.toggle("on", i === cursor);
+    li.setAttribute("aria-selected", i === cursor);
+  });
+}
+
+async function wake(){
+  try {
+    DB = await (await fetch("/index/find.json")).json();
+  } catch { return; }                       // the rendered rows stay usable
+  el("sorts").hidden = false;
+  el("sorts").addEventListener("click", ev => {
+    const b = ev.target.closest("button"); if (!b) return;
+    if (b.dataset.sort === sort && sort === "price") cheap = !cheap; else sort = b.dataset.sort;
+    el("sorts").querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b));
+    shown = PAGE; draw();
+  });
+  el("q").addEventListener("input", ev => {
+    q = ev.target.value.trim().toLowerCase(); shown = PAGE; draw(); suggest();
+  });
+  el("q").addEventListener("keydown", key);
+  el("q").addEventListener("blur", () => setTimeout(close, 160));
+  el("q").addEventListener("focus", suggest);
+  el("hits").addEventListener("mousedown", ev => {
+    const li = ev.target.closest("li[data-h]"); if (!li) return;
+    ev.preventDefault(); location.href = li.dataset.h;
+  });
+  el("more").addEventListener("click", () => { shown += PAGE * 4; draw(); });
+  if (el("q").value) { q = el("q").value.trim().toLowerCase(); }
+  if (pending) { pending.classList.remove("waiting"); const a = pending; pending = null; choose(a); }
+  else draw();
+}
+wake();
+</script>__ANALYTICS__</body></html>

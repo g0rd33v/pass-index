@@ -1,0 +1,280 @@
+/* Pass Index — style v2, laid over the live stylesheet.
+   This is the site's look. It loads after page.css and carries v2's palette
+   and the component shapes that differ; anything it does not mention keeps
+   the rule underneath, which is why this file is short. A reader who wants
+   the first style back adds ?v1, and the choice is remembered.
+
+   One trap it steps around: v2 calls the search input `.bar-in`, and here
+   `.bar-in` is the strip that holds it. Restyling by that name would have
+   turned the whole toolbar into a text field. */
+
+:root{
+  color-scheme: light;
+
+  --page:#f7f7f5; --surface:#ffffff; --sunk:#efefec; --raised:#e7e7e3; --raised-hi:#dcdcd7;
+  --line:rgba(0,0,0,.14); --hair:rgba(0,0,0,.07); --line-hi:rgba(0,0,0,.24);
+  --ink:#16160f; --mid:#3c4046; --dim:#666c75; --faint:#686e78;
+
+  --accent:#2265b5; --accent-hi:#1c5cab; --accent-lo:#164a8c;
+  --accent-soft:rgba(34,101,181,.11); --accent-line:rgba(34,101,181,.42);
+  --warm:#8a5a1f;
+  --good:#0ca30c; --good-ink:#0a7d0a;
+  --warning:#8f6300;
+  --critical:#d03b3b; --critical-ink:#b02a2a;
+
+  --good-soft:rgba(12,163,12,.10);  --good-line:rgba(12,163,12,.35);
+  --warn-soft:rgba(143,99,0,.10);   --warn-line:rgba(143,99,0,.32);
+  --crit-soft:rgba(208,59,59,.08);  --crit-line:rgba(208,59,59,.35);
+  --warm-soft:rgba(138,90,31,.10);  --warm-line:rgba(138,90,31,.30);
+
+  --pop:0 2px 6px rgba(25,25,15,.08), 0 8px 20px -8px rgba(25,25,15,.14);
+  --scrim:rgba(15,15,15,.45);
+  --masthead-bg:rgba(255,255,255,.85);
+  --tok-str:#1a7f37;
+
+  /* space & shape — unchanged from the live Index */
+  --s1:4px; --s2:8px; --s3:12px; --s4:18px; --s5:28px; --s6:44px;
+  --r:10px; --r-lg:14px; --r-pill:999px;
+
+  /* motion */
+  --dur-1:.12s; --dur-2:.2s; --dur-3:.32s;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --ease-back:cubic-bezier(.34,1.4,.64,1);
+
+  /* ── the multilingual stack ──────────────────────────────────
+     Rubik carries the brand: latin, latin-ext, cyrillic, cyrillic-ext,
+     hebrew, arabic. Noto Sans picks up greek, vietnamese, devanagari.
+     CJK falls to the reader's own system faces — native rendering,
+     zero download. Google serves each subset behind unicode-range, so a
+     Russian reader never downloads Arabic.                            */
+  --sans:'Rubik','Noto Sans',
+         -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,
+         'PingFang SC','Hiragino Sans','Hiragino Kaku Gothic ProN',
+         'Yu Gothic UI','Microsoft YaHei','Apple SD Gothic Neo','Malgun Gothic',
+         'Noto Sans CJK SC','Noto Sans CJK JP','Noto Sans CJK KR',
+         'Noto Sans Thai','Noto Sans Devanagari',
+         Arial,sans-serif;
+  --mono:ui-monospace,'SF Mono',SFMono-Regular,Menlo,'Cascadia Mono',Consolas,monospace;
+}
+
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --page:#0f0f0f; --surface:#17181a; --sunk:#131416; --raised:#1e2024; --raised-hi:#25282d;
+  --line:rgba(255,255,255,.09); --hair:rgba(255,255,255,.05); --line-hi:rgba(255,255,255,.16);
+  --ink:#e9edf2; --mid:#cfd5dd; --dim:#8b929c; --faint:#7a8089;
+  --accent:#3987e5; --accent-hi:#5598e7; --accent-lo:#2c6fc4;
+  --accent-soft:rgba(57,135,229,.14); --accent-line:rgba(57,135,229,.45);
+  --warm:#d99a3c;
+  --good:#0ca30c; --good-ink:#3ec93e;
+  --warning:#fab219;
+  --critical:#d03b3b; --critical-ink:#e26a6a;
+  --good-soft:rgba(12,163,12,.13);  --good-line:rgba(12,163,12,.40);
+  --warn-soft:rgba(250,178,25,.12); --warn-line:rgba(250,178,25,.38);
+  --crit-soft:rgba(208,59,59,.13);  --crit-line:rgba(208,59,59,.42);
+  --warm-soft:rgba(217,154,60,.12); --warm-line:rgba(217,154,60,.35);
+  --pop:0 4px 12px rgba(0,0,0,.4), 0 12px 32px -8px rgba(0,0,0,.55);
+  --scrim:rgba(0,0,0,.65);
+  --masthead-bg:rgba(23,24,26,.85);
+  --tok-str:#7fd48b;
+}
+
+:root[data-theme="light"]{
+  color-scheme: light;
+
+  --page:#f7f7f5; --surface:#ffffff; --sunk:#efefec; --raised:#e7e7e3; --raised-hi:#dcdcd7;
+  --line:rgba(0,0,0,.14); --hair:rgba(0,0,0,.07); --line-hi:rgba(0,0,0,.24);
+  --ink:#16160f; --mid:#3c4046; --dim:#666c75; --faint:#686e78;
+
+  --accent:#2265b5; --accent-hi:#1c5cab; --accent-lo:#164a8c;
+  --accent-soft:rgba(34,101,181,.11); --accent-line:rgba(34,101,181,.42);
+  --warm:#8a5a1f;
+  --good:#0ca30c; --good-ink:#0a7d0a;
+  --warning:#8f6300;
+  --critical:#d03b3b; --critical-ink:#b02a2a;
+
+  --good-soft:rgba(12,163,12,.10);  --good-line:rgba(12,163,12,.35);
+  --warn-soft:rgba(143,99,0,.10);   --warn-line:rgba(143,99,0,.32);
+  --crit-soft:rgba(208,59,59,.08);  --crit-line:rgba(208,59,59,.35);
+  --warm-soft:rgba(138,90,31,.10);  --warm-line:rgba(138,90,31,.30);
+
+  --pop:0 2px 6px rgba(25,25,15,.08), 0 8px 20px -8px rgba(25,25,15,.14);
+  --scrim:rgba(15,15,15,.45);
+  --masthead-bg:rgba(255,255,255,.85);
+  --tok-str:#1a7f37;
+}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+  color-scheme: dark;
+  --page:#0f0f0f; --surface:#17181a; --sunk:#131416; --raised:#1e2024; --raised-hi:#25282d;
+  --line:rgba(255,255,255,.09); --hair:rgba(255,255,255,.05); --line-hi:rgba(255,255,255,.16);
+  --ink:#e9edf2; --mid:#cfd5dd; --dim:#8b929c; --faint:#7a8089;
+  --accent:#3987e5; --accent-hi:#5598e7; --accent-lo:#2c6fc4;
+  --accent-soft:rgba(57,135,229,.14); --accent-line:rgba(57,135,229,.45);
+  --warm:#d99a3c;
+  --good:#0ca30c; --good-ink:#3ec93e;
+  --warning:#fab219;
+  --critical:#d03b3b; --critical-ink:#e26a6a;
+  --good-soft:rgba(12,163,12,.13);  --good-line:rgba(12,163,12,.40);
+  --warn-soft:rgba(250,178,25,.12); --warn-line:rgba(250,178,25,.38);
+  --crit-soft:rgba(208,59,59,.13);  --crit-line:rgba(208,59,59,.42);
+  --warm-soft:rgba(217,154,60,.12); --warm-line:rgba(217,154,60,.35);
+  --pop:0 4px 12px rgba(0,0,0,.4), 0 12px 32px -8px rgba(0,0,0,.55);
+  --scrim:rgba(0,0,0,.65);
+  --masthead-bg:rgba(23,24,26,.85);
+  --tok-str:#7fd48b;
+  }
+}
+
+/* ---- the frame ------------------------------------------------------- */
+body{background:var(--page);color:var(--ink);font-family:var(--sans)}
+header{border-bottom:1px solid var(--hair)}
+.brand{font-weight:600;letter-spacing:-.01em}
+.brand:hover{color:var(--accent)}
+a{color:var(--accent)}
+a:hover{color:var(--accent-hi)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---- the search bar --------------------------------------------------- */
+.bar{background:color-mix(in srgb,var(--page) 88%,transparent);
+  border-bottom:1px solid var(--hair)}
+#q{background:var(--sunk);border:1.5px solid var(--line);border-radius:var(--r-lg);
+  height:48px;font-size:15px;padding:0 var(--s4);
+  transition:border-color var(--dur-2) var(--ease),box-shadow var(--dur-2) var(--ease),
+             background var(--dur-2) var(--ease)}
+#q:hover{border-color:var(--line-hi)}
+#q:focus{background:var(--surface);border-color:var(--accent);
+  box-shadow:0 0 0 3px var(--accent-soft)}
+#q::placeholder{color:var(--faint)}
+
+/* ---- tabs and sorts --------------------------------------------------- */
+.tabs a,.sorts button{min-height:34px;padding:6px 13px;border-radius:var(--r-pill);
+  font-size:13.5px;color:var(--dim);border:1px solid transparent;
+  transition:background var(--dur-1) var(--ease),color var(--dur-1) var(--ease),
+             border-color var(--dur-1) var(--ease)}
+.tabs a:hover,.sorts button:hover{background:var(--raised);color:var(--ink)}
+.tabs a.on{background:var(--accent);color:#fff;font-weight:500}
+.sorts button.on{background:var(--raised);color:var(--ink);border-color:var(--line);
+  font-weight:500}
+.counts{color:var(--faint);font-size:12.5px}
+
+/* ---- the rows --------------------------------------------------------- */
+.rows li{border-bottom:0;border-top:1px solid var(--hair)}
+.rows li:first-child{border-top:0}
+.rows a{border-radius:var(--r);padding:var(--s3) 10px;
+  transition:background var(--dur-1) var(--ease)}
+.rows a:hover{background:var(--surface)}
+.rows a:active{background:var(--raised)}
+.rows .nm{font-size:15px;font-weight:500;color:var(--ink)}
+.rows a:hover .nm{color:var(--accent-hi)}
+.rows .mk{font-size:12.5px;color:var(--dim)}
+.rows .pr{font-size:15px;font-weight:500;color:var(--ink)}
+.rows .to,.rows .un{color:var(--faint)}
+.rows .sc{color:var(--dim);font-size:12px}
+.rows .st{border-left:1px solid var(--line)}
+
+/* ---- what you might have meant ---------------------------------------- */
+.hits{background:var(--raised);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:var(--pop)}
+.hits li{border-radius:8px}
+.hits li.on,.hits li:hover{background:var(--raised-hi)}
+.hits li.on .nm{color:var(--accent-hi)}
+.hits .mk{color:var(--faint)}
+
+/* ---- tables ----------------------------------------------------------- */
+.grid th{font-size:11px;letter-spacing:.09em;color:var(--faint);font-weight:600;
+  border-bottom:1px solid var(--line)}
+.sortable th button{color:var(--faint)}
+.sortable th button:hover,.sortable th button.on{color:var(--accent-hi)}
+.grid td{border-bottom:1px solid var(--hair);color:var(--mid);font-size:13.5px}
+.grid tbody tr:hover{background:var(--surface)}
+.grid td:first-child{color:var(--ink);font-weight:500}
+.cheapest{color:var(--accent-hi)}
+tr.cheap-row{background:var(--accent-soft);box-shadow:inset 3px 0 0 var(--accent)}
+.fig .u{color:var(--faint)}
+.sit{background:var(--hair)}
+.sit i{background:var(--dim)}
+tr.cheap-row .sit i{background:var(--accent)}
+tr.agg-head td:first-child::before{color:var(--faint)}
+tr.agg-head:hover td:first-child{color:var(--accent-hi)}
+
+/* ---- pills ------------------------------------------------------------ */
+.chip{background:var(--raised);border:1px solid var(--hair);color:var(--dim);
+  border-radius:var(--r-pill);padding:3px 10px;font-size:12px;font-weight:500}
+a.chip:hover{background:var(--accent-soft);color:var(--accent-hi);
+  border-color:var(--accent-line)}
+.tag{border:1px solid var(--hair);background:var(--raised);color:var(--dim);
+  border-radius:var(--r-pill);padding:2px 8px;font-size:11px;letter-spacing:.04em}
+
+/* ---- the headline figure and the panels ------------------------------- */
+.hero .big{font-weight:600;letter-spacing:-.02em}
+.hero .unit,.hero .said{color:var(--dim)}
+.hero .said b{color:var(--ink);font-weight:500}
+.about{border-top:1px solid var(--hair)}
+h2,.about h2,.ahead h2,.ahead h3,.jg b,.tally h3,.fam > h2{color:var(--faint)}
+.aline{font-weight:500;letter-spacing:-.01em}
+.apara,.intro,.lede,.note,.roll{color:var(--mid)}
+.abt-fig dt{color:var(--faint)}
+.abt-fig:hover{background:var(--surface)}
+.cp,.more{background:var(--raised);border:1px solid var(--line);color:var(--mid);
+  border-radius:var(--r-pill)}
+.cp:hover,.more:hover{background:var(--raised-hi);color:var(--ink);
+  border-color:var(--line-hi)}
+.roll a{color:var(--ink);box-shadow:inset 0 -1px 0 var(--line)}
+.roll a:hover{color:var(--accent-hi);box-shadow:inset 0 -1px 0 var(--accent)}
+
+/* ---- standings -------------------------------------------------------- */
+.place.top{color:var(--accent-hi)}
+.field{background:var(--hair)}
+.field i{background:var(--accent);opacity:.7}
+.rows.picks li:first-child a{background:var(--accent-soft)}
+.rows.picks .cell{color:var(--accent-hi)}
+.jump a{background:var(--raised);border:1px solid var(--hair);color:var(--dim)}
+.jump a:hover{background:var(--accent-soft);border-color:var(--accent-line);
+  color:var(--accent-hi)}
+
+/* ---- the self-check --------------------------------------------------- */
+ul.checks li.pass .mk{color:var(--good-ink)}
+ul.checks li.warn .mk,ul.checks li.warn .vd{color:var(--warning)}
+ul.checks li.fail .mk,ul.checks li.fail .vd{color:var(--critical-ink)}
+.verdict{border:1px solid var(--line);background:var(--surface);color:var(--mid)}
+.verdict.all-clear{border-color:var(--accent-line);background:var(--accent-soft);
+  color:var(--ink)}
+.verdict.bad{border-color:var(--crit-line);background:var(--crit-soft);
+  color:var(--critical-ink)}
+.tally{background:var(--sunk);border:1px solid var(--line)}
+.amts .a.day b{color:var(--accent-hi)}
+.facts{background:var(--line);border:1px solid var(--line)}
+.facts div{background:var(--page)}
+.facts span{color:var(--faint)}
+
+/* The spinner was drawn in white on white: the sample page had only a dark
+   theme, so a translucent white ring was safe there and invisible here. */
+.spin,.loading{border-color:var(--line);border-top-color:var(--accent)}
+
+/* ---- footer ----------------------------------------------------------- */
+footer{border-top:1px solid var(--hair);color:var(--faint)}
+footer a{color:var(--dim)}
+footer a:hover{color:var(--accent-hi)}
+#theme{background:var(--raised);border:1px solid var(--line);color:var(--dim)}
+#theme:hover{border-color:var(--accent);color:var(--accent-hi)}
+
+/* ---- models by size --------------------------------------------------- */
+/* The band cards and the row's size figure, in v2's palette. The band is a
+   filter and the sort an order, so the first is a card a reader picks and the
+   second stays the quiet text control the rest of the site uses. */
+.bands button{border:1px solid var(--line);background:var(--surface);color:var(--mid);
+  border-radius:var(--r);font-size:var(--t-meta);font-weight:500;
+  transition:background var(--dur-1) var(--ease),border-color var(--dur-1) var(--ease),
+             color var(--dur-1) var(--ease)}
+.bands button i{color:var(--faint);font-size:var(--t-label)}
+.bands button:hover:not(:disabled){background:var(--raised);border-color:var(--line-hi);
+  color:var(--ink)}
+.bands button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.bands button.on i{color:#fff;opacity:.75}
+.bands button:disabled{opacity:.35}
+.rows .mk b{color:var(--ink);font-weight:500}
+
+/* The sign-in button, in v2's radius and weight. */
+.cta{border-radius:var(--r);font-weight:500;font-size:var(--t-meta);
+  padding:7px 15px}

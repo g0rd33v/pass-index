@@ -1,0 +1,158 @@
+{
+ "providers": [],
+ "entities": [
+  {
+   "id": "ent_o1-mini",
+   "register": "model",
+   "name": "o1-mini",
+   "maker": "prov_openai",
+   "family": "o1",
+   "version": "mini",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_gpt-4o-2024-11-20",
+   "register": "model",
+   "name": "GPT-4o (2024-11-20)",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4o-2024-11-20",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_codex-mini",
+   "register": "model",
+   "name": "Codex mini",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "codex-mini",
+   "input_kind": "text",
+   "output_kind": "text"
+  }
+ ],
+ "aliases": [
+  {
+   "source": "prov_azure",
+   "alias": "4.1",
+   "entity": "ent_gpt-4.1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "4.1 mini",
+   "entity": "ent_gpt-4.1-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5",
+   "entity": "ent_gpt-5"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5 mini",
+   "entity": "ent_gpt-5-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.1",
+   "entity": "ent_gpt-5.1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.2",
+   "entity": "ent_gpt-5.2"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "V4 Flash",
+   "entity": "ent_deepseek-v4-flash"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "V4 Flash 0731",
+   "entity": "ent_deepseek-v4-flash-0731"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "V4 Pro",
+   "entity": "ent_deepseek-v4-pro"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "codex mini",
+   "entity": "ent_codex-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 4o 0513",
+   "entity": "ent_gpt-4o-2024-05-13"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 4o 0806",
+   "entity": "ent_gpt-4o"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 4o 1120",
+   "entity": "ent_gpt-4o-2024-11-20"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 4o mini 0718",
+   "entity": "ent_gpt-4o-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 5 pro",
+   "entity": "ent_gpt-5-pro"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt-oss-120B",
+   "entity": "ent_gpt-oss-120b"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "o1",
+   "entity": "ent_o1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "o1 1217",
+   "entity": "ent_o1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "o1 mini",
+   "entity": "ent_o1-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "o1-pro",
+   "entity": "ent_o1-pro"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "o3 0416",
+   "entity": "ent_o3"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "o3 mini 0131",
+   "entity": "ent_o3-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "o3-pro",
+   "entity": "ent_o3-pro"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "o4-mini 0416",
+   "entity": "ent_o4-mini"
+  }
+ ],
+ "offerings": []
+}

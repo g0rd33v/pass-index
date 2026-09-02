@@ -1,0 +1,1806 @@
+{
+ "providers": [
+  {
+   "id": "prov_atlassian",
+   "name": "Atlassian",
+   "url": "https://www.atlassian.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_diffbot",
+   "name": "Diffbot",
+   "url": "https://www.diffbot.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_lg-ai-research",
+   "name": "LG AI Research",
+   "url": "https://www.lgresearch.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_motif-technologies",
+   "name": "Motif Technologies",
+   "url": "https://motiftech.io",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_nanbeige",
+   "name": "Nanbeige LLM Lab",
+   "url": "https://huggingface.co/Nanbeige",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_metastone",
+   "name": "MetaStone AI",
+   "url": "https://github.com/MetaStone-AI",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_sapiens-ai",
+   "name": "SapiensAI",
+   "url": "https://agnes-ai.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_hidream",
+   "name": "HiDream.ai",
+   "url": "https://hidream.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_reve",
+   "name": "Reve",
+   "url": "https://reve.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_skywork",
+   "name": "Skywork AI",
+   "url": "https://skywork.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_anysphere",
+   "name": "Anysphere",
+   "url": "https://cursor.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_jetbrains",
+   "name": "JetBrains",
+   "url": "https://www.jetbrains.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_zeta-labs",
+   "name": "Zeta Labs",
+   "url": "https://zetalabs.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_narada",
+   "name": "Narada AI",
+   "url": "https://narada.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_refact",
+   "name": "Refact.ai",
+   "url": "https://refact.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_zencoder",
+   "name": "Zencoder",
+   "url": "https://zencoder.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_globant",
+   "name": "Globant",
+   "url": "https://www.globant.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_gbox",
+   "name": "GBOX",
+   "url": "https://gbox.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_customgpt",
+   "name": "CustomGPT.ai",
+   "url": "https://customgpt.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_coasty",
+   "name": "Coasty",
+   "url": "https://coasty.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_simular",
+   "name": "Simular AI",
+   "url": "https://www.simular.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_zte",
+   "name": "ZTE",
+   "url": "https://www.zte.com.cn",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_intelligence-indeed",
+   "name": "Intelligence Indeed",
+   "url": "https://www.ai-indeed.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_hcompany",
+   "name": "H Company",
+   "url": "https://hcompany.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_xlang",
+   "name": "XLANG NLP Lab",
+   "url": "https://xlang.ai",
+   "kind": "lab"
+  },
+  {
+   "id": "prov_async",
+   "name": "Async",
+   "url": "https://async.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_deepdub",
+   "name": "Deepdub",
+   "url": "https://www.deepdub.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_gradium",
+   "name": "Gradium",
+   "url": "https://gradium.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_vui-labs",
+   "name": "VUI Labs",
+   "url": "https://www.vuilabs.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_maya-research",
+   "name": "Maya Research",
+   "url": "https://mayaresearch.ai",
+   "kind": "lab"
+  },
+  {
+   "id": "prov_fish-audio",
+   "name": "Fish Audio",
+   "url": "https://fish.audio",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_papla",
+   "name": "Papla Media",
+   "url": "https://papla.media",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_rumik",
+   "name": "Rumik",
+   "url": "https://rumik.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_tontaube",
+   "name": "Tontaube",
+   "url": "https://tontaube.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_typecast",
+   "name": "Typecast",
+   "url": "https://typecast.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_voiceai",
+   "name": "Voice.ai",
+   "url": "https://voice.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_pine-ai",
+   "name": "Pine AI",
+   "url": "https://www.19pine.ai",
+   "kind": "vendor"
+  }
+ ],
+ "entities": [
+  {
+   "id": "ent_gpt-5-5-instant",
+   "register": "model",
+   "name": "GPT-5.5 Instant",
+   "maker": "prov_openai",
+   "family": "GPT-5",
+   "version": "5.5 Instant",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3-deep-think",
+   "register": "model",
+   "name": "Gemini 3 Deep Think",
+   "maker": "prov_google",
+   "family": "Gemini",
+   "version": "3 Deep Think",
+   "input_kind": "text + image",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_deepseek-v3-2-speciale",
+   "register": "model",
+   "name": "DeepSeek-V3.2-Speciale",
+   "maker": "prov_deepseek",
+   "family": "DeepSeek-V3",
+   "version": "3.2-Speciale",
+   "input_kind": "text + code",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_muse-spark",
+   "register": "model",
+   "name": "Muse Spark",
+   "maker": "prov_meta",
+   "family": "Muse",
+   "version": "Spark",
+   "input_kind": "text + image + audio + video + file",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_motif-3",
+   "register": "model",
+   "name": "Motif-3",
+   "maker": "prov_motif-technologies",
+   "family": "Motif",
+   "version": "3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_nanbeige4-3b-thinking-2511",
+   "register": "model",
+   "name": "Nanbeige4-3B-Thinking-2511",
+   "maker": "prov_nanbeige",
+   "family": "Nanbeige4",
+   "version": "3B-Thinking-2511",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_xbai-o4",
+   "register": "model",
+   "name": "XBai o4",
+   "maker": "prov_metastone",
+   "family": "XBai",
+   "version": "o4",
+   "input_kind": "text + code",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_diffbot-small-xl",
+   "register": "model",
+   "name": "Diffbot-Small-XL",
+   "maker": "prov_diffbot",
+   "family": "Diffbot LLM",
+   "version": "Small-XL",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_exaone-4-0-32b",
+   "register": "model",
+   "name": "EXAONE-4.0-32B",
+   "maker": "prov_lg-ai-research",
+   "family": "EXAONE",
+   "version": "4.0-32B",
+   "input_kind": "text + code",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_openreasoning-nemotron-32b",
+   "register": "model",
+   "name": "OpenReasoning-Nemotron-32B",
+   "maker": "prov_nvidia",
+   "family": "OpenReasoning-Nemotron",
+   "version": "32B",
+   "input_kind": "text + code",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_opencodereasoning-nemotron-1-1-32b",
+   "register": "model",
+   "name": "OpenCodeReasoning-Nemotron-1.1-32B",
+   "maker": "prov_nvidia",
+   "family": "OpenCodeReasoning-Nemotron",
+   "version": "1.1-32B",
+   "input_kind": "text + code",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_xlam-2-32b-fc-r",
+   "register": "model",
+   "name": "xLAM-2-32b-fc-r",
+   "maker": "prov_salesforce",
+   "family": "xLAM",
+   "version": "2-32b-fc-r",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_llama-xlam-2-70b-fc-r",
+   "register": "model",
+   "name": "Llama-xLAM-2-70b-fc-r",
+   "maker": "prov_salesforce",
+   "family": "xLAM",
+   "version": "2-70b-fc-r",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_codestral-24-05",
+   "register": "model",
+   "name": "Codestral (v24.05)",
+   "maker": "prov_mistral",
+   "family": "Codestral",
+   "version": "v24.05",
+   "input_kind": "text + code",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_rovo-dev",
+   "register": "agent",
+   "name": "Rovo Dev",
+   "maker": "prov_atlassian",
+   "family": "Rovo",
+   "version": "Dev",
+   "input_kind": "text + code + file",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_agnes-video-2-5",
+   "register": "model",
+   "name": "Agnes Video 2.5",
+   "maker": "prov_sapiens-ai",
+   "family": "agnes-video",
+   "version": "2.5",
+   "input_kind": "text + image + audio + video",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_dreamina-seedance-2-0",
+   "register": "model",
+   "name": "Dreamina Seedance 2.0",
+   "maker": "prov_bytedance",
+   "family": "seedance",
+   "version": "2.0",
+   "input_kind": "text + image + audio + video",
+   "output_kind": "audio + video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_happyhorse-1-0",
+   "register": "model",
+   "name": "HappyHorse 1.0",
+   "maker": "prov_alibaba",
+   "family": "happyhorse",
+   "version": "1.0",
+   "input_kind": "text + image",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_happyhorse-1-1",
+   "register": "model",
+   "name": "HappyHorse 1.1",
+   "maker": "prov_alibaba",
+   "family": "happyhorse",
+   "version": "1.1",
+   "input_kind": "text + image",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_hidream-o1-image-1-5",
+   "register": "model",
+   "name": "HiDream-O1-Image-1.5",
+   "maker": "prov_hidream",
+   "family": "hidream-o1-image",
+   "version": "1.5",
+   "input_kind": "text + image",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_ltx-2-pro",
+   "register": "model",
+   "name": "LTX-2 Pro",
+   "maker": "prov_lightricks",
+   "family": "ltx-2",
+   "version": "2",
+   "input_kind": "text + image",
+   "output_kind": "audio + video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_luma-uni-1-max",
+   "register": "model",
+   "name": "Uni-1 Max",
+   "maker": "prov_luma",
+   "family": "uni",
+   "version": "1",
+   "input_kind": "text + image",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_pixverse-v6",
+   "register": "model",
+   "name": "PixVerse V6",
+   "maker": "prov_pixverse",
+   "family": "pixverse",
+   "version": "6",
+   "input_kind": "text + image",
+   "output_kind": "audio + video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen-image-3-0",
+   "register": "model",
+   "name": "Qwen-Image-3.0",
+   "maker": "prov_alibaba",
+   "family": "qwen-image",
+   "version": "3.0",
+   "input_kind": "text + image",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen-image-3-0-pro",
+   "register": "model",
+   "name": "Qwen-Image-3.0-Pro",
+   "maker": "prov_alibaba",
+   "family": "qwen-image",
+   "version": "3.0",
+   "input_kind": "text + image",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_recraft-v4-1-utility",
+   "register": "model",
+   "name": "Recraft V4.1 Utility",
+   "maker": "prov_recraft",
+   "family": "recraft-v4.1",
+   "version": "4.1",
+   "input_kind": "text + image",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_recraft-v4-1-utility-pro",
+   "register": "model",
+   "name": "Recraft V4.1 Utility Pro",
+   "maker": "prov_recraft",
+   "family": "recraft-v4.1",
+   "version": "4.1",
+   "input_kind": "text + image",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_reve-2-1",
+   "register": "model",
+   "name": "Reve 2.1",
+   "maker": "prov_reve",
+   "family": "reve",
+   "version": "2.1",
+   "input_kind": "text + image",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_skyreels-v4",
+   "register": "model",
+   "name": "SkyReels V4",
+   "maker": "prov_skywork",
+   "family": "skyreels",
+   "version": "4",
+   "input_kind": "text + image + audio + video",
+   "output_kind": "audio + video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_stable-diffusion-1-5",
+   "register": "model",
+   "name": "Stable Diffusion 1.5",
+   "maker": "prov_stability",
+   "family": "stable-diffusion",
+   "version": "1.5",
+   "input_kind": "text + image",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_wan-2-6",
+   "register": "model",
+   "name": "Wan 2.6",
+   "maker": "prov_alibaba",
+   "family": "wan",
+   "version": "2.6",
+   "input_kind": "text + image",
+   "output_kind": "audio + video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_wan-2-7",
+   "register": "model",
+   "name": "Wan 2.7",
+   "maker": "prov_alibaba",
+   "family": "wan",
+   "version": "2.7",
+   "input_kind": "text + image",
+   "output_kind": "audio + video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_wan-3-0",
+   "register": "model",
+   "name": "Wan 3.0",
+   "maker": "prov_alibaba",
+   "family": "wan",
+   "version": "3.0",
+   "input_kind": "text + image + audio + video + file",
+   "output_kind": "audio + video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-code",
+   "register": "agent",
+   "name": "Claude Code",
+   "maker": "prov_anthropic",
+   "family": "claude-code",
+   "version": "",
+   "input_kind": "text + code + image + file",
+   "output_kind": "text + code + file",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-3-5-sonnet",
+   "register": "model",
+   "name": "Claude 3.5 Sonnet",
+   "maker": "prov_anthropic",
+   "family": "claude-3.5",
+   "version": "3.5 Sonnet",
+   "input_kind": "text + image + file",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_codex",
+   "register": "agent",
+   "name": "Codex",
+   "maker": "prov_openai",
+   "family": "codex",
+   "version": "",
+   "input_kind": "text + code + image + file",
+   "output_kind": "text + code + file",
+   "attrs": {}
+  },
+  {
+   "id": "ent_openai-operator",
+   "register": "agent",
+   "name": "Operator",
+   "maker": "prov_openai",
+   "family": "operator",
+   "version": "",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_cursor-agent",
+   "register": "agent",
+   "name": "Cursor Agent",
+   "maker": "prov_anysphere",
+   "family": "cursor",
+   "version": "",
+   "input_kind": "text + code + image + file",
+   "output_kind": "text + code + file",
+   "attrs": {}
+  },
+  {
+   "id": "ent_junie",
+   "register": "agent",
+   "name": "Junie",
+   "maker": "prov_jetbrains",
+   "family": "junie",
+   "version": "",
+   "input_kind": "text + code + file",
+   "output_kind": "text + code + file",
+   "attrs": {}
+  },
+  {
+   "id": "ent_jace-ai",
+   "register": "agent",
+   "name": "JACE",
+   "maker": "prov_zeta-labs",
+   "family": "jace",
+   "version": "",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_narada-ai",
+   "register": "agent",
+   "name": "Narada AI",
+   "maker": "prov_narada",
+   "family": "narada",
+   "version": "",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_cuga",
+   "register": "agent",
+   "name": "CUGA",
+   "maker": "prov_ibm",
+   "family": "cuga",
+   "version": "",
+   "input_kind": "text + image",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_refact-ai-agent",
+   "register": "agent",
+   "name": "Refact.ai Agent",
+   "maker": "prov_refact",
+   "family": "refact",
+   "version": "",
+   "input_kind": "text + code",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_zencoder",
+   "register": "agent",
+   "name": "Zencoder",
+   "maker": "prov_zencoder",
+   "family": "zencoder",
+   "version": "",
+   "input_kind": "text + code",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_globant-code-fixer-agent",
+   "register": "agent",
+   "name": "Code Fixer Agent",
+   "maker": "prov_globant",
+   "family": "globant-code-fixer",
+   "version": "",
+   "input_kind": "text + code + image",
+   "output_kind": "text + code",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gbox",
+   "register": "agent",
+   "name": "GBOX",
+   "maker": "prov_gbox",
+   "family": "gbox",
+   "version": "",
+   "input_kind": "text + image",
+   "output_kind": "text + image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_customgpt-researcher",
+   "register": "agent",
+   "name": "CustomGPT.ai Researcher",
+   "maker": "prov_customgpt",
+   "family": "customgpt-research-lab",
+   "version": "",
+   "input_kind": "text + file",
+   "output_kind": "text + file",
+   "attrs": {}
+  },
+  {
+   "id": "ent_coasty",
+   "register": "agent",
+   "name": "Coasty",
+   "maker": "prov_coasty",
+   "family": "coasty-cua",
+   "version": "1",
+   "input_kind": "text + image",
+   "output_kind": "text + file",
+   "attrs": {}
+  },
+  {
+   "id": "ent_agent-s3",
+   "register": "agent",
+   "name": "Agent S3",
+   "maker": "prov_simular",
+   "family": "agent-s",
+   "version": "3",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_co-sight",
+   "register": "agent",
+   "name": "Co-Sight",
+   "maker": "prov_zte",
+   "family": "co-sight",
+   "version": "1.0",
+   "input_kind": "text + file",
+   "output_kind": "text + file",
+   "attrs": {}
+  },
+  {
+   "id": "ent_intelligence-indeed-agent",
+   "register": "agent",
+   "name": "Intelligence Indeed Agent",
+   "maker": "prov_intelligence-indeed",
+   "family": "z-agent",
+   "version": "",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_holo3-35b-a3b",
+   "register": "model",
+   "name": "Holo3-35B-A3B",
+   "maker": "prov_hcompany",
+   "family": "holo3",
+   "version": "35B-A3B",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_agentlm-7b",
+   "register": "model",
+   "name": "AgentLM-7B",
+   "maker": "prov_zhipu",
+   "family": "agentlm",
+   "version": "7B",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_agentlm-13b",
+   "register": "model",
+   "name": "AgentLM-13B",
+   "maker": "prov_zhipu",
+   "family": "agentlm",
+   "version": "13B",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_agentlm-70b",
+   "register": "model",
+   "name": "AgentLM-70B",
+   "maker": "prov_zhipu",
+   "family": "agentlm",
+   "version": "70B",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_agentrl",
+   "register": "model",
+   "name": "AgentRL",
+   "maker": "prov_zhipu",
+   "family": "agentrl",
+   "version": "",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_agenttrek-1-0-32b",
+   "register": "model",
+   "name": "AgentTrek-1.0-32B",
+   "maker": "prov_xlang",
+   "family": "agenttrek",
+   "version": "1.0",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_castleflow-v1-0",
+   "register": "model",
+   "name": "CastleFlow v1.0",
+   "maker": "prov_async",
+   "family": "castleflow",
+   "version": "1.0",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_deepdub-etts-3-2",
+   "register": "model",
+   "name": "Deepdub eTTS 3.2",
+   "maker": "prov_deepdub",
+   "family": "etts",
+   "version": "3.2",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_eleven-flash-v2-5",
+   "register": "model",
+   "name": "Eleven Flash v2.5",
+   "maker": "prov_elevenlabs",
+   "family": "eleven-flash",
+   "version": "2.5",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_eleven-turbo-v2-5",
+   "register": "model",
+   "name": "Eleven Turbo v2.5",
+   "maker": "prov_elevenlabs",
+   "family": "eleven-turbo",
+   "version": "2.5",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gradium-tts",
+   "register": "model",
+   "name": "Gradium TTS",
+   "maker": "prov_gradium",
+   "family": "gradium-tts",
+   "version": "",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_hume-octave",
+   "register": "model",
+   "name": "Octave",
+   "maker": "prov_hume",
+   "family": "octave",
+   "version": "1",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_inworld-tts-max",
+   "register": "model",
+   "name": "Inworld TTS MAX",
+   "maker": "prov_inworld-ai",
+   "family": "inworld-tts",
+   "version": "1-max",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_lightning-v3-1-pro",
+   "register": "model",
+   "name": "Lightning v3.1 Pro",
+   "maker": "prov_smallestai",
+   "family": "lightning",
+   "version": "3.1 Pro",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_luna-tts",
+   "register": "model",
+   "name": "Luna TTS",
+   "maker": "prov_vui-labs",
+   "family": "luna",
+   "version": "",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_magpie-multilingual",
+   "register": "model",
+   "name": "Magpie TTS Multilingual",
+   "maker": "prov_nvidia",
+   "family": "magpie-tts",
+   "version": "multilingual",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_maya-1",
+   "register": "model",
+   "name": "Maya1",
+   "maker": "prov_maya-research",
+   "family": "maya",
+   "version": "1",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_minimax-speech-02-turbo",
+   "register": "model",
+   "name": "Speech 02 Turbo",
+   "maker": "prov_minimax",
+   "family": "speech",
+   "version": "02 Turbo",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_minimax-speech-2-6-hd",
+   "register": "model",
+   "name": "Speech 2.6 HD",
+   "maker": "prov_minimax",
+   "family": "speech",
+   "version": "2.6 HD",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_minimax-speech-2-6-turbo",
+   "register": "model",
+   "name": "Speech 2.6 Turbo",
+   "maker": "prov_minimax",
+   "family": "speech",
+   "version": "2.6 Turbo",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_openaudio-s1",
+   "register": "model",
+   "name": "OpenAudio S1",
+   "maker": "prov_fish-audio",
+   "family": "openaudio",
+   "version": "S1",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_openaudio-s2",
+   "register": "model",
+   "name": "OpenAudio S2",
+   "maker": "prov_fish-audio",
+   "family": "openaudio",
+   "version": "S2",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_papla-p1",
+   "register": "model",
+   "name": "Papla P1",
+   "maker": "prov_papla",
+   "family": "papla-p",
+   "version": "1",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_silk-mulberry-1-5",
+   "register": "model",
+   "name": "Silk Mulberry 1.5",
+   "maker": "prov_rumik",
+   "family": "silk-mulberry",
+   "version": "1.5",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_tontaube-v0",
+   "register": "model",
+   "name": "Tontaube V0",
+   "maker": "prov_tontaube",
+   "family": "tontaube",
+   "version": "V0",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_typecast-ssfm-3-0",
+   "register": "model",
+   "name": "SSFM 3.0",
+   "maker": "prov_typecast",
+   "family": "ssfm",
+   "version": "3.0",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_veena",
+   "register": "model",
+   "name": "Veena",
+   "maker": "prov_maya-research",
+   "family": "veena",
+   "version": "",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_voice-ai-text-to-speech-v1",
+   "register": "model",
+   "name": "Voice.ai Text to Speech V1",
+   "maker": "prov_voiceai",
+   "family": "voice-ai-tts",
+   "version": "1",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-live-2-5-flash-native-audio",
+   "register": "model",
+   "name": "Gemini Live 2.5 Flash Native Audio",
+   "maker": "prov_google",
+   "family": "gemini-flash-live",
+   "version": "2.5",
+   "input_kind": "text + image + audio + video",
+   "output_kind": "text + audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3-5-omni-plus-realtime",
+   "register": "model",
+   "name": "Qwen3.5-Omni-Plus-Realtime",
+   "maker": "prov_alibaba",
+   "family": "qwen-omni-realtime",
+   "version": "3.5-plus",
+   "input_kind": "text + image + audio + video",
+   "output_kind": "text + audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_pine-voice-preview",
+   "register": "agent",
+   "name": "Pine Voice Preview",
+   "maker": "prov_pine-ai",
+   "family": "pine-voice",
+   "version": "preview",
+   "input_kind": "text + audio",
+   "output_kind": "text + audio",
+   "attrs": {}
+  }
+ ],
+ "aliases": [
+  {
+   "source": "leaderboard",
+   "alias": "Claude 4.7 (High)",
+   "entity": "ent_claude-opus-4.7"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "gpt-5.5-instant",
+   "entity": "ent_gpt-5-5-instant"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "GPT-o1",
+   "entity": "ent_o1"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Gemini 3 Deep Think (2/26)",
+   "entity": "ent_gemini-3-deep-think"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Gemini 2.5 Pro Exp (Mar 2025)",
+   "entity": "ent_gemini-2.5-pro"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "DeepSeek v4 (max)",
+   "entity": "ent_deepseek-v4-pro"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "DeepSeek-V3.2-Exp (Prompt + Thinking)",
+   "entity": "ent_deepseek-v3.2-exp"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "DeepSeek-v3.2-Speciale",
+   "entity": "ent_deepseek-v3-2-speciale"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Qwen3.8 2.4T A95B",
+   "entity": "ent_qwen3.8-2.4t"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Qwen3 235B A22B diff, no think, Alibaba API",
+   "entity": "ent_qwen3-235b-a22b"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Muse Spark",
+   "entity": "ent_muse-spark"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "muse-spark",
+   "entity": "ent_muse-spark"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Motif 3",
+   "entity": "ent_motif-3"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Nanbeige4-3B-Thinking-2511 (FC)",
+   "entity": "ent_nanbeige4-3b-thinking-2511"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "XBai-o4-medium",
+   "entity": "ent_xbai-o4"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "diffbot-small-xl",
+   "entity": "ent_diffbot-small-xl"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "EXAONE-4.0-32B",
+   "entity": "ent_exaone-4-0-32b"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "OpenReasoning-Nemotron-32B",
+   "entity": "ent_openreasoning-nemotron-32b"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "OpenCodeReasoning-Nemotron-1.1-32B",
+   "entity": "ent_opencodereasoning-nemotron-1-1-32b"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "xLAM-2-32b-fc-r (FC)",
+   "entity": "ent_xlam-2-32b-fc-r"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "xLAM-2-70b-fc-r (FC)",
+   "entity": "ent_llama-xlam-2-70b-fc-r"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "codestral-2405",
+   "entity": "ent_codestral-24-05"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "K2.5-1T-A32B",
+   "entity": "ent_kimi-k2.5"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Moonshotai-Kimi-K2-Instruct (FC)",
+   "entity": "ent_kimi-k2"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "minimax-2.1",
+   "entity": "ent_minimax-m2.1"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Atlassian Rovo Dev (2025-09-02)",
+   "entity": "ent_rovo-dev"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "ppl-sonar-pro-high",
+   "entity": "ent_sonar-pro"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "ppl-sonar-reasoning-pro-high",
+   "entity": "ent_sonar-reasoning-pro"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Agnes-Video-2.5",
+   "entity": "ent_agnes-video-2-5"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Dreamina Seedance 2.0 720p",
+   "entity": "ent_dreamina-seedance-2-0"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "HappyHorse-1.0",
+   "entity": "ent_happyhorse-1-0"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "HappyHorse-1.1",
+   "entity": "ent_happyhorse-1-1"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "HiDream-O1-Image-1.5",
+   "entity": "ent_hidream-o1-image-1-5"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "LTX-2 Pro",
+   "entity": "ent_ltx-2-pro"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Luma UNI 1 Max",
+   "entity": "ent_luma-uni-1-max"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "PixVerse V6",
+   "entity": "ent_pixverse-v6"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Qwen-Image-3.0",
+   "entity": "ent_qwen-image-3-0"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Qwen-Image-3.0-Pro",
+   "entity": "ent_qwen-image-3-0-pro"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Recraft V4.1 Utility",
+   "entity": "ent_recraft-v4-1-utility"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Recraft V4.1 Utility Pro",
+   "entity": "ent_recraft-v4-1-utility-pro"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Reve 2.1",
+   "entity": "ent_reve-2-1"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "SkyReels V4",
+   "entity": "ent_skyreels-v4"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Stable Diffusion 1.5",
+   "entity": "ent_stable-diffusion-1-5"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Wan 2.6",
+   "entity": "ent_wan-2-6"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Wan 2.7",
+   "entity": "ent_wan-2-7"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Wan2.7-260612",
+   "entity": "ent_wan-2-7"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Wan 3.0",
+   "entity": "ent_wan-3-0"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Claude Code",
+   "entity": "ent_claude-code"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Anthropic Claude Code Agent",
+   "entity": "ent_claude-code"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Claude 3.5 Sonnet",
+   "entity": "ent_claude-3-5-sonnet"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Claude Sonnet 3.5",
+   "entity": "ent_claude-3-5-sonnet"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Codex",
+   "entity": "ent_codex"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "OpenAI Codex Agent",
+   "entity": "ent_codex"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "OpenAI Operator",
+   "entity": "ent_openai-operator"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Cursor",
+   "entity": "ent_cursor-agent"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Cursor Cursor Agent",
+   "entity": "ent_cursor-agent"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Junie",
+   "entity": "ent_junie"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Junie Junie Agent",
+   "entity": "ent_junie"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Jace.AI",
+   "entity": "ent_jace-ai"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Narada AI",
+   "entity": "ent_narada-ai"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "IBM CUGA",
+   "entity": "ent_cuga"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Refact.ai Agent",
+   "entity": "ent_refact-ai-agent"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Zencoder (2025-04-01)",
+   "entity": "ent_zencoder"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Globant Code Fixer Agent",
+   "entity": "ent_globant-code-fixer-agent"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "GBOX Agent",
+   "entity": "ent_gbox"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Claude Code + GBOX MCP",
+   "entity": "ent_gbox"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "CustomGPT.ai Research Lab V42",
+   "entity": "ent_customgpt-researcher"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "CustomGPT.ai Research Lab v34",
+   "entity": "ent_customgpt-researcher"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "CustomGPT.ai Research Lab v35",
+   "entity": "ent_customgpt-researcher"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "CustomGPT.ai Research Lab v39",
+   "entity": "ent_customgpt-researcher"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "CustomGPT.ai Research Lab v41",
+   "entity": "ent_customgpt-researcher"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "CustomGPT.ai Research Lab v43",
+   "entity": "ent_customgpt-researcher"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "CustomGPT.ai Research Lab v44",
+   "entity": "ent_customgpt-researcher"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Coasty CUA v1",
+   "entity": "ent_coasty"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "agent s3 w/ GPT-5 bBoN (N=10)",
+   "entity": "ent_agent-s3"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "agent s3 w/ Opus 4.5 + GPT-5 bBoN (N=10)",
+   "entity": "ent_agent-s3"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "agent s3 w/ Opus 4.5 bBoN (N=1)",
+   "entity": "ent_agent-s3"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Co-Sight Pro v1.0.0",
+   "entity": "ent_co-sight"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Co-Sight Pro v1.0.1",
+   "entity": "ent_co-sight"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Intelligence-Indeed Agent",
+   "entity": "ent_intelligence-indeed-agent"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Holo3-35B-A3B",
+   "entity": "ent_holo3-35b-a3b"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "AgentLM-7B",
+   "entity": "ent_agentlm-7b"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "AgentLM-13B",
+   "entity": "ent_agentlm-13b"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "AgentLM-70B",
+   "entity": "ent_agentlm-70b"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "AgentRL w/ GLM-4-9B-0414",
+   "entity": "ent_agentrl"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "AgentRL w/ Qwen2.5-14B-Instruct",
+   "entity": "ent_agentrl"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "AgentRL w/ Qwen2.5-32B-Instruct",
+   "entity": "ent_agentrl"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "AgentRL w/ Qwen2.5-3B-Instruct",
+   "entity": "ent_agentrl"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "AgentTrek-1.0-32B",
+   "entity": "ent_agenttrek-1-0-32b"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "CastleFlow v1.0",
+   "entity": "ent_castleflow-v1-0"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Deepdub eTTS 3.2",
+   "entity": "ent_deepdub-etts-3-2"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Eleven Flash v2.5",
+   "entity": "ent_eleven-flash-v2-5"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "eleven_flash_v2_5",
+   "entity": "ent_eleven-flash-v2-5"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Eleven Turbo v2.5",
+   "entity": "ent_eleven-turbo-v2-5"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "eleven_turbo_v2_5",
+   "entity": "ent_eleven-turbo-v2-5"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Gradium TTS",
+   "entity": "ent_gradium-tts"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Hume Octave",
+   "entity": "ent_hume-octave"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "octave",
+   "entity": "ent_hume-octave"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Inworld TTS MAX",
+   "entity": "ent_inworld-tts-max"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "inworld-tts-1-max",
+   "entity": "ent_inworld-tts-max"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Kokoro v1.0",
+   "entity": "ent_kokoro-82m"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Lightning v3.1 Pro",
+   "entity": "ent_lightning-v3-1-pro"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "lightning_v3.1_pro",
+   "entity": "ent_lightning-v3-1-pro"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Luna TTS",
+   "entity": "ent_luna-tts"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "luna-tts",
+   "entity": "ent_luna-tts"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Magpie Multilingual",
+   "entity": "ent_magpie-multilingual"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Maya 1",
+   "entity": "ent_maya-1"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "MiniMax Speech 02 Turbo",
+   "entity": "ent_minimax-speech-02-turbo"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "speech-02-turbo",
+   "entity": "ent_minimax-speech-02-turbo"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "MiniMax Speech 2.6 HD",
+   "entity": "ent_minimax-speech-2-6-hd"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "speech-2.6-hd",
+   "entity": "ent_minimax-speech-2-6-hd"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "MiniMax Speech 2.6 Turbo",
+   "entity": "ent_minimax-speech-2-6-turbo"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "speech-2.6-turbo",
+   "entity": "ent_minimax-speech-2-6-turbo"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "OpenAudio S1",
+   "entity": "ent_openaudio-s1"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "OpenAudio S2",
+   "entity": "ent_openaudio-s2"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Papla P1",
+   "entity": "ent_papla-p1"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Silk Mulberry 1.5",
+   "entity": "ent_silk-mulberry-1-5"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Tontaube V0",
+   "entity": "ent_tontaube-v0"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Typecast SSFM 3.0",
+   "entity": "ent_typecast-ssfm-3-0"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "ssfm-v30",
+   "entity": "ent_typecast-ssfm-3-0"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Veena",
+   "entity": "ent_veena"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Voice.ai Text to Speech V1",
+   "entity": "ent_voice-ai-text-to-speech-v1"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "voiceai-tts-v1",
+   "entity": "ent_voice-ai-text-to-speech-v1"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "gemini-3.1-flash-live-preview-thinking-high",
+   "entity": "ent_gemini-3.1-flash-live-preview"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "gemini-3.1-flash-live-preview-thinking-minimal",
+   "entity": "ent_gemini-3.1-flash-live-preview"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "gemini-3.1-flash-live-preview",
+   "entity": "ent_gemini-3.1-flash-live-preview"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "gemini-live-2.5-flash-native-audio",
+   "entity": "ent_gemini-live-2-5-flash-native-audio"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "gpt-realtime-1.0",
+   "entity": "ent_gpt-realtime"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "gpt-realtime",
+   "entity": "ent_gpt-realtime"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "gpt-realtime-2025-08-28",
+   "entity": "ent_gpt-realtime"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "qwen3.5-omni-plus-realtime",
+   "entity": "ent_qwen3-5-omni-plus-realtime"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "qwen3.5-omni-plus-realtime-2026-03-15",
+   "entity": "ent_qwen3-5-omni-plus-realtime"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "Pine Voice Preview",
+   "entity": "ent_pine-voice-preview"
+  },
+  {
+   "source": "leaderboard",
+   "alias": "pine-voice-preview",
+   "entity": "ent_pine-voice-preview"
+  }
+ ],
+ "offerings": [],
+ "suites": [],
+ "benchmarks": [],
+ "docs": []
+}

@@ -1,0 +1,154 @@
+url  ent_claude-opus-4.7	https://platform.claude.com/docs/en/models/opus-4-7/overview
+url  ent_gpt-5-5-instant	https://developers.openai.com/api/docs/models/chat-latest
+url  ent_o1	https://developers.openai.com/api/docs/models/o1
+url  ent_gemini-3-deep-think	https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/
+url  ent_gemini-2.5-pro	https://ai.google.dev/gemini-api/docs/models
+url  ent_deepseek-v4-pro	https://api-docs.deepseek.com/news/news260813/
+url  ent_deepseek-v3.2-exp	https://api-docs.deepseek.com/news/news250929/
+url  ent_deepseek-v3-2-speciale	https://api-docs.deepseek.com/news/news251201/
+url  ent_qwen3.8-2.4t	https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+url  ent_qwen3-235b-a22b	https://huggingface.co/Qwen/Qwen3-235B-A22B
+url  ent_muse-spark	https://ai.meta.com/blog/introducing-muse-spark-msl/
+url  ent_motif-3	https://huggingface.co/Motif-Technologies/Motif-3
+url  ent_nanbeige4-3b-thinking-2511	https://huggingface.co/Nanbeige/Nanbeige4-3B-Thinking-2511
+url  ent_xbai-o4	https://github.com/MetaStone-AI/XBai-o4
+url  ent_diffbot-small-xl	https://huggingface.co/diffbot/Diffbot-Small-XL-2508
+url  ent_exaone-4-0-32b	https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B
+url  ent_openreasoning-nemotron-32b	https://huggingface.co/nvidia/OpenReasoning-Nemotron-32B
+url  ent_opencodereasoning-nemotron-1-1-32b	https://huggingface.co/nvidia/OpenCodeReasoning-Nemotron-1.1-32B
+url  ent_xlam-2-32b-fc-r	https://huggingface.co/Salesforce/xLAM-2-32b-fc-r
+url  ent_llama-xlam-2-70b-fc-r	https://huggingface.co/Salesforce/Llama-xLAM-2-70b-fc-r
+url  ent_codestral-24-05	https://huggingface.co/mistralai/Codestral-22B-v0.1
+url  ent_kimi-k2.5	https://huggingface.co/moonshotai/Kimi-K2.5
+url  ent_kimi-k2	https://huggingface.co/moonshotai/Kimi-K2-Instruct
+url  ent_minimax-m2.1	https://www.minimax.io/news/minimax-m21
+url  ent_rovo-dev	https://www.atlassian.com/software/rovo-dev
+url  ent_sonar-pro	https://docs.perplexity.ai/docs/sonar/models/sonar-pro
+url  ent_sonar-reasoning-pro	https://docs.perplexity.ai/docs/sonar/models/sonar-reasoning-pro
+not sold  ACoder	a SWE-bench agent scaffold whose GitHub repo (github.com/ACoder-AI/ACoder) carries only a technical report by an unaffiliated 'ACoder Team' — no code, weights, API, license or product page, and no identifiable publishing organisation
+not sold  Claude-3.5-Sonnet-20241022	Anthropic retired claude-3-5-sonnet-20241022 on October 28, 2025; the deprecations page confirms requests to it now fail on every Anthropic-operated platform and it is absent from the Bedrock and Google Cloud tables
+not sold  DeepSeek R1 + claude-3-5-sonnet-20241022	a SWE-bench Lite submission (the open-source DARS Agent scaffold, arXiv 2503.14269) that pairs two other makers' models in one harness; nothing is sold under this name and both underlying snapshots are now retired
+not sold  Grok 4 Fast R	xAI retired grok-4-fast-reasoning on May 15, 2026; it no longer appears on docs.x.ai's current model list and requests are rerouted to Grok 4.3
+not sold  Hunyuan-T1	Tencent never released T1 weights and hunyuan-t1 / hunyuan-t1-latest no longer appear on Tencent Cloud's current Hunyuan model list, so there is no remaining way to obtain it
+not sold  Seed-Thinking-v1.5	a ByteDance Seed technical-report name (arXiv 2504.13914); no weights were published on the ByteDance-Seed org and no Volcano Engine endpoint is offered under this name
+not sold  Seed1.6-Ada-Thinking	not a released variant — 'Ada' comes from the AdaCoT evaluation mode in ByteDance's Seed 1.6 write-up, and the Volcano Engine Ark catalogue lists no such model
+not sold  Seed1.6-Base	the unreleased pretrained base of Seed 1.6, named only in ByteDance's technical blog; no weights on the ByteDance-Seed org and no base endpoint on Volcano Engine
+not sold  api-gpt-4o-search	OpenAI's gpt-4o-search-preview was deprecated April 22, 2026 and shut down July 23, 2026 per the official deprecations table
+url  ent_agnes-video-2-5	https://agnes-ai.com
+url  ent_dreamina-seedance-2-0	https://dreamina.capcut.com/tools/seedance-2-0
+url  ent_happyhorse-1-0	https://www.alibabacloud.com/help/en/model-studio/happyhorse-api-reference/
+url  ent_happyhorse-1-1	https://www.alibabacloud.com/help/en/model-studio/happyhorse-api-reference/
+url  ent_hidream-o1-image-1-5	https://hidream.ai/
+url  ent_ltx-2-pro	https://ltx.io/model/ltx-2
+url  ent_luma-uni-1-max	https://lumalabs.ai/uni-1
+url  ent_pixverse-v6	https://pixverse.ai/
+url  ent_qwen-image-3-0	https://help.aliyun.com/en/model-studio/qwen-image-generation-and-editing-api-reference
+url  ent_qwen-image-3-0-pro	https://help.aliyun.com/en/model-studio/qwen-image-generation-and-editing-api-reference
+url  ent_recraft-v4-1-utility	https://www.recraft.ai/docs/recraft-models/recraft-v4-1
+url  ent_recraft-v4-1-utility-pro	https://www.recraft.ai/docs/recraft-models/recraft-v4-1
+url  ent_reve-2-1	https://reve.com
+url  ent_skyreels-v4	https://www.skyreels.ai/
+url  ent_stable-diffusion-1-5	https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
+url  ent_wan-2-6	https://wan.video/
+url  ent_wan-2-7	https://wan.video/
+url  ent_wan-3-0	https://wan.video/
+url  ent_claude-code	https://claude.com/product/claude-code
+url  ent_claude-3-5-sonnet	https://www.anthropic.com/news/claude-3-5-sonnet
+url  ent_codex	https://openai.com/codex/
+url  ent_openai-operator	https://openai.com/index/introducing-operator/
+url  ent_cursor-agent	https://cursor.com/docs/agent/overview
+url  ent_junie	https://www.jetbrains.com/junie/
+url  ent_jace-ai	https://jace.ai
+url  ent_narada-ai	https://narada.ai
+url  ent_cuga	https://research.ibm.com/blog/cuga-agent-framework
+url  ent_refact-ai-agent	https://refact.ai
+url  ent_zencoder	https://zencoder.ai
+url  ent_rovo-dev	https://www.atlassian.com/solutions/devops/rovo-dev
+url  ent_globant-code-fixer-agent	https://more.globant.com/us-en/code-fixer-agent
+url  ent_gbox	https://gbox.ai
+url  ent_customgpt-researcher	https://researcher.customgpt.ai/
+url  ent_coasty	https://coasty.ai/computer-use
+url  ent_agent-s3	https://www.simular.ai/articles/agent-s3
+url  ent_co-sight	https://github.com/ZTE-AICloud/Co-Sight
+url  ent_intelligence-indeed-agent	https://www.ai-indeed.com/products/agentRpa
+url  ent_holo3-35b-a3b	https://hcompany.ai/holo3
+url  ent_agentlm-7b	https://huggingface.co/THUDM/agentlm-7b
+url  ent_agentlm-13b	https://huggingface.co/THUDM/agentlm-13b
+url  ent_agentlm-70b	https://huggingface.co/THUDM/agentlm-70b
+url  ent_agentrl	https://github.com/THUDM/AgentRL
+url  ent_agenttrek-1-0-32b	https://huggingface.co/xlangai/AgentTrek-1.0-32B
+not sold  Agent Workflow Memory	a CMU/MIT prompting-and-memory technique published as arXiv 2409.07429 with a research repo; nothing is sold or downloadable as a product
+not sold  AgentOccam-Judge	an Amazon Science WebArena baseline (arXiv 2410.13825) released only as a research repo, with a judge module variant used for the leaderboard row
+not sold  AgentSymbiotic	an academic large/small-LLM cooperation method (arXiv 2502.07942) with a project page only, no weights and no product
+not sold  Learn-by-Interact	a Google Cloud AI Research + HKU data-synthesis framework (arXiv 2501.10893) with no productised SKU or download
+not sold  SteP	ASAPP Research's stacked-policy web agent, shipped as a paper (arXiv 2310.03720) and research repo rather than a product
+not sold  TTI	a CMU/UIUC/Berkeley test-time-interaction research agent (arXiv 2506.07976) released as paper, code and data; no product and no vendor-published model card
+not sold  WebPilot	an academic multi-agent MCTS web agent from AAAI 2025 (arXiv 2408.15978) with no product page
+not sold  GUI-API Hybrid Agent	a research configuration mixing GUI actions with API calls (CMU's 'Beyond Browsing', arXiv 2410.16464); no vendor sells it under this name
+not sold  GPT-4 + Auto Eval	a UC Berkeley/Michigan auto-evaluation harness wrapped around the OpenAI API (arXiv 2404.06474), not a product
+not sold  GPT-4o + Tree Search	a CMU inference-time tree-search harness over the OpenAI API (arXiv 2407.01476), not a product
+not sold  GLM-4-32B + Qwen2.5-VL-7B	a leaderboard submission configuration pairing a Zhipu planner with an Alibaba grounding model; the pairing itself is not sold by anyone
+not sold  Cobra Agent Orch	an internal system submitted by the Korean startup Dalpha; project page only, no weights, no separately obtainable Cobra Agent product
+not sold  Cobra Agent_2.7	an internal Dalpha submission version; no product page and no way to obtain it
+not sold  Cobra Agent_v2.7	an internal Dalpha submission version; no product page and no way to obtain it
+not sold  Cobra Agent_v3.0	an internal Dalpha submission version; no product page and no way to obtain it
+not sold  Cobra Agent_v3.1	an internal Dalpha submission version; no product page and no way to obtain it
+not sold  Cobra Agent_v3.2	an internal Dalpha submission version; no product page and no way to obtain it
+not sold  Cobra Agent_v3.2.1	an internal Dalpha submission version; no product page and no way to obtain it
+not sold  Cobra Agent_v3.2.2	an internal Dalpha submission version; no product page and no way to obtain it
+not sold  Cobra Agent_v3.2.3	an internal Dalpha submission version; no product page and no way to obtain it
+not sold  Cobra Agent_v3.3	an internal Dalpha submission version; no product page and no way to obtain it
+not sold  Cobra Agent_v3.4	an internal Dalpha submission version; no product page and no way to obtain it
+not sold  Codefuse_Pycfuse_SVR	an Ant Group CodeFuse evaluation submission configuration added to the SWE-bench experiments repo; not released or sold under that name
+not sold  ACoder	an open harness published only as a GitHub repo and report by the ACoder-AI org, with no disclosed maker and no product
+not sold  ColorBrowserAgent	a MadeAgents research browser agent (arXiv 2601.07262) with an open repo and no public product page
+not sold  Lemon	a Lenovo Research agent technical report (arXiv 2602.07092) with a research repo and no sold product
+not sold  LemonHarness + Multiple	the same Lemon team's evaluation harness (arXiv 2606.24311) paired with assorted models; a research harness, not a product
+not sold  OPS-Agentic-Search	an Alibaba Cloud internal search agent submission with no standalone product page under that name
+not sold  openJiuwen-deepagent	an open-source project under the openJiuwen GitHub org; shipped indirectly inside Huawei Cloud agent services, with no standalone product SKU
+not sold  Hephaestus-8B-Base	an Amazon Science research model from the Hephaestus continual-pretraining paper (arXiv 2502.06589); no released weights or product page could be located
+not sold  Hephaestus-8B-IFT	an Amazon Science research model from the Hephaestus continual-pretraining paper (arXiv 2502.06589); no released weights or product page could be located
+not sold  Distyl ButtonAgent	Distyl AI's tau3-bench submission; Distyl sells enterprise AI services but publishes no product page for ButtonAgent and no way to obtain it
+unresolved  A3-Qwen3.5-9B	searched for the exact string on the web and Hugging Face; only Alibaba's base Qwen3.5-9B surfaces, and no lab, paper or repo claims the 'A3-' prefixed variant
+unresolved  AuraAi	searched the name alone and with agent-leaderboard qualifiers; no company page, paper or repo attributable to this submission
+unresolved  DeepSky Agent	searched the name alone and with benchmark qualifiers; no paper, repo, company or press mention found
+unresolved  OpAgent	searched the exact name and near spellings; only the unrelated OAgents paper (arXiv 2506.15741) surfaces, nothing attributable to this row
+url  ent_castleflow-v1-0	https://async.com/async-voice-api/
+url  ent_deepdub-etts-3-2	https://www.deepdub.ai/api-voices
+url  ent_eleven-flash-v2-5	https://elevenlabs.io/docs/models
+url  ent_eleven-turbo-v2-5	https://elevenlabs.io/docs/models
+url  ent_gradium-tts	https://docs.gradium.ai/guides/introduction
+url  ent_hume-octave	https://dev.hume.ai/docs/text-to-speech-tts/overview
+url  ent_inworld-tts-max	https://inworld.ai/tts
+url  ent_kokoro-82m	https://huggingface.co/hexgrad/Kokoro-82M
+url  ent_lightning-v3-1-pro	https://smallest.ai/pricing/models
+url  ent_luna-tts	https://www.vuilabs.ai/
+url  ent_magpie-multilingual	https://build.nvidia.com/nvidia/magpie-tts-multilingual
+url  ent_maya-1	https://huggingface.co/maya-research/maya1
+url  ent_minimax-speech-02-turbo	https://platform.minimax.io/
+url  ent_minimax-speech-2-6-hd	https://platform.minimax.io/
+url  ent_minimax-speech-2-6-turbo	https://platform.minimax.io/
+url  ent_openaudio-s1	https://openaudio.com/blogs/s1
+url  ent_openaudio-s2	https://fish.audio/s2/
+url  ent_papla-p1	https://papla.media/solutions/p1-model
+url  ent_silk-mulberry-1-5	https://docs.rumik.ai/
+url  ent_tontaube-v0	https://tontaube.ai/api-reference
+url  ent_typecast-ssfm-3-0	https://typecast.ai/developers/api/
+url  ent_veena	https://huggingface.co/maya-research/veena
+url  ent_voice-ai-text-to-speech-v1	https://voice.ai/text-to-speech/
+url  ent_gemini-3.1-flash-live-preview	https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview
+url  ent_gemini-live-2-5-flash-native-audio	https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-live-api
+url  ent_gpt-realtime	https://developers.openai.com/api/docs/models/gpt-realtime
+url  ent_qwen3-5-omni-plus-realtime	https://www.alibabacloud.com/help/en/model-studio/realtime
+url  ent_pine-voice-preview	https://pineclaw.com/voice/api.html
+not sold  Magpie Research Preview	an unreleased NVIDIA Magpie-TTS research checkpoint entered in the arena (its row links only to NVIDIA's NeMo GitHub); NVIDIA's own pages document Magpie TTS Multilingual and Magpie TTS Zeroshot but no 'Research Preview' model, and there is no NIM, no weights and no endpoint to obtain
+not sold  NeuTTS Max	Neuphonic's own site lists only NeuTTS-2M, NeuTTS-2E and NeuCodec (plus older open-weight NeuTTS Air/Nano on GitHub); /models/neutts-max 404s and no 'Max' model, model id or download exists to obtain
+not sold  Wordcab TTS	Wordcab's own site names no 'Wordcab TTS' model — its speech generation is part of 'Wordcab Voice', a private runtime whose SDKs, weights and deployment packages are 'delivered directly to each customer' via a demo/pilot process, with no public API, pricing or signup
+not sold  grok-voice-fast-1.0	Sierra's own display label for the xAI realtime voice endpoint it tested in March 2026 (the submission's trajectory files are just 'xai-realtime'); xAI's docs name grok-voice-think-fast-1.0, grok-voice-think-fast-2.0 and grok-voice-latest, but no model id 'grok-voice-fast-1.0' that anyone can call
+not sold  grok-voice-think-fast-1.0 + tool-mentor	a custom leaderboard submission by Pickle: a supervisory-LLM scaffold ('tool-mentor') living in Pickle's fork of Sierra's tau2-bench harness, layered over xAI's now-deprecated grok-voice-think-fast-1.0; Pickle sells a consumer AI-companion app and a wearable, not a voice model or developer API, and tool-mentor is not obtainable as a product
+unresolved  Hithink Speech 2.6	the arena's row links to https://readifyai.com/ and the arena's provider package calls it 'Hithink (Readify)', but readifyai.com never mentions 'Hithink', 'RoyalFlush' or any model named Hithink Speech 2.6 — the site is a free consumer TTS reader app with no company name, no parent, no API and no paid tier; I checked its homepage, /pricing, /blog and app.readifyai.com, plus the arena's own provider source, and found no maker page to confirm attribution to Hithink RoyalFlush Information Network or anyone else. Tried: read the arena provider package (packages/providers/hithink), fetched readifyai.com homepage, /pricing, /blog and app.readifyai.com; searched for a Hithink/RoyalFlush speech product page — the maker's own site names neither the company nor the model
+unresolved  NLS Pre V1	the arena's row links to https://www.alibabacloud.com/ with an Alibaba logo, but no Alibaba page names an 'NLS Pre V1' model. Tried: searched Alibaba Cloud's English and Chinese documentation (Intelligent Speech Interaction / NLS RESTful TTS, Model Studio qwen-tts and realtime-tts model lists) and the aliyun NLS SDK repos; Alibaba's own pages document KAN-TTS voices, qwen-tts and qwen-tts-realtime ids but never 'NLS Pre V1' — 'Pre' reads as a pre-release codename, so the maker is unconfirmed and the model is not obtainable
+unresolved  Luck Dolphin	a stealth entry: the arena shows it with the neutral 'stealth' mark, no product URL and no provider package in the arena source; the arena's own docs say codenamed entries are for genuinely unreleased models whose identity stays hidden until revealed. Tried: read the arena leaderboard API row (url empty, icon /logos/stealth.webp), searched the arena's provider packages for a matching provider, and read the arena's 'Submit a model' anonymity policy; no maker is disclosed anywhere
+unresolved  Luck Dolphin Turbo	same stealth entry family as 'Luck Dolphin' — neutral stealth mark, no product URL, no provider package, maker undisclosed by policy until reveal. Tried: read the arena leaderboard API row (url empty, icon /logos/stealth.webp), searched the arena's provider packages, read the arena's anonymity policy
+unresolved  Parmesan	a stealth codename on the arena with no URL and no maker shown. Tried: read the arena leaderboard API row (url empty, icon /logos/stealth.webp), grepped the arena's 17 provider packages for a matching provider, read the arena's 'Anonymous pre-release / Stealth models' docs; the arena gives no maker
+unresolved  star-june-2026	a codename row on the arena with no URL and not even a provider logo; no provider package in the arena source and no maker disclosed. Tried: read the arena leaderboard API row (url empty, icon null), grepped the arena's provider packages and seed/catalog code, read the arena's anonymity policy

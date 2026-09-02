@@ -1,0 +1,1009 @@
+ent_gemini-3.7-flash	gpqa_diamond	Accuracy (high)
+ent_gpt-5.4-pro	gpqa_diamond	Accuracy (xhigh)
+ent_gemini-3.1-pro-preview	gpqa_diamond	Accuracy (high)
+ent_gemini-3.6-flash	gpqa_diamond	Accuracy (high)
+ent_gemini-3.1-pro-preview	gpqa_diamond	Accuracy
+ent_grok-4.6	gpqa_diamond	Accuracy (high)
+ent_gpt-5.5	gpqa_diamond	Accuracy (xhigh)
+ent_gpt-5.5-pro	gpqa_diamond	Accuracy (xhigh)
+ent_claude-opus-5	gpqa_diamond	Accuracy (max)
+ent_gpt-5.6-sol	gpqa_diamond	Accuracy (max)
+ent_grok-4.5	gpqa_diamond	Accuracy (high)
+ent_gpt-5.6-terra	gpqa_diamond	Accuracy (max)
+ent_gpt-5.4	gpqa_diamond	Accuracy (xhigh)
+ent_grok-4.6	gpqa_diamond	Accuracy (xhigh)
+ent_kimi-k3	gpqa_diamond	Accuracy (max)
+ent_claude-opus-5	gpqa_diamond	Accuracy
+ent_gemini-3.5-flash	gpqa_diamond	Accuracy (high)
+ent_qwen3.8-max	gpqa_diamond	Accuracy
+ent_gemini-3-pro-preview	gpqa_diamond	Accuracy
+ent_kimi-k3	gpqa_diamond	Accuracy (high)
+ent_glm-5.2	gpqa_diamond	Accuracy (max)
+ent_deepseek-v4-pro-0813	gpqa_diamond	Accuracy
+ent_gpt-5.6-luna	gpqa_diamond	Accuracy (max)
+ent_gpt-5.2	gpqa_diamond	Accuracy (xhigh)
+ent_deepseek-v4-flash-0731	gpqa_diamond	Accuracy
+ent_claude-fable-5	epoch_otis_mock_aime	Accuracy (high)
+ent_gpt-5.6-sol	epoch_otis_mock_aime	Accuracy (max)
+ent_gpt-5.5-pro	epoch_otis_mock_aime	Accuracy (xhigh)
+ent_gpt-5.5	epoch_otis_mock_aime	Accuracy (xhigh)
+ent_gpt-5.6-terra	epoch_otis_mock_aime	Accuracy (max)
+ent_claude-fable-5	epoch_otis_mock_aime	Accuracy (max)
+ent_qwen3.8-max	epoch_otis_mock_aime	Accuracy (xhigh)
+ent_grok-4.6	epoch_otis_mock_aime	Accuracy (xhigh)
+ent_claude-opus-5	epoch_otis_mock_aime	Accuracy (max)
+ent_deepseek-v4-pro-0813	epoch_otis_mock_aime	Accuracy
+ent_gpt-5.6-luna	epoch_otis_mock_aime	Accuracy (max)
+ent_claude-opus-4.8	epoch_otis_mock_aime	Accuracy (max)
+ent_claude-opus-4.7	epoch_otis_mock_aime	Accuracy (xhigh)
+ent_grok-4.6	epoch_otis_mock_aime	Accuracy (high)
+ent_claude-opus-5	epoch_otis_mock_aime	Accuracy
+ent_claude-opus-4.8	epoch_otis_mock_aime	Accuracy (low)
+ent_claude-fable-5	epoch_otis_mock_aime	Accuracy (low)
+ent_gpt-5.4	epoch_otis_mock_aime	Accuracy (high)
+ent_grok-4.5	epoch_otis_mock_aime	Accuracy (high)
+ent_gemini-3.7-flash	epoch_otis_mock_aime	Accuracy (high)
+ent_kimi-k3	epoch_otis_mock_aime	Accuracy (max)
+ent_deepseek-v4-pro	epoch_otis_mock_aime	Accuracy (max)
+ent_kimi-k2.6	epoch_otis_mock_aime	Accuracy
+ent_gpt-5.2	epoch_otis_mock_aime	Accuracy (xhigh)
+ent_gpt-5.6-sol	epoch_frontiermath	Accuracy (max)
+ent_gpt-5.5-pro	epoch_frontiermath	Accuracy (xhigh)
+ent_claude-fable-5	epoch_frontiermath	Accuracy (max)
+ent_gpt-5.6-terra	epoch_frontiermath	Accuracy (max)
+ent_claude-opus-5	epoch_frontiermath	Accuracy (max)
+ent_gpt-5.5	epoch_frontiermath	Accuracy (xhigh)
+ent_gpt-5.4-pro	epoch_frontiermath	Accuracy (xhigh)
+ent_gpt-5.6-luna	epoch_frontiermath	Accuracy (max)
+ent_claude-opus-4.8	epoch_frontiermath	Accuracy (max)
+ent_gpt-5.4	epoch_frontiermath	Accuracy (xhigh)
+ent_qwen3.8-max	epoch_frontiermath	Accuracy
+ent_gpt-5.2-pro	epoch_frontiermath	Accuracy (xhigh)
+ent_kimi-k3	epoch_frontiermath	Accuracy (max)
+ent_gemini-3.7-flash	epoch_frontiermath	Accuracy (high)
+ent_claude-opus-4.7	epoch_frontiermath	Accuracy (max)
+ent_gpt-5.2	epoch_frontiermath	Accuracy (xhigh)
+ent_grok-4.6	epoch_frontiermath	Accuracy (xhigh)
+ent_claude-opus-4.6	epoch_frontiermath	Accuracy (max)
+ent_claude-sonnet-5	epoch_frontiermath	Accuracy (max)
+ent_deepseek-v4-pro-0813	epoch_frontiermath	Accuracy
+ent_qwen3.7-max	epoch_frontiermath	Accuracy (max)
+ent_gemini-3.5-flash	epoch_frontiermath	Accuracy (high)
+ent_gemini-3.1-pro-preview	epoch_frontiermath	Accuracy
+ent_glm-5.2	epoch_frontiermath	Accuracy (max)
+ent_gemini-3.6-flash	epoch_frontiermath	Accuracy (high)
+ent_gemini-3.1-pro-preview	epoch_hle	Accuracy
+ent_gpt-5.4-pro	epoch_hle	Accuracy (unknown)
+ent_muse-spark	epoch_hle	Accuracy
+ent_gemini-3-pro-preview	epoch_hle	Accuracy
+ent_gpt-5.4	epoch_hle	Accuracy (xhigh)
+ent_claude-opus-4.7	epoch_hle	Accuracy (unknown settings)
+ent_claude-opus-4.6	epoch_hle	Accuracy (max)
+ent_gpt-5-pro	epoch_hle	Accuracy (unknown thinking)
+ent_gpt-5.2	epoch_hle	Accuracy (high)
+ent_gpt-5	epoch_hle	Accuracy (high)
+ent_claude-opus-4.5	epoch_hle	Accuracy (unknown settings)
+ent_kimi-k2.5	epoch_hle	Accuracy
+ent_gpt-5.1	epoch_hle	Accuracy (high)
+ent_gemini-2.5-pro	epoch_hle	Accuracy (jun 2025)
+ent_o3	epoch_hle	Accuracy (high)
+ent_gpt-5-mini	epoch_hle	Accuracy (high)
+ent_o3	epoch_hle	Accuracy (medium)
+ent_claude-opus-4.6	epoch_hle	Accuracy (no thinking)
+ent_gemini-2.5-pro	epoch_hle	Accuracy (mar 2025)
+ent_o4-mini-high	epoch_hle	Accuracy
+ent_gemini-2.5-pro	epoch_hle	Accuracy (jun 2025)
+ent_o4-mini-medium	epoch_hle	Accuracy
+ent_claude-sonnet-4.5	epoch_hle	Accuracy (59k thinking)
+ent_gemini-2.5-flash	epoch_hle	Accuracy (apr 2025)
+ent_gemini-3-pro-preview	hle	Accuracy (%)
+ent_gpt-5	hle	Accuracy (%)
+ent_grok-4	hle	Accuracy (%)
+ent_gemini-2.5-pro	hle	Accuracy (%)
+ent_gpt-5-mini	hle	Accuracy (%)
+ent_claude-sonnet-4.5	hle	Accuracy (%)
+ent_gemini-2.5-flash	hle	Accuracy (%)
+ent_deepseek-r1	hle	Accuracy (%)
+ent_o1	hle	Accuracy (%)
+ent_gpt-4o	hle	Accuracy (%)
+ent_gpt-5.5	aime_2026	Accuracy (± 95% CI) (xhigh)
+ent_claude-opus-4.8	aime_2026	Accuracy (± 95% CI) (max)
+ent_gpt-5.4	aime_2026	Accuracy (± 95% CI) (xhigh)
+ent_gpt-5.2	aime_2026	Accuracy (± 95% CI) (high)
+ent_gemini-3.1-pro-preview	aime_2026	Accuracy (± 95% CI)
+ent_step-3.5-flash	aime_2026	Accuracy (± 95% CI)
+ent_gemini-3-flash-preview	aime_2026	Accuracy (± 95% CI)
+ent_glm-5	aime_2026	Accuracy (± 95% CI)
+ent_deepseek-v4-pro	aime_2026	Accuracy (± 95% CI) (max)
+ent_gemini-3.6-flash	aime_2026	Accuracy (± 95% CI)
+ent_kimi-k3	aime_2026	Accuracy (± 95% CI) (think)
+ent_claude-opus-4.6	aime_2026	Accuracy (± 95% CI) (high)
+ent_deepseek-v4-flash	aime_2026	Accuracy (± 95% CI) (max)
+ent_kimi-k2.5	aime_2026	Accuracy (± 95% CI) (think)
+ent_glm-5.1	aime_2026	Accuracy (± 95% CI)
+ent_kimi-k2.6	aime_2026	Accuracy (± 95% CI) (think)
+ent_claude-opus-4.7	aime_2026	Accuracy (± 95% CI) (xhigh)
+ent_step-3.7-flash	aime_2026	Accuracy (± 95% CI)
+ent_gemini-3.5-flash	aime_2026	Accuracy (± 95% CI)
+ent_grok-4.1-fast-reasoning	aime_2026	Accuracy (± 95% CI)
+ent_deepseek-v3.2	aime_2026	Accuracy (± 95% CI) (think)
+ent_qwen3.5-397b-a17b	aime_2026	Accuracy (± 95% CI)
+ent_qwen3.5-35b-a3b	aime_2026	Accuracy (± 95% CI)
+ent_qwen3.5-9b	aime_2026	Accuracy (± 95% CI)
+ent_nemotron-3-super-120b-a12b	aime_2026	Accuracy (± 95% CI)
+ent_gpt-5.2	aime_2025	Accuracy (± 95% CI) (xhigh)
+ent_step-3.5-flash	aime_2025	Accuracy (± 95% CI)
+ent_gemini-3-flash-preview	aime_2025	Accuracy (± 95% CI)
+ent_glm-5	aime_2025	Accuracy (± 95% CI)
+ent_deepseek-v3-2-speciale	aime_2025	Accuracy (± 95% CI)
+ent_kimi-k2.5	aime_2025	Accuracy (± 95% CI) (think)
+ent_gpt-5	aime_2025	Accuracy (± 95% CI) (high)
+ent_gemini-3-pro-preview	aime_2025	Accuracy (± 95% CI) (preview)
+ent_deepseek-v3.2	aime_2025	Accuracy (± 95% CI) (think)
+ent_gpt-5.1	aime_2025	Accuracy (± 95% CI) (high)
+ent_glm-4.5	aime_2025	Accuracy (± 95% CI)
+ent_kimi-k2-thinking	aime_2025	Accuracy (± 95% CI)
+ent_grok-4	aime_2025	Accuracy (± 95% CI)
+ent_deepseek-v3.2-exp	aime_2025	Accuracy (± 95% CI) (think)
+ent_glm-4.6	aime_2025	Accuracy (± 95% CI)
+ent_o4-mini-high	aime_2025	Accuracy (± 95% CI)
+ent_deepseek-v3.1	aime_2025	Accuracy (± 95% CI) (think)
+ent_gpt-oss-120b	aime_2025	Accuracy (± 95% CI) (high)
+ent_grok-4.1-fast-reasoning	aime_2025	Accuracy (± 95% CI)
+ent_gpt-oss-20b	aime_2025	Accuracy (± 95% CI) (high)
+ent_deepseek-r1-0528	aime_2025	Accuracy (± 95% CI)
+ent_o3	aime_2025	Accuracy (± 95% CI) (high)
+ent_gemini-2.5-pro	aime_2025	Accuracy (± 95% CI)
+ent_gemini-3.1-pro-preview	mmlu_pro	Overall (accuracy)
+ent_gemini-3-pro-preview	mmlu_pro	Overall (accuracy) (11/25)
+ent_o1	mmlu_pro	Overall (accuracy)
+ent_claude-opus-4.6	mmlu_pro	Overall (accuracy) (thinking)
+ent_gemini-3-flash-preview	mmlu_pro	Overall (accuracy) (12/25)
+ent_minimax-m2.1	mmlu_pro	Overall (accuracy)
+ent_qwen3.5-397b-a17b	mmlu_pro	Overall (accuracy)
+ent_seed-2.0-lite	mmlu_pro	Overall (accuracy)
+ent_gpt-5.4	mmlu_pro	Overall (accuracy)
+ent_gpt-5.2	mmlu_pro	Overall (accuracy)
+ent_claude-sonnet-4.5	mmlu_pro	Overall (accuracy) (thinking)
+ent_claude-4-opus	mmlu_pro	Overall (accuracy) (thinking)
+ent_claude-opus-4.5	mmlu_pro	Overall (accuracy) (thinking)
+ent_claude-sonnet-4.6	mmlu_pro	Overall (accuracy) (thinking)
+ent_gpt-5	mmlu_pro	Overall (accuracy) (high)
+ent_kimi-k2.5	mmlu_pro	Overall (accuracy)
+ent_grok-4	mmlu_pro	Overall (accuracy)
+ent_seed-2.0-pro	mmlu_pro	Overall (accuracy)
+ent_qwen3.5-122b-a10b	mmlu_pro	Overall (accuracy)
+ent_seed-1.6	mmlu_pro	Overall (accuracy) (thinking)
+ent_gpt-5.1	mmlu_pro	Overall (accuracy)
+ent_gemini-3.1-pro-preview	mmlu_pro	Overall (accuracy)
+ent_gemini-3-pro-preview	mmlu_pro	Overall (accuracy) (11/25)
+ent_o1	mmlu_pro	Overall (accuracy)
+ent_claude-opus-4.6	mmlu_pro	Overall (accuracy) (thinking)
+ent_gemini-3-flash-preview	mmlu_pro	Overall (accuracy) (12/25)
+ent_minimax-m2.1	mmlu_pro	Overall (accuracy)
+ent_qwen3.5-397b-a17b	mmlu_pro	Overall (accuracy)
+ent_seed-2.0-lite	mmlu_pro	Overall (accuracy)
+ent_gpt-5.4	mmlu_pro	Overall (accuracy)
+ent_gpt-5.2	mmlu_pro	Overall (accuracy)
+ent_gpt-5.6-sol	arc_agi_2	Score (%) (max)
+ent_claude-opus-5	arc_agi_2	Score (%) (max)
+ent_gpt-5.6-sol	arc_agi_2	Score (%) (xhigh)
+ent_claude-fable-5	arc_agi_2	Score (%) (max)
+ent_claude-fable-5	arc_agi_2	Score (%) (xhigh)
+ent_claude-opus-5	arc_agi_2	Score (%) (high)
+ent_claude-fable-5	arc_agi_2	Score (%) (high)
+ent_gpt-5.6-sol	arc_agi_2	Score (%) (high)
+ent_gpt-5.5	arc_agi_2	Score (%) (xhigh)
+ent_gemini-3.7-flash	arc_agi_2	Score (%) (high)
+ent_claude-fable-5	arc_agi_1	Score (%) (xhigh)
+ent_gemini-3.1-pro-preview	arc_agi_1	Score (%) (preview)
+ent_gpt-5.6-sol	arc_agi_1	Score (%) (xhigh)
+ent_claude-opus-5	arc_agi_1	Score (%) (high)
+ent_claude-opus-5	arc_agi_3	Score (%) (high)
+ent_gpt-5.6-sol	arc_agi_3	Score (%) (max)
+ent_gpt-5.6-sol	arc_agi_3	Score (%) (xhigh)
+ent_gpt-5.6-sol	arc_agi_3	Score (%) (high)
+ent_grok-4.6	arc_agi_3	Score (%) (xhigh)
+ent_gpt-5.5-pro	epoch_frontiermath	Accuracy (high)
+ent_gpt-5.5	epoch_frontiermath	Accuracy (xhigh)
+ent_gpt-5.5-pro	epoch_frontiermath	Accuracy (xhigh)
+ent_gpt-5.4-pro	epoch_frontiermath	Accuracy (xhigh)
+ent_gpt-5.4	epoch_frontiermath	Accuracy (xhigh)
+ent_claude-opus-4.8	epoch_frontiermath	Accuracy (max)
+ent_claude-opus-4.7	epoch_frontiermath	Accuracy (xhigh)
+ent_claude-opus-4.5	swebench_verified	% Resolved (high)
+ent_gemini-3-flash-preview	swebench_verified	% Resolved (high)
+ent_minimax-m2.5	swebench_verified	% Resolved (high)
+ent_claude-opus-4.6	swebench_verified	% Resolved
+ent_claude-opus-4.5	swebench_verified	% Resolved (medium)
+ent_gemini-3-pro-preview	swebench_verified	% Resolved
+ent_gpt-5.2-codex	swebench_verified	% Resolved
+ent_glm-5	swebench_verified	% Resolved (high)
+ent_gpt-5.2	swebench_verified	% Resolved (high)
+ent_gpt-5.2	swebench_verified	% Resolved (high)
+ent_claude-sonnet-4.5	swebench_verified	% Resolved (high)
+ent_kimi-k2.5	swebench_verified	% Resolved (high)
+ent_claude-sonnet-4.5	swebench_verified	% Resolved
+ent_deepseek-v3.2	swebench_verified	% Resolved (high)
+ent_gemini-3-pro-preview	swebench_verified	% Resolved (high)
+ent_gpt-5.2	swebench_verified	% Resolved
+ent_claude-4-opus	swebench_verified	% Resolved
+ent_claude-haiku-4.5	swebench_verified	% Resolved (high)
+ent_gpt-5.1-codex	swebench_verified	% Resolved (medium)
+ent_gpt-5.1	swebench_verified	% Resolved (medium)
+ent_gpt-5	swebench_verified	% Resolved (medium)
+ent_claude-4-sonnet	swebench_verified	% Resolved
+ent_kimi-k2-thinking	swebench_verified	% Resolved
+ent_minimax-m2	swebench_verified	% Resolved
+ent_deepseek-v3.2	swebench_verified	% Resolved (reasoner)
+ent_claude-opus-4.5	swebench_verified_all_agents	% Resolved (medium)
+ent_seed-code	swebench_verified_all_agents	% Resolved
+ent_gemini-3-pro-preview	swebench_verified_all_agents	% Resolved
+ent_claude-4-sonnet	swebench_verified_all_agents	% Resolved
+ent_claude-opus-4.5	swebench_verified_all_agents	% Resolved (high)
+ent_gemini-3-flash-preview	swebench_verified_all_agents	% Resolved (high)
+ent_minimax-m2.5	swebench_verified_all_agents	% Resolved (high)
+ent_claude-opus-4.6	swebench_verified_all_agents	% Resolved
+ent_claude-sonnet-4	swebench_verified_all_agents	% Resolved
+ent_claude-sonnet-4.5	swebench_verified_all_agents	% Resolved
+ent_claude-4-sonnet	swebench_verified_all_agents	% Resolved
+ent_gpt-5	swebench_verified_all_agents	% Resolved
+ent_claude-opus-4.5	swebench_verified_all_agents	% Resolved (medium)
+ent_gemini-3-pro-preview	swebench_verified_all_agents	% Resolved
+ent_claude-4-opus	swebench_verified_all_agents	% Resolved
+ent_gpt-5.2-codex	swebench_verified_all_agents	% Resolved
+ent_o3	swebench_multimodal	% Resolved
+ent_claude-4-sonnet	swebench_multimodal	% Resolved
+ent_claude-sonnet-4	swebench_multimodal	% Resolved (claude-sonnet 4)
+ent_o4-mini	swebench_multimodal	% Resolved
+ent_claude-3-7-sonnet-latest	swebench_multimodal	% Resolved
+ent_gpt-4.1	swebench_multimodal	% Resolved
+ent_claude-3-7-sonnet-latest	swebench_multimodal	% Resolved
+ent_gpt-4o	swebench_multimodal	% Resolved
+ent_claude-3-5-sonnet	swebench_multimodal	% Resolved
+ent_gpt-4o	swebench_multimodal	% Resolved
+ent_claude-3-5-sonnet	swebench_multimodal	% Resolved
+ent_claude-3-5-sonnet	swebench_multimodal	% Resolved
+ent_gpt-4o	swebench_multimodal	% Resolved
+ent_claude-3-5-sonnet	swebench_multimodal	% Resolved
+ent_gpt-4o	swebench_multimodal	% Resolved
+ent_claude-3-5-sonnet	swebench_multimodal	% Resolved
+ent_gpt-4o	swebench_multimodal	% Resolved
+ent_claude-3-5-sonnet	swebench_multimodal	% Resolved
+ent_gpt-4o	swebench_multimodal	% Resolved
+ent_muse-spark-1.1	swebench_pro_public	Resolve Rate
+ent_gpt-5.4	swebench_pro_public	Resolve Rate (xhigh)
+ent_muse-spark	swebench_pro_public	Resolve Rate
+ent_claude-opus-4.6	swebench_pro_public	Resolve Rate (thinking)
+ent_gemini-3.1-pro-preview	swebench_pro_public	Resolve Rate (thinking)
+ent_claude-opus-4.5	swebench_pro_public	Resolve Rate
+ent_claude-sonnet-4.5	swebench_pro_public	Resolve Rate
+ent_gemini-3-pro-preview	swebench_pro_public	Resolve Rate
+ent_claude-4-sonnet	swebench_pro_public	Resolve Rate
+ent_gpt-5	swebench_pro_public	Resolve Rate (high)
+ent_gpt-5.2-codex	swebench_pro_public	Resolve Rate
+ent_claude-haiku-4.5	swebench_pro_public	Resolve Rate
+ent_qwen3-coder-480b-a35b-instruct	swebench_pro_public	Resolve Rate
+ent_minimax-m2.1	swebench_pro_public	Resolve Rate
+ent_gemini-3-flash-preview	swebench_pro_public	Resolve Rate
+ent_gpt-5.2	swebench_pro_public	Resolve Rate
+ent_kimi-k2	swebench_pro_public	Resolve Rate
+ent_qwen3-235b-a22b	swebench_pro_public	Resolve Rate
+ent_gpt-oss-120b	swebench_pro_public	Resolve Rate
+ent_deepseek-v3.2	swebench_pro_public	Resolve Rate
+ent_gemma-3-27b-it	swebench_pro_public	Resolve Rate
+ent_llama-3.1-405b	swebench_pro_public	Resolve Rate
+ent_glm-4.6	swebench_pro_public	Resolve Rate
+ent_llama-4-maverick	swebench_pro_public	Resolve Rate
+ent_codestral-24-05	swebench_pro_public	Resolve Rate
+ent_o4-mini-high	livecodebench	Pass@1
+ent_o3	livecodebench	Pass@1 (high)
+ent_o4-mini-medium	livecodebench	Pass@1
+ent_gemini-2.5-pro-preview	livecodebench	Pass@1
+ent_deepseek-r1-0528	livecodebench	Pass@1
+ent_gemini-2.5-pro-preview-05-06	livecodebench	Pass@1
+ent_exaone-4-0-32b	livecodebench	Pass@1
+ent_openreasoning-nemotron-32b	livecodebench	Pass@1
+ent_o3-mini	livecodebench	Pass@1 (high)
+ent_opencodereasoning-nemotron-1-1-32b	livecodebench	Pass@1
+ent_grok-3-mini-high	livecodebench	Pass@1
+ent_o4-mini-low	livecodebench	Pass@1
+ent_qwen3-235b-a22b	livecodebench	Pass@1
+ent_xbai-o4	livecodebench	Pass@1 (medium)
+ent_o3-mini	livecodebench	Pass@1 (med)
+ent_gemini-2.5-flash	livecodebench	Pass@1
+ent_gemini-2.5-flash	livecodebench	Pass@1
+ent_o3-mini	livecodebench	Pass@1 (low)
+ent_claude-opus-4	livecodebench	Pass@1 (thinking)
+ent_claude-sonnet-4	livecodebench	Pass@1 (thinking)
+ent_claude-sonnet-4	livecodebench	Pass@1
+ent_claude-opus-4	livecodebench	Pass@1
+ent_claude-3-5-sonnet	livecodebench	Pass@1
+ent_gpt-4o-2024-08-06	livecodebench	Pass@1
+ent_gpt-4-turbo	livecodebench	Pass@1
+ent_gpt-4o-mini-2024-07-18	livecodebench	Pass@1
+ent_deepseek-v3	livecodebench	Pass@1
+ent_claude-3-haiku	livecodebench	Pass@1
+ent_gpt-5	aider_polyglot	Percent correct (high)
+ent_gpt-5	aider_polyglot	Percent correct (medium)
+ent_o3-pro	aider_polyglot	Percent correct (high)
+ent_gemini-2.5-pro	aider_polyglot	Percent correct (32k think)
+ent_gpt-5	aider_polyglot	Percent correct (low)
+ent_o3	aider_polyglot	Percent correct (high)
+ent_grok-4	aider_polyglot	Percent correct (high)
+ent_gemini-2.5-pro	aider_polyglot	Percent correct (default think)
+ent_gpt-4.1	aider_polyglot	Percent correct
+ent_o3	aider_polyglot	Percent correct
+ent_gemini-2.5-pro-preview-05-06	aider_polyglot	Percent correct
+ent_deepseek-v3.2-exp	aider_polyglot	Percent correct (reasoner)
+ent_gemini-2.5-pro	aider_polyglot	Percent correct
+ent_claude-opus-4	aider_polyglot	Percent correct (32k thinking)
+ent_o4-mini-high	aider_polyglot	Percent correct
+ent_deepseek-r1-0528	aider_polyglot	Percent correct
+ent_claude-opus-4	aider_polyglot	Percent correct (no think)
+ent_deepseek-v3.2-exp	aider_polyglot	Percent correct (chat)
+ent_claude-3-7-sonnet-latest	aider_polyglot	Percent correct (32k thinking tokens)
+ent_claude-3-5-sonnet	aider_polyglot	Percent correct
+ent_o1	aider_polyglot	Percent correct (high)
+ent_claude-sonnet-4	aider_polyglot	Percent correct (32k thinking)
+ent_claude-3-7-sonnet-latest	aider_polyglot	Percent correct (no thinking)
+ent_o3-mini-high	aider_polyglot	Percent correct
+ent_qwen3-235b-a22b	aider_polyglot	Percent correct
+ent_claude-fable-5	terminal_bench_2_1	Accuracy (xhigh)
+ent_gpt-5.5	terminal_bench_2_1	Accuracy (xhigh)
+ent_claude-fable-5	terminal_bench_2_1	Accuracy (high)
+ent_grok-4.5	terminal_bench_2_1	Accuracy (high)
+ent_claude-opus-4.8	terminal_bench_2_1	Accuracy (high)
+ent_gpt-5.6-terra	terminal_bench_2_1	Accuracy (max)
+ent_gpt-5.5	terminal_bench_2_1	Accuracy (xhigh)
+ent_muse-spark-1.1	terminal_bench_2_1	Accuracy (xhigh)
+ent_gpt-5.6-luna	terminal_bench_2_1	Accuracy (max)
+ent_claude-sonnet-5	terminal_bench_2_1	Accuracy (high)
+ent_gemini-3-pro-preview	terminal_bench_2_1	Accuracy
+ent_claude-opus-4.7	terminal_bench_2_1	Accuracy
+ent_claude-opus-4.7	terminal_bench_2_1	Accuracy
+ent_gemini-3-pro-preview	terminal_bench_2_1	Accuracy
+ent_gemini-3.1-pro-preview	terminal_bench_2_1	Accuracy
+ent_gemini-3.1-pro-preview	terminal_bench_2_1	Accuracy
+ent_glm-5.1	terminal_bench_2_1	Accuracy
+ent_gpt-5.5	terminal_bench_2_0	Accuracy
+ent_gpt-5.5	terminal_bench_2_0	Accuracy
+ent_gpt-5.5	terminal_bench_2_0	Accuracy
+ent_claude-opus-4.7	terminal_bench_2_0	Accuracy
+ent_gemini-3.1-pro-preview	terminal_bench_2_0	Accuracy
+ent_gpt-5.3-codex	terminal_bench_2_0	Accuracy
+ent_gpt-5.3-codex	terminal_bench_2_0	Accuracy
+ent_claude-opus-4.6	terminal_bench_2_0	Accuracy
+ent_gpt-5.3-codex	terminal_bench_2_0	Accuracy
+ent_gpt-5.3-codex	terminal_bench_2_0	Accuracy
+ent_claude-opus-4.6	terminal_bench_2_0	Accuracy
+ent_gpt-5.3-codex	terminal_bench_2_0	Accuracy
+ent_gemini-3.1-pro-preview	terminal_bench_2_0	Accuracy
+ent_claude-opus-4.6	terminal_bench_2_0	Accuracy
+ent_gpt-5.3-codex	terminal_bench_2_0	Accuracy
+ent_claude-opus-4.6	terminal_bench_2_0	Accuracy
+ent_claude-opus-4.6	terminal_bench_2_0	Accuracy
+ent_gpt-5.3-codex	terminal_bench_2_0	Accuracy
+ent_claude-opus-4.6	terminal_bench_2_0	Accuracy
+ent_gemini-3-pro-preview	terminal_bench_2_0	Accuracy
+ent_gpt-5.3-codex	terminal_bench_2_0	Accuracy
+ent_claude-opus-4.5	bfcl_v4	Overall Acc (fc)
+ent_claude-sonnet-4.5	bfcl_v4	Overall Acc (fc)
+ent_gemini-3-pro-preview	bfcl_v4	Overall Acc (prompt)
+ent_glm-4.6	bfcl_v4	Overall Acc (fc thinking)
+ent_grok-4.1-fast-reasoning	bfcl_v4	Overall Acc (fc)
+ent_claude-haiku-4.5	bfcl_v4	Overall Acc (fc)
+ent_gemini-3-pro-preview	bfcl_v4	Overall Acc (fc)
+ent_o3	bfcl_v4	Overall Acc (prompt)
+ent_grok-4	bfcl_v4	Overall Acc (prompt)
+ent_grok-4	bfcl_v4	Overall Acc (fc)
+ent_kimi-k2	bfcl_v4	Overall Acc
+ent_grok-4.1-fast-non-reasoning	bfcl_v4	Overall Acc (fc)
+ent_command-a	bfcl_v4	Overall Acc (fc, reasoning)
+ent_deepseek-v3.2-exp	bfcl_v4	Overall Acc (prompt + thinking)
+ent_gemini-2.5-flash	bfcl_v4	Overall Acc (fc)
+ent_gpt-5.2	bfcl_v4	Overall Acc (fc)
+ent_gpt-5-mini	bfcl_v4	Overall Acc (fc)
+ent_xlam-2-32b-fc-r	bfcl_v4	Overall Acc (fc)
+ent_deepseek-v3.2-exp	bfcl_v4	Overall Acc (fc)
+ent_gpt-4.1	bfcl_v4	Overall Acc (fc)
+ent_o4-mini	bfcl_v4	Overall Acc (fc)
+ent_llama-xlam-2-70b-fc-r	bfcl_v4	Overall Acc (fc)
+ent_qwen3-235b-a22b-instruct-2507	bfcl_v4	Overall Acc
+ent_gpt-5-nano	bfcl_v4	Overall Acc (fc)
+ent_nanbeige4-3b-thinking-2511	bfcl_v4	Overall Acc (fc)
+ent_claude-fable-5	lmarena_text	Score (Elo, style control)
+ent_claude-opus-4.6	lmarena_text	Score (Elo, style control) (high)
+ent_claude-opus-4.7	lmarena_text	Score (Elo, style control) (high)
+ent_muse-spark-1.2	lmarena_text	Score (Elo, style control) (xhigh)
+ent_claude-opus-4.6	lmarena_text	Score (Elo, style control)
+ent_claude-opus-4.7	lmarena_text	Score (Elo, style control)
+ent_claude-opus-5	lmarena_text	Score (Elo, style control) (high)
+ent_muse-spark-1.1	lmarena_text	Score (Elo, style control)
+ent_gemini-3.7-flash	lmarena_text	Score (Elo, style control) (high)
+ent_kimi-k3	lmarena_text	Score (Elo, style control) (max)
+ent_muse-spark	lmarena_text	Score (Elo, style control)
+ent_claude-opus-5	lmarena_text	Score (Elo, style control) (max)
+ent_glm-5.3	lmarena_text	Score (Elo, style control) (max)
+ent_gemini-3.1-pro-preview	lmarena_text	Score (Elo, style control)
+ent_gemini-3-pro-preview	lmarena_text	Score (Elo, style control)
+ent_gpt-5.6-sol	lmarena_text	Score (Elo, style control) (xhigh)
+ent_gpt-5.5	lmarena_text	Score (Elo, style control) (high)
+ent_claude-opus-4.8	lmarena_text	Score (Elo, style control) (high)
+ent_qwen3.8-max	lmarena_text	Score (Elo, style control)
+ent_gemini-3.6-flash	lmarena_text	Score (Elo, style control) (high)
+ent_gemini-3.5-flash	lmarena_text	Score (Elo, style control) (high)
+ent_gpt-5.4	lmarena_text	Score (Elo, style control) (high)
+ent_gpt-5.5	lmarena_text	Score (Elo, style control)
+ent_gpt-5.2-chat	lmarena_text	Score (Elo, style control)
+ent_grok-4.20	lmarena_text	Score (Elo, style control)
+ent_gemini-3.5-flash	lmarena_text	Score (Elo, style control) (medium)
+ent_qwen3.7-max	lmarena_text	Score (Elo, style control)
+ent_gpt-5-5-instant	lmarena_text	Score (Elo, style control)
+ent_claude-opus-4.8	lmarena_text	Score (Elo, style control)
+ent_gemini-3-flash-preview	lmarena_text	Score (Elo, style control)
+ent_claude-opus-4.5	lmarena_text	Score (Elo, style control) (32k, high)
+ent_claude-sonnet-4.6	lmarena_text	Score (Elo, style control)
+ent_grok-4.20	lmarena_text	Score (Elo, style control) (reasoning)
+ent_glm-5.2	lmarena_text	Score (Elo, style control) (max)
+ent_grok-4.5	lmarena_text	Score (Elo, style control)
+ent_grok-4.20-multi-agent	lmarena_text	Score (Elo, style control)
+ent_claude-opus-4.5	lmarena_text	Score (Elo, style control)
+ent_ernie-5.1	lmarena_text	Score (Elo, style control)
+ent_glm-5.1	lmarena_text	Score (Elo, style control)
+ent_mimo-v2.5-pro	lmarena_text	Score (Elo, style control)
+ent_claude-fable-5	lmarena_vision	Score (Elo, style control)
+ent_qwen3.8-max	lmarena_vision	Score (Elo, style control)
+ent_claude-opus-4.7	lmarena_vision	Score (Elo, style control) (high)
+ent_claude-opus-4.7	lmarena_vision	Score (Elo, style control)
+ent_claude-opus-4.6	lmarena_vision	Score (Elo, style control) (high)
+ent_muse-spark	lmarena_vision	Score (Elo, style control)
+ent_claude-opus-4.6	lmarena_vision	Score (Elo, style control)
+ent_muse-spark-1.2	lmarena_vision	Score (Elo, style control) (xhigh)
+ent_claude-opus-5	lmarena_vision	Score (Elo, style control) (high)
+ent_gemini-3-pro-preview	lmarena_vision	Score (Elo, style control)
+ent_gemini-3.5-flash	lmarena_vision	Score (Elo, style control) (high)
+ent_claude-opus-4.8	lmarena_vision	Score (Elo, style control) (high)
+ent_gemini-3.6-flash	lmarena_vision	Score (Elo, style control) (high)
+ent_gpt-5.5	lmarena_vision	Score (Elo, style control)
+ent_gemini-3.5-flash	lmarena_vision	Score (Elo, style control) (medium)
+ent_gpt-5.5	lmarena_vision	Score (Elo, style control) (high)
+ent_grok-4.5	lmarena_vision	Score (Elo, style control)
+ent_muse-spark-1.1	lmarena_vision	Score (Elo, style control)
+ent_gpt-5.6-sol	lmarena_vision	Score (Elo, style control) (xhigh)
+ent_gpt-5.4	lmarena_vision	Score (Elo, style control) (high)
+ent_claude-opus-4.8	lmarena_vision	Score (Elo, style control)
+ent_gpt-5.2-chat	lmarena_vision	Score (Elo, style control)
+ent_gemini-3.1-pro-preview	lmarena_vision	Score (Elo, style control)
+ent_gpt-5-5-instant	lmarena_vision	Score (Elo, style control)
+ent_claude-opus-5	lmarena_webdev	Score (Elo) (max)
+ent_kimi-k3	lmarena_webdev	Score (Elo) (max)
+ent_qwen3.8-max	lmarena_webdev	Score (Elo)
+ent_claude-opus-5	lmarena_webdev	Score (Elo) (high)
+ent_grok-4.6	lmarena_webdev	Score (Elo) (high)
+ent_claude-fable-5	lmarena_webdev	Score (Elo)
+ent_gpt-5.6-sol	lmarena_webdev	Score (Elo) (codex-harness)
+ent_glm-5.3	lmarena_webdev	Score (Elo) (max)
+ent_qwen3.8-27b	lmarena_webdev	Score (Elo)
+ent_gemini-3.7-flash	lmarena_webdev	Score (Elo) (high)
+ent_glm-5.2	lmarena_webdev	Score (Elo) (max)
+ent_deepseek-v4-pro	lmarena_webdev	Score (Elo)
+ent_deepseek-v4-flash	lmarena_webdev	Score (Elo) (high)
+ent_claude-opus-4.8	lmarena_webdev	Score (Elo) (high)
+ent_claude-opus-4.7	lmarena_webdev	Score (Elo)
+ent_claude-opus-4.7	lmarena_webdev	Score (Elo) (high)
+ent_grok-4.5	lmarena_webdev	Score (Elo)
+ent_claude-opus-4.6	lmarena_webdev	Score (Elo) (high)
+ent_claude-opus-4.8	lmarena_webdev	Score (Elo)
+ent_muse-spark-1.1	lmarena_webdev	Score (Elo)
+ent_gemini-3.6-flash	lmarena_webdev	Score (Elo) (high)
+ent_claude-sonnet-5	lmarena_webdev	Score (Elo) (high)
+ent_claude-opus-4.6	lmarena_webdev	Score (Elo)
+ent_muse-spark-1.2	lmarena_webdev	Score (Elo) (xhigh)
+ent_claude-sonnet-4.6	lmarena_webdev	Score (Elo)
+ent_gpt-5.6-sol	lmarena_search	Score (Elo) (xhigh)
+ent_claude-opus-4.6	lmarena_search	Score (Elo) (search)
+ent_gpt-5.5	lmarena_search	Score (Elo) (search)
+ent_claude-opus-4.7	lmarena_search	Score (Elo)
+ent_claude-fable-5	lmarena_search	Score (Elo)
+ent_ernie-5.1	lmarena_search	Score (Elo)
+ent_claude-sonnet-4.6	lmarena_search	Score (Elo) (search)
+ent_grok-4.5	lmarena_search	Score (Elo)
+ent_gemini-3.1-pro-preview	lmarena_search	Score (Elo) (grounding)
+ent_gemini-3-pro-preview	lmarena_search	Score (Elo) (grounding)
+ent_gpt-5.2	lmarena_search	Score (Elo) (search)
+ent_claude-opus-4.8	lmarena_search	Score (Elo)
+ent_grok-4.20-multi-agent	lmarena_search	Score (Elo)
+ent_gpt-5.1	lmarena_search	Score (Elo) (search)
+ent_gemini-3-flash-preview	lmarena_search	Score (Elo) (grounding)
+ent_gpt-5.4	lmarena_search	Score (Elo) (search)
+ent_claude-sonnet-5	lmarena_search	Score (Elo) (search)
+ent_grok-4.20	lmarena_search	Score (Elo)
+ent_claude-opus-4.5	lmarena_search	Score (Elo) (search)
+ent_gpt-5.2	lmarena_search	Score (Elo) (non-reasoning)
+ent_grok-4.1-fast	lmarena_search	Score (Elo) (search)
+ent_grok-4-fast	lmarena_search	Score (Elo) (search)
+ent_grok-4.3	lmarena_search	Score (Elo)
+ent_claude-sonnet-4.5	lmarena_search	Score (Elo) (search)
+ent_claude-opus-4.1	lmarena_search	Score (Elo) (search)
+ent_o3	lmarena_search	Score (Elo) (search)
+ent_gemini-2.5-pro	lmarena_search	Score (Elo) (grounding)
+ent_grok-4	lmarena_search	Score (Elo) (search)
+ent_sonar-reasoning-pro	lmarena_search	Score (Elo) (high)
+ent_gpt-5	lmarena_search	Score (Elo) (search)
+ent_sonar-pro	lmarena_search	Score (Elo) (high)
+ent_claude-opus-4	lmarena_search	Score (Elo) (search)
+ent_diffbot-small-xl	lmarena_search	Score (Elo)
+ent_claude-opus-5	lmarena_agent	Net Improvement (%) (high)
+ent_claude-opus-5	lmarena_agent	Net Improvement (%) (max)
+ent_claude-fable-5	lmarena_agent	Net Improvement (%) (high)
+ent_gpt-5.6-sol	lmarena_agent	Net Improvement (%) (xhigh)
+ent_claude-opus-4.8	lmarena_agent	Net Improvement (%) (high)
+ent_kimi-k3	lmarena_agent	Net Improvement (%) (max)
+ent_gpt-5.5	lmarena_agent	Net Improvement (%) (xhigh)
+ent_claude-sonnet-5	lmarena_agent	Net Improvement (%) (high)
+ent_claude-opus-4.7	lmarena_agent	Net Improvement (%) (high)
+ent_claude-opus-4.7	lmarena_agent	Net Improvement (%)
+ent_deepseek-v4-pro	lmarena_agent	Net Improvement (%) (high)
+ent_gpt-5.5	lmarena_agent	Net Improvement (%) (high)
+ent_qwen3.8-max	lmarena_agent	Net Improvement (%)
+ent_grok-4.5	lmarena_agent	Net Improvement (%)
+ent_glm-5.2	lmarena_agent	Net Improvement (%) (max)
+ent_claude-opus-4.6	lmarena_agent	Net Improvement (%)
+ent_gpt-5.5	lmarena_agent	Net Improvement (%)
+ent_gpt-5.4	lmarena_agent	Net Improvement (%) (high)
+ent_gpt-5.6-luna	lmarena_agent	Net Improvement (%) (xhigh)
+ent_glm-5.3	lmarena_agent	Net Improvement (%) (max)
+ent_deepseek-v4-flash	lmarena_agent	Net Improvement (%) (high)
+ent_gpt-5.6-terra	lmarena_agent	Net Improvement (%) (xhigh)
+ent_claude-opus-4.8	lmarena_agent	Net Improvement (%)
+ent_claude-sonnet-4.6	lmarena_agent	Net Improvement (%)
+ent_kimi-k2.7-code	lmarena_agent	Net Improvement (%)
+ent_claude-opus-5	aa_intelligence	Artificial Analysis Intelligence Index (xhigh)
+ent_claude-fable-5	aa_intelligence	Artificial Analysis Intelligence Index (with fallback)
+ent_claude-opus-5	aa_intelligence	Artificial Analysis Intelligence Index (high)
+ent_gpt-5.6-sol	aa_intelligence	Artificial Analysis Intelligence Index (max)
+ent_grok-4.6	aa_intelligence	Artificial Analysis Intelligence Index (high)
+ent_grok-4.6	aa_intelligence	Artificial Analysis Intelligence Index (xhigh)
+ent_kimi-k3	aa_intelligence	Artificial Analysis Intelligence Index (max)
+ent_glm-5.3	aa_intelligence	Artificial Analysis Intelligence Index (max)
+ent_gpt-5.6-sol	aa_intelligence	Artificial Analysis Intelligence Index (xhigh)
+ent_grok-4.6	aa_intelligence	Artificial Analysis Intelligence Index (medium)
+ent_claude-opus-5	aa_intelligence	Artificial Analysis Intelligence Index (medium)
+ent_qwen3.8-max	aa_intelligence	Artificial Analysis Intelligence Index
+ent_qwen3.8-2.4t	aa_intelligence	Artificial Analysis Intelligence Index
+ent_gpt-5.6-sol	aa_intelligence	Artificial Analysis Intelligence Index (high)
+ent_muse-spark-1.2	aa_intelligence	Artificial Analysis Intelligence Index (xhigh)
+ent_gpt-5.6-terra	aa_intelligence	Artificial Analysis Intelligence Index (max)
+ent_gemini-3.7-flash	aa_intelligence	Artificial Analysis Intelligence Index (high)
+ent_grok-4.5	aa_intelligence	Artificial Analysis Intelligence Index (high)
+ent_gpt-5.6-sol	aa_intelligence	Artificial Analysis Intelligence Index (medium)
+ent_claude-sonnet-5	aa_intelligence	Artificial Analysis Intelligence Index (max)
+ent_gemini-3.7-flash	aa_intelligence	Artificial Analysis Intelligence Index (medium)
+ent_deepseek-v4-pro-0813	aa_intelligence	Artificial Analysis Intelligence Index
+ent_gpt-5.6-terra	aa_intelligence	Artificial Analysis Intelligence Index (xhigh)
+ent_glm-5.2	aa_intelligence	Artificial Analysis Intelligence Index (max)
+ent_claude-opus-5	aa_intelligence	Artificial Analysis Intelligence Index (low)
+ent_gpt-5.6-luna	aa_intelligence	Artificial Analysis Intelligence Index (max)
+ent_qwen3.8-27b	aa_intelligence	Artificial Analysis Intelligence Index (xhigh)
+ent_deepseek-v4-flash-0731	aa_intelligence	Artificial Analysis Intelligence Index
+ent_grok-4.6	aa_intelligence	Artificial Analysis Intelligence Index (low)
+ent_gemini-3.6-flash	aa_intelligence	Artificial Analysis Intelligence Index
+ent_deepseek-v4-flash-vision-exp	aa_intelligence	Artificial Analysis Intelligence Index (max)
+ent_gemini-3.7-flash	aa_intelligence	Artificial Analysis Intelligence Index (low)
+ent_gpt-5.6-sol	aa_intelligence	Artificial Analysis Intelligence Index (low)
+ent_gpt-5.6-terra	aa_intelligence	Artificial Analysis Intelligence Index (high)
+ent_gpt-5.6-luna	aa_intelligence	Artificial Analysis Intelligence Index (xhigh)
+ent_kimi-k3	aa_intelligence	Artificial Analysis Intelligence Index (low)
+ent_gemini-3.1-pro-preview	aa_intelligence	Artificial Analysis Intelligence Index
+ent_motif-3	aa_intelligence	Artificial Analysis Intelligence Index
+ent_gpt-5.6-luna	aa_intelligence	Artificial Analysis Intelligence Index (high)
+ent_gpt-image-2	aa_text_to_image	Elo (high)
+ent_reve-2-1	aa_text_to_image	Elo
+ent_gemini-3.1-flash-image-preview	aa_text_to_image	Elo
+ent_gpt-image-1.5	aa_text_to_image	Elo (high)
+ent_mai-image-2.5	aa_text_to_image	Elo
+ent_gemini-3-pro-image-preview	aa_text_to_image	Elo
+ent_mai-image-2.5-pro	aa_text_to_image	Elo
+ent_gemini-3.1-flash-lite-image	aa_text_to_image	Elo
+ent_qwen-image-3-0-pro	aa_text_to_image	Elo
+ent_seedream-5.0-pro	aa_text_to_image	Elo
+ent_qwen-image-3-0	aa_text_to_image	Elo
+ent_qwen-image-2.0-pro	aa_text_to_image	Elo
+ent_grok-imagine-image-quality	aa_text_to_image	Elo
+ent_mai-image-2.5-flash	aa_text_to_image	Elo
+ent_hidream-o1-image-1-5	aa_text_to_image	Elo
+ent_flux-2-max	aa_text_to_image	Elo (max)
+ent_seedream-4.0	aa_text_to_image	Elo
+ent_flux-2-flex	aa_text_to_image	Elo
+ent_ideogram-4.0	aa_text_to_image	Elo
+ent_luma-uni-1-max	aa_text_to_image	Elo (max)
+ent_krea-2-large	aa_text_to_image	Elo
+ent_recraft-v4-1-utility-pro	aa_text_to_image	Elo
+ent_recraft-v4-1-utility	aa_text_to_image	Elo
+ent_ideogram-4.0	aa_text_to_image	Elo (quality)
+ent_grok-imagine-image	aa_text_to_image	Elo
+ent_wan-3-0	aa_text_to_video	Elo
+ent_gemini-omni-flash	aa_text_to_video	Elo
+ent_minimax-h3	aa_text_to_video	Elo
+ent_dreamina-seedance-2-0	aa_text_to_video	Elo (720p)
+ent_wan-2-7	aa_text_to_video	Elo
+ent_happyhorse-1-1	aa_text_to_video	Elo
+ent_happyhorse-1-0	aa_text_to_video	Elo
+ent_wan-2-7	aa_text_to_video	Elo
+ent_kling-3.0	aa_text_to_video	Elo (pro, 1080p)
+ent_skyreels-v4	aa_text_to_video	Elo
+ent_kling-3.0	aa_text_to_video	Elo (standard, 720p)
+ent_veo-3.1	aa_text_to_video	Elo
+ent_kling-3.0-omni	aa_text_to_video	Elo (standard, 720p)
+ent_veo-3.1-lite	aa_text_to_video	Elo
+ent_kling-3.0-omni	aa_text_to_video	Elo (pro, 1080p)
+ent_veo-3.1-fast	aa_text_to_video	Elo
+ent_agnes-video-2-5	aa_text_to_video	Elo
+ent_vidu-q3-pro	aa_text_to_video	Elo
+ent_pixverse-v6	aa_text_to_video	Elo
+ent_grok-imagine-video	aa_text_to_video	Elo
+ent_ltx-2.5-fast	aa_text_to_video	Elo
+ent_ltx-2.5-pro	aa_text_to_video	Elo
+ent_vidu-q3-turbo	aa_text_to_video	Elo
+ent_wan-2-6	aa_text_to_video	Elo
+ent_seedance-1.5-pro	aa_text_to_video	Elo
+ent_ingot-8b-r3	mteb_eng	meanTask (mean score, 0-1)
+ent_jasper-token-compression-600m	mteb_eng	meanTask (mean score, 0-1)
+ent_qzhou-embedding	mteb_eng	meanTask (mean score, 0-1)
+ent_qwen3-embedding-8b	mteb_eng	meanTask (mean score, 0-1)
+ent_seed1.5-embedding	mteb_eng	meanTask (mean score, 0-1)
+ent_lgai-embedding-preview	mteb_eng	meanTask (mean score, 0-1)
+ent_qwen3-embedding-4b	mteb_eng	meanTask (mean score, 0-1)
+ent_seed1.6-embedding	mteb_eng	meanTask (mean score, 0-1)
+ent_gemini-embedding-001	mteb_eng	meanTask (mean score, 0-1)
+ent_f2llm-v2-8b	mteb_eng	meanTask (mean score, 0-1)
+ent_harrier-oss-v1-27b	mteb_multi	meanTask (mean score, 0-1)
+ent_llama-embed-nemotron-8b	mteb_multi	meanTask (mean score, 0-1)
+ent_qwen3-embedding-4b	mteb_multi	meanTask (mean score, 0-1)
+ent_harrier-oss-v1-0.6b	mteb_multi	meanTask (mean score, 0-1)
+ent_jina-embeddings-v5-omni-small	mteb_multi	meanTask (mean score, 0-1)
+ent_harrier-oss-v1-270m	mteb_multi	meanTask (mean score, 0-1)
+ent_f2llm-v2-80m	mteb_multi	meanTask (mean score, 0-1)
+ent_qzhou-embedding	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_qwen3-embedding-8b	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_ingot-8b-r3	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_qwen3-embedding-4b	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_seed1.5-embedding	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_jasper-token-compression-600m	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_seed1.6-embedding	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_f2llm-v2-8b	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_lgai-embedding-preview	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_gemini-embedding-001	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_scribe-v2	open_asr_en_short	avg (Average WER %)
+ent_vfast	open_asr_en_short	avg (Average WER %)
+ent_resonant-1	open_asr_en_short	avg (Average WER %)
+ent_resonant-1-flash	open_asr_en_short	avg (Average WER %)
+ent_scribe-v1	open_asr_en_short	avg (Average WER %)
+ent_azure-speech-06-2026	open_asr_en_short	avg (Average WER %)
+ent_hojo-asr-v1	open_asr_en_short	avg (Average WER %)
+ent_qwen3-asr-1.7b-hf	open_asr_en_short	avg (Average WER %)
+ent_higgs-audio-v3-stt	open_asr_en_short	avg (Average WER %)
+ent_universal-3.5-pro	open_asr_en_short	avg (Average WER %)
+ent_whisper-large-v3	open_asr_en_short	avg (Average WER %)
+ent_luna-tts	tts_arena_v2	Elo
+ent_castleflow-v1-0	tts_arena_v2	Elo
+ent_inworld-tts-max	tts_arena_v2	Elo (max)
+ent_inworld-tts-max	tts_arena_v2	Elo
+ent_papla-p1	tts_arena_v2	Elo
+ent_hume-octave	tts_arena_v2	Elo
+ent_speech-2.8-hd	tts_arena_v2	Elo
+ent_lightning-v3-1-pro	tts_arena_v2	Elo
+ent_gradium-tts	tts_arena_v2	Elo
+ent_gpt-image-1.5	aa_text_to_image	Elo (high)
+ent_mai-image-2.5	aa_text_to_image	Elo
+ent_gemini-3-pro-image-preview	aa_text_to_image	Elo
+ent_gemini-3.1-flash-lite-image	aa_text_to_image	Elo
+ent_imagen-4-ultra	aa_text_to_image	Elo
+ent_stable-diffusion-1-5	aa_text_to_image	Elo
+ent_ltx-2-pro	aa_text_to_video	Elo
+ent_qwen3.8-max	tau3_banking	Pass^1
+ent_claude-opus-5	tau3_banking	Pass^1
+ent_grok-4.5	tau3_banking	Pass^1
+ent_gpt-5.6-sol	tau3_banking	Pass^1
+ent_gpt-5.5	tau3_banking	Pass^1
+ent_muse-spark-1.1	tau3_banking	Pass^1
+ent_claude-opus-4.7	tau3_banking	Pass^1
+ent_claude-opus-4.8	tau3_banking	Pass^1
+ent_claude-fable-5	tau3_banking	Pass^1
+ent_gpt-5.4	tau3_banking	Pass^1
+ent_kimi-k3	tau3_banking	Pass^1
+ent_glm-5.2	tau3_banking	Pass^1
+ent_gpt-5.2	tau3_banking	Pass^1
+ent_gemini-3-flash-preview	tau3_banking	Pass^1
+ent_claude-opus-4.6	tau3_banking	Pass^1
+ent_gemini-3.1-pro-preview	tau3_banking	Pass^1
+ent_claude-sonnet-4.5	tau3_banking	Pass^1
+ent_inkling	tau3_banking	Pass^1
+ent_claude-opus-4.5	tau3_banking	Pass^1
+ent_gemini-3-pro-preview	tau3_banking	Pass^1
+ent_grok-4.20-reasoning	tau3_banking	Pass^1
+ent_grok-4-fast	tau3_banking	Pass^1
+ent_gemini-2.5-pro	tau3_banking	Pass^1
+ent_grok-4.1-fast	tau3_banking	Pass^1
+ent_gpt-5.2	tau3_banking	Pass^1
+ent_glm-5	tau3_banking	Pass^1
+ent_qwen3.5-397b-a17b	tau3_banking	Pass^1
+ent_pine-voice-preview	tau3_voice	Pass^1
+ent_pine-voice-preview	tau3_voice	Pass^1
+ent_grok-voice-think-fast-1.0	tau3_voice	Pass^1
+ent_grok-voice-think-fast-2.0	tau3_voice	Pass^1
+ent_qwen3-5-omni-plus-realtime	tau3_voice	Pass^1
+ent_gpt-realtime-2	tau3_voice	Pass^1
+ent_gemini-3.1-flash-live-preview	tau3_voice	Pass^1 (high)
+ent_gpt-realtime-2	tau3_voice	Pass^1
+ent_gpt-realtime-2	tau3_voice	Pass^1
+ent_gpt-realtime-1.5	tau3_voice	Pass^1
+ent_gpt-realtime	tau3_voice	Pass^1
+ent_gemini-3.1-flash-live-preview	tau3_voice	Pass^1
+ent_gemini-live-2-5-flash-native-audio	tau3_voice	Pass^1
+ent_qwen3.5-397b-a17b	tau2_bench_overall	Pass^1
+ent_claude-opus-4.5	tau2_bench_overall	Pass^1
+ent_gpt-5.2	tau2_bench_overall	Pass^1
+ent_gemini-3-flash-preview	tau2_bench_overall	Pass^1
+ent_gemini-3-pro-preview	tau2_bench_overall	Pass^1
+ent_glm-5	tau2_bench_overall	Pass^1
+ent_claude-sonnet-4.5	tau2_bench_overall	Pass^1
+ent_gpt-5.2	tau2_bench_overall	Pass^1
+ent_claude-opus-5	vending_bench_2	Money Balance (average across 5 runs)
+ent_claude-opus-4.7	vending_bench_2	Money Balance (average across 5 runs)
+ent_gpt-5.6-sol	vending_bench_2	Money Balance (average across 5 runs)
+ent_grok-4.6	vending_bench_2	Money Balance (average across 5 runs)
+ent_glm-5.2	vending_bench_2	Money Balance (average across 5 runs)
+ent_glm-5.3	vending_bench_2	Money Balance (average across 5 runs)
+ent_claude-opus-4.6	vending_bench_2	Money Balance (average across 5 runs)
+ent_gpt-5.5	vending_bench_2	Money Balance (average across 5 runs)
+ent_gpt-5.6-terra	vending_bench_2	Money Balance (average across 5 runs)
+ent_claude-sonnet-4.6	vending_bench_2	Money Balance (average across 5 runs)
+ent_muse-spark-1.1	vending_bench_2	Money Balance (average across 5 runs)
+ent_claude-sonnet-5	vending_bench_2	Money Balance (average across 5 runs)
+ent_kimi-k2.6	vending_bench_2	Money Balance (average across 5 runs)
+ent_gpt-5.4	vending_bench_2	Money Balance (average across 5 runs)
+ent_gpt-5.3-codex	vending_bench_2	Money Balance (average across 5 runs)
+ent_claude-opus-4.8	vending_bench_2	Money Balance (average across 5 runs) (high)
+ent_claude-fable-5	vending_bench_2	Money Balance (average across 5 runs) (high)
+ent_glm-5.1	vending_bench_2	Money Balance (average across 5 runs)
+ent_gemini-3-pro-preview	vending_bench_2	Money Balance (average across 5 runs)
+ent_gemini-3.5-flash	vending_bench_2	Money Balance (average across 5 runs)
+ent_kimi-k3	vending_bench_2	Money Balance (average across 5 runs) (moonshot)
+ent_qwen3.6-plus	vending_bench_2	Money Balance (average across 5 runs)
+ent_kimi-k2.7-code	vending_bench_2	Money Balance (average across 5 runs)
+ent_claude-fable-5	vending_bench_2	Money Balance (average across 5 runs) (low)
+ent_claude-opus-4.5	vending_bench_2	Money Balance (average across 5 runs)
+ent_gpt-5.6-sol	arc_agi_1	Score (%) (high)
+ent_gpt-5.6-sol	arc_agi_1	Score (%) (max)
+ent_gpt-5.6-terra	arc_agi_1	Score (%) (max)
+ent_gpt-5.5-pro	arc_agi_1	Score (%) (high)
+ent_gemini-3-deep-think	arc_agi_1	Score (%) (2/26, think)
+ent_gemini-3.7-flash	arc_agi_1	Score (%) (high)
+ent_claude-fable-5	arc_agi_1	Score (%) (high)
+ent_gpt-5.5-pro	arc_agi_1	Score (%) (xhigh)
+ent_gpt-5.5	arc_agi_1	Score (%) (xhigh)
+ent_kimi-k3	arc_agi_1	Score (%) (max)
+ent_gpt-5.5	arc_agi_1	Score (%) (high)
+ent_gpt-5.4-pro	arc_agi_1	Score (%) (xhigh)
+ent_gpt-5.2	arc_agi_1	Score (%) (refine.)
+ent_gpt-5.6-terra	arc_agi_1	Score (%) (xhigh)
+ent_claude-opus-4.6	arc_agi_1	Score (%) (120k, high)
+ent_gpt-5.4	arc_agi_1	Score (%) (xhigh)
+ent_claude-opus-4.7	arc_agi_1	Score (%) (high)
+ent_gpt-5.5-pro	arc_agi_2	Score (%) (high)
+ent_gemini-3-deep-think	arc_agi_2	Score (%) (2/26, think)
+ent_gpt-5.5-pro	arc_agi_2	Score (%) (xhigh)
+ent_gpt-5.6-terra	arc_agi_2	Score (%) (max)
+ent_gpt-5.5	arc_agi_2	Score (%) (high)
+ent_gpt-5.4-pro	arc_agi_2	Score (%) (xhigh)
+ent_claude-fable-5	arc_agi_2	Score (%) (medium)
+ent_gemini-3.1-pro-preview	arc_agi_2	Score (%) (preview)
+ent_claude-fable-5	arc_agi_2	Score (%) (low)
+ent_claude-opus-4.7	arc_agi_2	Score (%) (max)
+ent_gpt-5.6-terra	arc_agi_2	Score (%) (xhigh)
+ent_gpt-5.4	arc_agi_2	Score (%) (xhigh)
+ent_gpt-5.2	arc_agi_2	Score (%) (refine.)
+ent_claude-opus-4.8	arc_agi_2	Score (%) (high)
+ent_claude-opus-4.8	arc_agi_3	Score (%) (high)
+ent_gpt-5.6-sol	arc_agi_3	Score (%) (medium)
+ent_gpt-5.6-terra	arc_agi_3	Score (%) (max)
+ent_gpt-5.6-terra	arc_agi_3	Score (%) (xhigh)
+ent_claude-opus-4.6	arc_agi_3	Score (%) (max)
+ent_gpt-5.6-terra	arc_agi_3	Score (%) (high)
+ent_gpt-5.5	arc_agi_3	Score (%) (high)
+ent_gemini-3.1-pro-preview	arc_agi_3	Score (%) (preview)
+ent_gpt-5.6-sol	arc_agi_3	Score (%) (low)
+ent_grok-4.5	arc_agi_3	Score (%) (medium)
+ent_gpt-5.4	arc_agi_3	Score (%) (high)
+ent_claude-opus-4.7	arc_agi_3	Score (%) (high)
+ent_gpt-5.6-luna	arc_agi_3	Score (%) (medium)
+ent_gpt-5.6-luna	arc_agi_3	Score (%) (high)
+ent_grok-4.20-reasoning-beta	arc_agi_3	Score (%)
+ent_gpt-5.6-terra	arc_agi_3	Score (%) (medium)
+ent_gpt-5.6-luna	arc_agi_3	Score (%) (xhigh)
+ent_gpt-5.6-terra	arc_agi_3	Score (%) (low)
+ent_intelligence-indeed-agent	osworld_verified	Success Rate (Avg±Std)
+ent_claude-fable-5	osworld_verified	Success Rate (Avg±Std) (1m)
+ent_claude-opus-4.7	osworld_verified	Success Rate (Avg±Std)
+ent_claude-opus-5	osworld_verified	Success Rate (Avg±Std) (1m)
+ent_coasty	osworld_verified	Success Rate (Avg±Std)
+ent_claude-sonnet-4.6	osworld_verified	Success Rate (Avg±Std)
+ent_muse-spark-1.1	osworld_verified	Success Rate (Avg±Std)
+ent_holo3-35b-a3b	osworld_verified	Success Rate (Avg±Std)
+ent_gemini-3.1-pro-preview	osworld_verified	Success Rate (Avg±Std)
+ent_claude-opus-4.5	osworld_verified	Success Rate (Avg±Std)
+ent_minimax-m3	osworld_verified	Success Rate (Avg±Std)
+ent_claude-opus-4.5	osworld_verified	Success Rate (Avg±Std)
+ent_qwen3.7-plus	osworld_verified	Success Rate (Avg±Std)
+ent_kimi-k2.6	osworld_verified	Success Rate (Avg±Std)
+ent_agent-s3	osworld_verified	Success Rate (Avg±Std) (n=10)
+ent_claude-sonnet-4.6	osworld_verified	Success Rate (Avg±Std)
+ent_agent-s3	osworld_verified	Success Rate (Avg±Std) (n=10)
+ent_claude-opus-4.5	osworld_verified	Success Rate (Avg±Std)
+ent_agent-s3	osworld_verified	Success Rate (Avg±Std) (n=1)
+ent_gpt-5	osworld_verified	Success Rate (Avg±Std)
+ent_claude-opus-4.5	osworld_verified	Success Rate (Avg±Std)
+ent_gbox	osworld_verified	Success Rate (Avg±Std)
+ent_gpt-5	osworld_verified	Success Rate (Avg±Std)
+ent_kimi-k2.5	osworld_verified	Success Rate (Avg±Std)
+ent_claude-sonnet-4.5	osworld_verified	Success Rate (Avg±Std)
+ent_customgpt-researcher	gaia	Average score (%)
+ent_co-sight	gaia	Average score (%)
+ent_customgpt-researcher	gaia	Average score (%)
+ent_co-sight	gaia	Average score (%)
+ent_customgpt-researcher	gaia	Average score (%)
+ent_customgpt-researcher	gaia	Average score (%)
+ent_agentrl	agentbench	Success Rate (pass@1) AVG
+ent_agentrl	agentbench	Success Rate (pass@1) AVG
+ent_agentrl	agentbench	Success Rate (pass@1) AVG
+ent_qwen2.5-7b	agentbench	Success Rate (pass@1) AVG
+ent_agentrl	agentbench	Success Rate (pass@1) AVG
+ent_claude-sonnet-4.5	agentbench	Success Rate (pass@1) AVG
+ent_claude-sonnet-4.5	agentbench	Success Rate (pass@1) AVG (thinking)
+ent_claude-sonnet-4	agentbench	Success Rate (pass@1) AVG (thinking)
+ent_claude-sonnet-4	agentbench	Success Rate (pass@1) AVG
+ent_claude-3-7-sonnet-latest	agentbench	Success Rate (pass@1) AVG
+ent_gpt-5	agentbench	Success Rate (pass@1) AVG
+ent_agentlm-70b	agentbench	Success Rate (pass@1) AVG
+ent_claude-3-7-sonnet-latest	agentbench	Success Rate (pass@1) AVG (thinking)
+ent_deepseek-r1	agentbench	Success Rate (pass@1) AVG
+ent_agentlm-13b	agentbench	Success Rate (pass@1) AVG
+ent_agentlm-7b	agentbench	Success Rate (pass@1) AVG
+ent_o3-mini	agentbench	Success Rate (pass@1) AVG
+ent_qwen-2.5-72b-instruct	agentbench	Success Rate (pass@1) AVG
+ent_o4-mini	agentbench	Success Rate (pass@1) AVG
+ent_gpt-4o-2024-11-20	agentbench	Success Rate (pass@1) AVG
+ent_agentrl	agentbench	Success Rate (pass@1) AVG
+ent_deepseek-v3	agentbench	Success Rate (pass@1) AVG
+ent_agentrl	agentbench	Success Rate (pass@1) AVG
+ent_deepseek-v3.2	webarena	Success Rate (%)
+ent_gbox	webarena	Success Rate (%)
+ent_narada-ai	webarena	Success Rate (%)
+ent_cuga	webarena	Success Rate (%)
+ent_openai-operator	webarena	Success Rate (%)
+ent_jace-ai	webarena	Success Rate (%)
+ent_gpt-4o	webarena	Success Rate (%)
+ent_gpt-4o	webarena	Success Rate (%)
+ent_gpt-4	webarena	Success Rate (%)
+ent_agenttrek-1-0-32b	webarena	Success Rate (%)
+ent_rovo-dev	swebench_verified_all_agents	% Resolved
+ent_refact-ai-agent	swebench_multimodal	% Resolved
+ent_zencoder	swebench_multimodal	% Resolved
+ent_globant-code-fixer-agent	swebench_multimodal	% Resolved
+ent_claude-fable-5	swe_rebench	Resolved Rate (%) (high)
+ent_grok-4.5	swe_rebench	Resolved Rate (%) (high)
+ent_claude-opus-5	swe_rebench	Resolved Rate (%) (high)
+ent_glm-5.2	swe_rebench	Resolved Rate (%) (high)
+ent_gpt-5.6-sol	swe_rebench	Resolved Rate (%) (medium)
+ent_junie	swe_rebench	Resolved Rate (%)
+ent_claude-code	swe_rebench	Resolved Rate (%)
+ent_codex	swe_rebench	Resolved Rate (%)
+ent_claude-sonnet-5	swe_rebench	Resolved Rate (%) (high)
+ent_cursor-agent	swe_rebench	Resolved Rate (%)
+ent_f2llm-4b	mteb_eng	meanTask (mean score, 0-1)
+ent_f2llm-v2-14b	mteb_eng	meanTask (mean score, 0-1)
+ent_f2llm-v2-4b	mteb_eng	meanTask (mean score, 0-1)
+ent_f2llm-1.7b	mteb_eng	meanTask (mean score, 0-1)
+ent_jina-embeddings-v5-omni-small	mteb_eng	meanTask (mean score, 0-1)
+ent_jina-embeddings-v5-text-small	mteb_eng	meanTask (mean score, 0-1)
+ent_yuan-embedding-2.0-en	mteb_eng	meanTask (mean score, 0-1)
+ent_f2llm-v2-1.7b	mteb_eng	meanTask (mean score, 0-1)
+ent_jasper-en-vision-language-v1	mteb_eng	meanTask (mean score, 0-1)
+ent_kalm-embedding-multilingual-mini-instruct-v2.5	mteb_eng	meanTask (mean score, 0-1)
+ent_jina-embeddings-v5-omni-nano	mteb_eng	meanTask (mean score, 0-1)
+ent_jina-embeddings-v5-text-nano	mteb_eng	meanTask (mean score, 0-1)
+ent_giga-embeddings-instruct	mteb_eng	meanTask (mean score, 0-1)
+ent_gte-qwen2-7b-instruct	mteb_eng	meanTask (mean score, 0-1)
+ent_qwen3-embedding-0.6b	mteb_eng	meanTask (mean score, 0-1)
+ent_geoembedding	mteb_eng	meanTask (mean score, 0-1)
+ent_ict-time-and-querit-embedding-v1	mteb_eng	meanTask (mean score, 0-1)
+ent_f2llm-0.6b	mteb_eng	meanTask (mean score, 0-1)
+ent_f2llm-v2-0.6b	mteb_eng	meanTask (mean score, 0-1)
+ent_sfr-embedding-2-r	mteb_eng	meanTask (mean score, 0-1)
+ent_kalm-embedding-gemma3-12b-2511	mteb_multi	meanTask (mean score, 0-1)
+ent_qwen3-embedding-8b	mteb_multi	meanTask (mean score, 0-1)
+ent_seed1.6-embedding-1215	mteb_multi	meanTask (mean score, 0-1)
+ent_f2llm-v2-14b	mteb_multi	meanTask (mean score, 0-1)
+ent_gemini-embedding-001	mteb_multi	meanTask (mean score, 0-1)
+ent_f2llm-v2-8b	mteb_multi	meanTask (mean score, 0-1)
+ent_octen-embedding-8b	mteb_multi	meanTask (mean score, 0-1)
+ent_f2llm-v2-4b	mteb_multi	meanTask (mean score, 0-1)
+ent_jina-embeddings-v5-text-small	mteb_multi	meanTask (mean score, 0-1)
+ent_jina-embeddings-v5-text-nano	mteb_multi	meanTask (mean score, 0-1)
+ent_jina-embeddings-v5-omni-nano	mteb_multi	meanTask (mean score, 0-1)
+ent_f2llm-v2-1.7b	mteb_multi	meanTask (mean score, 0-1)
+ent_qwen3-embedding-0.6b	mteb_multi	meanTask (mean score, 0-1)
+ent_ict-time-and-querit-embedding-v1	mteb_multi	meanTask (mean score, 0-1)
+ent_bidirlm-1.7b-embedding	mteb_multi	meanTask (mean score, 0-1)
+ent_boom-4b-v1	mteb_multi	meanTask (mean score, 0-1)
+ent_bidirlm-omni-2.5b-embedding	mteb_multi	meanTask (mean score, 0-1)
+ent_multilingual-e5-large-instruct	mteb_multi	meanTask (mean score, 0-1)
+ent_bidirlm-1b-embedding	mteb_multi	meanTask (mean score, 0-1)
+ent_f2llm-v2-0.6b	mteb_multi	meanTask (mean score, 0-1)
+ent_gte-qwen2-7b-instruct	mteb_multi	meanTask (mean score, 0-1)
+ent_text-multilingual-embedding-002	mteb_multi	meanTask (mean score, 0-1)
+ent_embeddinggemma-300m	mteb_multi	meanTask (mean score, 0-1)
+ent_gritlm-7b	mteb_multi	meanTask (mean score, 0-1)
+ent_yuan-embedding-2.0-en	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_gte-qwen2-7b-instruct	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_f2llm-v2-14b	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_speed-embedding-7b-instruct	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_stella-en-1.5b-v5	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_sfr-embedding-mistral	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_voyage-large-2-instruct	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_f2llm-v2-4b	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_f2llm-4b	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_jasper-en-vision-language-v1	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_f2llm-1.7b	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_e5-mistral-7b-instruct	mteb_eng_rerank	scoresByTaskType.Reranking (0-1)
+ent_pulse	open_asr_en_short	avg (Average WER %)
+ent_canary-qwen-2.5b	open_asr_en_short	avg (Average WER %)
+ent_ark-asr-3b	open_asr_en_short	avg (Average WER %)
+ent_granite-speech-4.1-2b	open_asr_en_short	avg (Average WER %)
+ent_solaria-3	open_asr_en_short	avg (Average WER %)
+ent_ark-asr-0.6b	open_asr_en_short	avg (Average WER %)
+ent_moss-transcribe-diarize	open_asr_en_short	avg (Average WER %)
+ent_granite-speech-4.1-2b-nar	open_asr_en_short	avg (Average WER %)
+ent_moss-transcribe-preview-2b	open_asr_en_short	avg (Average WER %)
+ent_parakeet-tdt-0.6b-v2	open_asr_en_short	avg (Average WER %)
+ent_cohere-transcribe-03-2026	open_asr_en_short	avg (Average WER %)
+ent_parakeet-tdt-0.6b	open_asr_en_short	avg (Average WER %)
+ent_canary-1b-flash	open_asr_en_short	avg (Average WER %)
+ent_phi-4-multimodal-instruct	open_asr_en_short	avg (Average WER %)
+ent_granite-4.0-1b-speech	open_asr_en_short	avg (Average WER %)
+ent_luna-tts	tts_arena_v2	Elo
+ent_speech-2.8-hd	tts_arena_v2	Elo
+ent_lightning-v3-1-pro	tts_arena_v2	Elo
+ent_gradium-tts	tts_arena_v2	Elo
+ent_minimax-speech-02-hd	tts_arena_v2	Elo
+ent_openaudio-s2	tts_arena_v2	Elo
+ent_eleven-flash-v2-5	tts_arena_v2	Elo
+ent_minimax-speech-2-6-turbo	tts_arena_v2	Elo
+ent_eleven-turbo-v2-5	tts_arena_v2	Elo
+ent_speech-2.8-turbo	tts_arena_v2	Elo
+ent_eleven-multilingual-v2	tts_arena_v2	Elo
+ent_deepdub-etts-3-2	tts_arena_v2	Elo
+ent_inworld-tts-1.5-max	tts_arena_v2	Elo (max)
+ent_typecast-ssfm-3-0	tts_arena_v2	Elo
+ent_minimax-speech-2-6-hd	tts_arena_v2	Elo
+ent_minimax-speech-02-turbo	tts_arena_v2	Elo
+ent_sonic-2	tts_arena_v2	Elo
+ent_eleven-v3	tts_arena_v2	Elo
+ent_openaudio-s1	tts_arena_v2	Elo
+ent_chatterbox	tts_arena_v2	Elo
+ent_voice-ai-text-to-speech-v1	tts_arena_v2	Elo
+ent_tontaube-v0	tts_arena_v2	Elo
+ent_kokoro-82m	tts_arena_v2	Elo
+ent_silk-mulberry-1-5	tts_arena_v2	Elo
+ent_magpie-multilingual	tts_arena_v2	Elo
+ent_maya-1	tts_arena_v2	Elo
+ent_veena	tts_arena_v2	Elo
+ent_minimax-m3	swe_rebench	Resolved Rate (%)
+ent_mimo-v2.5-pro	swe_rebench	Resolved Rate (%)
+ent_gpt-5.6-luna	swe_rebench	Resolved Rate (%) (medium)
+ent_deepseek-v4-pro	swe_rebench	Resolved Rate (%) (high)
+ent_qwen3.6-27b	swe_rebench	Resolved Rate (%)
+ent_qwen3.6-35b-a3b	swe_rebench	Resolved Rate (%)
+ent_qwen3.5-35b-a3b	swe_rebench	Resolved Rate (%)

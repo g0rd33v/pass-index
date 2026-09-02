@@ -1,0 +1,650 @@
+merge	ent_claude-haiku-4-5	ent_claude-haiku-4.5		anthropic/claude-haiku-4-5
+merge	ent_claude-opus-4-1	ent_claude-opus-4.1		anthropic/claude-opus-4-1
+merge	ent_claude-opus-4-5	ent_claude-opus-4.5		anthropic/claude-opus-4-5
+merge	ent_claude-opus-4-6	ent_claude-opus-4.6		anthropic/claude-opus-4-6
+merge	ent_claude-opus-4-7	ent_claude-opus-4.7		anthropic/claude-opus-4-7
+merge	ent_claude-opus-4-8	ent_claude-opus-4.8		anthropic/claude-opus-4-8
+merge	ent_claude-sonnet-4-5	ent_claude-sonnet-4.5		anthropic/claude-sonnet-4-5
+merge	ent_claude-sonnet-4-6	ent_claude-sonnet-4.6		anthropic/claude-sonnet-4-6
+merge	ent_gpt-4.1-mini-eastus2	ent_gpt-4.1-mini	eastus2	azure/gpt-4.1-mini@eastus2
+merge	ent_gpt-4.1-mini-francecentral	ent_gpt-4.1-mini	francecentral	azure/gpt-4.1-mini@francecentral
+merge	ent_gpt-4.1-mini-uksouth	ent_gpt-4.1-mini	uksouth	azure/gpt-4.1-mini@uksouth
+merge	ent_gpt-4.1-mini-westus3	ent_gpt-4.1-mini	westus3	azure/gpt-4.1-mini@westus3
+merge	ent_gpt-4.1-nano-eastus2	ent_gpt-4.1-nano	eastus2	azure/gpt-4.1-nano@eastus2
+merge	ent_gpt-4.1-nano-francecentral	ent_gpt-4.1-nano	francecentral	azure/gpt-4.1-nano@francecentral
+merge	ent_gpt-4.1-nano-swedencentral	ent_gpt-4.1-nano	swedencentral	azure/gpt-4.1-nano@swedencentral
+merge	ent_gpt-4.1-nano-uksouth	ent_gpt-4.1-nano	uksouth	azure/gpt-4.1-nano@uksouth
+merge	ent_gpt-4.1-nano-westus3	ent_gpt-4.1-nano	westus3	azure/gpt-4.1-nano@westus3
+merge	ent_gpt-4.1-eastus2	ent_gpt-4.1	eastus2	azure/gpt-4.1@eastus2
+merge	ent_gpt-4.1-francecentral	ent_gpt-4.1	francecentral	azure/gpt-4.1@francecentral
+merge	ent_gpt-4.1-swedencentral	ent_gpt-4.1	swedencentral	azure/gpt-4.1@swedencentral
+merge	ent_gpt-4.1-uksouth	ent_gpt-4.1	uksouth	azure/gpt-4.1@uksouth
+merge	ent_gpt-4.1-westus3	ent_gpt-4.1	westus3	azure/gpt-4.1@westus3
+merge	ent_gpt-4o-mini-eastus2	ent_gpt-4o-mini	eastus2	azure/gpt-4o-mini@eastus2
+merge	ent_gpt-4o-mini-swedencentral	ent_gpt-4o-mini	swedencentral	azure/gpt-4o-mini@swedencentral
+merge	ent_gpt-5-mini-eastus2	ent_gpt-5-mini	eastus2	azure/gpt-5-mini@eastus2
+merge	ent_gpt-5-mini-francecentral	ent_gpt-5-mini	francecentral	azure/gpt-5-mini@francecentral
+merge	ent_gpt-5-mini-swedencentral	ent_gpt-5-mini	swedencentral	azure/gpt-5-mini@swedencentral
+merge	ent_gpt-5-mini-uksouth	ent_gpt-5-mini	uksouth	azure/gpt-5-mini@uksouth
+merge	ent_gpt-5-nano-eastus2	ent_gpt-5-nano	eastus2	azure/gpt-5-nano@eastus2
+merge	ent_gpt-5-nano-francecentral	ent_gpt-5-nano	francecentral	azure/gpt-5-nano@francecentral
+merge	ent_gpt-5-nano-swedencentral	ent_gpt-5-nano	swedencentral	azure/gpt-5-nano@swedencentral
+merge	ent_gpt-5.1-eastus2	ent_gpt-5.1	eastus2	azure/gpt-5.1@eastus2
+merge	ent_gpt-5.1-francecentral	ent_gpt-5.1	francecentral	azure/gpt-5.1@francecentral
+merge	ent_gpt-5.1-swedencentral	ent_gpt-5.1	swedencentral	azure/gpt-5.1@swedencentral
+merge	ent_gpt-5.2-codex-eastus2	ent_gpt-5.2-codex	eastus2	azure/gpt-5.2-codex@eastus2
+merge	ent_gpt-5.2-eastus2	ent_gpt-5.2	eastus2	azure/gpt-5.2@eastus2
+merge	ent_gpt-5.3-codex-eastus2	ent_gpt-5.3-codex	eastus2	azure/gpt-5.3-codex@eastus2
+merge	ent_gpt-5.4-mini-eastus2	ent_gpt-5.4-mini	eastus2	azure/gpt-5.4-mini@eastus2
+merge	ent_gpt-5.4-eastus2	ent_gpt-5.4	eastus2	azure/gpt-5.4@eastus2
+merge	ent_gpt-5.4-francecentral	ent_gpt-5.4	francecentral	azure/gpt-5.4@francecentral
+merge	ent_gpt-5.4-swedencentral	ent_gpt-5.4	swedencentral	azure/gpt-5.4@swedencentral
+merge	ent_gpt-5.5-eastus2	ent_gpt-5.5	eastus2	azure/gpt-5.5@eastus2
+merge	ent_gpt-5.5-swedencentral	ent_gpt-5.5	swedencentral	azure/gpt-5.5@swedencentral
+merge	ent_gpt-5.6-luna-eastus2	ent_gpt-5.6-luna	eastus2	azure/gpt-5.6-luna@eastus2
+merge	ent_gpt-5.6-luna-swedencentral	ent_gpt-5.6-luna	swedencentral	azure/gpt-5.6-luna@swedencentral
+merge	ent_gpt-5.6-sol-eastus2	ent_gpt-5.6-sol	eastus2	azure/gpt-5.6-sol@eastus2
+merge	ent_gpt-5.6-sol-swedencentral	ent_gpt-5.6-sol	swedencentral	azure/gpt-5.6-sol@swedencentral
+merge	ent_gpt-5.6-terra-eastus2	ent_gpt-5.6-terra	eastus2	azure/gpt-5.6-terra@eastus2
+merge	ent_gpt-5.6-terra-swedencentral	ent_gpt-5.6-terra	swedencentral	azure/gpt-5.6-terra@swedencentral
+merge	ent_gpt-5-eastus2	ent_gpt-5	eastus2	azure/gpt-5@eastus2
+merge	ent_gpt-5-francecentral	ent_gpt-5	francecentral	azure/gpt-5@francecentral
+merge	ent_gpt-5-swedencentral	ent_gpt-5	swedencentral	azure/gpt-5@swedencentral
+merge	ent_gpt-5-uksouth	ent_gpt-5	uksouth	azure/gpt-5@uksouth
+merge	ent_o4-mini-eastus2	ent_o4-mini	eastus2	azure/o4-mini@eastus2
+merge	ent_o4-mini-francecentral	ent_o4-mini	francecentral	azure/o4-mini@francecentral
+merge	ent_o4-mini-swedencentral	ent_o4-mini	swedencentral	azure/o4-mini@swedencentral
+merge	ent_o4-mini-westus3	ent_o4-mini	westus3	azure/o4-mini@westus3
+merge	ent_gpt-5.4-pro-eastus2	ent_gpt-5.4-pro	eastus2	azure/openai-responses/gpt-5.4-pro@eastus2
+merge	ent_claude-fable-5-us-east-1	ent_claude-fable-5	us-east-1	bedrock/claude-fable-5@us-east-1
+merge	ent_claude-haiku-4-5-ap-northeast-1	ent_claude-haiku-4.5	ap-northeast-1	bedrock/claude-haiku-4-5@ap-northeast-1
+merge	ent_claude-haiku-4-5-eu-central-1	ent_claude-haiku-4.5	eu-central-1	bedrock/claude-haiku-4-5@eu-central-1
+merge	ent_claude-haiku-4-5-eu-north-1	ent_claude-haiku-4.5	eu-north-1	bedrock/claude-haiku-4-5@eu-north-1
+merge	ent_claude-haiku-4-5-eu-west-1	ent_claude-haiku-4.5	eu-west-1	bedrock/claude-haiku-4-5@eu-west-1
+merge	ent_claude-haiku-4-5-eu-west-3	ent_claude-haiku-4.5	eu-west-3	bedrock/claude-haiku-4-5@eu-west-3
+merge	ent_claude-haiku-4-5-us-east-1	ent_claude-haiku-4.5	us-east-1	bedrock/claude-haiku-4-5@us-east-1
+merge	ent_claude-haiku-4-5-us-east-2	ent_claude-haiku-4.5	us-east-2	bedrock/claude-haiku-4-5@us-east-2
+merge	ent_claude-haiku-4-5-us-west-2	ent_claude-haiku-4.5	us-west-2	bedrock/claude-haiku-4-5@us-west-2
+merge	ent_claude-opus-4-5-eu-central-1	ent_claude-opus-4.5	eu-central-1	bedrock/claude-opus-4-5@eu-central-1
+merge	ent_claude-opus-4-5-eu-north-1	ent_claude-opus-4.5	eu-north-1	bedrock/claude-opus-4-5@eu-north-1
+merge	ent_claude-opus-4-5-eu-west-1	ent_claude-opus-4.5	eu-west-1	bedrock/claude-opus-4-5@eu-west-1
+merge	ent_claude-opus-4-5-eu-west-3	ent_claude-opus-4.5	eu-west-3	bedrock/claude-opus-4-5@eu-west-3
+merge	ent_claude-opus-4-5-us-east-1	ent_claude-opus-4.5	us-east-1	bedrock/claude-opus-4-5@us-east-1
+merge	ent_claude-opus-4-5-us-east-2	ent_claude-opus-4.5	us-east-2	bedrock/claude-opus-4-5@us-east-2
+merge	ent_claude-opus-4-5-us-west-2	ent_claude-opus-4.5	us-west-2	bedrock/claude-opus-4-5@us-west-2
+merge	ent_claude-opus-4-7-eu-central-1	ent_claude-opus-4.7	eu-central-1	bedrock/claude-opus-4-7@eu-central-1
+merge	ent_claude-opus-4-7-eu-north-1	ent_claude-opus-4.7	eu-north-1	bedrock/claude-opus-4-7@eu-north-1
+merge	ent_claude-opus-4-7-eu-west-1	ent_claude-opus-4.7	eu-west-1	bedrock/claude-opus-4-7@eu-west-1
+merge	ent_claude-opus-4-7-eu-west-3	ent_claude-opus-4.7	eu-west-3	bedrock/claude-opus-4-7@eu-west-3
+merge	ent_claude-opus-4-8-ap-northeast-1	ent_claude-opus-4.8	ap-northeast-1	bedrock/claude-opus-4-8@ap-northeast-1
+merge	ent_claude-opus-4-8-eu-central-1	ent_claude-opus-4.8	eu-central-1	bedrock/claude-opus-4-8@eu-central-1
+merge	ent_claude-opus-4-8-eu-north-1	ent_claude-opus-4.8	eu-north-1	bedrock/claude-opus-4-8@eu-north-1
+merge	ent_claude-opus-4-8-eu-west-1	ent_claude-opus-4.8	eu-west-1	bedrock/claude-opus-4-8@eu-west-1
+merge	ent_claude-opus-4-8-eu-west-3	ent_claude-opus-4.8	eu-west-3	bedrock/claude-opus-4-8@eu-west-3
+merge	ent_claude-opus-5-eu-central-1	ent_claude-opus-5	eu-central-1	bedrock/claude-opus-5@eu-central-1
+merge	ent_claude-opus-5-eu-north-1	ent_claude-opus-5	eu-north-1	bedrock/claude-opus-5@eu-north-1
+merge	ent_claude-opus-5-eu-west-1	ent_claude-opus-5	eu-west-1	bedrock/claude-opus-5@eu-west-1
+merge	ent_claude-opus-5-eu-west-3	ent_claude-opus-5	eu-west-3	bedrock/claude-opus-5@eu-west-3
+merge	ent_claude-sonnet-4-5-eu-central-1	ent_claude-sonnet-4.5	eu-central-1	bedrock/claude-sonnet-4-5@eu-central-1
+merge	ent_claude-sonnet-4-5-eu-north-1	ent_claude-sonnet-4.5	eu-north-1	bedrock/claude-sonnet-4-5@eu-north-1
+merge	ent_claude-sonnet-4-5-eu-west-1	ent_claude-sonnet-4.5	eu-west-1	bedrock/claude-sonnet-4-5@eu-west-1
+merge	ent_claude-sonnet-4-5-eu-west-3	ent_claude-sonnet-4.5	eu-west-3	bedrock/claude-sonnet-4-5@eu-west-3
+merge	ent_claude-sonnet-4-5-us-east-1	ent_claude-sonnet-4.5	us-east-1	bedrock/claude-sonnet-4-5@us-east-1
+merge	ent_claude-sonnet-4-5-us-east-2	ent_claude-sonnet-4.5	us-east-2	bedrock/claude-sonnet-4-5@us-east-2
+merge	ent_claude-sonnet-4-5-us-west-2	ent_claude-sonnet-4.5	us-west-2	bedrock/claude-sonnet-4-5@us-west-2
+merge	ent_claude-sonnet-4-6-ap-northeast-1	ent_claude-sonnet-4.6	ap-northeast-1	bedrock/claude-sonnet-4-6@ap-northeast-1
+merge	ent_claude-sonnet-4-6-eu-central-1	ent_claude-sonnet-4.6	eu-central-1	bedrock/claude-sonnet-4-6@eu-central-1
+merge	ent_claude-sonnet-4-6-eu-north-1	ent_claude-sonnet-4.6	eu-north-1	bedrock/claude-sonnet-4-6@eu-north-1
+merge	ent_claude-sonnet-4-6-eu-west-1	ent_claude-sonnet-4.6	eu-west-1	bedrock/claude-sonnet-4-6@eu-west-1
+merge	ent_claude-sonnet-4-6-eu-west-3	ent_claude-sonnet-4.6	eu-west-3	bedrock/claude-sonnet-4-6@eu-west-3
+merge	ent_claude-sonnet-4-6-us-east-1	ent_claude-sonnet-4.6	us-east-1	bedrock/claude-sonnet-4-6@us-east-1
+merge	ent_claude-sonnet-4-6-us-east-2	ent_claude-sonnet-4.6	us-east-2	bedrock/claude-sonnet-4-6@us-east-2
+merge	ent_claude-sonnet-4-6-us-west-2	ent_claude-sonnet-4.6	us-west-2	bedrock/claude-sonnet-4-6@us-west-2
+merge	ent_claude-sonnet-4-eu-central-1	ent_claude-sonnet-4	eu-central-1	bedrock/claude-sonnet-4@eu-central-1
+merge	ent_claude-sonnet-4-eu-north-1	ent_claude-sonnet-4	eu-north-1	bedrock/claude-sonnet-4@eu-north-1
+merge	ent_claude-sonnet-4-eu-west-1	ent_claude-sonnet-4	eu-west-1	bedrock/claude-sonnet-4@eu-west-1
+merge	ent_claude-sonnet-4-eu-west-3	ent_claude-sonnet-4	eu-west-3	bedrock/claude-sonnet-4@eu-west-3
+merge	ent_claude-sonnet-4-us-east-1	ent_claude-sonnet-4	us-east-1	bedrock/claude-sonnet-4@us-east-1
+merge	ent_claude-sonnet-4-us-east-2	ent_claude-sonnet-4	us-east-2	bedrock/claude-sonnet-4@us-east-2
+merge	ent_claude-sonnet-4-us-west-2	ent_claude-sonnet-4	us-west-2	bedrock/claude-sonnet-4@us-west-2
+merge	ent_claude-sonnet-5-ap-southeast-2	ent_claude-sonnet-5	ap-southeast-2	bedrock/claude-sonnet-5@ap-southeast-2
+merge	ent_claude-sonnet-5-eu-central-1	ent_claude-sonnet-5	eu-central-1	bedrock/claude-sonnet-5@eu-central-1
+merge	ent_claude-sonnet-5-eu-north-1	ent_claude-sonnet-5	eu-north-1	bedrock/claude-sonnet-5@eu-north-1
+merge	ent_claude-sonnet-5-eu-west-1	ent_claude-sonnet-5	eu-west-1	bedrock/claude-sonnet-5@eu-west-1
+merge	ent_claude-sonnet-5-eu-west-2	ent_claude-sonnet-5	eu-west-2	bedrock/claude-sonnet-5@eu-west-2
+merge	ent_claude-sonnet-5-us-east-1	ent_claude-sonnet-5	us-east-1	bedrock/claude-sonnet-5@us-east-1
+merge	ent_claude-sonnet-5-us-east-2	ent_claude-sonnet-5	us-east-2	bedrock/claude-sonnet-5@us-east-2
+merge	ent_claude-sonnet-5-us-west-2	ent_claude-sonnet-5	us-west-2	bedrock/claude-sonnet-5@us-west-2
+merge	ent_gpt-5.4-us-east-1	ent_gpt-5.4	us-east-1	bedrock/gpt-5.4@us-east-1
+merge	ent_gpt-5.4-us-east-2	ent_gpt-5.4	us-east-2	bedrock/gpt-5.4@us-east-2
+merge	ent_gpt-5.4-us-west-2	ent_gpt-5.4	us-west-2	bedrock/gpt-5.4@us-west-2
+merge	ent_gpt-5.5-us-east-1	ent_gpt-5.5	us-east-1	bedrock/gpt-5.5@us-east-1
+merge	ent_gpt-5.5-us-east-2	ent_gpt-5.5	us-east-2	bedrock/gpt-5.5@us-east-2
+merge	ent_gpt-5.6-luna-us-east-1	ent_gpt-5.6-luna	us-east-1	bedrock/gpt-5.6-luna@us-east-1
+merge	ent_gpt-5.6-luna-us-east-2	ent_gpt-5.6-luna	us-east-2	bedrock/gpt-5.6-luna@us-east-2
+merge	ent_gpt-5.6-luna-us-west-2	ent_gpt-5.6-luna	us-west-2	bedrock/gpt-5.6-luna@us-west-2
+merge	ent_gpt-5.6-sol-us-east-1	ent_gpt-5.6-sol	us-east-1	bedrock/gpt-5.6-sol@us-east-1
+merge	ent_gpt-5.6-sol-us-east-2	ent_gpt-5.6-sol	us-east-2	bedrock/gpt-5.6-sol@us-east-2
+merge	ent_gpt-5.6-terra-us-east-1	ent_gpt-5.6-terra	us-east-1	bedrock/gpt-5.6-terra@us-east-1
+merge	ent_gpt-5.6-terra-us-east-2	ent_gpt-5.6-terra	us-east-2	bedrock/gpt-5.6-terra@us-east-2
+merge	ent_gpt-5.6-terra-us-west-2	ent_gpt-5.6-terra	us-west-2	bedrock/gpt-5.6-terra@us-west-2
+merge	ent_kimi-k2.5-eu-north-1	ent_kimi-k2.5	eu-north-1	bedrock/kimi-k2.5@eu-north-1
+merge	ent_kimi-k2.5-eu-west-2	ent_kimi-k2.5	eu-west-2	bedrock/kimi-k2.5@eu-west-2
+merge	ent_kimi-k2.5-us-east-1	ent_kimi-k2.5	us-east-1	bedrock/kimi-k2.5@us-east-1
+merge	ent_kimi-k2.5-us-east-2	ent_kimi-k2.5	us-east-2	bedrock/kimi-k2.5@us-east-2
+merge	ent_kimi-k2.5-us-west-2	ent_kimi-k2.5	us-west-2	bedrock/kimi-k2.5@us-west-2
+merge	ent_minimax-m2.5-eu-central-1	ent_minimax-m2.5	eu-central-1	bedrock/minimax-m2.5@eu-central-1
+merge	ent_minimax-m2.5-eu-north-1	ent_minimax-m2.5	eu-north-1	bedrock/minimax-m2.5@eu-north-1
+merge	ent_minimax-m2.5-eu-south-1	ent_minimax-m2.5	eu-south-1	bedrock/minimax-m2.5@eu-south-1
+merge	ent_minimax-m2.5-eu-west-1	ent_minimax-m2.5	eu-west-1	bedrock/minimax-m2.5@eu-west-1
+merge	ent_minimax-m2.5-us-east-1	ent_minimax-m2.5	us-east-1	bedrock/minimax-m2.5@us-east-1
+merge	ent_minimax-m2.5-us-east-2	ent_minimax-m2.5	us-east-2	bedrock/minimax-m2.5@us-east-2
+merge	ent_minimax-m2.5-us-west-2	ent_minimax-m2.5	us-west-2	bedrock/minimax-m2.5@us-west-2
+merge	ent_gemini-2.5-flash-europe-central2	ent_gemini-2.5-flash	europe-central2	coding/gemini-2.5-flash@europe-central2
+merge	ent_gemini-2.5-flash-europe-north1	ent_gemini-2.5-flash	europe-north1	coding/gemini-2.5-flash@europe-north1
+merge	ent_gemini-2.5-flash-europe-west1	ent_gemini-2.5-flash	europe-west1	coding/gemini-2.5-flash@europe-west1
+merge	ent_gemini-2.5-flash-europe-west4	ent_gemini-2.5-flash	europe-west4	coding/gemini-2.5-flash@europe-west4
+merge	ent_gemini-2.5-flash-europe-west8	ent_gemini-2.5-flash	europe-west8	coding/gemini-2.5-flash@europe-west8
+merge	ent_gemini-2.5-flash-us-central1	ent_gemini-2.5-flash	us-central1	coding/gemini-2.5-flash@us-central1
+merge	ent_gemini-2.5-flash-us-east1	ent_gemini-2.5-flash	us-east1	coding/gemini-2.5-flash@us-east1
+merge	ent_gemini-2.5-flash-us-east5	ent_gemini-2.5-flash	us-east5	coding/gemini-2.5-flash@us-east5
+merge	ent_gemini-2.5-flash-us-south1	ent_gemini-2.5-flash	us-south1	coding/gemini-2.5-flash@us-south1
+merge	ent_gemini-2.5-flash-us-west1	ent_gemini-2.5-flash	us-west1	coding/gemini-2.5-flash@us-west1
+merge	ent_gemini-2.5-pro-europe-central2	ent_gemini-2.5-pro	europe-central2	coding/gemini-2.5-pro@europe-central2
+merge	ent_gemini-2.5-pro-europe-north1	ent_gemini-2.5-pro	europe-north1	coding/gemini-2.5-pro@europe-north1
+merge	ent_gemini-2.5-pro-europe-west1	ent_gemini-2.5-pro	europe-west1	coding/gemini-2.5-pro@europe-west1
+merge	ent_gemini-2.5-pro-europe-west4	ent_gemini-2.5-pro	europe-west4	coding/gemini-2.5-pro@europe-west4
+merge	ent_gemini-2.5-pro-europe-west8	ent_gemini-2.5-pro	europe-west8	coding/gemini-2.5-pro@europe-west8
+merge	ent_gemini-2.5-pro-us-central1	ent_gemini-2.5-pro	us-central1	coding/gemini-2.5-pro@us-central1
+merge	ent_gemini-2.5-pro-us-east1	ent_gemini-2.5-pro	us-east1	coding/gemini-2.5-pro@us-east1
+merge	ent_gemini-2.5-pro-us-east5	ent_gemini-2.5-pro	us-east5	coding/gemini-2.5-pro@us-east5
+merge	ent_gemini-2.5-pro-us-south1	ent_gemini-2.5-pro	us-south1	coding/gemini-2.5-pro@us-south1
+merge	ent_gemini-2.5-pro-us-west1	ent_gemini-2.5-pro	us-west1	coding/gemini-2.5-pro@us-west1
+merge	ent_qwen2.5-72b-instruct	ent_qwen-2.5-72b-instruct		deepinfra/Qwen/Qwen2.5-72B-Instruct
+merge	ent_qwen2.5-coder-32b-instruct	ent_qwen-2.5-coder-32b-instruct		deepinfra/Qwen/Qwen2.5-Coder-32B-Instruct
+merge	ent_qwen3-235b-a22b-thinking-2507-flex	ent_qwen3-235b-a22b-thinking-2507	flex	deepinfra/Qwen/Qwen3-235B-A22B-Thinking-2507:flex
+merge	ent_qwen3-32b-flex	ent_qwen3-32b	flex	deepinfra/Qwen/Qwen3-32B:flex
+merge	ent_qwen3.5-27b-flex	ent_qwen3.5-27b	flex	deepinfra/Qwen/Qwen3.5-27B:flex
+merge	ent_qwen3.5-35b-a3b-flex	ent_qwen3.5-35b-a3b	flex	deepinfra/Qwen/Qwen3.5-35B-A3B:flex
+merge	ent_qwen3.5-397b-a17b-flex	ent_qwen3.5-397b-a17b	flex	deepinfra/Qwen/Qwen3.5-397B-A17B:flex
+merge	ent_mimo-v2.5-pro-flex	ent_mimo-v2.5-pro	flex	deepinfra/XiaomiMiMo/MiMo-V2.5-Pro:flex
+merge	ent_mimo-v2.5-flex	ent_mimo-v2.5	flex	deepinfra/XiaomiMiMo/MiMo-V2.5:flex
+merge	ent_deepseek-v3.1-flex	ent_deepseek-v3.1	flex	deepinfra/deepseek-ai/DeepSeek-V3.1:flex
+merge	ent_deepseek-v3-flex	ent_deepseek-v3	flex	deepinfra/deepseek-ai/DeepSeek-V3:flex
+merge	ent_deepseek-v4-flash-flex	ent_deepseek-v4-flash	flex	deepinfra/deepseek-ai/DeepSeek-V4-Flash:flex
+merge	ent_deepseek-v4-pro-flex	ent_deepseek-v4-pro	flex	deepinfra/deepseek-ai/DeepSeek-V4-Pro:flex
+merge	ent_deepseek-v4-flash-0731-flex	ent_deepseek-v4-flash-0731	flex	deepinfra/deepseek-v4-flash-0731:flex
+merge	ent_glm-5.2-flex	ent_glm-5.2	flex	deepinfra/glm-5.2:flex
+merge	ent_gemma-4-26b-a4b-it-flex	ent_gemma-4-26b-a4b-it	flex	deepinfra/google/gemma-4-26B-A4B-it:flex
+merge	ent_gemma-4-31b-it-flex	ent_gemma-4-31b	flex	deepinfra/google/gemma-4-31B-it:flex
+merge	ent_phi-4-flex	ent_phi-4	flex	deepinfra/microsoft/phi-4:flex
+merge	ent_kimi-k2.6-flex	ent_kimi-k2.6	flex	deepinfra/moonshotai/Kimi-K2.6:flex
+merge	ent_nvidia-nemotron-3-super-120b-a12b	ent_nemotron-3-super-120b		deepinfra/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B
+merge	ent_nvidia-nemotron-3-super-120b-a12b-flex	ent_nemotron-3-super-120b	flex	deepinfra/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B:flex
+merge	ent_nemotron-3-nano-30b-a3b-flex	ent_nemotron-3-nano-30b-a3b	flex	deepinfra/nvidia/Nemotron-3-Nano-30B-A3B:flex
+merge	ent_glm-5.1-flex	ent_glm-5.1	flex	deepinfra/zai-org/GLM-5.1:flex
+merge	ent_nvidia-nemotron-3-ultra	ent_nemotron-3-ultra		doubleword/nvidia-nemotron-3-ultra
+merge	ent_nvidia-nemotron-3-ultra-flex	ent_nemotron-3-ultra	flex	doubleword/nvidia-nemotron-3-ultra:flex
+merge	ent_gemini-2.5-flash-lite-flex	ent_gemini-2.5-flash-lite	flex	google/gemini-2.5-flash-lite:flex
+merge	ent_gemini-2.5-flash-flex	ent_gemini-2.5-flash	flex	google/gemini-2.5-flash:flex
+merge	ent_gemini-2.5-pro-flex	ent_gemini-2.5-pro	flex	google/gemini-2.5-pro:flex
+merge	ent_gemini-3-flash-preview-flex	ent_gemini-3-flash-preview	flex	google/gemini-3-flash-preview:flex
+merge	ent_gemini-3.1-flash-lite-flex	ent_gemini-3.1-flash-lite	flex	google/gemini-3.1-flash-lite:flex
+merge	ent_gemini-3.1-pro-preview-flex	ent_gemini-3.1-pro-preview	flex	google/gemini-3.1-pro-preview:flex
+merge	ent_gemini-3.5-flash-lite-flex	ent_gemini-3.5-flash-lite	flex	google/gemini-3.5-flash-lite:flex
+merge	ent_gemini-3.5-flash-flex	ent_gemini-3.5-flash	flex	google/gemini-3.5-flash:flex
+merge	ent_gemini-3.6-flash-flex	ent_gemini-3.6-flash	flex	google/gemini-3.6-flash:flex
+merge	ent_codestral-latest	ent_codestral		mistral/codestral-latest
+merge	ent_glm-5-2	ent_glm-5.2		mistral/glm-5-2
+merge	ent_mistral-large-latest	ent_mistral-large		mistral/mistral-large-latest
+merge	ent_mistral-medium-3-5	ent_mistral-medium-3.5		mistral/mistral-medium-3-5
+merge	ent_mistral-medium-latest	ent_mistral-medium		mistral/mistral-medium-latest
+merge	ent_mistral-small-latest	ent_mistral-small		mistral/mistral-small-latest
+merge	ent_gpt-5.1-flex	ent_gpt-5.1	flex	openai-responses/gpt-5.1:flex
+merge	ent_gpt-5.2-flex	ent_gpt-5.2	flex	openai-responses/gpt-5.2:flex
+merge	ent_gpt-5.4-mini-flex	ent_gpt-5.4-mini	flex	openai-responses/gpt-5.4-mini:flex
+merge	ent_gpt-5.4-nano-flex	ent_gpt-5.4-nano	flex	openai-responses/gpt-5.4-nano:flex
+merge	ent_gpt-5.4-flex	ent_gpt-5.4	flex	openai-responses/gpt-5.4:flex
+merge	ent_gpt-5.5-flex	ent_gpt-5.5	flex	openai-responses/gpt-5.5:flex
+merge	ent_gpt-5.6-luna-flex	ent_gpt-5.6-luna	flex	openai-responses/gpt-5.6-luna:flex
+merge	ent_gpt-5.6-sol-flex	ent_gpt-5.6-sol	flex	openai-responses/gpt-5.6-sol:flex
+merge	ent_gpt-5.6-terra-flex	ent_gpt-5.6-terra	flex	openai-responses/gpt-5.6-terra:flex
+merge	ent_gpt-5-mini-flex	ent_gpt-5-mini	flex	openai/gpt-5-mini:flex
+merge	ent_gpt-5-mini-priority	ent_gpt-5-mini	priority	openai/gpt-5-mini:priority
+merge	ent_gpt-5-nano-flex	ent_gpt-5-nano	flex	openai/gpt-5-nano:flex
+merge	ent_gpt-5-flex	ent_gpt-5	flex	openai/gpt-5:flex
+merge	ent_gpt-5-priority	ent_gpt-5	priority	openai/gpt-5:priority
+merge	ent_o1-high	ent_o1	high	openai/o1:high
+merge	ent_o1-low	ent_o1	low	openai/o1:low
+merge	ent_o1-medium	ent_o1	medium	openai/o1:medium
+merge	ent_o3-mini-low	ent_o3-mini	low	openai/o3-mini:low
+merge	ent_o3-mini-medium	ent_o3-mini	medium	openai/o3-mini:medium
+merge	ent_o3-flex	ent_o3	flex	openai/o3:flex
+merge	ent_o4-mini-flex	ent_o4-mini	flex	openai/o4-mini:flex
+merge	ent_o4-mini-low	ent_o4-mini	low	openai/o4-mini:low
+merge	ent_o4-mini-medium	ent_o4-mini	medium	openai/o4-mini:medium
+merge	ent_claude-fable-5-eu	ent_claude-fable-5	eu	vertex/claude-fable-5@eu
+merge	ent_claude-haiku-4-5-europe-west1	ent_claude-haiku-4.5	europe-west1	vertex/claude-haiku-4-5@europe-west1
+merge	ent_claude-haiku-4-5-us-east5	ent_claude-haiku-4.5	us-east5	vertex/claude-haiku-4-5@us-east5
+merge	ent_claude-opus-4-1-us-east5	ent_claude-opus-4.1	us-east5	vertex/claude-opus-4-1@us-east5
+merge	ent_claude-opus-4-5-europe-west1	ent_claude-opus-4.5	europe-west1	vertex/claude-opus-4-5@europe-west1
+merge	ent_claude-opus-4-5-us-east5	ent_claude-opus-4.5	us-east5	vertex/claude-opus-4-5@us-east5
+merge	ent_claude-opus-4-6-europe-west1	ent_claude-opus-4.6	europe-west1	vertex/claude-opus-4-6@europe-west1
+merge	ent_claude-opus-4-6-us-east5	ent_claude-opus-4.6	us-east5	vertex/claude-opus-4-6@us-east5
+merge	ent_claude-opus-4-7-eu	ent_claude-opus-4.7	eu	vertex/claude-opus-4-7@eu
+merge	ent_claude-opus-4-7-us	ent_claude-opus-4.7	us	vertex/claude-opus-4-7@us
+merge	ent_claude-opus-4-8-eu	ent_claude-opus-4.8	eu	vertex/claude-opus-4-8@eu
+merge	ent_claude-opus-4-8-us	ent_claude-opus-4.8	us	vertex/claude-opus-4-8@us
+merge	ent_claude-opus-4-us-east5	ent_claude-opus-4	us-east5	vertex/claude-opus-4@us-east5
+merge	ent_claude-opus-5-eu	ent_claude-opus-5	eu	vertex/claude-opus-5@eu
+merge	ent_claude-opus-5-us	ent_claude-opus-5	us	vertex/claude-opus-5@us
+merge	ent_claude-sonnet-4-5-europe-west1	ent_claude-sonnet-4.5	europe-west1	vertex/claude-sonnet-4-5@europe-west1
+merge	ent_claude-sonnet-4-5-us-east5	ent_claude-sonnet-4.5	us-east5	vertex/claude-sonnet-4-5@us-east5
+merge	ent_claude-sonnet-4-6-europe-west1	ent_claude-sonnet-4.6	europe-west1	vertex/claude-sonnet-4-6@europe-west1
+merge	ent_claude-sonnet-4-6-us-east5	ent_claude-sonnet-4.6	us-east5	vertex/claude-sonnet-4-6@us-east5
+merge	ent_claude-sonnet-4-europe-west1	ent_claude-sonnet-4	europe-west1	vertex/claude-sonnet-4@europe-west1
+merge	ent_claude-sonnet-4-us-east5	ent_claude-sonnet-4	us-east5	vertex/claude-sonnet-4@us-east5
+merge	ent_claude-sonnet-5-eu	ent_claude-sonnet-5	eu	vertex/claude-sonnet-5@eu
+merge	ent_claude-sonnet-5-us	ent_claude-sonnet-5	us	vertex/claude-sonnet-5@us
+merge	ent_gemini-2.5-flash-image-europe-central2	ent_gemini-2.5-flash-image	europe-central2	vertex/gemini-2.5-flash-image@europe-central2
+merge	ent_gemini-2.5-flash-image-europe-north1	ent_gemini-2.5-flash-image	europe-north1	vertex/gemini-2.5-flash-image@europe-north1
+merge	ent_gemini-2.5-flash-image-europe-southwest1	ent_gemini-2.5-flash-image	europe-southwest1	vertex/gemini-2.5-flash-image@europe-southwest1
+merge	ent_gemini-2.5-flash-image-europe-west1	ent_gemini-2.5-flash-image	europe-west1	vertex/gemini-2.5-flash-image@europe-west1
+merge	ent_gemini-2.5-flash-image-europe-west4	ent_gemini-2.5-flash-image	europe-west4	vertex/gemini-2.5-flash-image@europe-west4
+merge	ent_gemini-2.5-flash-image-europe-west8	ent_gemini-2.5-flash-image	europe-west8	vertex/gemini-2.5-flash-image@europe-west8
+merge	ent_gemini-2.5-flash-image-us-central1	ent_gemini-2.5-flash-image	us-central1	vertex/gemini-2.5-flash-image@us-central1
+merge	ent_gemini-2.5-flash-image-us-east1	ent_gemini-2.5-flash-image	us-east1	vertex/gemini-2.5-flash-image@us-east1
+merge	ent_gemini-2.5-flash-image-us-east4	ent_gemini-2.5-flash-image	us-east4	vertex/gemini-2.5-flash-image@us-east4
+merge	ent_gemini-2.5-flash-image-us-east5	ent_gemini-2.5-flash-image	us-east5	vertex/gemini-2.5-flash-image@us-east5
+merge	ent_gemini-2.5-flash-image-us-south1	ent_gemini-2.5-flash-image	us-south1	vertex/gemini-2.5-flash-image@us-south1
+merge	ent_gemini-2.5-flash-image-us-west1	ent_gemini-2.5-flash-image	us-west1	vertex/gemini-2.5-flash-image@us-west1
+merge	ent_gemini-2.5-flash-image-us-west4	ent_gemini-2.5-flash-image	us-west4	vertex/gemini-2.5-flash-image@us-west4
+merge	ent_gemini-2.5-flash-lite-europe-central2	ent_gemini-2.5-flash-lite	europe-central2	vertex/gemini-2.5-flash-lite@europe-central2
+merge	ent_gemini-2.5-flash-lite-europe-north1	ent_gemini-2.5-flash-lite	europe-north1	vertex/gemini-2.5-flash-lite@europe-north1
+merge	ent_gemini-2.5-flash-lite-europe-west1	ent_gemini-2.5-flash-lite	europe-west1	vertex/gemini-2.5-flash-lite@europe-west1
+merge	ent_gemini-2.5-flash-lite-europe-west4	ent_gemini-2.5-flash-lite	europe-west4	vertex/gemini-2.5-flash-lite@europe-west4
+merge	ent_gemini-2.5-flash-lite-europe-west8	ent_gemini-2.5-flash-lite	europe-west8	vertex/gemini-2.5-flash-lite@europe-west8
+merge	ent_gemini-2.5-flash-lite-us-central1	ent_gemini-2.5-flash-lite	us-central1	vertex/gemini-2.5-flash-lite@us-central1
+merge	ent_gemini-2.5-flash-lite-us-east1	ent_gemini-2.5-flash-lite	us-east1	vertex/gemini-2.5-flash-lite@us-east1
+merge	ent_gemini-2.5-flash-lite-us-east5	ent_gemini-2.5-flash-lite	us-east5	vertex/gemini-2.5-flash-lite@us-east5
+merge	ent_gemini-2.5-flash-lite-us-south1	ent_gemini-2.5-flash-lite	us-south1	vertex/gemini-2.5-flash-lite@us-south1
+merge	ent_gemini-2.5-flash-lite-us-west1	ent_gemini-2.5-flash-lite	us-west1	vertex/gemini-2.5-flash-lite@us-west1
+merge	ent_gemini-3-pro-image-flex	ent_gemini-3-pro-image	flex	vertex/gemini-3-pro-image:flex
+merge	ent_gemini-3.1-flash-image-flex	ent_gemini-3.1-flash-image	flex	vertex/gemini-3.1-flash-image:flex
+merge	ent_gemini-3.1-flash-lite-eu	ent_gemini-3.1-flash-lite	eu	vertex/gemini-3.1-flash-lite@eu
+merge	ent_gemini-3.1-flash-lite-us	ent_gemini-3.1-flash-lite	us	vertex/gemini-3.1-flash-lite@us
+merge	ent_gemini-3.5-flash-lite-eu	ent_gemini-3.5-flash-lite	eu	vertex/gemini-3.5-flash-lite@eu
+merge	ent_gemini-3.5-flash-eu	ent_gemini-3.5-flash	eu	vertex/gemini-3.5-flash@eu
+merge	ent_gemini-3.5-flash-us	ent_gemini-3.5-flash	us	vertex/gemini-3.5-flash@us
+merge	ent_gemini-3.7-flash-eu	ent_gemini-3.7-flash	eu	vertex/gemini-3.7-flash@eu
+merge	ent_grok-3-mini-high	ent_grok-3-mini	high	xai/grok-3-mini:high
+merge	ent_grok-3-mini-low	ent_grok-3-mini	low	xai/grok-3-mini:low
+merge	ent_grok-4-1-fast-non-reasoning	ent_grok-4.1-fast-non-reasoning		xai/grok-4-1-fast-non-reasoning
+merge	ent_grok-4-1-fast-reasoning	ent_grok-4.1-fast-reasoning		xai/grok-4-1-fast-reasoning
+merge	ent_remove-background	ent_stable-image-remove-background		Bria/remove_background
+merge	ent_flux	ent_deepgram-flux		ClarityAI/flux
+merge	ent_qwen2-7b-instruct	ent_qwen-2-7b-instruct		Qwen/Qwen2-7B-Instruct
+merge	ent_qwen3.8-2.4t-a95b	ent_qwen3.8-2.4t		Qwen/Qwen3.8-2.4T-A95B
+merge	ent_claude-3-7-sonnet-latest	ent_claude-3.7-sonnet		anthropic/claude-3-7-sonnet-latest
+merge	ent_claude-4-opus	ent_claude-opus-4		anthropic/claude-4-opus
+merge	ent_claude-4-sonnet	ent_claude-sonnet-4		anthropic/claude-4-sonnet
+merge	ent_gemini-3.1-pro	ent_gemini-3.1-pro-preview		google/gemini-3.1-pro
+merge	ent_multilingual-e5-large-instruct	ent_multilingual-e5-large		intfloat/multilingual-e5-large-instruct
+merge	ent_realtime-tts-2	ent_inworld-tts-2		inworld-ai/realtime-tts-2
+merge	ent_kimi-k2-instruct-0905	ent_kimi-k2-0905		moonshotai/Kimi-K2-Instruct-0905
+merge	ent_nvidia-nemotron-3.5-lightning	ent_nemotron-3.5-lightning		nvidia/NVIDIA-Nemotron-3.5-Lightning
+merge	ent_nvidia-nemotron-nano-12b-v2-vl	ent_nemotron-nano-12b-v2-vl		nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL
+merge	ent_nvidia-nemotron-nano-9b-v2	ent_nemotron-nano-9b-v2		nvidia/NVIDIA-Nemotron-Nano-9B-v2
+merge	ent_sd3.5-medium	ent_sd-3.5-medium		stabilityai/sd3.5-medium
+merge	ent_nova-2-lite-v1	ent_nova-2-lite		Amazon: Nova 2 Lite
+merge	ent_claude-fable-5-batch	ent_claude-fable-5	batch	Anthropic: Claude Fable 5 (batch)
+merge	ent_claude-haiku-4.5-batch	ent_claude-haiku-4.5	batch	Anthropic: Claude Haiku 4.5 (batch)
+merge	ent_claude-opus-4.1-batch	ent_claude-opus-4.1	batch	Anthropic: Claude Opus 4.1 (batch)
+merge	ent_claude-opus-4.5-batch	ent_claude-opus-4.5	batch	Anthropic: Claude Opus 4.5 (batch)
+merge	ent_claude-opus-4.6-batch	ent_claude-opus-4.6	batch	Anthropic: Claude Opus 4.6 (batch)
+merge	ent_claude-opus-4.7-fast	ent_claude-opus-4.7	Fast	Anthropic: Claude Opus 4.7 (Fast)
+merge	ent_claude-opus-4.7-batch	ent_claude-opus-4.7	batch	Anthropic: Claude Opus 4.7 (batch)
+merge	ent_claude-opus-4.8-fast	ent_claude-opus-4.8	Fast	Anthropic: Claude Opus 4.8 (Fast)
+merge	ent_claude-opus-4.8-batch	ent_claude-opus-4.8	batch	Anthropic: Claude Opus 4.8 (batch)
+merge	ent_claude-sonnet-4.5-batch	ent_claude-sonnet-4.5	batch	Anthropic: Claude Sonnet 4.5 (batch)
+merge	ent_claude-sonnet-4.6-batch	ent_claude-sonnet-4.6	batch	Anthropic: Claude Sonnet 4.6 (batch)
+merge	ent_claude-sonnet-5-batch	ent_claude-sonnet-5	batch	Anthropic: Claude Sonnet 5 (batch)
+merge	ent_deepseek-chat-v3-0324	ent_deepseek-v3-0324		DeepSeek: DeepSeek V3 0324
+merge	ent_deepseek-chat-v3.1	ent_deepseek-v3.1		DeepSeek: DeepSeek V3.1
+merge	ent_gemini-2.5-flash-lite-batch	ent_gemini-2.5-flash-lite	batch	Google: Gemini 2.5 Flash Lite (batch)
+merge	ent_gemini-2.5-flash-batch	ent_gemini-2.5-flash	batch	Google: Gemini 2.5 Flash (batch)
+merge	ent_gemini-2.5-pro-batch	ent_gemini-2.5-pro	batch	Google: Gemini 2.5 Pro (batch)
+merge	ent_gemini-3-flash-preview-batch	ent_gemini-3-flash-preview	batch	Google: Gemini 3 Flash Preview (batch)
+merge	ent_gemini-3.1-flash-lite-preview	ent_gemini-3.1-flash-lite		Google: Gemini 3.1 Flash Lite Preview
+merge	ent_gemini-3.1-flash-lite-batch	ent_gemini-3.1-flash-lite	batch	Google: Gemini 3.1 Flash Lite (batch)
+merge	ent_gemini-3.1-pro-preview-batch	ent_gemini-3.1-pro-preview	batch	Google: Gemini 3.1 Pro Preview (batch)
+merge	ent_gemini-3.5-flash-lite-batch	ent_gemini-3.5-flash-lite	batch	Google: Gemini 3.5 Flash Lite (batch)
+merge	ent_gemini-3.5-flash-batch	ent_gemini-3.5-flash	batch	Google: Gemini 3.5 Flash (batch)
+merge	ent_gemini-3.6-flash-batch	ent_gemini-3.6-flash	batch	Google: Gemini 3.6 Flash (batch)
+merge	ent_gemini-3.7-flash-batch	ent_gemini-3.7-flash	batch	Google: Gemini 3.7 Flash (batch)
+merge	ent_gemini-embedding-2-preview	ent_gemini-embedding-2		Google: Gemini Embedding 2 Preview
+merge	ent_gemini-embedding-2-batch	ent_gemini-embedding-2	batch	Google: Gemini Embedding 2 (batch)
+merge	ent_llama-3.1-70b-instruct	ent_llama-3.1-70b		Meta: Llama 3.1 70B Instruct
+merge	ent_minimax-m3-batch	ent_minimax-m3	batch	MiniMax: MiniMax M3 (batch)
+merge	ent_kimi-k2.7-code-batch	ent_kimi-k2.7-code	batch	MoonshotAI: Kimi K2.7 Code (batch)
+merge	ent_gpt-3.5-turbo-batch	ent_gpt-3.5-turbo	batch	OpenAI: GPT-3.5 Turbo (batch)
+merge	ent_gpt-4-turbo-batch	ent_gpt-4-turbo	batch	OpenAI: GPT-4 Turbo (batch)
+merge	ent_gpt-4.1-mini-batch	ent_gpt-4.1-mini	batch	OpenAI: GPT-4.1 Mini (batch)
+merge	ent_gpt-4.1-nano-batch	ent_gpt-4.1-nano	batch	OpenAI: GPT-4.1 Nano (batch)
+merge	ent_gpt-4.1-batch	ent_gpt-4.1	batch	OpenAI: GPT-4.1 (batch)
+merge	ent_gpt-4o-mini-batch	ent_gpt-4o-mini	batch	OpenAI: GPT-4o-mini (batch)
+merge	ent_gpt-4o-batch	ent_gpt-4o	batch	OpenAI: GPT-4o (batch)
+merge	ent_gpt-5-codex-batch	ent_gpt-5-codex	batch	OpenAI: GPT-5 Codex (batch)
+merge	ent_gpt-5-mini-batch	ent_gpt-5-mini	batch	OpenAI: GPT-5 Mini (batch)
+merge	ent_gpt-5-nano-batch	ent_gpt-5-nano	batch	OpenAI: GPT-5 Nano (batch)
+merge	ent_gpt-5-pro-batch	ent_gpt-5-pro	batch	OpenAI: GPT-5 Pro (batch)
+merge	ent_gpt-5.1-batch	ent_gpt-5.1	batch	OpenAI: GPT-5.1 (batch)
+merge	ent_gpt-5.2-pro-batch	ent_gpt-5.2-pro	batch	OpenAI: GPT-5.2 Pro (batch)
+merge	ent_gpt-5.2-batch	ent_gpt-5.2	batch	OpenAI: GPT-5.2 (batch)
+merge	ent_gpt-5.4-mini-batch	ent_gpt-5.4-mini	batch	OpenAI: GPT-5.4 Mini (batch)
+merge	ent_gpt-5.4-nano-batch	ent_gpt-5.4-nano	batch	OpenAI: GPT-5.4 Nano (batch)
+merge	ent_gpt-5.4-pro-batch	ent_gpt-5.4-pro	batch	OpenAI: GPT-5.4 Pro (batch)
+merge	ent_gpt-5.4-batch	ent_gpt-5.4	batch	OpenAI: GPT-5.4 (batch)
+merge	ent_gpt-5.5-pro-batch	ent_gpt-5.5-pro	batch	OpenAI: GPT-5.5 Pro (batch)
+merge	ent_gpt-5.5-batch	ent_gpt-5.5	batch	OpenAI: GPT-5.5 (batch)
+merge	ent_gpt-5.6-luna-pro-batch	ent_gpt-5.6-luna-pro	batch	OpenAI: GPT-5.6 Luna Pro (batch)
+merge	ent_gpt-5.6-luna-batch	ent_gpt-5.6-luna	batch	OpenAI: GPT-5.6 Luna (batch)
+merge	ent_gpt-5.6-sol-pro-batch	ent_gpt-5.6-sol-pro	batch	OpenAI: GPT-5.6 Sol Pro (batch)
+merge	ent_gpt-5.6-sol-batch	ent_gpt-5.6-sol	batch	OpenAI: GPT-5.6 Sol (batch)
+merge	ent_gpt-5.6-terra-pro-batch	ent_gpt-5.6-terra-pro	batch	OpenAI: GPT-5.6 Terra Pro (batch)
+merge	ent_gpt-5.6-terra-batch	ent_gpt-5.6-terra	batch	OpenAI: GPT-5.6 Terra (batch)
+merge	ent_gpt-5-batch	ent_gpt-5	batch	OpenAI: GPT-5 (batch)
+merge	ent_o1-batch	ent_o1	batch	OpenAI: o1 (batch)
+merge	ent_o3-mini-high-batch	ent_o3-mini-high	batch	OpenAI: o3 Mini High (batch)
+merge	ent_o3-mini-batch	ent_o3-mini	batch	OpenAI: o3 Mini (batch)
+merge	ent_o3-pro-batch	ent_o3-pro	batch	OpenAI: o3 Pro (batch)
+merge	ent_o3-batch	ent_o3	batch	OpenAI: o3 (batch)
+merge	ent_o4-mini-high-batch	ent_o4-mini-high	batch	OpenAI: o4 Mini High (batch)
+merge	ent_o4-mini-batch	ent_o4-mini	batch	OpenAI: o4 Mini (batch)
+merge	ent_text-embedding-3-large-batch	ent_text-embedding-3-large	batch	OpenAI: Text Embedding 3 Large (batch)
+merge	ent_text-embedding-ada-002-batch	ent_text-embedding-ada-002	batch	OpenAI: Text Embedding Ada 002 (batch)
+merge	ent_qwen-plus-2025-07-28-thinking	ent_qwen-plus-2025-07-28	thinking	Qwen: Qwen Plus 0728 (thinking)
+merge	ent_qwen3-coder	ent_qwen3-coder-480b-a35b-instruct		Qwen: Qwen3 Coder 480B A35B
+merge	ent_glm-5.2-us	ent_glm-5.2		zai/GLM-5.2
+merge	ent_glm-5.2-batch	ent_glm-5.2	batch	Z.ai: GLM 5.2 (batch)
+rename	ent_eleven-v3	Text-to-speech		Text-to-speech (v3 / Multilingual v2)
+rename	ent_eleven-flash	Text-to-speech		Text-to-speech (Flash/Turbo)
+rename	ent_mimo-v2-flash	MiMo-V2-Flash		XiaomiMiMo/MiMo-V2-Flash
+rename	ent_mimo-v2-pro	MiMo-V2-Pro		XiaomiMiMo/MiMo-V2-Pro
+rename	ent_qwen3-235b-a22b-thinking-2507-tee	Qwen3-235B-A22B-Thinking-2507-TEE		Qwen/Qwen3-235B-A22B-Thinking-2507-TEE
+rename	ent_qwen3-32b-tee	Qwen3-32B-TEE		Qwen/Qwen3-32B-TEE
+rename	ent_qwen3.5-397b-a17b-tee	Qwen3.5-397B-A17B-TEE		Qwen/Qwen3.5-397B-A17B-TEE
+rename	ent_qwen3.6-27b-tee	Qwen3.6-27B-TEE		Qwen/Qwen3.6-27B-TEE
+rename	ent_qwen3.8-27b-tee	Qwen3.8-27B-TEE		Qwen/Qwen3.8-27B-TEE
+rename	ent_deepseek-v3.2-tee	DeepSeek-V3.2-TEE		deepseek-ai/DeepSeek-V3.2-TEE
+rename	ent_deepseek-v4-flash-0731-tee	DeepSeek-V4-Flash-0731-TEE		deepseek-ai/DeepSeek-V4-Flash-0731-TEE
+rename	ent_gemma-4-31b-turbo-tee	gemma-4-31B-turbo-TEE		google/gemma-4-31B-turbo-TEE
+rename	ent_kimi-k2.6-tee	Kimi-K2.6-TEE		moonshotai/Kimi-K2.6-TEE
+rename	ent_kimi-k3-tee	Kimi-K3-TEE		moonshotai/Kimi-K3-TEE
+rename	ent_mistral-nemo-instruct-2407-tee	Mistral-Nemo-Instruct-2407-TEE		unsloth/Mistral-Nemo-Instruct-2407-TEE
+rename	ent_glm-5.1-tee	GLM-5.1-TEE		zai-org/GLM-5.1-TEE
+rename	ent_glm-5.2-tee	GLM-5.2-TEE		zai-org/GLM-5.2-TEE
+rename	ent_qwen-turbo	qwen-turbo		alibaba/qwen-turbo
+rename	ent_seed-1.8	Seed-1.8		deepinfra/ByteDance/Seed-1.8
+rename	ent_seed-2.0-pro	Seed-2.0-pro		deepinfra/ByteDance/Seed-2.0-pro
+rename	ent_qwen3-coder-480b-a35b-instruct-turbo	Qwen3-Coder-480B-A35B-Instruct-Turbo		deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo
+rename	ent_qwen3-coder-480b-a35b-instruct-turbo-flex	Qwen3-Coder-480B-A35B-Instruct-Turbo		deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo:flex
+rename	ent_qwen3.5-2b	Qwen3.5-2B		deepinfra/Qwen/Qwen3.5-2B
+rename	ent_llama-3.2-90b-vision-instruct	Llama-3.2-90B-Vision-Instruct		deepinfra/meta-llama/Llama-3.2-90B-Vision-Instruct
+rename	ent_llama-3.3-70b-instruct-turbo	Llama-3.3-70B-Instruct-Turbo		deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo
+rename	ent_llama-3.3-70b-instruct-turbo-flex	Llama-3.3-70B-Instruct-Turbo		deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo:flex
+rename	ent_meta-llama-3.1-405b-instruct	Meta-Llama-3.1-405B-Instruct		deepinfra/meta-llama/Meta-Llama-3.1-405B-Instruct
+rename	ent_meta-llama-3.1-70b-instruct	Meta-Llama-3.1-70B-Instruct		deepinfra/meta-llama/Meta-Llama-3.1-70B-Instruct
+rename	ent_meta-llama-3.1-8b-instruct-turbo	Meta-Llama-3.1-8B-Instruct-Turbo		deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+rename	ent_qwen3.8	qwen3.8		deepinfra/qwen3.8
+rename	ent_deepseek-chat	deepseek-chat		deepseek/deepseek-chat
+rename	ent_deepseek-reasoner	deepseek-reasoner		deepseek/deepseek-reasoner
+rename	ent_glm-5.2-fast	glm-5.2-fast		fireworks/glm-5.2-fast
+rename	ent_nemotron-3-ultra-nvfp4	nemotron-3-ultra-nvfp4		fireworks/nemotron-3-ultra-nvfp4
+rename	ent_nemotron-lightning-3.5-30b-a3b	nemotron-lightning-3.5-30b-a3b		fireworks/nemotron-lightning-3.5-30b-a3b
+rename	ent_gemini-3-pro-preview	gemini-3-pro-preview		google/gemini-3-pro-preview
+rename	ent_gemini-3-pro-preview-flex	gemini-3-pro-preview		google/gemini-3-pro-preview:flex
+rename	ent_devstral-latest	devstral-latest		mistral/devstral-latest
+rename	ent_devstral-small-latest	devstral-small-latest		mistral/devstral-small-latest
+rename	ent_mistral-small-2503	mistral-small-2503		mistral/mistral-small-2503
+rename	ent_mistral-small-2603	mistral-small-2603		mistral/mistral-small-2603
+rename	ent_open-mistral-7b	open-mistral-7b		mistral/open-mistral-7b
+rename	ent_nemotron-3-nano-omni	nemotron-3-nano-omni		nebius/nvidia/nemotron-3-nano-omni
+rename	ent_parasail-deepseek-v4-flash	parasail-deepseek-v4-flash		parasail/parasail-deepseek-v4-flash
+rename	ent_parasail-gemma3-27b-it	parasail-gemma3-27b-it		parasail/parasail-gemma3-27b-it
+rename	ent_parasail-qwen25-vl-72b-instruct	parasail-qwen25-vl-72b-instruct		parasail/parasail-qwen25-vl-72b-instruct
+rename	ent_parasail-qwen3-235b-a22b-instruct-2507	parasail-qwen3-235b-a22b-instruct-2507		parasail/parasail-qwen3-235b-a22b-instruct-2507
+rename	ent_thinkingcap-qwen3.6-27b	thinkingcap-qwen3.6-27b		sference/thinkingcap-qwen3.6-27b
+rename	ent_inkling-256k	inkling-256k		thinkingmachines/inkling-256k
+rename	ent_grok-4-fast-non-reasoning	grok-4-fast-non-reasoning		xai/grok-4-fast-non-reasoning
+rename	ent_grok-4.2-beta	grok-4.2-beta		xai/grok-4.2-beta
+rename	ent_grok-code-fast-1	grok-code-fast-1		xai/grok-code-fast-1
+rename	ent_acestep-v15-xl-sft	acestep-v15-xl-sft		ACE-Step/acestep-v15-xl-sft
+rename	ent_audio8-tts-preview-0.6b	Audio8-TTS-Preview-0.6b		Audio8/Audio8-TTS-Preview-0.6b
+rename	ent_chronos-hermes-13b-v2	chronos-hermes-13b-v2		Austism/chronos-hermes-13b-v2
+rename	ent_bge-base-en-v1.5	bge-base-en-v1.5		BAAI/bge-base-en-v1.5
+rename	ent_bge-en-icl	bge-en-icl		BAAI/bge-en-icl
+rename	ent_bge-large-en-v1.5	bge-large-en-v1.5		BAAI/bge-large-en-v1.5
+rename	ent_bge-m3	bge-m3		BAAI/bge-m3
+rename	ent_bge-m3-multi	bge-m3-multi		BAAI/bge-m3-multi
+rename	ent_bria-3.2	Bria-3.2		Bria/Bria-3.2
+rename	ent_bria-3.2-vector	Bria-3.2-vector		Bria/Bria-3.2-vector
+rename	ent_blur-background	blur_background		Bria/blur_background
+rename	ent_enhance	enhance		Bria/enhance
+rename	ent_erase	erase		Bria/erase
+rename	ent_erase-foreground	erase_foreground		Bria/erase_foreground
+rename	ent_expand	expand		Bria/expand
+rename	ent_fibo	fibo		Bria/fibo
+rename	ent_fibo-edit	fibo_edit		Bria/fibo_edit
+rename	ent_gen-fill	gen_fill		Bria/gen_fill
+rename	ent_replace-background	replace_background		Bria/replace_background
+rename	ent_video-eraser	video_eraser		Bria/video_eraser
+rename	ent_video-foreground-mask	video_foreground_mask		Bria/video_foreground_mask
+rename	ent_video-increase-resolution	video_increase_resolution		Bria/video_increase_resolution
+rename	ent_video-mask-by-key-points	video_mask_by_key_points		Bria/video_mask_by_key_points
+rename	ent_video-mask-by-prompt	video_mask_by_prompt		Bria/video_mask_by_prompt
+rename	ent_video-remove-background	video_remove_background		Bria/video_remove_background
+rename	ent_seedance-1.5-pro	Seedance-1.5-Pro		ByteDance/Seedance-1.5-Pro
+rename	ent_seedance-2.0	Seedance-2.0		ByteDance/Seedance-2.0
+rename	ent_seedream-4	Seedream-4		ByteDance/Seedream-4
+rename	ent_seedream-4.5	Seedream-4.5		ByteDance/Seedream-4.5
+rename	ent_creative	creative		ClarityAI/creative
+rename	ent_crystal	crystal		ClarityAI/crystal
+rename	ent_stable-diffusion-v1-4	stable-diffusion-v1-4		CompVis/stable-diffusion-v1-4
+rename	ent_fastwan-qad-fp8-1.3b	FastWan-QAD-FP8-1.3B		FastVideo/FastWan-QAD-FP8-1.3B
+rename	ent_ltx2-distilled-diffusers	LTX2-Distilled-Diffusers		FastVideo/LTX2-Distilled-Diffusers
+rename	ent_mythomax-l2-13b-turbo	MythoMax-L2-13b-turbo		Gryphe/MythoMax-L2-13b-turbo
+rename	ent_llama2-13b-tiefighter	LLaMA2-13B-Tiefighter		KoboldAI/LLaMA2-13B-Tiefighter
+rename	ent_minimax-m2.7-turbo	MiniMax-M2.7-Turbo		MiniMaxAI/MiniMax-M2.7-Turbo
+rename	ent_sky-t1-32b-preview	Sky-T1-32B-Preview		NovaSky-AI/Sky-T1-32B-Preview
+rename	ent_paddleocr-vl-0.9b	PaddleOCR-VL-0.9B		PaddlePaddle/PaddleOCR-VL-0.9B
+rename	ent_phind-codellama-34b-v2	Phind-CodeLlama-34B-v2		Phind/Phind-CodeLlama-34B-v2
+rename	ent_pixverse-6-i2v	Pixverse-6-I2V		Pixverse/Pixverse-6-I2V
+rename	ent_pixverse-6-t2v	Pixverse-6-T2V		Pixverse/Pixverse-6-T2V
+rename	ent_pixverse-t2v	Pixverse-T2V		Pixverse/Pixverse-T2V
+rename	ent_pixverse-t2v-hd	Pixverse-T2V-HD		Pixverse/Pixverse-T2V-HD
+rename	ent_p-image	p-image		PrunaAI/p-image
+rename	ent_p-image-edit	p-image-Edit		PrunaAI/p-image-Edit
+rename	ent_p-video	p-video		PrunaAI/p-video
+rename	ent_p-video-avatar	p-video-avatar		PrunaAI/p-video-avatar
+rename	ent_qvq-72b-preview	QVQ-72B-Preview		Qwen/QVQ-72B-Preview
+rename	ent_qwq-32b	QwQ-32B		Qwen/QwQ-32B
+rename	ent_qwq-32b-preview	QwQ-32B-Preview		Qwen/QwQ-32B-Preview
+rename	ent_qwen-image-edit	Qwen-Image-Edit		Qwen/Qwen-Image-Edit
+rename	ent_qwen-image-edit-max	Qwen-Image-Edit-Max		Qwen/Qwen-Image-Edit-Max
+rename	ent_qwen-image-max	Qwen-Image-Max		Qwen/Qwen-Image-Max
+rename	ent_qwen2-72b-instruct	Qwen2-72B-Instruct		Qwen/Qwen2-72B-Instruct
+rename	ent_qwen2.5-coder-7b	Qwen2.5-Coder-7B		Qwen/Qwen2.5-Coder-7B
+rename	ent_qwen2.5-vl-32b-instruct	Qwen2.5-VL-32B-Instruct		Qwen/Qwen2.5-VL-32B-Instruct
+rename	ent_qwen3-asr-0.6b	Qwen3-ASR-0.6B		Qwen/Qwen3-ASR-0.6B
+rename	ent_qwen3-asr-1.7b	Qwen3-ASR-1.7B		Qwen/Qwen3-ASR-1.7B
+rename	ent_qwen3-embedding-0.6b	Qwen3-Embedding-0.6B		Qwen/Qwen3-Embedding-0.6B
+rename	ent_qwen3-embedding-0.6b-batch	Qwen3-Embedding-0.6B-batch		Qwen/Qwen3-Embedding-0.6B-batch
+rename	ent_qwen3-embedding-4b	Qwen3-Embedding-4B		Qwen/Qwen3-Embedding-4B
+rename	ent_qwen3-embedding-4b-batch	Qwen3-Embedding-4B-batch		Qwen/Qwen3-Embedding-4B-batch
+rename	ent_qwen3-embedding-8b-batch	Qwen3-Embedding-8B-batch		Qwen/Qwen3-Embedding-8B-batch
+rename	ent_qwen3-reranker-0.6b	Qwen3-Reranker-0.6B		Qwen/Qwen3-Reranker-0.6B
+rename	ent_qwen3-reranker-4b	Qwen3-Reranker-4B		Qwen/Qwen3-Reranker-4B
+rename	ent_qwen3-reranker-8b	Qwen3-Reranker-8B		Qwen/Qwen3-Reranker-8B
+rename	ent_qwen3-tts	Qwen3-TTS		Qwen/Qwen3-TTS
+rename	ent_qwen3-tts-voicedesign	Qwen3-TTS-VoiceDesign		Qwen/Qwen3-TTS-VoiceDesign
+rename	ent_qwen3-vl-4b-instruct	Qwen3-VL-4B-Instruct		Qwen/Qwen3-VL-4B-Instruct
+rename	ent_qwen3-vl-4b-thinking	Qwen3-VL-4B-Thinking		Qwen/Qwen3-VL-4B-Thinking
+rename	ent_qwen3.5-0.8b	Qwen3.5-0.8B		Qwen/Qwen3.5-0.8B
+rename	ent_chatterbox	chatterbox		ResembleAI/chatterbox
+rename	ent_chatterbox-multilingual	chatterbox-multilingual		ResembleAI/chatterbox-multilingual
+rename	ent_chatterbox-turbo	chatterbox-turbo		ResembleAI/chatterbox-turbo
+rename	ent_l3-8b-lunaris-v1	L3-8B-Lunaris-v1		Sao10K/L3-8B-Lunaris-v1
+rename	ent_l3-8b-lunaris-v1-turbo	L3-8B-Lunaris-v1-Turbo		Sao10K/L3-8B-Lunaris-v1-Turbo
+rename	ent_l3.1-70b-euryale-v2.2	L3.1-70B-Euryale-v2.2		Sao10K/L3.1-70B-Euryale-v2.2
+rename	ent_l3.3-70b-euryale-v2.3	L3.3-70B-Euryale-v2.3		Sao10K/L3.3-70B-Euryale-v2.3
+rename	ent_wan2.1-t2v-1.3b	Wan2.1-T2V-1.3B		Wan-AI/Wan2.1-T2V-1.3B
+rename	ent_wan2.1-t2v-14b	Wan2.1-T2V-14B		Wan-AI/Wan2.1-T2V-14B
+rename	ent_wan2.2-t2v-a14b	Wan2.2-T2V-A14B		Wan-AI/Wan2.2-T2V-A14B
+rename	ent_wan2.6-i2v	Wan2.6-I2V		Wan-AI/Wan2.6-I2V
+rename	ent_wan2.6-image-edit	Wan2.6-Image-Edit		Wan-AI/Wan2.6-Image-Edit
+rename	ent_wan2.6-t2i	Wan2.6-T2I		Wan-AI/Wan2.6-T2I
+rename	ent_wan2.6-t2v	Wan2.6-T2V		Wan-AI/Wan2.6-T2V
+rename	ent_wan2.7-i2v	Wan2.7-I2V		Wan-AI/Wan2.7-I2V
+rename	ent_wan2.7-image-edit	Wan2.7-Image-Edit		Wan-AI/Wan2.7-Image-Edit
+rename	ent_wan2.7-r2v	Wan2.7-R2V		Wan-AI/Wan2.7-R2V
+rename	ent_deliberate	Deliberate		XpucT/Deliberate
+rename	ent_zonos-v0.1-hybrid	Zonos-v0.1-hybrid		Zyphra/Zonos-v0.1-hybrid
+rename	ent_zonos-v0.1-transformer	Zonos-v0.1-transformer		Zyphra/Zonos-v0.1-transformer
+rename	ent_olmo-3.1-32b-instruct	Olmo-3.1-32B-Instruct		allenai/Olmo-3.1-32B-Instruct
+rename	ent_olmocr-2	olmOCR-2		allenai/olmOCR-2
+rename	ent_olmocr-2-7b-1025	olmOCR-2-7B-1025		allenai/olmOCR-2-7B-1025
+rename	ent_olmocr-7b-0725-fp8	olmOCR-7B-0725-FP8		allenai/olmOCR-7B-0725-FP8
+rename	ent_olmocr-7b-0825	olmOCR-7B-0825		allenai/olmOCR-7B-0825
+rename	ent_olmocr-7b-1025	olmOCR-7B-1025		allenai/olmOCR-7B-1025
+rename	ent_starcoder2-15b-instruct-v0.1	starcoder2-15b-instruct-v0.1		bigcode/starcoder2-15b-instruct-v0.1
+rename	ent_flux-1-redux-dev	FLUX-1-Redux-dev		black-forest-labs/FLUX-1-Redux-dev
+rename	ent_flux.1-kontext-dev	FLUX.1-Kontext-dev		black-forest-labs/FLUX.1-Kontext-dev
+rename	ent_higgsaudiov2.5	HiggsAudioV2.5		bosonai/HiggsAudioV2.5
+rename	ent_orpheus-3b-0.1-ft	orpheus-3b-0.1-ft		canopylabs/orpheus-3b-0.1-ft
+rename	ent_dolphin-2.6-mixtral-8x7b	dolphin-2.6-mixtral-8x7b		cognitivecomputations/dolphin-2.6-mixtral-8x7b
+rename	ent_dolphin-2.9.1-llama-3-70b	dolphin-2.9.1-llama-3-70b		cognitivecomputations/dolphin-2.9.1-llama-3-70b
+rename	ent_airoboros-70b	airoboros-70b		deepinfra/airoboros-70b
+rename	ent_ornith-1.0-35b	Ornith-1.0-35B		deepreinforce-ai/Ornith-1.0-35B
+rename	ent_deepseek-r1-0528-turbo	DeepSeek-R1-0528-Turbo		deepseek-ai/DeepSeek-R1-0528-Turbo
+rename	ent_deepseek-v3-0324-turbo	DeepSeek-V3-0324-Turbo		deepseek-ai/DeepSeek-V3-0324-Turbo
+rename	ent_janus-pro-1b	Janus-Pro-1B		deepseek-ai/Janus-Pro-1B
+rename	ent_janus-pro-7b	Janus-Pro-7B		deepseek-ai/Janus-Pro-7B
+rename	ent_codegemma-7b-it	codegemma-7b-it		google/codegemma-7b-it
+rename	ent_embeddinggemma-300m	embeddinggemma-300m		google/embeddinggemma-300m
+rename	ent_gemini-2.0-flash-001	gemini-2.0-flash-001		google/gemini-2.0-flash-001
+rename	ent_gemma-1.1-7b-it	gemma-1.1-7b-it		google/gemma-1.1-7b-it
+rename	ent_gemma-2-9b-it	gemma-2-9b-it		google/gemma-2-9b-it
+rename	ent_gemma-4-31b-it-ultra	gemma-4-31B-it-Ultra		google/gemma-4-31B-it-Ultra
+rename	ent_gemma-4-31b-it-turbo	gemma-4-31B-it-turbo		google/gemma-4-31B-it-turbo
+rename	ent_gemma-4-e4b-it	gemma-4-E4B-it		google/gemma-4-E4B-it
+rename	ent_nano-banana-2	nano-banana-2		google/nano-banana-2
+rename	ent_nano-banana-2-lite	nano-banana-2-lite		google/nano-banana-2-lite
+rename	ent_nano-banana-pro	nano-banana-pro		google/nano-banana-pro
+rename	ent_veo-3.0	veo-3.0		google/veo-3.0
+rename	ent_veo-3.0-fast	veo-3.0-fast		google/veo-3.0-fast
+rename	ent_kokoro-82m	Kokoro-82M		hexgrad/Kokoro-82M
+rename	ent_e5-base-v2	e5-base-v2		intfloat/e5-base-v2
+rename	ent_e5-large-v2	e5-large-v2		intfloat/e5-large-v2
+rename	ent_inworld-tts-1.5-max	inworld-tts-1.5-max		inworld-ai/inworld-tts-1.5-max
+rename	ent_inworld-tts-1.5-mini	inworld-tts-1.5-mini		inworld-ai/inworld-tts-1.5-mini
+rename	ent_realtime-tts-1.5-max	realtime-tts-1.5-max		inworld-ai/realtime-tts-1.5-max
+rename	ent_realtime-tts-1.5-mini	realtime-tts-1.5-mini		inworld-ai/realtime-tts-1.5-mini
+rename	ent_lzlv-70b-fp16-hf	lzlv_70b_fp16_hf		lizpreciatior/lzlv_70b_fp16_hf
+rename	ent_reflection-llama-3.1-70b	Reflection-Llama-3.1-70B		mattshumer/Reflection-Llama-3.1-70B
+rename	ent_llama-2-13b-chat-hf	Llama-2-13b-chat-hf		meta-llama/Llama-2-13b-chat-hf
+rename	ent_llama-2-70b-chat-hf	Llama-2-70b-chat-hf		meta-llama/Llama-2-70b-chat-hf
+rename	ent_llama-4-maverick-17b-128e-instruct-turbo	Llama-4-Maverick-17B-128E-Instruct-Turbo		meta-llama/Llama-4-Maverick-17B-128E-Instruct-Turbo
+rename	ent_llama-guard-3-8b	Llama-Guard-3-8B		meta-llama/Llama-Guard-3-8B
+rename	ent_meta-llama-3-70b-instruct	Meta-Llama-3-70B-Instruct		meta-llama/Meta-Llama-3-70B-Instruct
+rename	ent_meta-llama-3-8b-instruct	Meta-Llama-3-8B-Instruct		meta-llama/Meta-Llama-3-8B-Instruct
+rename	ent_meta-llama-3.1-70b-instruct-turbo	Meta-Llama-3.1-70B-Instruct-Turbo		meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo
+rename	ent_meta-llama-3.1-8b-instruct	Meta-Llama-3.1-8B-Instruct		meta-llama/Meta-Llama-3.1-8B-Instruct
+rename	ent_phi-3-medium-4k-instruct	Phi-3-medium-4k-instruct		microsoft/Phi-3-medium-4k-instruct
+rename	ent_phi-4-multimodal-instruct	Phi-4-multimodal-instruct		microsoft/Phi-4-multimodal-instruct
+rename	ent_wizardlm-2-7b	WizardLM-2-7B		microsoft/WizardLM-2-7B
+rename	ent_phi-4-reasoning-plus	phi-4-reasoning-plus		microsoft/phi-4-reasoning-plus
+rename	ent_devstral-small-2505	Devstral-Small-2505		mistralai/Devstral-Small-2505
+rename	ent_devstral-small-2507	Devstral-Small-2507		mistralai/Devstral-Small-2507
+rename	ent_mistral-7b-instruct-v0.1	Mistral-7B-Instruct-v0.1		mistralai/Mistral-7B-Instruct-v0.1
+rename	ent_mistral-7b-instruct-v0.2	Mistral-7B-Instruct-v0.2		mistralai/Mistral-7B-Instruct-v0.2
+rename	ent_mistral-7b-instruct-v0.3	Mistral-7B-Instruct-v0.3		mistralai/Mistral-7B-Instruct-v0.3
+rename	ent_mistral-nemo-instruct-2407	Mistral-Nemo-Instruct-2407		mistralai/Mistral-Nemo-Instruct-2407
+rename	ent_mistral-small-3.2-24b-instruct-2506	Mistral-Small-3.2-24B-Instruct-2506		mistralai/Mistral-Small-3.2-24B-Instruct-2506
+rename	ent_mixtral-8x22b-instruct-v0.1	Mixtral-8x22B-Instruct-v0.1		mistralai/Mixtral-8x22B-Instruct-v0.1
+rename	ent_mixtral-8x7b-instruct-v0.1	Mixtral-8x7B-Instruct-v0.1		mistralai/Mixtral-8x7B-Instruct-v0.1
+rename	ent_voxtral-mini-3b-2507	Voxtral-Mini-3B-2507		mistralai/Voxtral-Mini-3B-2507
+rename	ent_kimi-k2.5-turbo	Kimi-K2.5-Turbo		moonshotai/Kimi-K2.5-Turbo
+rename	ent_llama-3.1-nemotron-70b-instruct	Llama-3.1-Nemotron-70B-Instruct		nvidia/Llama-3.1-Nemotron-70B-Instruct
+rename	ent_llama-3.3-nemotron-super-49b-v1.5	Llama-3.3-Nemotron-Super-49B-v1.5		nvidia/Llama-3.3-Nemotron-Super-49B-v1.5
+rename	ent_nvidia-nemotron-3-ultra-550b-a55b	NVIDIA-Nemotron-3-Ultra-550B-A55B		nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B
+rename	ent_nvidia-nemotron-3-ultra-550b-a55b-bf16	NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16		nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
+rename	ent_nemotron-3-embed-1b-bf16	Nemotron-3-Embed-1B-BF16		nvidia/Nemotron-3-Embed-1B-BF16
+rename	ent_nemotron-3-embed-1b-nvfp4	Nemotron-3-Embed-1B-NVFP4		nvidia/Nemotron-3-Embed-1B-NVFP4
+rename	ent_nemotron-3-embed-8b	Nemotron-3-Embed-8B		nvidia/Nemotron-3-Embed-8B
+rename	ent_nemotron-3-nano-omni-30b-a3b-reasoning	Nemotron-3-Nano-Omni-30B-A3B-Reasoning		nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning
+rename	ent_nemotron-3.5-asr-streaming-multilingual-0.6b	Nemotron-3.5-ASR-Streaming-Multilingual-0.6b		nvidia/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b
+rename	ent_nemotron-4-340b-instruct	Nemotron-4-340B-Instruct		nvidia/Nemotron-4-340B-Instruct
+rename	ent_nemotron-content-safety-3.5	Nemotron-Content-Safety-3.5		nvidia/Nemotron-Content-Safety-3.5
+rename	ent_llama-nemotron-embed-vl-1b-v2	llama-nemotron-embed-vl-1b-v2		nvidia/llama-nemotron-embed-vl-1b-v2
+rename	ent_llama-nemotron-rerank-vl-1b-v2	llama-nemotron-rerank-vl-1b-v2		nvidia/llama-nemotron-rerank-vl-1b-v2
+rename	ent_clip-vit-base-patch32	clip-vit-base-patch32		openai/clip-vit-base-patch32
+rename	ent_clip-vit-large-patch14-336	clip-vit-large-patch14-336		openai/clip-vit-large-patch14-336
+rename	ent_gpt-oss-120b-turbo	gpt-oss-120b-Turbo		openai/gpt-oss-120b-Turbo
+rename	ent_gpt-oss-120b-ultra	gpt-oss-120b-Ultra		openai/gpt-oss-120b-Ultra
+rename	ent_whisper-base	whisper-base		openai/whisper-base
+rename	ent_whisper-base.en	whisper-base.en		openai/whisper-base.en
+rename	ent_whisper-medium.en	whisper-medium.en		openai/whisper-medium.en
+rename	ent_whisper-small.en	whisper-small.en		openai/whisper-small.en
+rename	ent_whisper-timestamped-medium	whisper-timestamped-medium		openai/whisper-timestamped-medium
+rename	ent_whisper-timestamped-medium.en	whisper-timestamped-medium.en		openai/whisper-timestamped-medium.en
+rename	ent_whisper-tiny.en	whisper-tiny.en		openai/whisper-tiny.en
+rename	ent_minicpm-llama3-v-2-5	MiniCPM-Llama3-V-2_5		openbmb/MiniCPM-Llama3-V-2_5
+rename	ent_openchat-3.6-8b	openchat-3.6-8b		openchat/openchat-3.6-8b
+rename	ent_openchat-3.5	openchat_3.5		openchat/openchat_3.5
+rename	ent_juggernaut-flux	Juggernaut-Flux		run-diffusion/Juggernaut-Flux
+rename	ent_stable-diffusion-v1-5	stable-diffusion-v1-5		runwayml/stable-diffusion-v1-5
+rename	ent_all-minilm-l12-v2	all-MiniLM-L12-v2		sentence-transformers/all-MiniLM-L12-v2
+rename	ent_all-minilm-l6-v2	all-MiniLM-L6-v2		sentence-transformers/all-MiniLM-L6-v2
+rename	ent_all-mpnet-base-v2	all-mpnet-base-v2		sentence-transformers/all-mpnet-base-v2
+rename	ent_clip-vit-b-32	clip-ViT-B-32		sentence-transformers/clip-ViT-B-32
+rename	ent_clip-vit-b-32-multilingual-v1	clip-ViT-B-32-multilingual-v1		sentence-transformers/clip-ViT-B-32-multilingual-v1
+rename	ent_multi-qa-mpnet-base-dot-v1	multi-qa-mpnet-base-dot-v1		sentence-transformers/multi-qa-mpnet-base-dot-v1
+rename	ent_paraphrase-minilm-l6-v2	paraphrase-MiniLM-L6-v2		sentence-transformers/paraphrase-MiniLM-L6-v2
+rename	ent_csm-1b	csm-1b		sesame/csm-1b
+rename	ent_text2vec-base-chinese	text2vec-base-chinese		shibing624/text2vec-base-chinese
+rename	ent_sd3.5	sd3.5		stabilityai/sd3.5
+rename	ent_sdxl-turbo	sdxl-turbo		stabilityai/sdxl-turbo
+rename	ent_stable-diffusion-2-1	stable-diffusion-2-1		stabilityai/stable-diffusion-2-1
+rename	ent_gte-base	gte-base		thenlper/gte-base
+rename	ent_gte-large	gte-large		thenlper/gte-large
+rename	ent_codestral-embed-2505	Codestral Embed 2505		Mistral: Codestral Embed 2505
+rename	ent_mistral-embed-2312	Mistral Embed 2312		Mistral: Mistral Embed 2312
+rename	ent_gpt-chat-latest	GPT Chat Latest		OpenAI: GPT Chat Latest
+rename	ent_qwen3-235b-a22b-2507	Qwen3 235B A22B Instruct 2507		Qwen: Qwen3 235B A22B Instruct 2507
+rename	ent_voyage-4	voyage-4		VoyageAI by MongoDB: voyage-4
+rename	ent_voyage-4-large	voyage-4-large		VoyageAI by MongoDB: voyage-4-large
+rename	ent_voyage-4-lite	voyage-4-lite		VoyageAI by MongoDB: voyage-4-lite
+rename	ent_voyage-code-4	voyage-code-4		VoyageAI by MongoDB: voyage-code-4
+rename	ent_voyage-multimodal-3.5	voyage-multimodal-3.5		VoyageAI by MongoDB: voyage-multimodal-3.5
+rename	ent_grok-4.20	Grok 4.20		SpaceXAI: Grok 4.20
+rename	ent_claude-fable-latest	Claude Fable Latest		Anthropic: Claude Fable Latest
+rename	ent_claude-opus-latest	Claude Opus Latest		Anthropic: Claude Opus Latest
+rename	ent_grok-latest	Grok Latest		xAI: Grok Latest
+rename	ent_glm-latest	GLM Latest		Z.ai: GLM Latest
+rename	ent_qwen2.5-coder-3b-instruct	Qwen2.5-Coder-3B-Instruct		Qwen/Qwen2.5-Coder-3B-Instruct
+rename	ent_qwen2.5-coder-7b-instruct	Qwen2.5-Coder-7B-Instruct		Qwen/Qwen2.5-Coder-7B-Instruct
+rename	ent_qwen3-4b-instruct-2507	Qwen3-4B-Instruct-2507		Qwen/Qwen3-4B-Instruct-2507
+rename	ent_qwen3-4b-thinking-2507	Qwen3-4B-Thinking-2507		Qwen/Qwen3-4B-Thinking-2507
+rename	ent_gemma-sea-lion-v4-27b-it	Gemma-SEA-LION-v4-27B-IT		aisingapore/Gemma-SEA-LION-v4-27B-IT
+rename	ent_qwen-sea-lion-v4-32b-it	Qwen-SEA-LION-v4-32B-IT		aisingapore/Qwen-SEA-LION-v4-32B-IT
+rename	ent_ernie-4.5-vl-424b-a47b-base-pt	ERNIE-4.5-VL-424B-A47B-Base-PT		baidu/ERNIE-4.5-VL-424B-A47B-Base-PT
+rename	ent_deepseek-r1-distill-llama-8b	DeepSeek-R1-Distill-Llama-8B		deepseek-ai/DeepSeek-R1-Distill-Llama-8B
+rename	ent_deepseek-r1-distill-qwen-7b	DeepSeek-R1-Distill-Qwen-7B		deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+rename	ent_gemma-4-31b-it-pearl	Gemma-4-31B-it-pearl		pearl-ai/Gemma-4-31B-it-pearl
+rename	ent_bielik-11b-v3.0-instruct	Bielik-11B-v3.0-Instruct		speakleash/Bielik-11B-v3.0-Instruct
+rename	ent_apertus-70b-instruct-2509	Apertus-70B-Instruct-2509		swiss-ai/Apertus-70B-Instruct-2509
+rename	ent_apertus-8b-instruct-2509	Apertus-8B-Instruct-2509		swiss-ai/Apertus-8B-Instruct-2509
+rename	ent_apertus-v1.5-70b	Apertus-v1.5-70B		swiss-ai/Apertus-v1.5-70B
+rename	ent_apertus-v1.5-8b	Apertus-v1.5-8B		swiss-ai/Apertus-v1.5-8B
+rename	ent_glm-4.6v-flash	GLM-4.6V-Flash		zai-org/GLM-4.6V-Flash

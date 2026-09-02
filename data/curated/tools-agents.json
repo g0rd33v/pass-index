@@ -1,0 +1,529 @@
+{
+ "providers": [
+  {
+   "id": "prov_serper",
+   "name": "Serper",
+   "url": "https://serper.dev",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_tavily",
+   "name": "Tavily",
+   "url": "https://www.tavily.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_deepgram",
+   "name": "Deepgram",
+   "url": "https://deepgram.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_elevenlabs",
+   "name": "ElevenLabs",
+   "url": "https://elevenlabs.io",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_exa",
+   "name": "Exa",
+   "url": "https://exa.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_vapi",
+   "name": "Vapi",
+   "url": "https://vapi.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_bland",
+   "name": "Bland AI",
+   "url": "https://www.bland.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_intercom_fin",
+   "name": "Fin by Intercom",
+   "url": "https://fin.ai",
+   "kind": "vendor"
+  }
+ ],
+ "entities": [
+  {
+   "id": "ent_web-search",
+   "register": "tool",
+   "name": "Web search",
+   "maker": null,
+   "family": "search",
+   "version": null,
+   "input_kind": "query",
+   "output_kind": "result links",
+   "attrs": {}
+  },
+  {
+   "id": "ent_page-render",
+   "register": "tool",
+   "name": "Page render",
+   "maker": null,
+   "family": "render",
+   "version": null,
+   "input_kind": "url",
+   "output_kind": "markdown",
+   "attrs": {}
+  },
+  {
+   "id": "ent_nova-3",
+   "register": "model",
+   "name": "Speech-to-text batch (Nova-3 monolingual)",
+   "maker": "prov_deepgram",
+   "family": "nova",
+   "version": "3",
+   "input_kind": "audio",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_aura-2",
+   "register": "model",
+   "name": "Text-to-speech (Aura-2)",
+   "maker": "prov_deepgram",
+   "family": "aura",
+   "version": "2",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_eleven-v3",
+   "register": "model",
+   "name": "Text-to-speech (v3 / Multilingual v2)",
+   "maker": "prov_elevenlabs",
+   "family": "eleven",
+   "version": "v3",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_eleven-flash",
+   "register": "model",
+   "name": "Text-to-speech (Flash/Turbo)",
+   "maker": "prov_elevenlabs",
+   "family": "eleven",
+   "version": "flash",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_scribe-v2",
+   "register": "model",
+   "name": "Speech-to-text (Scribe v2)",
+   "maker": "prov_elevenlabs",
+   "family": "scribe",
+   "version": "v2",
+   "input_kind": "audio",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_voice-caller",
+   "register": "agent",
+   "name": "Voice caller",
+   "maker": null,
+   "family": "voice",
+   "version": null,
+   "input_kind": "goal + phone number",
+   "output_kind": "call outcome + transcript",
+   "attrs": {}
+  },
+  {
+   "id": "ent_web-answer",
+   "register": "tool",
+   "name": "Web answer",
+   "maker": "prov_exa",
+   "family": "search",
+   "version": null,
+   "input_kind": "question",
+   "output_kind": "answer with citations",
+   "attrs": {}
+  },
+  {
+   "id": "ent_research-agent",
+   "register": "agent",
+   "name": "Research agent",
+   "maker": "prov_exa",
+   "family": "research",
+   "version": null,
+   "input_kind": "research task",
+   "output_kind": "research report",
+   "attrs": {}
+  },
+  {
+   "id": "ent_support-resolver",
+   "register": "agent",
+   "name": "Support resolver",
+   "maker": "prov_intercom_fin",
+   "family": "support",
+   "version": null,
+   "input_kind": "customer support conversation",
+   "output_kind": "resolved outcome",
+   "attrs": {}
+  }
+ ],
+ "aliases": [
+  {
+   "source": "prov_serper",
+   "alias": "search",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_tavily",
+   "alias": "search",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_tavily",
+   "alias": "extract",
+   "entity": "ent_page-render"
+  },
+  {
+   "source": "prov_deepgram",
+   "alias": "nova-3",
+   "entity": "ent_nova-3"
+  },
+  {
+   "source": "prov_deepgram",
+   "alias": "aura-2",
+   "entity": "ent_aura-2"
+  },
+  {
+   "source": "prov_elevenlabs",
+   "alias": "eleven-v3",
+   "entity": "ent_eleven-v3"
+  },
+  {
+   "source": "prov_elevenlabs",
+   "alias": "flash-turbo",
+   "entity": "ent_eleven-flash"
+  },
+  {
+   "source": "prov_elevenlabs",
+   "alias": "scribe-v2",
+   "entity": "ent_scribe-v2"
+  },
+  {
+   "source": "prov_elevenlabs",
+   "alias": "agents",
+   "entity": "ent_voice-caller"
+  },
+  {
+   "source": "prov_exa",
+   "alias": "search",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_exa",
+   "alias": "contents",
+   "entity": "ent_page-render"
+  },
+  {
+   "source": "prov_exa",
+   "alias": "answer",
+   "entity": "ent_web-answer"
+  },
+  {
+   "source": "prov_exa",
+   "alias": "agent",
+   "entity": "ent_research-agent"
+  },
+  {
+   "source": "prov_vapi",
+   "alias": "voice-agent",
+   "entity": "ent_voice-caller"
+  },
+  {
+   "source": "prov_bland",
+   "alias": "phone-calls",
+   "entity": "ent_voice-caller"
+  },
+  {
+   "source": "prov_intercom_fin",
+   "alias": "fin",
+   "entity": "ent_support-resolver"
+  }
+ ],
+ "offerings": [
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_serper",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://serper.dev",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.001
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_tavily",
+   "way": "api",
+   "variant": "basic",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://www.tavily.com/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.008
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_tavily",
+   "way": "api",
+   "variant": "advanced",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://www.tavily.com/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.016
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_page-render",
+   "provider": "prov_tavily",
+   "way": "api",
+   "variant": "basic",
+   "components": [
+    {
+     "dimension": "page",
+     "source_url": "https://www.tavily.com/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0016
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-3",
+   "provider": "prov_deepgram",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://deepgram.com/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0043
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nova-3",
+   "provider": "prov_deepgram",
+   "way": "api",
+   "variant": "streaming",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://deepgram.com/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0048
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_aura-2",
+   "provider": "prov_deepgram",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://deepgram.com/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3e-05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_eleven-v3",
+   "provider": "prov_elevenlabs",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://elevenlabs.io/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0001
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_eleven-flash",
+   "provider": "prov_elevenlabs",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://elevenlabs.io/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5e-05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_scribe-v2",
+   "provider": "prov_elevenlabs",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://elevenlabs.io/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.003667
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_voice-caller",
+   "provider": "prov_elevenlabs",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://elevenlabs.io/pricing/api",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.08
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_exa",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://exa.ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.007
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_page-render",
+   "provider": "prov_exa",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "page",
+     "source_url": "https://exa.ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.001
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-answer",
+   "provider": "prov_exa",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://exa.ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.005
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_research-agent",
+   "provider": "prov_exa",
+   "way": "api",
+   "variant": "effort-medium",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://exa.ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_voice-caller",
+   "provider": "prov_vapi",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://vapi.ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_voice-caller",
+   "provider": "prov_bland",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://www.bland.ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.14
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_support-resolver",
+   "provider": "prov_intercom_fin",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "result",
+     "source_url": "https://fin.ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.99
+    }
+   ],
+   "metrics": []
+  }
+ ]
+}

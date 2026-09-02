@@ -1,0 +1,3364 @@
+{
+ "providers": [
+  {
+   "id": "prov_openai",
+   "name": "OpenAI",
+   "url": "https://openai.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_anthropic",
+   "name": "Anthropic",
+   "url": "https://anthropic.com",
+   "kind": "vendor"
+  }
+ ],
+ "entities": [
+  {
+   "id": "ent_gpt-5.6-sol",
+   "register": "model",
+   "name": "GPT-5.6 Sol",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.6-sol",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.6-terra",
+   "register": "model",
+   "name": "GPT-5.6 Terra",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.6-terra",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.6-luna",
+   "register": "model",
+   "name": "GPT-5.6 Luna",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.6-luna",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.6-cyber",
+   "register": "model",
+   "name": "GPT-5.6 Cyber",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.6-cyber",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.5",
+   "register": "model",
+   "name": "GPT-5.5",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.5-pro",
+   "register": "model",
+   "name": "GPT-5.5 Pro",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.5-pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.5-cyber",
+   "register": "model",
+   "name": "GPT-5.5 Cyber",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.5-cyber",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.4",
+   "register": "model",
+   "name": "GPT-5.4",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.4",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.4-mini",
+   "register": "model",
+   "name": "GPT-5.4 mini",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.4-mini",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.4-nano",
+   "register": "model",
+   "name": "GPT-5.4 nano",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.4-nano",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.4-pro",
+   "register": "model",
+   "name": "GPT-5.4 Pro",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.4-pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.2",
+   "register": "model",
+   "name": "GPT-5.2",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.2-pro",
+   "register": "model",
+   "name": "GPT-5.2 Pro",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.2-pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5.1",
+   "register": "model",
+   "name": "GPT-5.1",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5",
+   "register": "model",
+   "name": "GPT-5",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5-mini",
+   "register": "model",
+   "name": "GPT-5 mini",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5-mini",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5-nano",
+   "register": "model",
+   "name": "GPT-5 nano",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5-nano",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-5-pro",
+   "register": "model",
+   "name": "GPT-5 Pro",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5-pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4.1",
+   "register": "model",
+   "name": "GPT-4.1",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4.1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4.1-mini",
+   "register": "model",
+   "name": "GPT-4.1 mini",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4.1-mini",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4.1-nano",
+   "register": "model",
+   "name": "GPT-4.1 nano",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4.1-nano",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4.1-ft",
+   "register": "model",
+   "name": "GPT-4.1 fine-tuned",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4.1-ft",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4o",
+   "register": "model",
+   "name": "GPT-4o",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4o",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4o-2024-05-13",
+   "register": "model",
+   "name": "GPT-4o (2024-05-13)",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4o-2024-05-13",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4o-mini",
+   "register": "model",
+   "name": "GPT-4o mini",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4o-mini",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_o1",
+   "register": "model",
+   "name": "o1",
+   "maker": "prov_openai",
+   "family": "o",
+   "version": "1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_o1-pro",
+   "register": "model",
+   "name": "o1-pro",
+   "maker": "prov_openai",
+   "family": "o",
+   "version": "1-pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_o3-pro",
+   "register": "model",
+   "name": "o3-pro",
+   "maker": "prov_openai",
+   "family": "o",
+   "version": "3-pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_o3",
+   "register": "model",
+   "name": "o3",
+   "maker": "prov_openai",
+   "family": "o",
+   "version": "3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_o4-mini",
+   "register": "model",
+   "name": "o4-mini",
+   "maker": "prov_openai",
+   "family": "o",
+   "version": "4-mini",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_o3-mini",
+   "register": "model",
+   "name": "o3-mini",
+   "maker": "prov_openai",
+   "family": "o",
+   "version": "3-mini",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4-turbo",
+   "register": "model",
+   "name": "GPT-4 Turbo",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4-turbo",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-4",
+   "register": "model",
+   "name": "GPT-4 (0613)",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-3.5-turbo",
+   "register": "model",
+   "name": "GPT-3.5 Turbo",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "3.5-turbo",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-3.5-turbo-1106",
+   "register": "model",
+   "name": "GPT-3.5 Turbo (1106)",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "3.5-turbo-1106",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-3.5-turbo-instruct",
+   "register": "model",
+   "name": "GPT-3.5 Turbo Instruct",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "3.5-turbo-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_davinci-002",
+   "register": "model",
+   "name": "davinci-002",
+   "maker": "prov_openai",
+   "family": "davinci",
+   "version": "002",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_babbage-002",
+   "register": "model",
+   "name": "babbage-002",
+   "maker": "prov_openai",
+   "family": "babbage",
+   "version": "002",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-realtime-2.1",
+   "register": "model",
+   "name": "GPT Realtime 2.1",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "realtime-2.1",
+   "input_kind": "audio + text",
+   "output_kind": "audio + text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-image-2",
+   "register": "model",
+   "name": "GPT Image 2 (standard)",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "image-2",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_sora-2",
+   "register": "model",
+   "name": "Sora 2 (720p)",
+   "maker": "prov_openai",
+   "family": "sora",
+   "version": "2",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_text-embedding-3-small",
+   "register": "model",
+   "name": "text-embedding-3-small",
+   "maker": "prov_openai",
+   "family": "text",
+   "version": "embedding-3-small",
+   "input_kind": "text",
+   "output_kind": "embedding vector",
+   "attrs": {}
+  },
+  {
+   "id": "ent_text-embedding-3-large",
+   "register": "model",
+   "name": "text-embedding-3-large",
+   "maker": "prov_openai",
+   "family": "text",
+   "version": "embedding-3-large",
+   "input_kind": "text",
+   "output_kind": "embedding vector",
+   "attrs": {}
+  },
+  {
+   "id": "ent_text-embedding-ada-002",
+   "register": "model",
+   "name": "text-embedding-ada-002",
+   "maker": "prov_openai",
+   "family": "text",
+   "version": "embedding-ada-002",
+   "input_kind": "text",
+   "output_kind": "embedding vector",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-transcribe",
+   "register": "model",
+   "name": "GPT Transcribe",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "transcribe",
+   "input_kind": "audio",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_whisper",
+   "register": "model",
+   "name": "Whisper",
+   "maker": "prov_openai",
+   "family": "whisper",
+   "version": null,
+   "input_kind": "audio",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_tts-1",
+   "register": "model",
+   "name": "TTS-1",
+   "maker": "prov_openai",
+   "family": "tts",
+   "version": "1",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_tts-1-hd",
+   "register": "model",
+   "name": "TTS-1 HD",
+   "maker": "prov_openai",
+   "family": "tts",
+   "version": "1-hd",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_web-search",
+   "register": "tool",
+   "name": "Web search",
+   "maker": null,
+   "family": "search",
+   "version": null,
+   "input_kind": "query",
+   "output_kind": "result links",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-fable-5",
+   "register": "model",
+   "name": "Claude Fable 5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "fable-5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-mythos-5",
+   "register": "model",
+   "name": "Claude Mythos 5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "mythos-5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-opus-5",
+   "register": "model",
+   "name": "Claude Opus 5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-opus-4.8",
+   "register": "model",
+   "name": "Claude Opus 4.8",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.8",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-opus-4.7",
+   "register": "model",
+   "name": "Claude Opus 4.7",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.7",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-opus-4.6",
+   "register": "model",
+   "name": "Claude Opus 4.6",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.6",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-opus-4.5",
+   "register": "model",
+   "name": "Claude Opus 4.5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 200000
+   }
+  },
+  {
+   "id": "ent_claude-opus-4.1",
+   "register": "model",
+   "name": "Claude Opus 4.1",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-opus-4",
+   "register": "model",
+   "name": "Claude Opus 4",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-sonnet-5",
+   "register": "model",
+   "name": "Claude Sonnet 5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "sonnet-5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-sonnet-4.6",
+   "register": "model",
+   "name": "Claude Sonnet 4.6",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "sonnet-4.6",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_claude-sonnet-4.5",
+   "register": "model",
+   "name": "Claude Sonnet 4.5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "sonnet-4.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 200000
+   }
+  },
+  {
+   "id": "ent_claude-sonnet-4",
+   "register": "model",
+   "name": "Claude Sonnet 4",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "sonnet-4",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-haiku-4.5",
+   "register": "model",
+   "name": "Claude Haiku 4.5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "haiku-4.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 200000
+   }
+  },
+  {
+   "id": "ent_claude-haiku-3.5",
+   "register": "model",
+   "name": "Claude Haiku 3.5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "haiku-3.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  }
+ ],
+ "aliases": [
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.6-sol",
+   "entity": "ent_gpt-5.6-sol"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.6-terra",
+   "entity": "ent_gpt-5.6-terra"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.6-luna",
+   "entity": "ent_gpt-5.6-luna"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.6-cyber",
+   "entity": "ent_gpt-5.6-cyber"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.5",
+   "entity": "ent_gpt-5.5"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.5-pro",
+   "entity": "ent_gpt-5.5-pro"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.5-cyber",
+   "entity": "ent_gpt-5.5-cyber"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.4",
+   "entity": "ent_gpt-5.4"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.4-mini",
+   "entity": "ent_gpt-5.4-mini"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.4-nano",
+   "entity": "ent_gpt-5.4-nano"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.4-pro",
+   "entity": "ent_gpt-5.4-pro"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.2",
+   "entity": "ent_gpt-5.2"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.2-pro",
+   "entity": "ent_gpt-5.2-pro"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5.1",
+   "entity": "ent_gpt-5.1"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5",
+   "entity": "ent_gpt-5"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5-mini",
+   "entity": "ent_gpt-5-mini"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5-nano",
+   "entity": "ent_gpt-5-nano"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-5-pro",
+   "entity": "ent_gpt-5-pro"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-4.1",
+   "entity": "ent_gpt-4.1"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-4.1-mini",
+   "entity": "ent_gpt-4.1-mini"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-4.1-nano",
+   "entity": "ent_gpt-4.1-nano"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-4.1-2025-04-14",
+   "entity": "ent_gpt-4.1-ft"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-4o",
+   "entity": "ent_gpt-4o"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-4o-2024-05-13",
+   "entity": "ent_gpt-4o-2024-05-13"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-4o-mini",
+   "entity": "ent_gpt-4o-mini"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "o1",
+   "entity": "ent_o1"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "o1-pro",
+   "entity": "ent_o1-pro"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "o3-pro",
+   "entity": "ent_o3-pro"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "o3",
+   "entity": "ent_o3"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "o4-mini",
+   "entity": "ent_o4-mini"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "o3-mini",
+   "entity": "ent_o3-mini"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-4-turbo-2024-04-09",
+   "entity": "ent_gpt-4-turbo"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-4-0613",
+   "entity": "ent_gpt-4"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-3.5-turbo",
+   "entity": "ent_gpt-3.5-turbo"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-3.5-turbo-0125",
+   "entity": "ent_gpt-3.5-turbo"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-3.5-turbo-1106",
+   "entity": "ent_gpt-3.5-turbo-1106"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-3.5-turbo-instruct",
+   "entity": "ent_gpt-3.5-turbo-instruct"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "davinci-002",
+   "entity": "ent_davinci-002"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "babbage-002",
+   "entity": "ent_babbage-002"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-realtime-2.1",
+   "entity": "ent_gpt-realtime-2.1"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-image-2",
+   "entity": "ent_gpt-image-2"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "sora-2",
+   "entity": "ent_sora-2"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "text-embedding-3-small",
+   "entity": "ent_text-embedding-3-small"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "text-embedding-3-large",
+   "entity": "ent_text-embedding-3-large"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "text-embedding-ada-002",
+   "entity": "ent_text-embedding-ada-002"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "gpt-transcribe",
+   "entity": "ent_gpt-transcribe"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "whisper",
+   "entity": "ent_whisper"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "tts-1",
+   "entity": "ent_tts-1"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "tts-1-hd",
+   "entity": "ent_tts-1-hd"
+  },
+  {
+   "source": "prov_openai",
+   "alias": "Web search tool",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "claude-fable-5",
+   "entity": "ent_claude-fable-5"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "claude-mythos-5",
+   "entity": "ent_claude-mythos-5"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "claude-opus-5",
+   "entity": "ent_claude-opus-5"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "claude-opus-4-8",
+   "entity": "ent_claude-opus-4.8"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "claude-opus-4-7",
+   "entity": "ent_claude-opus-4.7"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "claude-opus-4-6",
+   "entity": "ent_claude-opus-4.6"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "claude-opus-4-5-20251101",
+   "entity": "ent_claude-opus-4.5"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "Claude Opus 4.1",
+   "entity": "ent_claude-opus-4.1"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "Claude Opus 4",
+   "entity": "ent_claude-opus-4"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "claude-sonnet-5",
+   "entity": "ent_claude-sonnet-5"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "claude-sonnet-4-6",
+   "entity": "ent_claude-sonnet-4.6"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "claude-sonnet-4-5-20250929",
+   "entity": "ent_claude-sonnet-4.5"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "Claude Sonnet 4",
+   "entity": "ent_claude-sonnet-4"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "claude-haiku-4-5-20251001",
+   "entity": "ent_claude-haiku-4.5"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "Claude Haiku 3.5",
+   "entity": "ent_claude-haiku-3.5"
+  },
+  {
+   "source": "prov_anthropic",
+   "alias": "Web search tool",
+   "entity": "ent_web-search"
+  }
+ ],
+ "offerings": [
+  {
+   "entity": "ent_gpt-5.6-sol",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 20.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.6-sol",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.6-terra",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.6-terra",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.6-luna",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.6-luna",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.6-cyber",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 75.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.5",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 30.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.5",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.5-pro",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 30.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 180.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.5-pro",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 90.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.5-cyber",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 75.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.13
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4-mini",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4-mini",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.375
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0375
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4-nano",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.4-pro",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 30.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 180.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.2",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.175
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 14.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.2-pro",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 21.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 168.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5.1",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5-mini",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.025
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5-nano",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.005
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-5-pro",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 120.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4.1",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 8.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4.1-mini",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4.1-nano",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.025
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4.1-ft",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "fine-tuned",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4.1-ft",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4o",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4o-2024-05-13",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4o-mini",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4o-mini",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_o1",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 60.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_o1",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 30.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_o1-pro",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 150.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 600.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_o3-pro",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 20.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 80.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_o3",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 8.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_o4-mini",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.1
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.275
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_o3-mini",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.1
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.55
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4-turbo",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 30.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-4",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 30.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 60.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-3.5-turbo",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-3.5-turbo",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-3.5-turbo-1106",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-3.5-turbo-instruct",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_davinci-002",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_babbage-002",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-realtime-2.1",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in_audio",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 32.0
+    },
+    {
+     "dimension": "mtok_cache_read_audio",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_out_audio",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 64.0
+    },
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 24.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-image-2",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in_image",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 8.0
+    },
+    {
+     "dimension": "mtok_cache_read_image",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out_image",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 30.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_sora-2",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_sora-2",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_text-embedding-3-small",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_text-embedding-3-large",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.13
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_text-embedding-ada-002",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-transcribe",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0045
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_whisper",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.006
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_tts-1",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5e-05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_tts-1-hd",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3e-05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_openai",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://developers.openai.com/api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-fable-5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 50.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-fable-5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-mythos-5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 50.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-mythos-5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "fast",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 50.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.8",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.8",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.8",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "fast",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 50.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.7",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.7",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.6",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.6",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.1",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 75.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 18.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.1",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 37.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 75.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 18.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 37.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.6",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.6",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-haiku-4.5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-haiku-4.5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-haiku-3.5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.8
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.08
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-haiku-3.5",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_anthropic",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://platform.claude.com/docs/en/docs/about-claude/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    }
+   ],
+   "metrics": []
+  }
+ ]
+}

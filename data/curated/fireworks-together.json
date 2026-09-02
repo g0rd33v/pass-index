@@ -1,0 +1,3201 @@
+{
+ "providers": [
+  {
+   "id": "prov_fireworks",
+   "name": "Fireworks AI",
+   "url": "https://fireworks.ai",
+   "kind": "host"
+  },
+  {
+   "id": "prov_together",
+   "name": "Together AI",
+   "url": "https://together.ai",
+   "kind": "host"
+  },
+  {
+   "id": "prov_moonshot",
+   "name": "Moonshot AI",
+   "url": "https://moonshot.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_deepseek",
+   "name": "DeepSeek",
+   "url": "https://deepseek.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_zhipu",
+   "name": "Zhipu AI",
+   "url": "https://z.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_alibaba",
+   "name": "Alibaba Model Studio",
+   "url": "https://www.alibabacloud.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_minimax",
+   "name": "MiniMax",
+   "url": "https://minimax.io",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_openai",
+   "name": "OpenAI",
+   "url": "https://openai.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_nvidia",
+   "name": "NVIDIA",
+   "url": "https://nvidia.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_mistral",
+   "name": "Mistral",
+   "url": "https://mistral.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_databricks",
+   "name": "Databricks",
+   "url": "https://databricks.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_thinking-machines",
+   "name": "Thinking Machines",
+   "url": "https://thinkingmachines.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_meta",
+   "name": "Meta",
+   "url": "https://ai.meta.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_google",
+   "name": "Google",
+   "url": "https://ai.google.dev",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_intfloat",
+   "name": "intfloat",
+   "url": "https://huggingface.co/intfloat",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_canopy",
+   "name": "Canopy Labs",
+   "url": "https://canopylabs.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_hexgrad",
+   "name": "Hexgrad",
+   "url": "https://huggingface.co/hexgrad",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_cartesia",
+   "name": "Cartesia",
+   "url": "https://cartesia.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_bfl",
+   "name": "Black Forest Labs",
+   "url": "https://bfl.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_bytedance",
+   "name": "ByteDance Seed",
+   "url": "https://seed.bytedance.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_ideogram",
+   "name": "Ideogram",
+   "url": "https://ideogram.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_stability",
+   "name": "Stability AI",
+   "url": "https://stability.ai",
+   "kind": "vendor"
+  }
+ ],
+ "entities": [
+  {
+   "id": "ent_kimi-k3",
+   "register": "model",
+   "name": "Kimi K3",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_kimi-k2.7-code",
+   "register": "model",
+   "name": "Kimi K2.7 Code",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k2.7-code",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_kimi-k2.6",
+   "register": "model",
+   "name": "Kimi K2.6",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k2.6",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_deepseek-v4-pro",
+   "register": "model",
+   "name": "DeepSeek V4 Pro",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v4-pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 512000
+   }
+  },
+  {
+   "id": "ent_deepseek-v4-flash-0731",
+   "register": "model",
+   "name": "DeepSeek V4 Flash (0731)",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v4-flash-0731",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_glm-5.2",
+   "register": "model",
+   "name": "GLM 5.2",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "5.2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 512000
+   }
+  },
+  {
+   "id": "ent_glm-5.1",
+   "register": "model",
+   "name": "GLM 5.1",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "5.1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3.7-plus",
+   "register": "model",
+   "name": "Qwen 3.7 Plus",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.7-plus",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_qwen3.8-max",
+   "register": "model",
+   "name": "Qwen 3.8 Max",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.8-max",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_minimax-m3",
+   "register": "model",
+   "name": "MiniMax M3",
+   "maker": "prov_minimax",
+   "family": "minimax",
+   "version": "m3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 524288
+   }
+  },
+  {
+   "id": "ent_minimax-m2.7",
+   "register": "model",
+   "name": "MiniMax M2.7",
+   "maker": "prov_minimax",
+   "family": "minimax",
+   "version": "m2.7",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-oss-120b",
+   "register": "model",
+   "name": "OpenAI GPT OSS 120B",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "oss-120b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_gpt-oss-20b",
+   "register": "model",
+   "name": "OpenAI GPT OSS 20B",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "oss-20b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_muse-glimmer-30b",
+   "register": "model",
+   "name": "Muse Glimmer 30B",
+   "maker": null,
+   "family": "muse",
+   "version": "glimmer-30b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_nemotron-3.5-lightning-30b",
+   "register": "model",
+   "name": "NVIDIA Nemotron 3.5 Lightning 30B A3B",
+   "maker": "prov_nvidia",
+   "family": "nemotron",
+   "version": "3.5-lightning-30b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_nemotron-3-ultra",
+   "register": "model",
+   "name": "NVIDIA Nemotron 3 Ultra (Preview)",
+   "maker": "prov_nvidia",
+   "family": "nemotron",
+   "version": "3-ultra",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 512300
+   }
+  },
+  {
+   "id": "ent_mixtral-8x7b",
+   "register": "model",
+   "name": "Mixtral 8x7B",
+   "maker": "prov_mistral",
+   "family": "mixtral",
+   "version": "8x7b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_dbrx",
+   "register": "model",
+   "name": "DBRX",
+   "maker": "prov_databricks",
+   "family": "dbrx",
+   "version": null,
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_mixtral-8x22b",
+   "register": "model",
+   "name": "Mixtral 8x22B",
+   "maker": "prov_mistral",
+   "family": "mixtral",
+   "version": "8x22b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3-embedding-8b",
+   "register": "model",
+   "name": "Qwen3 8B (embeddings)",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-embedding-8b",
+   "input_kind": "text",
+   "output_kind": "embedding vector",
+   "attrs": {}
+  },
+  {
+   "id": "ent_inkling",
+   "register": "model",
+   "name": "Inkling",
+   "maker": "prov_thinking-machines",
+   "family": "inkling",
+   "version": null,
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 524288
+   }
+  },
+  {
+   "id": "ent_qwen3.8-2.4t",
+   "register": "model",
+   "name": "Qwen3.8-2.4T-A95B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.8-2.4t",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3.7-max",
+   "register": "model",
+   "name": "Qwen3.7 Max",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.7-max",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3.6-plus",
+   "register": "model",
+   "name": "Qwen3.6 Plus",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.6-plus",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_qwen3.5-9b",
+   "register": "model",
+   "name": "Qwen3.5 9B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.5-9b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_deepseek-v4-pro-0813",
+   "register": "model",
+   "name": "DeepSeek V4 Pro 0813",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v4-pro-0813",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_llama-3.3-70b",
+   "register": "model",
+   "name": "Llama 3.3 70B Instruct Turbo",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.3-70b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_qwen2.5-7b",
+   "register": "model",
+   "name": "Qwen 2.5 7B Instruct Turbo",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "2.5-7b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_gemma-4-31b",
+   "register": "model",
+   "name": "Gemma 4 31B Instruct",
+   "maker": "prov_google",
+   "family": "gemma",
+   "version": "4-31b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_gemma-3n-e4b",
+   "register": "model",
+   "name": "Gemma 3N E4B Instruct",
+   "maker": "prov_google",
+   "family": "gemma",
+   "version": "3n-e4b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_inkling-small",
+   "register": "model",
+   "name": "Inkling Small",
+   "maker": "prov_thinking-machines",
+   "family": "inkling",
+   "version": "small",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 524288
+   }
+  },
+  {
+   "id": "ent_llama-guard-4-12b",
+   "register": "model",
+   "name": "Llama Guard 4 12B",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "guard-4-12b",
+   "input_kind": "text",
+   "output_kind": "safety labels",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_multilingual-e5-large",
+   "register": "model",
+   "name": "Multilingual-e5-large-instruct",
+   "maker": "prov_intfloat",
+   "family": "multilingual",
+   "version": "e5-large",
+   "input_kind": "text",
+   "output_kind": "embedding vector",
+   "attrs": {
+    "context": 514
+   }
+  },
+  {
+   "id": "ent_whisper-large-v3",
+   "register": "model",
+   "name": "Whisper Large v3",
+   "maker": "prov_openai",
+   "family": "whisper",
+   "version": "large-v3",
+   "input_kind": "audio",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_parakeet-tdt-0.6b",
+   "register": "model",
+   "name": "Parakeet TDT 0.6B v3",
+   "maker": "prov_nvidia",
+   "family": "parakeet",
+   "version": "tdt-0.6b",
+   "input_kind": "audio",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_nemotron-3-asr-0.6b",
+   "register": "model",
+   "name": "NVIDIA Nemotron 3 ASR Streaming 0.6B",
+   "maker": "prov_nvidia",
+   "family": "nemotron",
+   "version": "3-asr-0.6b",
+   "input_kind": "audio",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_nemotron-3.5-asr-0.6b",
+   "register": "model",
+   "name": "NVIDIA Nemotron 3.5 ASR Streaming 0.6B",
+   "maker": "prov_nvidia",
+   "family": "nemotron",
+   "version": "3.5-asr-0.6b",
+   "input_kind": "audio",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_orpheus-3b",
+   "register": "model",
+   "name": "Orpheus 3B",
+   "maker": "prov_canopy",
+   "family": "orpheus",
+   "version": "3b",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_kokoro",
+   "register": "model",
+   "name": "Kokoro",
+   "maker": "prov_hexgrad",
+   "family": "kokoro",
+   "version": null,
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_sonic-3",
+   "register": "model",
+   "name": "Cartesia Sonic 3",
+   "maker": "prov_cartesia",
+   "family": "sonic",
+   "version": "3",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_sonic-2",
+   "register": "model",
+   "name": "Cartesia Sonic 2",
+   "maker": "prov_cartesia",
+   "family": "sonic",
+   "version": "2",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_sonic",
+   "register": "model",
+   "name": "Cartesia Sonic",
+   "maker": "prov_cartesia",
+   "family": "sonic",
+   "version": null,
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_flux-2-pro",
+   "register": "model",
+   "name": "FLUX.2 [pro]",
+   "maker": "prov_bfl",
+   "family": "flux",
+   "version": "2-pro",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_flux-2-dev",
+   "register": "model",
+   "name": "FLUX.2 [dev]",
+   "maker": "prov_bfl",
+   "family": "flux",
+   "version": "2-dev",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_flux-2-flex",
+   "register": "model",
+   "name": "FLUX.2 [flex]",
+   "maker": "prov_bfl",
+   "family": "flux",
+   "version": "2-flex",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_flux-2-max",
+   "register": "model",
+   "name": "FLUX.2 [max]",
+   "maker": "prov_bfl",
+   "family": "flux",
+   "version": "2-max",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_flux-1-schnell",
+   "register": "model",
+   "name": "Flux.1 [schnell] (Turbo)",
+   "maker": "prov_bfl",
+   "family": "flux",
+   "version": "1-schnell",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_flux-1.1-pro",
+   "register": "model",
+   "name": "Flux1.1 [pro]",
+   "maker": "prov_bfl",
+   "family": "flux",
+   "version": "1.1-pro",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_flux-1-kontext-pro",
+   "register": "model",
+   "name": "Flux.1 Kontext [pro]",
+   "maker": "prov_bfl",
+   "family": "flux",
+   "version": "1-kontext-pro",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_flux-1-kontext-max",
+   "register": "model",
+   "name": "Flux.1 Kontext [max]",
+   "maker": "prov_bfl",
+   "family": "flux",
+   "version": "1-kontext-max",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-4.0",
+   "register": "model",
+   "name": "Imagen 4.0 Preview",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "4.0",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-4.0-fast",
+   "register": "model",
+   "name": "Imagen 4.0 Fast",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "4.0-fast",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-4.0-ultra",
+   "register": "model",
+   "name": "Imagen 4.0 Ultra",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "4.0-ultra",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-flash-image",
+   "register": "model",
+   "name": "Flash Image 2.5 (Nano Banana)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-flash-image",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3-pro-image",
+   "register": "model",
+   "name": "Gemini 3 Pro Image (Nano Banana Pro)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3-pro-image",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.1-flash-image",
+   "register": "model",
+   "name": "Gemini 3.1 Flash Image (Nano Banana 2)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.1-flash-image",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.1-flash-lite-image",
+   "register": "model",
+   "name": "Gemini 3.1 Flash-Lite Image (Nano Banana 2 Lite)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.1-flash-lite-image",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_seedream-3.0",
+   "register": "model",
+   "name": "Seedream 3.0",
+   "maker": "prov_bytedance",
+   "family": "seedream",
+   "version": "3.0",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_seedream-4.0",
+   "register": "model",
+   "name": "Seedream 4.0",
+   "maker": "prov_bytedance",
+   "family": "seedream",
+   "version": "4.0",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_seedream-5.0-lite",
+   "register": "model",
+   "name": "Seedream 5.0 Lite",
+   "maker": "prov_bytedance",
+   "family": "seedream",
+   "version": "5.0-lite",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen-image",
+   "register": "model",
+   "name": "Qwen Image",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "image",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen-image-2.0",
+   "register": "model",
+   "name": "Qwen Image 2.0",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "image-2.0",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen-image-2.0-pro",
+   "register": "model",
+   "name": "Qwen Image 2.0 Pro",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "image-2.0-pro",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_juggernaut-pro-flux",
+   "register": "model",
+   "name": "Juggernaut Pro Flux",
+   "maker": null,
+   "family": "juggernaut",
+   "version": "pro-flux",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_juggernaut-lightning-flux",
+   "register": "model",
+   "name": "Juggernaut Lightning Flux",
+   "maker": null,
+   "family": "juggernaut",
+   "version": "lightning-flux",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_ideogram-3.0",
+   "register": "model",
+   "name": "Ideogram 3.0",
+   "maker": "prov_ideogram",
+   "family": "ideogram",
+   "version": "3.0",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_ideogram-4.0",
+   "register": "model",
+   "name": "Ideogram 4.0",
+   "maker": "prov_ideogram",
+   "family": "ideogram",
+   "version": "4.0",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_sd-xl",
+   "register": "model",
+   "name": "SD XL",
+   "maker": "prov_stability",
+   "family": "sd",
+   "version": "xl",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_wan-2.6-image",
+   "register": "model",
+   "name": "Wan 2.6 Image",
+   "maker": "prov_alibaba",
+   "family": "wan",
+   "version": "2.6-image",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-image-1.5",
+   "register": "model",
+   "name": "GPT Image 1.5",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "image-1.5",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-image-2",
+   "register": "model",
+   "name": "GPT Image 2",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "image-2",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_p-image-ideogram",
+   "register": "model",
+   "name": "P-Image-Ideogram",
+   "maker": null,
+   "family": "p",
+   "version": "image-ideogram",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  }
+ ],
+ "aliases": [
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/kimi-k3",
+   "entity": "ent_kimi-k3"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/kimi-k2p7-code",
+   "entity": "ent_kimi-k2.7-code"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/kimi-k2p6",
+   "entity": "ent_kimi-k2.6"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/deepseek-v4-pro",
+   "entity": "ent_deepseek-v4-pro"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/deepseek-v4-flash-0731",
+   "entity": "ent_deepseek-v4-flash-0731"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/glm-5p2",
+   "entity": "ent_glm-5.2"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/glm-5p1",
+   "entity": "ent_glm-5.1"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/qwen3p7-plus",
+   "entity": "ent_qwen3.7-plus"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/qwen3p8-max",
+   "entity": "ent_qwen3.8-max"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/minimax-m3",
+   "entity": "ent_minimax-m3"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/minimax-m2p7",
+   "entity": "ent_minimax-m2.7"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/gpt-oss-120b",
+   "entity": "ent_gpt-oss-120b"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/gpt-oss-20b",
+   "entity": "ent_gpt-oss-20b"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/muse-glimmer-30b",
+   "entity": "ent_muse-glimmer-30b"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/nemotron-lightning-3p5-30b-a3b",
+   "entity": "ent_nemotron-3.5-lightning-30b"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "fireworks/nemotron-3-ultra-nvfp4",
+   "entity": "ent_nemotron-3-ultra"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "Mixtral 8x7B",
+   "entity": "ent_mixtral-8x7b"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "DBRX",
+   "entity": "ent_dbrx"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "Mixtral 8x22B",
+   "entity": "ent_mixtral-8x22b"
+  },
+  {
+   "source": "prov_fireworks",
+   "alias": "Qwen3 8B",
+   "entity": "ent_qwen3-embedding-8b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "thinkingmachines/Inkling",
+   "entity": "ent_inkling"
+  },
+  {
+   "source": "prov_together",
+   "alias": "MiniMaxAI/MiniMax-M3",
+   "entity": "ent_minimax-m3"
+  },
+  {
+   "source": "prov_together",
+   "alias": "Qwen/Qwen3.8-2.4T-A95B",
+   "entity": "ent_qwen3.8-2.4t"
+  },
+  {
+   "source": "prov_together",
+   "alias": "Qwen/Qwen3.7-Max",
+   "entity": "ent_qwen3.7-max"
+  },
+  {
+   "source": "prov_together",
+   "alias": "Qwen/Qwen3.6-Plus",
+   "entity": "ent_qwen3.6-plus"
+  },
+  {
+   "source": "prov_together",
+   "alias": "Qwen/Qwen3.5-9B",
+   "entity": "ent_qwen3.5-9b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "moonshotai/Kimi-K3",
+   "entity": "ent_kimi-k3"
+  },
+  {
+   "source": "prov_together",
+   "alias": "moonshotai/Kimi-K2.7-Code",
+   "entity": "ent_kimi-k2.7-code"
+  },
+  {
+   "source": "prov_together",
+   "alias": "zai-org/GLM-5.2",
+   "entity": "ent_glm-5.2"
+  },
+  {
+   "source": "prov_together",
+   "alias": "openai/gpt-oss-120b",
+   "entity": "ent_gpt-oss-120b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "openai/gpt-oss-20b",
+   "entity": "ent_gpt-oss-20b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "deepseek-ai/DeepSeek-V4-Pro",
+   "entity": "ent_deepseek-v4-pro"
+  },
+  {
+   "source": "prov_together",
+   "alias": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "entity": "ent_deepseek-v4-flash-0731"
+  },
+  {
+   "source": "prov_together",
+   "alias": "deepseek-ai/DeepSeek-V4-Pro-0813",
+   "entity": "ent_deepseek-v4-pro-0813"
+  },
+  {
+   "source": "prov_together",
+   "alias": "nvidia/nemotron-3-ultra-550b-a55b",
+   "entity": "ent_nemotron-3-ultra"
+  },
+  {
+   "source": "prov_together",
+   "alias": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+   "entity": "ent_llama-3.3-70b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "Qwen/Qwen2.5-7B-Instruct-Turbo",
+   "entity": "ent_qwen2.5-7b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "google/gemma-4-31B-it",
+   "entity": "ent_gemma-4-31b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "pearl-ai/gemma-4-31b-it",
+   "entity": "ent_gemma-4-31b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "Qwen/Qwen3.7-Plus",
+   "entity": "ent_qwen3.7-plus"
+  },
+  {
+   "source": "prov_together",
+   "alias": "google/gemma-3n-E4B-it",
+   "entity": "ent_gemma-3n-e4b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "thinkingmachines/Inkling-Small",
+   "entity": "ent_inkling-small"
+  },
+  {
+   "source": "prov_together",
+   "alias": "meta-models/Muse-Glimmer-30B",
+   "entity": "ent_muse-glimmer-30b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "meta-llama/Llama-Guard-4-12B",
+   "entity": "ent_llama-guard-4-12b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "intfloat/multilingual-e5-large-instruct",
+   "entity": "ent_multilingual-e5-large"
+  },
+  {
+   "source": "prov_together",
+   "alias": "openai/whisper-large-v3",
+   "entity": "ent_whisper-large-v3"
+  },
+  {
+   "source": "prov_together",
+   "alias": "nvidia/parakeet-tdt-0.6b-v3",
+   "entity": "ent_parakeet-tdt-0.6b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "nvidia/nemotron-3-asr-streaming-0.6b",
+   "entity": "ent_nemotron-3-asr-0.6b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+   "entity": "ent_nemotron-3.5-asr-0.6b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "canopylabs/orpheus-3b-0.1-ft",
+   "entity": "ent_orpheus-3b"
+  },
+  {
+   "source": "prov_together",
+   "alias": "hexgrad/Kokoro-82M",
+   "entity": "ent_kokoro"
+  },
+  {
+   "source": "prov_together",
+   "alias": "cartesia/sonic-3",
+   "entity": "ent_sonic-3"
+  },
+  {
+   "source": "prov_together",
+   "alias": "cartesia/sonic-2",
+   "entity": "ent_sonic-2"
+  },
+  {
+   "source": "prov_together",
+   "alias": "cartesia/sonic",
+   "entity": "ent_sonic"
+  },
+  {
+   "source": "prov_together",
+   "alias": "black-forest-labs/FLUX.2-pro",
+   "entity": "ent_flux-2-pro"
+  },
+  {
+   "source": "prov_together",
+   "alias": "black-forest-labs/FLUX.2-dev",
+   "entity": "ent_flux-2-dev"
+  },
+  {
+   "source": "prov_together",
+   "alias": "black-forest-labs/FLUX.2-flex",
+   "entity": "ent_flux-2-flex"
+  },
+  {
+   "source": "prov_together",
+   "alias": "black-forest-labs/FLUX.2-max",
+   "entity": "ent_flux-2-max"
+  },
+  {
+   "source": "prov_together",
+   "alias": "black-forest-labs/FLUX.1-schnell",
+   "entity": "ent_flux-1-schnell"
+  },
+  {
+   "source": "prov_together",
+   "alias": "black-forest-labs/FLUX.1.1-pro",
+   "entity": "ent_flux-1.1-pro"
+  },
+  {
+   "source": "prov_together",
+   "alias": "black-forest-labs/FLUX.1-kontext-pro",
+   "entity": "ent_flux-1-kontext-pro"
+  },
+  {
+   "source": "prov_together",
+   "alias": "black-forest-labs/FLUX.1-kontext-max",
+   "entity": "ent_flux-1-kontext-max"
+  },
+  {
+   "source": "prov_together",
+   "alias": "google/imagen-4.0-preview",
+   "entity": "ent_imagen-4.0"
+  },
+  {
+   "source": "prov_together",
+   "alias": "google/imagen-4.0-fast",
+   "entity": "ent_imagen-4.0-fast"
+  },
+  {
+   "source": "prov_together",
+   "alias": "google/imagen-4.0-ultra",
+   "entity": "ent_imagen-4.0-ultra"
+  },
+  {
+   "source": "prov_together",
+   "alias": "google/flash-image-2.5",
+   "entity": "ent_gemini-2.5-flash-image"
+  },
+  {
+   "source": "prov_together",
+   "alias": "google/gemini-3-pro-image",
+   "entity": "ent_gemini-3-pro-image"
+  },
+  {
+   "source": "prov_together",
+   "alias": "google/flash-image-3.1",
+   "entity": "ent_gemini-3.1-flash-image"
+  },
+  {
+   "source": "prov_together",
+   "alias": "google/flash-image-3.1-lite",
+   "entity": "ent_gemini-3.1-flash-lite-image"
+  },
+  {
+   "source": "prov_together",
+   "alias": "ByteDance-Seed/Seedream-3.0",
+   "entity": "ent_seedream-3.0"
+  },
+  {
+   "source": "prov_together",
+   "alias": "ByteDance-Seed/Seedream-4.0",
+   "entity": "ent_seedream-4.0"
+  },
+  {
+   "source": "prov_together",
+   "alias": "ByteDance/Seedream-5.0-lite",
+   "entity": "ent_seedream-5.0-lite"
+  },
+  {
+   "source": "prov_together",
+   "alias": "Qwen/Qwen-Image",
+   "entity": "ent_qwen-image"
+  },
+  {
+   "source": "prov_together",
+   "alias": "Qwen/Qwen-Image-2.0",
+   "entity": "ent_qwen-image-2.0"
+  },
+  {
+   "source": "prov_together",
+   "alias": "Qwen/Qwen-Image-2.0-Pro",
+   "entity": "ent_qwen-image-2.0-pro"
+  },
+  {
+   "source": "prov_together",
+   "alias": "RunDiffusion/Juggernaut-pro-flux",
+   "entity": "ent_juggernaut-pro-flux"
+  },
+  {
+   "source": "prov_together",
+   "alias": "Rundiffusion/Juggernaut-Lightning-Flux",
+   "entity": "ent_juggernaut-lightning-flux"
+  },
+  {
+   "source": "prov_together",
+   "alias": "ideogram/ideogram-3.0",
+   "entity": "ent_ideogram-3.0"
+  },
+  {
+   "source": "prov_together",
+   "alias": "ideogram/ideogram-4.0",
+   "entity": "ent_ideogram-4.0"
+  },
+  {
+   "source": "prov_together",
+   "alias": "stabilityai/stable-diffusion-xl-base-1.0",
+   "entity": "ent_sd-xl"
+  },
+  {
+   "source": "prov_together",
+   "alias": "Wan-AI/Wan2.6-image",
+   "entity": "ent_wan-2.6-image"
+  },
+  {
+   "source": "prov_together",
+   "alias": "openai/gpt-image-1.5",
+   "entity": "ent_gpt-image-1.5"
+  },
+  {
+   "source": "prov_together",
+   "alias": "openai/gpt-image-2",
+   "entity": "ent_gpt-image-2"
+  },
+  {
+   "source": "prov_together",
+   "alias": "prunaai/p-image-ideogram",
+   "entity": "ent_p-image-ideogram"
+  }
+ ],
+ "offerings": [
+  {
+   "entity": "ent_kimi-k3",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k3",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "fast",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.45
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 22.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k3",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "us",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.3
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.33
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 16.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.7-code",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.95
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.19
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.7-code",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "fast",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.9
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.38
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 8.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.6",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.95
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.16
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.6",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "fast",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 8.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v4-pro",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.74
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.145
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.48
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v4-flash-0731",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.22
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.007
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.66
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5.2",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.14
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5.2",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "fast",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.1
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.21
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5.2",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "fast-us",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.1
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.21
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5.1",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.26
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5.1",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "fast",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.8
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.52
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 8.8
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.7-plus",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.08
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.8-max",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_minimax-m3",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_minimax-m2.7",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-oss-120b",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.015
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-oss-20b",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.07
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.035
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_muse-glimmer-30b",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.35
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nemotron-3.5-lightning-30b",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nemotron-3-ultra",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.12
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mixtral-8x7b",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_dbrx",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mixtral-8x22b",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-embedding-8b",
+   "provider": "prov_fireworks",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.fireworks.ai/serverless/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_inkling",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_minimax-m3",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.8-2.4t",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.7-max",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.6-plus",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.5-9b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.17
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k3",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2.7-code",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.95
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5.2",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-oss-120b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-oss-20b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v4-pro",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.74
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.48
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v4-flash-0731",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.14
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.28
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v4-pro-0813",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.32
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.96
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nemotron-3-ultra",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.3-70b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.04
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.04
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen2.5-7b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemma-4-31b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.39
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.97
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemma-4-31b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "pearl-ai",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.28
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.86
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3.7-plus",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.32
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.28
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemma-3n-e4b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.12
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_inkling-small",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_muse-glimmer-30b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.35
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-guard-4-12b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_multilingual-e5-large",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_whisper-large-v3",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0015
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_parakeet-tdt-0.6b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0015
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nemotron-3-asr-0.6b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0015
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_nemotron-3.5-asr-0.6b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "minute",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0015
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_orpheus-3b",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5e-05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kokoro",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4e-06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_sonic-3",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.5e-05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_sonic-2",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.5e-05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_sonic",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.5e-05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_flux-2-pro",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_flux-2-dev",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0154
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_flux-2-flex",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_flux-2-max",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.07
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_flux-1-schnell",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0027
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_flux-1.1-pro",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_flux-1-kontext-pro",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_flux-1-kontext-max",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.08
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-4.0",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-4.0-fast",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-4.0-ultra",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-image",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.039
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3-pro-image",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.134
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-image",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-lite-image",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.069
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_seedream-3.0",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.018
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_seedream-4.0",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_seedream-5.0-lite",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.035
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen-image",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0058
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen-image-2.0",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.035
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen-image-2.0-pro",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_juggernaut-pro-flux",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0049
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_juggernaut-lightning-flux",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0017
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_ideogram-3.0",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_ideogram-4.0",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_sd-xl",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0019
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_wan-2.6-image",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-image-1.5",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.034
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-image-2",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.053
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_p-image-ideogram",
+   "provider": "prov_together",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://docs.together.ai/docs/inference-models",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.00225
+    }
+   ],
+   "metrics": []
+  }
+ ]
+}

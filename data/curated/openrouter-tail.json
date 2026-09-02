@@ -1,0 +1,3796 @@
+{
+ "providers": [
+  {
+   "id": "prov_aion",
+   "name": "AionLabs",
+   "url": "https://aionlabs.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_allenai",
+   "name": "Allen Institute for AI",
+   "url": "https://allenai.org",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_amazon",
+   "name": "Amazon",
+   "url": "https://aws.amazon.com/ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_anthracite",
+   "name": "Anthracite",
+   "url": "https://huggingface.co/anthracite-org",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_anthropic",
+   "name": "Anthropic",
+   "url": "https://anthropic.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_arcee",
+   "name": "Arcee AI",
+   "url": "https://arcee.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_baidu",
+   "name": "Baidu",
+   "url": "https://yiyan.baidu.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_bytedance",
+   "name": "ByteDance Seed",
+   "url": "https://seed.bytedance.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_cognitive",
+   "name": "Cognitive Computations",
+   "url": "https://huggingface.co/cognitivecomputations",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_cohere",
+   "name": "Cohere",
+   "url": "https://cohere.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_deepseek",
+   "name": "DeepSeek",
+   "url": "https://deepseek.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_google",
+   "name": "Google",
+   "url": "https://ai.google.dev",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_gryphe",
+   "name": "Gryphe",
+   "url": "https://huggingface.co/Gryphe",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_ibm",
+   "name": "IBM",
+   "url": "https://ibm.com/granite",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_inception",
+   "name": "Inception Labs",
+   "url": "https://inceptionlabs.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_inclusionai",
+   "name": "InclusionAI",
+   "url": "https://github.com/inclusionAI",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_kuaishou",
+   "name": "Kuaishou",
+   "url": "https://kuaishou.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_mancer",
+   "name": "Mancer",
+   "url": "https://mancer.tech",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_meituan",
+   "name": "Meituan",
+   "url": "https://meituan.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_meta",
+   "name": "Meta",
+   "url": "https://ai.meta.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_microsoft",
+   "name": "Microsoft",
+   "url": "https://microsoft.com/ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_minimax",
+   "name": "MiniMax",
+   "url": "https://minimax.io",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_mistral",
+   "name": "Mistral",
+   "url": "https://mistral.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_moonshot",
+   "name": "Moonshot AI",
+   "url": "https://moonshot.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_morph",
+   "name": "Morph",
+   "url": "https://morphllm.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_nexagi",
+   "name": "NEX AGI",
+   "url": "https://nex-agi.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_nous",
+   "name": "Nous Research",
+   "url": "https://nousresearch.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_nvidia",
+   "name": "NVIDIA",
+   "url": "https://nvidia.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_openai",
+   "name": "OpenAI",
+   "url": "https://openai.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_perceptron",
+   "name": "Perceptron",
+   "url": "https://perceptron.inc",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_perplexity",
+   "name": "Perplexity",
+   "url": "https://perplexity.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_poolside",
+   "name": "Poolside",
+   "url": "https://poolside.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_alibaba",
+   "name": "Alibaba Model Studio",
+   "url": "https://www.alibabacloud.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_reka",
+   "name": "Reka",
+   "url": "https://reka.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_relace",
+   "name": "Relace",
+   "url": "https://relace.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_sakana",
+   "name": "Sakana AI",
+   "url": "https://sakana.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_sao10k",
+   "name": "Sao10K",
+   "url": "https://huggingface.co/Sao10K",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_stepfun",
+   "name": "StepFun",
+   "url": "https://stepfun.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_tencent",
+   "name": "Tencent",
+   "url": "https://hunyuan.tencent.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_thedrummer",
+   "name": "TheDrummer",
+   "url": "https://huggingface.co/TheDrummer",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_undi95",
+   "name": "Undi95",
+   "url": "https://huggingface.co/Undi95",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_upstage",
+   "name": "Upstage",
+   "url": "https://upstage.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_writer",
+   "name": "Writer",
+   "url": "https://writer.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_xai",
+   "name": "xAI",
+   "url": "https://x.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_xiaomi",
+   "name": "Xiaomi",
+   "url": "https://xiaomi.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_zhipu",
+   "name": "Zhipu AI",
+   "url": "https://z.ai",
+   "kind": "vendor"
+  }
+ ],
+ "entities": [
+  {
+   "id": "ent_aion-2.0",
+   "register": "model",
+   "name": "Aion-2.0",
+   "maker": "prov_aion",
+   "family": "aion",
+   "version": "2.0",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_aion-3.0",
+   "register": "model",
+   "name": "Aion-3.0",
+   "maker": "prov_aion",
+   "family": "aion",
+   "version": "3.0",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_aion-3.0-mini",
+   "register": "model",
+   "name": "Aion-3.0-Mini",
+   "maker": "prov_aion",
+   "family": "aion",
+   "version": "3.0-mini",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_aion-rp-llama-3.1-8b",
+   "register": "model",
+   "name": "Aion-RP 1.0 (8B)",
+   "maker": "prov_aion",
+   "family": "aion",
+   "version": "rp-llama-3.1-8b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_olmo-3-32b-think",
+   "register": "model",
+   "name": "Olmo 3 32B Think",
+   "maker": "prov_allenai",
+   "family": "olmo",
+   "version": "3-32b-think",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 65536
+   }
+  },
+  {
+   "id": "ent_nova-lite-v1",
+   "register": "model",
+   "name": "Nova Lite 1.0",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "lite-v1",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 300000
+   }
+  },
+  {
+   "id": "ent_nova-micro-v1",
+   "register": "model",
+   "name": "Nova Micro 1.0",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "micro-v1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_nova-premier-v1",
+   "register": "model",
+   "name": "Nova Premier 1.0",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "premier-v1",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_nova-pro-v1",
+   "register": "model",
+   "name": "Nova Pro 1.0",
+   "maker": "prov_amazon",
+   "family": "nova",
+   "version": "pro-v1",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 300000
+   }
+  },
+  {
+   "id": "ent_magnum-v4-72b",
+   "register": "model",
+   "name": "Magnum v4 72B",
+   "maker": "prov_anthracite",
+   "family": "magnum",
+   "version": "v4-72b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_trinity-large-thinking",
+   "register": "model",
+   "name": "Trinity Large Thinking",
+   "maker": "prov_arcee",
+   "family": "trinity",
+   "version": "large-thinking",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_virtuoso-large",
+   "register": "model",
+   "name": "Virtuoso Large",
+   "maker": "prov_arcee",
+   "family": "virtuoso",
+   "version": "large",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_ernie-4.5-vl-424b-a47b",
+   "register": "model",
+   "name": "ERNIE 4.5 VL 424B A47B ",
+   "maker": "prov_baidu",
+   "family": "ernie",
+   "version": "4.5-vl-424b-a47b",
+   "input_kind": "image + text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 123000
+   }
+  },
+  {
+   "id": "ent_seed-1.6",
+   "register": "model",
+   "name": "Seed 1.6",
+   "maker": "prov_bytedance",
+   "family": "seed",
+   "version": "1.6",
+   "input_kind": "image + text + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_seed-1.6-flash",
+   "register": "model",
+   "name": "Seed 1.6 Flash",
+   "maker": "prov_bytedance",
+   "family": "seed",
+   "version": "1.6-flash",
+   "input_kind": "image + text + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_seed-2-1-turbo",
+   "register": "model",
+   "name": "Seed 2.1 Turbo",
+   "maker": "prov_bytedance",
+   "family": "seed",
+   "version": "2-1-turbo",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_seed-2.0-code",
+   "register": "model",
+   "name": "Seed-2.0-Code",
+   "maker": "prov_bytedance",
+   "family": "seed",
+   "version": "2.0-code",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_seed-2.0-lite",
+   "register": "model",
+   "name": "Seed-2.0-Lite",
+   "maker": "prov_bytedance",
+   "family": "seed",
+   "version": "2.0-lite",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_seed-2.0-mini",
+   "register": "model",
+   "name": "Seed-2.0-Mini",
+   "maker": "prov_bytedance",
+   "family": "seed",
+   "version": "2.0-mini",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_ui-tars-1.5-7b",
+   "register": "model",
+   "name": "UI-TARS 7B ",
+   "maker": "prov_bytedance",
+   "family": "ui",
+   "version": "tars-1.5-7b",
+   "input_kind": "image + text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_dolphin-mistral-24b-venice-edition",
+   "register": "model",
+   "name": "Uncensored",
+   "maker": "prov_cognitive",
+   "family": "dolphin",
+   "version": "mistral-24b-venice-edition",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_command-r-08-2024",
+   "register": "model",
+   "name": "Command R (08-2024)",
+   "maker": "prov_cohere",
+   "family": "command",
+   "version": "r-08-2024",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_command-r-plus-08-2024",
+   "register": "model",
+   "name": "Command R+ (08-2024)",
+   "maker": "prov_cohere",
+   "family": "command",
+   "version": "r-plus-08-2024",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_command-r7b-12-2024",
+   "register": "model",
+   "name": "Command R7B (12-2024)",
+   "maker": "prov_cohere",
+   "family": "command",
+   "version": "r7b-12-2024",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_deepseek-r1-distill-llama-70b",
+   "register": "model",
+   "name": "R1 Distill Llama 70B",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "r1-distill-llama-70b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 8192
+   }
+  },
+  {
+   "id": "ent_deepseek-v3.1-terminus",
+   "register": "model",
+   "name": "DeepSeek V3.1 Terminus",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v3.1-terminus",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 163840
+   }
+  },
+  {
+   "id": "ent_deepseek-v3.2-exp",
+   "register": "model",
+   "name": "DeepSeek V3.2 Exp",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v3.2-exp",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 163840
+   }
+  },
+  {
+   "id": "ent_gemini-2.5-pro-preview",
+   "register": "model",
+   "name": "Gemini 2.5 Pro Preview 06-05",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-pro-preview",
+   "input_kind": "file + image + text + audio",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_gemini-2.5-pro-preview-05-06",
+   "register": "model",
+   "name": "Gemini 2.5 Pro Preview 05-06",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-pro-preview-05-06",
+   "input_kind": "text + image + file + audio + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_gemini-3-pro-image-preview",
+   "register": "model",
+   "name": "Nano Banana Pro (Gemini 3 Pro Image Preview)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3-pro-image-preview",
+   "input_kind": "image + text",
+   "output_kind": "image + text",
+   "attrs": {
+    "context": 65536
+   }
+  },
+  {
+   "id": "ent_gemini-3.1-flash-image-preview",
+   "register": "model",
+   "name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.1-flash-image-preview",
+   "input_kind": "image + text",
+   "output_kind": "image + text",
+   "attrs": {
+    "context": 65536
+   }
+  },
+  {
+   "id": "ent_gemini-3.1-flash-lite-preview",
+   "register": "model",
+   "name": "Gemini 3.1 Flash Lite Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.1-flash-lite-preview",
+   "input_kind": "text + image + video + file + audio",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_gemini-3.1-pro-preview-customtools",
+   "register": "model",
+   "name": "Gemini 3.1 Pro Preview Custom Tools",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.1-pro-preview-customtools",
+   "input_kind": "text + audio + image + video + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_gemma-2-27b-it",
+   "register": "model",
+   "name": "Gemma 2 27B",
+   "maker": "prov_google",
+   "family": "gemma",
+   "version": "2-27b-it",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 8192
+   }
+  },
+  {
+   "id": "ent_gemma-3-12b-it",
+   "register": "model",
+   "name": "Gemma 3 12B",
+   "maker": "prov_google",
+   "family": "gemma",
+   "version": "3-12b-it",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_gemma-3-27b-it",
+   "register": "model",
+   "name": "Gemma 3 27B",
+   "maker": "prov_google",
+   "family": "gemma",
+   "version": "3-27b-it",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_gemma-3-4b-it",
+   "register": "model",
+   "name": "Gemma 3 4B",
+   "maker": "prov_google",
+   "family": "gemma",
+   "version": "3-4b-it",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_gemma-3n-e4b-it",
+   "register": "model",
+   "name": "Gemma 3n 4B",
+   "maker": "prov_google",
+   "family": "gemma",
+   "version": "3n-e4b-it",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_gemma-4-26b-a4b-it",
+   "register": "model",
+   "name": "Gemma 4 26B A4B ",
+   "maker": "prov_google",
+   "family": "gemma",
+   "version": "4-26b-a4b-it",
+   "input_kind": "image + text + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_mythomax-l2-13b",
+   "register": "model",
+   "name": "MythoMax 13B",
+   "maker": "prov_gryphe",
+   "family": "mythomax",
+   "version": "l2-13b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 8192
+   }
+  },
+  {
+   "id": "ent_granite-4.0-h-micro",
+   "register": "model",
+   "name": "Granite 4.0 Micro",
+   "maker": "prov_ibm",
+   "family": "granite",
+   "version": "4.0-h-micro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131000
+   }
+  },
+  {
+   "id": "ent_granite-4.1-8b",
+   "register": "model",
+   "name": "Granite 4.1 8B",
+   "maker": "prov_ibm",
+   "family": "granite",
+   "version": "4.1-8b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_mercury-2",
+   "register": "model",
+   "name": "Mercury 2",
+   "maker": "prov_inception",
+   "family": "mercury",
+   "version": "2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_ling-3.0-flash",
+   "register": "model",
+   "name": "Ling-3.0-flash",
+   "maker": "prov_inclusionai",
+   "family": "ling",
+   "version": "3.0-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_kat-coder-air-v2.5",
+   "register": "model",
+   "name": "KAT-Coder-Air V2.5",
+   "maker": "prov_kuaishou",
+   "family": "kat",
+   "version": "coder-air-v2.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 256000
+   }
+  },
+  {
+   "id": "ent_kat-coder-pro-v2",
+   "register": "model",
+   "name": "KAT-Coder-Pro V2",
+   "maker": "prov_kuaishou",
+   "family": "kat",
+   "version": "coder-pro-v2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_kat-coder-pro-v2.5",
+   "register": "model",
+   "name": "KAT-Coder-Pro V2.5",
+   "maker": "prov_kuaishou",
+   "family": "kat",
+   "version": "coder-pro-v2.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 256000
+   }
+  },
+  {
+   "id": "ent_weaver",
+   "register": "model",
+   "name": "Weaver (alpha)",
+   "maker": "prov_mancer",
+   "family": "weaver",
+   "version": null,
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 8000
+   }
+  },
+  {
+   "id": "ent_longcat-2.0",
+   "register": "model",
+   "name": "LongCat 2.0",
+   "maker": "prov_meituan",
+   "family": "longcat",
+   "version": "2.0",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048756
+   }
+  },
+  {
+   "id": "ent_llama-3.1-70b-instruct",
+   "register": "model",
+   "name": "Llama 3.1 70B Instruct",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.1-70b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_llama-3.1-8b-instruct",
+   "register": "model",
+   "name": "Llama 3.1 8B Instruct",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.1-8b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_llama-3.2-1b-instruct",
+   "register": "model",
+   "name": "Llama 3.2 1B Instruct",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.2-1b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 60000
+   }
+  },
+  {
+   "id": "ent_llama-3.2-3b-instruct",
+   "register": "model",
+   "name": "Llama 3.2 3B Instruct",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.2-3b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_llama-3.3-70b-instruct",
+   "register": "model",
+   "name": "Llama 3.3 70B Instruct",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.3-70b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_muse-spark-1.1",
+   "register": "model",
+   "name": "Muse Spark 1.1",
+   "maker": "prov_meta",
+   "family": "muse",
+   "version": "spark-1.1",
+   "input_kind": "text + image + video + file + audio",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_muse-spark-1.2",
+   "register": "model",
+   "name": "Muse Spark 1.2",
+   "maker": "prov_meta",
+   "family": "muse",
+   "version": "spark-1.2",
+   "input_kind": "text + image + video + file + audio",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_muse-spark-1.2-contributor",
+   "register": "model",
+   "name": "Muse Spark 1.2 Contributor",
+   "maker": "prov_meta",
+   "family": "muse",
+   "version": "spark-1.2-contributor",
+   "input_kind": "text + image + video + file + audio",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_wizardlm-2-8x22b",
+   "register": "model",
+   "name": "WizardLM-2 8x22B",
+   "maker": "prov_microsoft",
+   "family": "wizardlm",
+   "version": "2-8x22b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 65535
+   }
+  },
+  {
+   "id": "ent_minimax-01",
+   "register": "model",
+   "name": "MiniMax-01",
+   "maker": "prov_minimax",
+   "family": "minimax",
+   "version": "01",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000192
+   }
+  },
+  {
+   "id": "ent_minimax-m1",
+   "register": "model",
+   "name": "MiniMax M1",
+   "maker": "prov_minimax",
+   "family": "minimax",
+   "version": "m1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_minimax-m2-her",
+   "register": "model",
+   "name": "MiniMax M2-her",
+   "maker": "prov_minimax",
+   "family": "minimax",
+   "version": "m2-her",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 65536
+   }
+  },
+  {
+   "id": "ent_codestral-2508",
+   "register": "model",
+   "name": "Codestral 2508",
+   "maker": "prov_mistral",
+   "family": "codestral",
+   "version": "2508",
+   "input_kind": "text + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 256000
+   }
+  },
+  {
+   "id": "ent_devstral-2512",
+   "register": "model",
+   "name": "Devstral 2 2512",
+   "maker": "prov_mistral",
+   "family": "devstral",
+   "version": "2512",
+   "input_kind": "text + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_ministral-14b-2512",
+   "register": "model",
+   "name": "Ministral 3 14B 2512",
+   "maker": "prov_mistral",
+   "family": "ministral",
+   "version": "14b-2512",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_ministral-3b-2512",
+   "register": "model",
+   "name": "Ministral 3 3B 2512",
+   "maker": "prov_mistral",
+   "family": "ministral",
+   "version": "3b-2512",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_ministral-8b",
+   "register": "model",
+   "name": "Ministral 8B",
+   "maker": "prov_mistral",
+   "family": "ministral",
+   "version": "8b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_ministral-8b-2512",
+   "register": "model",
+   "name": "Ministral 3 8B 2512",
+   "maker": "prov_mistral",
+   "family": "ministral",
+   "version": "8b-2512",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_mistral-large",
+   "register": "model",
+   "name": "Mistral Large",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "large",
+   "input_kind": "text + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_mistral-large-2407",
+   "register": "model",
+   "name": "Mistral Large 2407",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "large-2407",
+   "input_kind": "text + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_mistral-medium-3.1",
+   "register": "model",
+   "name": "Mistral Medium 3.1",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "medium-3.1",
+   "input_kind": "text + image + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_mistral-nemo",
+   "register": "model",
+   "name": "Mistral Nemo",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "nemo",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_mistral-saba",
+   "register": "model",
+   "name": "Saba",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "saba",
+   "input_kind": "text + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_mistral-small-24b-instruct-2501",
+   "register": "model",
+   "name": "Mistral Small 3",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "small-24b-instruct-2501",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_mistral-small-3.1-24b-instruct",
+   "register": "model",
+   "name": "Mistral Small 3.1 24B",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "small-3.1-24b-instruct",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_mistral-small-3.2-24b-instruct",
+   "register": "model",
+   "name": "Mistral Small 3.2 24B",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "small-3.2-24b-instruct",
+   "input_kind": "image + text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_mixtral-8x22b-instruct",
+   "register": "model",
+   "name": "Mixtral 8x22B Instruct",
+   "maker": "prov_mistral",
+   "family": "mixtral",
+   "version": "8x22b-instruct",
+   "input_kind": "text + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 65536
+   }
+  },
+  {
+   "id": "ent_voxtral-small-24b-2507",
+   "register": "model",
+   "name": "Voxtral Small 24B 2507",
+   "maker": "prov_mistral",
+   "family": "voxtral",
+   "version": "small-24b-2507",
+   "input_kind": "text + audio + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32000
+   }
+  },
+  {
+   "id": "ent_kimi-k2",
+   "register": "model",
+   "name": "Kimi K2 0711",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_kimi-k2-0905",
+   "register": "model",
+   "name": "Kimi K2 0905",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k2-0905",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_morph-v3-fast",
+   "register": "model",
+   "name": "Morph V3 Fast",
+   "maker": "prov_morph",
+   "family": "morph",
+   "version": "v3-fast",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 81920
+   }
+  },
+  {
+   "id": "ent_morph-v3-large",
+   "register": "model",
+   "name": "Morph V3 Large",
+   "maker": "prov_morph",
+   "family": "morph",
+   "version": "v3-large",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_nex-n2-mini",
+   "register": "model",
+   "name": "Nex-N2-Mini",
+   "maker": "prov_nexagi",
+   "family": "nex",
+   "version": "n2-mini",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_nex-n2-pro",
+   "register": "model",
+   "name": "Nex-N2-Pro",
+   "maker": "prov_nexagi",
+   "family": "nex",
+   "version": "n2-pro",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_hermes-3-llama-3.1-405b",
+   "register": "model",
+   "name": "Hermes 3 405B Instruct",
+   "maker": "prov_nous",
+   "family": "hermes",
+   "version": "3-llama-3.1-405b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_hermes-3-llama-3.1-70b",
+   "register": "model",
+   "name": "Hermes 3 70B Instruct",
+   "maker": "prov_nous",
+   "family": "hermes",
+   "version": "3-llama-3.1-70b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_hermes-4-405b",
+   "register": "model",
+   "name": "Hermes 4 405B",
+   "maker": "prov_nous",
+   "family": "hermes",
+   "version": "4-405b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_hermes-4-70b",
+   "register": "model",
+   "name": "Hermes 4 70B",
+   "maker": "prov_nous",
+   "family": "hermes",
+   "version": "4-70b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_nemotron-3-nano-30b-a3b",
+   "register": "model",
+   "name": "Nemotron 3 Nano 30B A3B",
+   "maker": "prov_nvidia",
+   "family": "nemotron",
+   "version": "3-nano-30b-a3b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_nemotron-3-super-120b-a12b",
+   "register": "model",
+   "name": "Nemotron 3 Super",
+   "maker": "prov_nvidia",
+   "family": "nemotron",
+   "version": "3-super-120b-a12b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_nemotron-3-ultra-550b-a55b",
+   "register": "model",
+   "name": "Nemotron 3 Ultra",
+   "maker": "prov_nvidia",
+   "family": "nemotron",
+   "version": "3-ultra-550b-a55b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 512288
+   }
+  },
+  {
+   "id": "ent_nemotron-3.5-lightning",
+   "register": "model",
+   "name": "Nemotron 3.5 Lightning",
+   "maker": "prov_nvidia",
+   "family": "nemotron",
+   "version": "3.5-lightning",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_gpt-3.5-turbo-0613",
+   "register": "model",
+   "name": "GPT-3.5 Turbo (older v0613)",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "3.5-turbo-0613",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 4095
+   }
+  },
+  {
+   "id": "ent_gpt-3.5-turbo-16k",
+   "register": "model",
+   "name": "GPT-3.5 Turbo 16k",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "3.5-turbo-16k",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 16385
+   }
+  },
+  {
+   "id": "ent_gpt-4-turbo-preview",
+   "register": "model",
+   "name": "GPT-4 Turbo Preview",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4-turbo-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_gpt-4o-2024-08-06",
+   "register": "model",
+   "name": "GPT-4o (2024-08-06)",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4o-2024-08-06",
+   "input_kind": "text + image + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_gpt-4o-2024-11-20",
+   "register": "model",
+   "name": "GPT-4o (2024-11-20)",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4o-2024-11-20",
+   "input_kind": "text + image + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_gpt-4o-mini-2024-07-18",
+   "register": "model",
+   "name": "GPT-4o-mini (2024-07-18)",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "4o-mini-2024-07-18",
+   "input_kind": "text + image + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_gpt-5-codex",
+   "register": "model",
+   "name": "GPT-5 Codex (batch)",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5-codex",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 400000
+   }
+  },
+  {
+   "id": "ent_gpt-5-image",
+   "register": "model",
+   "name": "GPT-5 Image",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5-image",
+   "input_kind": "image + text + file",
+   "output_kind": "image + text",
+   "attrs": {
+    "context": 400000
+   }
+  },
+  {
+   "id": "ent_gpt-5-image-mini",
+   "register": "model",
+   "name": "GPT-5 Image Mini",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5-image-mini",
+   "input_kind": "file + image + text",
+   "output_kind": "image + text",
+   "attrs": {
+    "context": 400000
+   }
+  },
+  {
+   "id": "ent_gpt-5.4-image-2",
+   "register": "model",
+   "name": "GPT-5.4 Image 2",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.4-image-2",
+   "input_kind": "image + text + file",
+   "output_kind": "image + text",
+   "attrs": {
+    "context": 272000
+   }
+  },
+  {
+   "id": "ent_gpt-5.6-luna-pro",
+   "register": "model",
+   "name": "GPT-5.6 Luna Pro",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.6-luna-pro",
+   "input_kind": "file + image + text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1050000
+   }
+  },
+  {
+   "id": "ent_gpt-5.6-sol-pro",
+   "register": "model",
+   "name": "GPT-5.6 Sol Pro",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.6-sol-pro",
+   "input_kind": "file + image + text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1050000
+   }
+  },
+  {
+   "id": "ent_gpt-5.6-terra-pro",
+   "register": "model",
+   "name": "GPT-5.6 Terra Pro",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.6-terra-pro",
+   "input_kind": "file + image + text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1050000
+   }
+  },
+  {
+   "id": "ent_gpt-audio",
+   "register": "model",
+   "name": "GPT Audio",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "audio",
+   "input_kind": "text + audio",
+   "output_kind": "text + audio",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_gpt-audio-mini",
+   "register": "model",
+   "name": "GPT Audio Mini",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "audio-mini",
+   "input_kind": "text + audio",
+   "output_kind": "text + audio",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_gpt-oss-safeguard-20b",
+   "register": "model",
+   "name": "gpt-oss-safeguard-20b",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "oss-safeguard-20b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_o3-mini-high",
+   "register": "model",
+   "name": "o3 Mini High",
+   "maker": "prov_openai",
+   "family": "o",
+   "version": "3-mini-high",
+   "input_kind": "text + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 200000
+   }
+  },
+  {
+   "id": "ent_o4-mini-high",
+   "register": "model",
+   "name": "o4 Mini High",
+   "maker": "prov_openai",
+   "family": "o",
+   "version": "4-mini-high",
+   "input_kind": "image + text + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 200000
+   }
+  },
+  {
+   "id": "ent_perceptron-mk1",
+   "register": "model",
+   "name": "Perceptron Mk1",
+   "maker": "prov_perceptron",
+   "family": "perceptron",
+   "version": "mk1",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_sonar",
+   "register": "model",
+   "name": "Sonar",
+   "maker": "prov_perplexity",
+   "family": "sonar",
+   "version": null,
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 127072
+   }
+  },
+  {
+   "id": "ent_sonar-deep-research",
+   "register": "model",
+   "name": "Sonar Deep Research",
+   "maker": "prov_perplexity",
+   "family": "sonar",
+   "version": "deep-research",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_sonar-pro",
+   "register": "model",
+   "name": "Sonar Pro",
+   "maker": "prov_perplexity",
+   "family": "sonar",
+   "version": "pro",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 200000
+   }
+  },
+  {
+   "id": "ent_sonar-pro-search",
+   "register": "model",
+   "name": "Sonar Pro Search",
+   "maker": "prov_perplexity",
+   "family": "sonar",
+   "version": "pro-search",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 200000
+   }
+  },
+  {
+   "id": "ent_sonar-reasoning-pro",
+   "register": "model",
+   "name": "Sonar Reasoning Pro",
+   "maker": "prov_perplexity",
+   "family": "sonar",
+   "version": "reasoning-pro",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_laguna-s-2.1",
+   "register": "model",
+   "name": "Laguna S 2.1",
+   "maker": "prov_poolside",
+   "family": "laguna",
+   "version": "s-2.1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1048576
+   }
+  },
+  {
+   "id": "ent_laguna-xs-2.1",
+   "register": "model",
+   "name": "Laguna XS 2.1",
+   "maker": "prov_poolside",
+   "family": "laguna",
+   "version": "xs-2.1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen-2.5-72b-instruct",
+   "register": "model",
+   "name": "Qwen2.5 72B Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "2.5-72b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_qwen-2.5-7b-instruct",
+   "register": "model",
+   "name": "Qwen2.5 7B Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "2.5-7b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_qwen-2.5-coder-32b-instruct",
+   "register": "model",
+   "name": "Qwen2.5 Coder 32B Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "2.5-coder-32b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_qwen-plus-2025-07-28",
+   "register": "model",
+   "name": "Qwen Plus 0728",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "plus-2025-07-28",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_qwen2.5-vl-72b-instruct",
+   "register": "model",
+   "name": "Qwen2.5 VL 72B Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "2.5-vl-72b-instruct",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 128000
+   }
+  },
+  {
+   "id": "ent_qwen3-14b",
+   "register": "model",
+   "name": "Qwen3 14B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-14b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_qwen3-235b-a22b",
+   "register": "model",
+   "name": "Qwen3 235B A22B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-235b-a22b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_qwen3-235b-a22b-thinking-2507",
+   "register": "model",
+   "name": "Qwen3 235B A22B Thinking 2507",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-235b-a22b-thinking-2507",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_qwen3-30b-a3b",
+   "register": "model",
+   "name": "Qwen3 30B A3B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-30b-a3b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_qwen3-30b-a3b-instruct-2507",
+   "register": "model",
+   "name": "Qwen3 30B A3B Instruct 2507",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-30b-a3b-instruct-2507",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3-30b-a3b-thinking-2507",
+   "register": "model",
+   "name": "Qwen3 30B A3B Thinking 2507",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-30b-a3b-thinking-2507",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 81920
+   }
+  },
+  {
+   "id": "ent_qwen3-32b",
+   "register": "model",
+   "name": "Qwen3 32B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-32b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_qwen3-8b",
+   "register": "model",
+   "name": "Qwen3 8B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-8b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_qwen3-coder",
+   "register": "model",
+   "name": "Qwen3 Coder 480B A35B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-coder",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3-coder-30b-a3b-instruct",
+   "register": "model",
+   "name": "Qwen3 Coder 30B A3B Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-coder-30b-a3b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3-coder-flash",
+   "register": "model",
+   "name": "Qwen3 Coder Flash",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-coder-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_qwen3-max-thinking",
+   "register": "model",
+   "name": "Qwen3 Max Thinking",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-max-thinking",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3-next-80b-a3b-instruct",
+   "register": "model",
+   "name": "Qwen3 Next 80B A3B Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-next-80b-a3b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3-next-80b-a3b-thinking",
+   "register": "model",
+   "name": "Qwen3 Next 80B A3B Thinking",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-next-80b-a3b-thinking",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3-vl-235b-a22b-instruct",
+   "register": "model",
+   "name": "Qwen3 VL 235B A22B Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-vl-235b-a22b-instruct",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3-vl-235b-a22b-thinking",
+   "register": "model",
+   "name": "Qwen3 VL 235B A22B Thinking",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-vl-235b-a22b-thinking",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_qwen3-vl-30b-a3b-instruct",
+   "register": "model",
+   "name": "Qwen3 VL 30B A3B Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-vl-30b-a3b-instruct",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3-vl-30b-a3b-thinking",
+   "register": "model",
+   "name": "Qwen3 VL 30B A3B Thinking",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-vl-30b-a3b-thinking",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3-vl-32b-instruct",
+   "register": "model",
+   "name": "Qwen3 VL 32B Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-vl-32b-instruct",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_qwen3-vl-8b-instruct",
+   "register": "model",
+   "name": "Qwen3 VL 8B Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-vl-8b-instruct",
+   "input_kind": "image + text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3-vl-8b-thinking",
+   "register": "model",
+   "name": "Qwen3 VL 8B Thinking",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-vl-8b-thinking",
+   "input_kind": "image + text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_qwen3.5-122b-a10b",
+   "register": "model",
+   "name": "Qwen3.5-122B-A10B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.5-122b-a10b",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3.5-27b",
+   "register": "model",
+   "name": "Qwen3.5-27B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.5-27b",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3.5-35b-a3b",
+   "register": "model",
+   "name": "Qwen3.5-35B-A3B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.5-35b-a3b",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3.5-397b-a17b",
+   "register": "model",
+   "name": "Qwen3.5 397B A17B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.5-397b-a17b",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3.5-flash-02-23",
+   "register": "model",
+   "name": "Qwen3.5-Flash",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.5-flash-02-23",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_qwen3.5-plus-02-15",
+   "register": "model",
+   "name": "Qwen3.5 Plus 2026-02-15",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.5-plus-02-15",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_qwen3.5-plus-20260420",
+   "register": "model",
+   "name": "Qwen3.5 Plus 2026-04-20",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.5-plus-20260420",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_qwen3.6-27b",
+   "register": "model",
+   "name": "Qwen3.6 27B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.6-27b",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3.6-35b-a3b",
+   "register": "model",
+   "name": "Qwen3.6 35B A3B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.6-35b-a3b",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3.6-max-preview",
+   "register": "model",
+   "name": "Qwen3.6 Max Preview",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.6-max-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_qwen3.7-flash",
+   "register": "model",
+   "name": "Qwen3.7 Flash",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.7-flash",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_qwen3.8-27b",
+   "register": "model",
+   "name": "Qwen3.8 27B",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3.8-27b",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_reka-edge",
+   "register": "model",
+   "name": "Reka Edge",
+   "maker": "prov_reka",
+   "family": "reka",
+   "version": "edge",
+   "input_kind": "image + text + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 16384
+   }
+  },
+  {
+   "id": "ent_reka-flash-3",
+   "register": "model",
+   "name": "Reka Flash 3",
+   "maker": "prov_reka",
+   "family": "reka",
+   "version": "flash-3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 65536
+   }
+  },
+  {
+   "id": "ent_relace-apply-3",
+   "register": "model",
+   "name": "Relace Apply 3",
+   "maker": "prov_relace",
+   "family": "relace",
+   "version": "apply-3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 256000
+   }
+  },
+  {
+   "id": "ent_relace-search",
+   "register": "model",
+   "name": "Relace Search",
+   "maker": "prov_relace",
+   "family": "relace",
+   "version": "search",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 256000
+   }
+  },
+  {
+   "id": "ent_fugu-ultra",
+   "register": "model",
+   "name": "Fugu Ultra",
+   "maker": "prov_sakana",
+   "family": "fugu",
+   "version": "ultra",
+   "input_kind": "text + image",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1000000
+   }
+  },
+  {
+   "id": "ent_sakana-namazu",
+   "register": "model",
+   "name": "Sakana Namazu",
+   "maker": "prov_sakana",
+   "family": "sakana",
+   "version": "namazu",
+   "input_kind": "text + image + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_l3-lunaris-8b",
+   "register": "model",
+   "name": "Llama 3 8B Lunaris",
+   "maker": "prov_sao10k",
+   "family": "l",
+   "version": "3-lunaris-8b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 8192
+   }
+  },
+  {
+   "id": "ent_l3.1-euryale-70b",
+   "register": "model",
+   "name": "Llama 3.1 Euryale 70B v2.2",
+   "maker": "prov_sao10k",
+   "family": "l",
+   "version": "3.1-euryale-70b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_l3.3-euryale-70b",
+   "register": "model",
+   "name": "Llama 3.3 Euryale 70B",
+   "maker": "prov_sao10k",
+   "family": "l",
+   "version": "3.3-euryale-70b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_step-3.5-flash",
+   "register": "model",
+   "name": "Step 3.5 Flash",
+   "maker": "prov_stepfun",
+   "family": "step",
+   "version": "3.5-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_step-3.7-flash",
+   "register": "model",
+   "name": "Step 3.7 Flash",
+   "maker": "prov_stepfun",
+   "family": "step",
+   "version": "3.7-flash",
+   "input_kind": "text + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_hunyuan-a13b-instruct",
+   "register": "model",
+   "name": "Hunyuan A13B Instruct",
+   "maker": "prov_tencent",
+   "family": "hunyuan",
+   "version": "a13b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_hy-mt2-1.8b",
+   "register": "model",
+   "name": "Hy-MT2-1.8B",
+   "maker": "prov_tencent",
+   "family": "hy",
+   "version": "mt2-1.8b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 8192
+   }
+  },
+  {
+   "id": "ent_hy-mt2-30b-a3b",
+   "register": "model",
+   "name": "Hy-MT2-30B-A3B",
+   "maker": "prov_tencent",
+   "family": "hy",
+   "version": "mt2-30b-a3b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 8192
+   }
+  },
+  {
+   "id": "ent_hy-mt2-7b",
+   "register": "model",
+   "name": "Hy-MT2-7B",
+   "maker": "prov_tencent",
+   "family": "hy",
+   "version": "mt2-7b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 8192
+   }
+  },
+  {
+   "id": "ent_hy3",
+   "register": "model",
+   "name": "Hy3",
+   "maker": "prov_tencent",
+   "family": "hy",
+   "version": "3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_hy3-preview",
+   "register": "model",
+   "name": "Hy3 preview",
+   "maker": "prov_tencent",
+   "family": "hy",
+   "version": "3-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 262144
+   }
+  },
+  {
+   "id": "ent_cydonia-24b-v4.1",
+   "register": "model",
+   "name": "Cydonia 24B V4.1",
+   "maker": "prov_thedrummer",
+   "family": "cydonia",
+   "version": "24b-v4.1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_rocinante-12b",
+   "register": "model",
+   "name": "Rocinante 12B",
+   "maker": "prov_thedrummer",
+   "family": "rocinante",
+   "version": "12b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 65536
+   }
+  },
+  {
+   "id": "ent_skyfall-36b-v2",
+   "register": "model",
+   "name": "Skyfall 36B V2",
+   "maker": "prov_thedrummer",
+   "family": "skyfall",
+   "version": "36b-v2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 32768
+   }
+  },
+  {
+   "id": "ent_unslopnemo-12b",
+   "register": "model",
+   "name": "UnslopNemo 12B",
+   "maker": "prov_thedrummer",
+   "family": "unslopnemo",
+   "version": "12b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1024000
+   }
+  },
+  {
+   "id": "ent_remm-slerp-l2-13b",
+   "register": "model",
+   "name": "ReMM SLERP 13B",
+   "maker": "prov_undi95",
+   "family": "remm",
+   "version": "slerp-l2-13b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 6144
+   }
+  },
+  {
+   "id": "ent_solar-pro-3",
+   "register": "model",
+   "name": "Solar Pro 3",
+   "maker": "prov_upstage",
+   "family": "solar",
+   "version": "pro-3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 131072
+   }
+  },
+  {
+   "id": "ent_solar-pro4",
+   "register": "model",
+   "name": "Solar Pro 4",
+   "maker": "prov_upstage",
+   "family": "solar",
+   "version": "pro4",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 524288
+   }
+  },
+  {
+   "id": "ent_palmyra-x5",
+   "register": "model",
+   "name": "Palmyra X5",
+   "maker": "prov_writer",
+   "family": "palmyra",
+   "version": "x5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1040000
+   }
+  },
+  {
+   "id": "ent_grok-4.20",
+   "register": "model",
+   "name": "Grok 4.20",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4.20",
+   "input_kind": "text + image + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 2000000
+   }
+  },
+  {
+   "id": "ent_grok-4.20-multi-agent",
+   "register": "model",
+   "name": "Grok 4.20 Multi-Agent",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4.20-multi-agent",
+   "input_kind": "text + image + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 2000000
+   }
+  },
+  {
+   "id": "ent_grok-4.5",
+   "register": "model",
+   "name": "Grok 4.5",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4.5",
+   "input_kind": "text + image + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 500000
+   }
+  },
+  {
+   "id": "ent_grok-4.6",
+   "register": "model",
+   "name": "Grok 4.6",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4.6",
+   "input_kind": "text + image + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 500000
+   }
+  },
+  {
+   "id": "ent_grok-build-0.1",
+   "register": "model",
+   "name": "Grok Build 0.1",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "build-0.1",
+   "input_kind": "text + image + file",
+   "output_kind": "text",
+   "attrs": {
+    "context": 256000
+   }
+  },
+  {
+   "id": "ent_mimo-v2.5",
+   "register": "model",
+   "name": "MiMo-V2.5",
+   "maker": "prov_xiaomi",
+   "family": "mimo",
+   "version": "v2.5",
+   "input_kind": "text + audio + image + video",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1050000
+   }
+  },
+  {
+   "id": "ent_mimo-v2.5-pro",
+   "register": "model",
+   "name": "MiMo-V2.5-Pro",
+   "maker": "prov_xiaomi",
+   "family": "mimo",
+   "version": "v2.5-pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {
+    "context": 1050000
+   }
+  }
+ ],
+ "aliases": [
+  {
+   "source": "prov_openrouter",
+   "alias": "aion-labs/aion-2.0",
+   "entity": "ent_aion-2.0"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "aion-labs/aion-3.0",
+   "entity": "ent_aion-3.0"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "aion-labs/aion-3.0-mini",
+   "entity": "ent_aion-3.0-mini"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "aion-labs/aion-rp-llama-3.1-8b",
+   "entity": "ent_aion-rp-llama-3.1-8b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "allenai/olmo-3-32b-think",
+   "entity": "ent_olmo-3-32b-think"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "amazon/nova-2-lite-v1",
+   "entity": "ent_nova-2-lite"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "amazon/nova-lite-v1",
+   "entity": "ent_nova-lite-v1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "amazon/nova-micro-v1",
+   "entity": "ent_nova-micro-v1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "amazon/nova-premier-v1",
+   "entity": "ent_nova-premier-v1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "amazon/nova-pro-v1",
+   "entity": "ent_nova-pro-v1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "anthracite-org/magnum-v4-72b",
+   "entity": "ent_magnum-v4-72b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "anthropic/claude-3-haiku",
+   "entity": "ent_claude-3-haiku"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "anthropic/claude-opus-4.7-fast",
+   "entity": "ent_claude-opus-4.7"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "anthropic/claude-opus-4.8-fast",
+   "entity": "ent_claude-opus-4.8"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "anthropic/claude-opus-5-fast",
+   "entity": "ent_claude-opus-5"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "arcee-ai/trinity-large-thinking",
+   "entity": "ent_trinity-large-thinking"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "arcee-ai/virtuoso-large",
+   "entity": "ent_virtuoso-large"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "baidu/ernie-4.5-vl-424b-a47b",
+   "entity": "ent_ernie-4.5-vl-424b-a47b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "bytedance-seed/seed-1.6",
+   "entity": "ent_seed-1.6"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "bytedance-seed/seed-1.6-flash",
+   "entity": "ent_seed-1.6-flash"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "bytedance-seed/seed-2-1-turbo",
+   "entity": "ent_seed-2-1-turbo"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "bytedance-seed/seed-2.0-code",
+   "entity": "ent_seed-2.0-code"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "bytedance-seed/seed-2.0-lite",
+   "entity": "ent_seed-2.0-lite"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "bytedance-seed/seed-2.0-mini",
+   "entity": "ent_seed-2.0-mini"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "bytedance/ui-tars-1.5-7b",
+   "entity": "ent_ui-tars-1.5-7b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+   "entity": "ent_dolphin-mistral-24b-venice-edition"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "cohere/command-a",
+   "entity": "ent_command-a"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "cohere/command-r-08-2024",
+   "entity": "ent_command-r-08-2024"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "cohere/command-r-plus-08-2024",
+   "entity": "ent_command-r-plus-08-2024"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "cohere/command-r7b-12-2024",
+   "entity": "ent_command-r7b-12-2024"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "deepseek/deepseek-chat-v3-0324",
+   "entity": "ent_deepseek-v3-0324"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "deepseek/deepseek-chat-v3.1",
+   "entity": "ent_deepseek-v3.1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "deepseek/deepseek-r1-distill-llama-70b",
+   "entity": "ent_deepseek-r1-distill-llama-70b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "deepseek/deepseek-v3.1-terminus",
+   "entity": "ent_deepseek-v3.1-terminus"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "deepseek/deepseek-v3.2-exp",
+   "entity": "ent_deepseek-v3.2-exp"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemini-2.5-pro-preview",
+   "entity": "ent_gemini-2.5-pro-preview"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemini-2.5-pro-preview-05-06",
+   "entity": "ent_gemini-2.5-pro-preview-05-06"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemini-3-pro-image-preview",
+   "entity": "ent_gemini-3-pro-image-preview"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemini-3.1-flash-image-preview",
+   "entity": "ent_gemini-3.1-flash-image-preview"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemini-3.1-flash-lite-preview",
+   "entity": "ent_gemini-3.1-flash-lite-preview"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemini-3.1-pro-preview-customtools",
+   "entity": "ent_gemini-3.1-pro-preview-customtools"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemma-2-27b-it",
+   "entity": "ent_gemma-2-27b-it"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemma-3-12b-it",
+   "entity": "ent_gemma-3-12b-it"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemma-3-27b-it",
+   "entity": "ent_gemma-3-27b-it"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemma-3-4b-it",
+   "entity": "ent_gemma-3-4b-it"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemma-3n-e4b-it",
+   "entity": "ent_gemma-3n-e4b-it"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "google/gemma-4-26b-a4b-it",
+   "entity": "ent_gemma-4-26b-a4b-it"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "gryphe/mythomax-l2-13b",
+   "entity": "ent_mythomax-l2-13b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "ibm-granite/granite-4.0-h-micro",
+   "entity": "ent_granite-4.0-h-micro"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "ibm-granite/granite-4.1-8b",
+   "entity": "ent_granite-4.1-8b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "inception/mercury-2",
+   "entity": "ent_mercury-2"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "inclusionai/ling-3.0-flash",
+   "entity": "ent_ling-3.0-flash"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "kwaipilot/kat-coder-air-v2.5",
+   "entity": "ent_kat-coder-air-v2.5"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "kwaipilot/kat-coder-pro-v2",
+   "entity": "ent_kat-coder-pro-v2"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "kwaipilot/kat-coder-pro-v2.5",
+   "entity": "ent_kat-coder-pro-v2.5"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mancer/weaver",
+   "entity": "ent_weaver"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "meituan/longcat-2.0",
+   "entity": "ent_longcat-2.0"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "meta-llama/llama-3.1-70b-instruct",
+   "entity": "ent_llama-3.1-70b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "meta-llama/llama-3.1-8b-instruct",
+   "entity": "ent_llama-3.1-8b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "meta-llama/llama-3.2-1b-instruct",
+   "entity": "ent_llama-3.2-1b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "meta-llama/llama-3.2-3b-instruct",
+   "entity": "ent_llama-3.2-3b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "meta-llama/llama-3.3-70b-instruct",
+   "entity": "ent_llama-3.3-70b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "meta/muse-spark-1.1",
+   "entity": "ent_muse-spark-1.1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "meta/muse-spark-1.2",
+   "entity": "ent_muse-spark-1.2"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "meta/muse-spark-1.2-contributor",
+   "entity": "ent_muse-spark-1.2-contributor"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "microsoft/wizardlm-2-8x22b",
+   "entity": "ent_wizardlm-2-8x22b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "minimax/minimax-01",
+   "entity": "ent_minimax-01"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "minimax/minimax-m1",
+   "entity": "ent_minimax-m1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "minimax/minimax-m2-her",
+   "entity": "ent_minimax-m2-her"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "minimax/minimax-m2.1",
+   "entity": "ent_minimax-m2.1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "minimax/minimax-m2.5",
+   "entity": "ent_minimax-m2.5"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/codestral-2508",
+   "entity": "ent_codestral-2508"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/devstral-2512",
+   "entity": "ent_devstral-2512"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/ministral-14b-2512",
+   "entity": "ent_ministral-14b-2512"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/ministral-3b-2512",
+   "entity": "ent_ministral-3b-2512"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/ministral-8b",
+   "entity": "ent_ministral-8b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/ministral-8b-2512",
+   "entity": "ent_ministral-8b-2512"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/mistral-large",
+   "entity": "ent_mistral-large"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/mistral-large-2407",
+   "entity": "ent_mistral-large-2407"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/mistral-medium-3-5",
+   "entity": "ent_mistral-medium-3.5"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/mistral-medium-3.1",
+   "entity": "ent_mistral-medium-3.1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/mistral-nemo",
+   "entity": "ent_mistral-nemo"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/mistral-saba",
+   "entity": "ent_mistral-saba"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/mistral-small-24b-instruct-2501",
+   "entity": "ent_mistral-small-24b-instruct-2501"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/mistral-small-2603",
+   "entity": "ent_mistral-small-4"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/mistral-small-3.1-24b-instruct",
+   "entity": "ent_mistral-small-3.1-24b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/mistral-small-3.2-24b-instruct",
+   "entity": "ent_mistral-small-3.2-24b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/mixtral-8x22b-instruct",
+   "entity": "ent_mixtral-8x22b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "mistralai/voxtral-small-24b-2507",
+   "entity": "ent_voxtral-small-24b-2507"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "moonshotai/kimi-k2",
+   "entity": "ent_kimi-k2"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "moonshotai/kimi-k2-0905",
+   "entity": "ent_kimi-k2-0905"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "morph/morph-v3-fast",
+   "entity": "ent_morph-v3-fast"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "morph/morph-v3-large",
+   "entity": "ent_morph-v3-large"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "nex-agi/nex-n2-mini",
+   "entity": "ent_nex-n2-mini"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "nex-agi/nex-n2-pro",
+   "entity": "ent_nex-n2-pro"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "nousresearch/hermes-3-llama-3.1-405b",
+   "entity": "ent_hermes-3-llama-3.1-405b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "nousresearch/hermes-3-llama-3.1-70b",
+   "entity": "ent_hermes-3-llama-3.1-70b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "nousresearch/hermes-4-405b",
+   "entity": "ent_hermes-4-405b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "nousresearch/hermes-4-70b",
+   "entity": "ent_hermes-4-70b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "nvidia/nemotron-3-nano-30b-a3b",
+   "entity": "ent_nemotron-3-nano-30b-a3b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "nvidia/nemotron-3-super-120b-a12b",
+   "entity": "ent_nemotron-3-super-120b-a12b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "nvidia/nemotron-3-ultra-550b-a55b",
+   "entity": "ent_nemotron-3-ultra-550b-a55b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "nvidia/nemotron-3-ultra-550b-a55b:batch",
+   "entity": "ent_nemotron-3-ultra-550b-a55b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "nvidia/nemotron-3.5-lightning",
+   "entity": "ent_nemotron-3.5-lightning"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-3.5-turbo-0613",
+   "entity": "ent_gpt-3.5-turbo-0613"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-3.5-turbo-16k",
+   "entity": "ent_gpt-3.5-turbo-16k"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-4-turbo-preview",
+   "entity": "ent_gpt-4-turbo-preview"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-4o-2024-08-06",
+   "entity": "ent_gpt-4o-2024-08-06"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-4o-2024-11-20",
+   "entity": "ent_gpt-4o-2024-11-20"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-4o-mini-2024-07-18",
+   "entity": "ent_gpt-4o-mini-2024-07-18"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5-codex:batch",
+   "entity": "ent_gpt-5-codex"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5-image",
+   "entity": "ent_gpt-5-image"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5-image-mini",
+   "entity": "ent_gpt-5-image-mini"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.1-codex",
+   "entity": "ent_gpt-5.1-codex"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.1-codex-max",
+   "entity": "ent_gpt-5.1-codex-max"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.1-codex-mini",
+   "entity": "ent_gpt-5.1-codex-mini"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.2-chat",
+   "entity": "ent_gpt-5.2-chat"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.2-codex",
+   "entity": "ent_gpt-5.2-codex"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.3-codex",
+   "entity": "ent_gpt-5.3-codex"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.4-image-2",
+   "entity": "ent_gpt-5.4-image-2"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.6-luna-pro",
+   "entity": "ent_gpt-5.6-luna-pro"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.6-luna-pro:batch",
+   "entity": "ent_gpt-5.6-luna-pro"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.6-sol-pro",
+   "entity": "ent_gpt-5.6-sol-pro"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.6-sol-pro:batch",
+   "entity": "ent_gpt-5.6-sol-pro"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.6-terra-pro",
+   "entity": "ent_gpt-5.6-terra-pro"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-5.6-terra-pro:batch",
+   "entity": "ent_gpt-5.6-terra-pro"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-audio",
+   "entity": "ent_gpt-audio"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-audio-mini",
+   "entity": "ent_gpt-audio-mini"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/gpt-oss-safeguard-20b",
+   "entity": "ent_gpt-oss-safeguard-20b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/o3-mini-high",
+   "entity": "ent_o3-mini-high"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/o3-mini-high:batch",
+   "entity": "ent_o3-mini-high"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/o4-mini-high",
+   "entity": "ent_o4-mini-high"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "openai/o4-mini-high:batch",
+   "entity": "ent_o4-mini-high"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "perceptron/perceptron-mk1",
+   "entity": "ent_perceptron-mk1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "perplexity/sonar",
+   "entity": "ent_sonar"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "perplexity/sonar-deep-research",
+   "entity": "ent_sonar-deep-research"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "perplexity/sonar-pro",
+   "entity": "ent_sonar-pro"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "perplexity/sonar-pro-search",
+   "entity": "ent_sonar-pro-search"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "perplexity/sonar-reasoning-pro",
+   "entity": "ent_sonar-reasoning-pro"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "poolside/laguna-s-2.1",
+   "entity": "ent_laguna-s-2.1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "poolside/laguna-xs-2.1",
+   "entity": "ent_laguna-xs-2.1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen-2.5-72b-instruct",
+   "entity": "ent_qwen-2.5-72b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen-2.5-7b-instruct",
+   "entity": "ent_qwen-2.5-7b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen-2.5-coder-32b-instruct",
+   "entity": "ent_qwen-2.5-coder-32b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen-plus-2025-07-28",
+   "entity": "ent_qwen-plus-2025-07-28"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen-plus-2025-07-28:thinking",
+   "entity": "ent_qwen-plus-2025-07-28"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen2.5-vl-72b-instruct",
+   "entity": "ent_qwen2.5-vl-72b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-14b",
+   "entity": "ent_qwen3-14b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-235b-a22b",
+   "entity": "ent_qwen3-235b-a22b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-235b-a22b-2507",
+   "entity": "ent_qwen3-235b-a22b-instruct-2507"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-235b-a22b-thinking-2507",
+   "entity": "ent_qwen3-235b-a22b-thinking-2507"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-30b-a3b",
+   "entity": "ent_qwen3-30b-a3b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-30b-a3b-instruct-2507",
+   "entity": "ent_qwen3-30b-a3b-instruct-2507"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-30b-a3b-thinking-2507",
+   "entity": "ent_qwen3-30b-a3b-thinking-2507"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-32b",
+   "entity": "ent_qwen3-32b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-8b",
+   "entity": "ent_qwen3-8b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-coder",
+   "entity": "ent_qwen3-coder"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-coder-30b-a3b-instruct",
+   "entity": "ent_qwen3-coder-30b-a3b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-coder-flash",
+   "entity": "ent_qwen3-coder-flash"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-coder-next",
+   "entity": "ent_qwen3-coder-next"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-max-thinking",
+   "entity": "ent_qwen3-max-thinking"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-next-80b-a3b-instruct",
+   "entity": "ent_qwen3-next-80b-a3b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-next-80b-a3b-thinking",
+   "entity": "ent_qwen3-next-80b-a3b-thinking"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-vl-235b-a22b-instruct",
+   "entity": "ent_qwen3-vl-235b-a22b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-vl-235b-a22b-thinking",
+   "entity": "ent_qwen3-vl-235b-a22b-thinking"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-vl-30b-a3b-instruct",
+   "entity": "ent_qwen3-vl-30b-a3b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-vl-30b-a3b-thinking",
+   "entity": "ent_qwen3-vl-30b-a3b-thinking"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-vl-32b-instruct",
+   "entity": "ent_qwen3-vl-32b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-vl-8b-instruct",
+   "entity": "ent_qwen3-vl-8b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3-vl-8b-thinking",
+   "entity": "ent_qwen3-vl-8b-thinking"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.5-122b-a10b",
+   "entity": "ent_qwen3.5-122b-a10b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.5-27b",
+   "entity": "ent_qwen3.5-27b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.5-35b-a3b",
+   "entity": "ent_qwen3.5-35b-a3b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.5-397b-a17b",
+   "entity": "ent_qwen3.5-397b-a17b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.5-flash-02-23",
+   "entity": "ent_qwen3.5-flash-02-23"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.5-plus-02-15",
+   "entity": "ent_qwen3.5-plus-02-15"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.5-plus-20260420",
+   "entity": "ent_qwen3.5-plus-20260420"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.6-27b",
+   "entity": "ent_qwen3.6-27b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.6-35b-a3b",
+   "entity": "ent_qwen3.6-35b-a3b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.6-max-preview",
+   "entity": "ent_qwen3.6-max-preview"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.7-flash",
+   "entity": "ent_qwen3.7-flash"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.8-2.4t-a95b",
+   "entity": "ent_qwen3.8-2.4t"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "qwen/qwen3.8-27b",
+   "entity": "ent_qwen3.8-27b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "rekaai/reka-edge",
+   "entity": "ent_reka-edge"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "rekaai/reka-flash-3",
+   "entity": "ent_reka-flash-3"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "relace/relace-apply-3",
+   "entity": "ent_relace-apply-3"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "relace/relace-search",
+   "entity": "ent_relace-search"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "sakana/fugu-ultra",
+   "entity": "ent_fugu-ultra"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "sakana/sakana-namazu",
+   "entity": "ent_sakana-namazu"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "sao10k/l3-lunaris-8b",
+   "entity": "ent_l3-lunaris-8b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "sao10k/l3.1-euryale-70b",
+   "entity": "ent_l3.1-euryale-70b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "sao10k/l3.3-euryale-70b",
+   "entity": "ent_l3.3-euryale-70b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "stepfun/step-3.5-flash",
+   "entity": "ent_step-3.5-flash"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "stepfun/step-3.7-flash",
+   "entity": "ent_step-3.7-flash"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "tencent/hunyuan-a13b-instruct",
+   "entity": "ent_hunyuan-a13b-instruct"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "tencent/hy-mt2-1.8b",
+   "entity": "ent_hy-mt2-1.8b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "tencent/hy-mt2-30b-a3b",
+   "entity": "ent_hy-mt2-30b-a3b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "tencent/hy-mt2-7b",
+   "entity": "ent_hy-mt2-7b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "tencent/hy3",
+   "entity": "ent_hy3"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "tencent/hy3-preview",
+   "entity": "ent_hy3-preview"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "thedrummer/cydonia-24b-v4.1",
+   "entity": "ent_cydonia-24b-v4.1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "thedrummer/rocinante-12b",
+   "entity": "ent_rocinante-12b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "thedrummer/skyfall-36b-v2",
+   "entity": "ent_skyfall-36b-v2"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "thedrummer/unslopnemo-12b",
+   "entity": "ent_unslopnemo-12b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "undi95/remm-slerp-l2-13b",
+   "entity": "ent_remm-slerp-l2-13b"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "upstage/solar-pro-3",
+   "entity": "ent_solar-pro-3"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "upstage/solar-pro4",
+   "entity": "ent_solar-pro4"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "writer/palmyra-x5",
+   "entity": "ent_palmyra-x5"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "x-ai/grok-4.20",
+   "entity": "ent_grok-4.20"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "x-ai/grok-4.20-multi-agent",
+   "entity": "ent_grok-4.20-multi-agent"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "x-ai/grok-4.5",
+   "entity": "ent_grok-4.5"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "x-ai/grok-4.6",
+   "entity": "ent_grok-4.6"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "x-ai/grok-build-0.1",
+   "entity": "ent_grok-build-0.1"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "xiaomi/mimo-v2.5",
+   "entity": "ent_mimo-v2.5"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "xiaomi/mimo-v2.5-pro",
+   "entity": "ent_mimo-v2.5-pro"
+  },
+  {
+   "source": "prov_openrouter",
+   "alias": "z-ai/glm-4.7-flash",
+   "entity": "ent_glm-4.7-flash"
+  }
+ ],
+ "offerings": []
+}

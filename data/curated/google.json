@@ -1,0 +1,6619 @@
+{
+ "providers": [
+  {
+   "id": "prov_google",
+   "name": "Google",
+   "url": "https://ai.google.dev",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_vertex",
+   "name": "Google Vertex AI",
+   "url": "https://cloud.google.com/vertex-ai",
+   "kind": "cloud"
+  },
+  {
+   "id": "prov_intfloat",
+   "name": "intfloat",
+   "url": "https://huggingface.co/intfloat",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_anthropic",
+   "name": "Anthropic",
+   "url": "https://anthropic.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_xai",
+   "name": "xAI",
+   "url": "https://x.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_deepseek",
+   "name": "DeepSeek",
+   "url": "https://deepseek.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_minimax",
+   "name": "MiniMax",
+   "url": "https://minimax.io",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_moonshot",
+   "name": "Moonshot AI",
+   "url": "https://moonshot.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_alibaba",
+   "name": "Alibaba Model Studio",
+   "url": "https://www.alibabacloud.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_zhipu",
+   "name": "Zhipu AI",
+   "url": "https://z.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_openai",
+   "name": "OpenAI",
+   "url": "https://openai.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_meta",
+   "name": "Meta",
+   "url": "https://ai.meta.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_mistral",
+   "name": "Mistral",
+   "url": "https://mistral.ai",
+   "kind": "vendor"
+  }
+ ],
+ "entities": [
+  {
+   "id": "ent_gemini-3.7-flash",
+   "register": "model",
+   "name": "Gemini 3.7 Flash",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.7-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.6-flash",
+   "register": "model",
+   "name": "Gemini 3.6 Flash",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.6-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.5-flash",
+   "register": "model",
+   "name": "Gemini 3.5 Flash",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.5-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.5-live-translate-preview",
+   "register": "model",
+   "name": "Gemini 3.5 Live Translate",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.5-live-translate-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.5-flash-lite",
+   "register": "model",
+   "name": "Gemini 3.5 Flash-Lite",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.5-flash-lite",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.1-flash-lite",
+   "register": "model",
+   "name": "Gemini 3.1 Flash-Lite",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.1-flash-lite",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-omni-flash-preview",
+   "register": "model",
+   "name": "Gemini Omni Flash Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "omni-flash-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.1-pro-preview",
+   "register": "model",
+   "name": "Gemini 3.1 Pro Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.1-pro-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.1-flash-live-preview",
+   "register": "model",
+   "name": "Gemini 3.1 Flash Live Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.1-flash-live-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.1-flash-image",
+   "register": "model",
+   "name": "Gemini 3.1 Flash Image (Nano Banana 2)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.1-flash-image",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.1-flash-lite-image",
+   "register": "model",
+   "name": "Gemini 3.1 Flash Lite Image (Nano Banana 2 Lite)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.1-flash-lite-image",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3.1-flash-tts-preview",
+   "register": "model",
+   "name": "Gemini 3.1 Flash TTS Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3.1-flash-tts-preview",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3-flash-preview",
+   "register": "model",
+   "name": "Gemini 3 Flash Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3-flash-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-3-pro-image",
+   "register": "model",
+   "name": "Gemini 3 Pro Image (Nano Banana Pro)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "3-pro-image",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-pro",
+   "register": "model",
+   "name": "Gemini 2.5 Pro",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-pro",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-flash",
+   "register": "model",
+   "name": "Gemini 2.5 Flash",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-flash-lite",
+   "register": "model",
+   "name": "Gemini 2.5 Flash-Lite",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-flash-lite",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-flash-lite-preview-09-2025",
+   "register": "model",
+   "name": "Gemini 2.5 Flash-Lite Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-flash-lite-preview-09-2025",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-flash-native-audio-preview-12-2025",
+   "register": "model",
+   "name": "Gemini 2.5 Flash Native Audio (Live API)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-flash-native-audio-preview-12-2025",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-flash-image",
+   "register": "model",
+   "name": "Gemini 2.5 Flash Image (Nano Banana)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-flash-image",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-flash-preview-tts",
+   "register": "model",
+   "name": "Gemini 2.5 Flash Preview TTS",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-flash-preview-tts",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-pro-preview-tts",
+   "register": "model",
+   "name": "Gemini 2.5 Pro Preview TTS",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-pro-preview-tts",
+   "input_kind": "text",
+   "output_kind": "audio",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.0-flash",
+   "register": "model",
+   "name": "Gemini 2.0 Flash",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.0-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.0-flash-lite",
+   "register": "model",
+   "name": "Gemini 2.0 Flash-Lite",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.0-flash-lite",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-4.0-fast",
+   "register": "model",
+   "name": "Imagen 4 Fast",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "4.0-fast",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-4.0",
+   "register": "model",
+   "name": "Imagen 4 Standard",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "4.0",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-4.0-ultra",
+   "register": "model",
+   "name": "Imagen 4 Ultra",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "4.0-ultra",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_veo-3.1",
+   "register": "model",
+   "name": "Veo 3.1 Standard",
+   "maker": "prov_google",
+   "family": "veo",
+   "version": "3.1",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_veo-3.1-fast",
+   "register": "model",
+   "name": "Veo 3.1 Fast",
+   "maker": "prov_google",
+   "family": "veo",
+   "version": "3.1-fast",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_veo-3.1-lite",
+   "register": "model",
+   "name": "Veo 3.1 Lite",
+   "maker": "prov_google",
+   "family": "veo",
+   "version": "3.1-lite",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_veo-3",
+   "register": "model",
+   "name": "Veo 3 Standard",
+   "maker": "prov_google",
+   "family": "veo",
+   "version": "3",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_veo-3-fast",
+   "register": "model",
+   "name": "Veo 3 Fast",
+   "maker": "prov_google",
+   "family": "veo",
+   "version": "3-fast",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_veo-2",
+   "register": "model",
+   "name": "Veo 2",
+   "maker": "prov_google",
+   "family": "veo",
+   "version": "2",
+   "input_kind": "prompt",
+   "output_kind": "video",
+   "attrs": {}
+  },
+  {
+   "id": "ent_lyria-3-clip",
+   "register": "model",
+   "name": "Lyria 3 Clip Preview",
+   "maker": "prov_google",
+   "family": "lyria",
+   "version": "3-clip",
+   "input_kind": "prompt",
+   "output_kind": "music",
+   "attrs": {}
+  },
+  {
+   "id": "ent_lyria-3-pro",
+   "register": "model",
+   "name": "Lyria 3 Pro Preview",
+   "maker": "prov_google",
+   "family": "lyria",
+   "version": "3-pro",
+   "input_kind": "prompt",
+   "output_kind": "music",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-embedding-2",
+   "register": "model",
+   "name": "Gemini Embedding 2",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "embedding-2",
+   "input_kind": "text",
+   "output_kind": "embedding vector",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-embedding-001",
+   "register": "model",
+   "name": "Gemini Embedding",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "embedding-001",
+   "input_kind": "text",
+   "output_kind": "embedding vector",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-robotics-er-2-preview",
+   "register": "model",
+   "name": "Gemini Robotics ER 2 Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "robotics-er-2-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-robotics-er-2-streaming-preview",
+   "register": "model",
+   "name": "Gemini Robotics ER 2 Streaming Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "robotics-er-2-streaming-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-robotics-er-1.6-preview",
+   "register": "model",
+   "name": "Gemini Robotics ER 1.6 Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "robotics-er-1.6-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-computer-use-preview-10-2025",
+   "register": "model",
+   "name": "Gemini 2.5 Computer Use Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-computer-use-preview-10-2025",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_web-search",
+   "register": "tool",
+   "name": "Web search",
+   "maker": null,
+   "family": "search",
+   "version": null,
+   "input_kind": "query",
+   "output_kind": "result links",
+   "attrs": {}
+  },
+  {
+   "id": "ent_maps-grounding",
+   "register": "tool",
+   "name": "Grounding with Google Maps (Gemini 3 models)",
+   "maker": null,
+   "family": "maps",
+   "version": "grounding",
+   "input_kind": "query",
+   "output_kind": "grounded places",
+   "attrs": {}
+  },
+  {
+   "id": "ent_file-search",
+   "register": "tool",
+   "name": "File Search (embeddings)",
+   "maker": null,
+   "family": "file",
+   "version": "search",
+   "input_kind": "query",
+   "output_kind": "matching chunks",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-pro-computer-use-preview",
+   "register": "model",
+   "name": "Gemini 2.5 Pro Computer Use-Preview",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-pro-computer-use-preview",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.5-flash-live-api",
+   "register": "model",
+   "name": "Gemini 2.5 Flash Live API",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.5-flash-live-api",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.0-flash-image-generation",
+   "register": "model",
+   "name": "Gemini 2.0 Flash Image Generation",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.0-flash-image-generation",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-2.0-flash-live-api",
+   "register": "model",
+   "name": "Gemini 2.0 Flash Live API",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "2.0-flash-live-api",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-4-ultra",
+   "register": "model",
+   "name": "Imagen 4 Ultra",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "4-ultra",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-4",
+   "register": "model",
+   "name": "Imagen 4",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "4",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-4-fast",
+   "register": "model",
+   "name": "Imagen 4 Fast",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "4-fast",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-3",
+   "register": "model",
+   "name": "Imagen 3",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "3",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-3-fast",
+   "register": "model",
+   "name": "Imagen 3 Fast",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "3-fast",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-2--imagen-1",
+   "register": "model",
+   "name": "Imagen 2 / Imagen 1",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "2--imagen-1",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-visual-captioning",
+   "register": "model",
+   "name": "Imagen Visual Captioning",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "visual-captioning",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-visual-q-a",
+   "register": "model",
+   "name": "Imagen Visual Q&A",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "visual-q-a",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-product-recontext",
+   "register": "model",
+   "name": "Imagen Product Recontext",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "product-recontext",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_imagen-virtual-try-on",
+   "register": "model",
+   "name": "Imagen Virtual Try-On",
+   "maker": "prov_google",
+   "family": "imagen",
+   "version": "virtual-try-on",
+   "input_kind": "prompt",
+   "output_kind": "image",
+   "attrs": {}
+  },
+  {
+   "id": "ent_lyria-3",
+   "register": "model",
+   "name": "Lyria 3",
+   "maker": "prov_google",
+   "family": "lyria",
+   "version": "3",
+   "input_kind": "prompt",
+   "output_kind": "music",
+   "attrs": {}
+  },
+  {
+   "id": "ent_lyria-2",
+   "register": "model",
+   "name": "Lyria 2",
+   "maker": "prov_google",
+   "family": "lyria",
+   "version": "2",
+   "input_kind": "prompt",
+   "output_kind": "music",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-embedding",
+   "register": "model",
+   "name": "Gemini Embedding",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "embedding",
+   "input_kind": "text",
+   "output_kind": "embedding vector",
+   "attrs": {}
+  },
+  {
+   "id": "ent_embeddings-for-text",
+   "register": "model",
+   "name": "Embeddings for Text (excluding Gemini Embedding)",
+   "maker": null,
+   "family": "embeddings",
+   "version": "for-text",
+   "input_kind": "text",
+   "output_kind": "embedding vector",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-embedding-2-multimodal",
+   "register": "model",
+   "name": "Gemini Embedding 2 (Unified Multimodal, Preview)",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "embedding-2-multimodal",
+   "input_kind": "text",
+   "output_kind": "embedding vector",
+   "attrs": {}
+  },
+  {
+   "id": "ent_multimodal-embedding",
+   "register": "model",
+   "name": "Multimodal Embeddings",
+   "maker": "prov_google",
+   "family": "multimodal",
+   "version": "embedding",
+   "input_kind": "text",
+   "output_kind": "embedding vector",
+   "attrs": {}
+  },
+  {
+   "id": "ent_multilingual-e5-small",
+   "register": "model",
+   "name": "multilingual-e5-small",
+   "maker": "prov_intfloat",
+   "family": "multilingual",
+   "version": "e5-small",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_multilingual-e5-large",
+   "register": "model",
+   "name": "multilingual-e5-large",
+   "maker": "prov_intfloat",
+   "family": "multilingual",
+   "version": "e5-large",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-omni-flash",
+   "register": "model",
+   "name": "Gemini Omni Flash",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "omni-flash",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemini-deep-research",
+   "register": "agent",
+   "name": "Gemini Deep Research Agent",
+   "maker": "prov_google",
+   "family": "gemini",
+   "version": "deep-research",
+   "input_kind": "research task",
+   "output_kind": "research report",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gemma-4-26b",
+   "register": "model",
+   "name": "Gemma 4 26B",
+   "maker": "prov_google",
+   "family": "gemma",
+   "version": "4-26b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_codey-for-code-completion",
+   "register": "model",
+   "name": "Codey for Code Completion",
+   "maker": "prov_google",
+   "family": "codey",
+   "version": "for-code-completion",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_translation-llm",
+   "register": "model",
+   "name": "Translation LLM",
+   "maker": "prov_google",
+   "family": "translation",
+   "version": "llm",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_translation-llm-002",
+   "register": "model",
+   "name": "Translation LLM 002",
+   "maker": "prov_google",
+   "family": "translation",
+   "version": "llm-002",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_alphaevolve",
+   "register": "agent",
+   "name": "AlphaEvolve (Gemini 3.1 Pro Preview)",
+   "maker": "prov_google",
+   "family": "alphaevolve",
+   "version": null,
+   "input_kind": "optimization task",
+   "output_kind": "evolved solution",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-opus-5",
+   "register": "model",
+   "name": "Opus 5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-sonnet-5",
+   "register": "model",
+   "name": "Claude Sonnet 5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "sonnet-5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-fable-5",
+   "register": "model",
+   "name": "Claude Fable 5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "fable-5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-opus-4.8",
+   "register": "model",
+   "name": "Claude Opus 4.8",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.8",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-opus-4.7",
+   "register": "model",
+   "name": "Claude Opus 4.7",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.7",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-opus-4.6",
+   "register": "model",
+   "name": "Claude Opus 4.6",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.6",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-opus-4.5",
+   "register": "model",
+   "name": "Claude Opus 4.5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "opus-4.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-sonnet-4.6",
+   "register": "model",
+   "name": "Claude Sonnet 4.6",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "sonnet-4.6",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-sonnet-4.5",
+   "register": "model",
+   "name": "Claude Sonnet 4.5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "sonnet-4.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_claude-haiku-4.5",
+   "register": "model",
+   "name": "Claude Haiku 4.5",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "haiku-4.5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_grok-4.20-reasoning",
+   "register": "model",
+   "name": "Grok 4.20 Reasoning",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4.20-reasoning",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_grok-4.20-non-reasoning",
+   "register": "model",
+   "name": "Grok 4.20 Non-Reasoning",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4.20-non-reasoning",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_grok-4.3",
+   "register": "model",
+   "name": "Grok 4.3",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4.3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_grok-4.1-fast-reasoning",
+   "register": "model",
+   "name": "Grok 4.1 Fast Reasoning",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4.1-fast-reasoning",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_grok-4.1-fast-non-reasoning",
+   "register": "model",
+   "name": "Grok 4.1 Fast Non-Reasoning",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4.1-fast-non-reasoning",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_deepseek-v3.1",
+   "register": "model",
+   "name": "DeepSeek-V3.1",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v3.1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_deepseek-v3.2",
+   "register": "model",
+   "name": "DeepSeek-V3.2",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v3.2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_deepseek-r1-0528",
+   "register": "model",
+   "name": "DeepSeek-R1 (0528)",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "r1-0528",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_deepseek-ocr",
+   "register": "model",
+   "name": "DeepSeek-OCR",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "ocr",
+   "input_kind": "document page",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_minimax-m2",
+   "register": "model",
+   "name": "MiniMax-M2",
+   "maker": "prov_minimax",
+   "family": "minimax",
+   "version": "m2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_kimi-k2-thinking",
+   "register": "model",
+   "name": "Kimi-K2-Thinking",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k2-thinking",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3-next-80b-thinking",
+   "register": "model",
+   "name": "Qwen3-Next-80B-Thinking",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-next-80b-thinking",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3-next-80b-instruct",
+   "register": "model",
+   "name": "Qwen3-Next-80B-Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-next-80b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3-coder-480b-a35b-instruct",
+   "register": "model",
+   "name": "Qwen3-Coder-480B-A35B-Instruct",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-coder-480b-a35b-instruct",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_qwen3-235b-a22b-instruct-2507",
+   "register": "model",
+   "name": "Qwen3-235B-A22B-Instruct-2507",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-235b-a22b-instruct-2507",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-4.7",
+   "register": "model",
+   "name": "GLM-4.7",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.7",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_glm-5",
+   "register": "model",
+   "name": "GLM-5",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "5",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-oss-120b",
+   "register": "model",
+   "name": "gpt-oss-120b",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "oss-120b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_gpt-oss-20b",
+   "register": "model",
+   "name": "gpt-oss-20b",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "oss-20b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_llama-3.3-70b",
+   "register": "model",
+   "name": "Llama 3.3 70B",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.3-70b",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_llama-4-scout",
+   "register": "model",
+   "name": "Llama 4 Scout",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "4-scout",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_llama-4-maverick",
+   "register": "model",
+   "name": "Llama 4 Maverick",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "4-maverick",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_mistral-ocr-2505",
+   "register": "model",
+   "name": "Mistral OCR (25.05)",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "ocr-2505",
+   "input_kind": "document page",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_mistral-medium-3",
+   "register": "model",
+   "name": "Mistral Medium 3",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "medium-3",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_mistral-small-3.1",
+   "register": "model",
+   "name": "Mistral Small 3.1 (25.03)",
+   "maker": "prov_mistral",
+   "family": "mistral",
+   "version": "small-3.1",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_codestral-2",
+   "register": "model",
+   "name": "Codestral 2",
+   "maker": "prov_mistral",
+   "family": "codestral",
+   "version": "2",
+   "input_kind": "text",
+   "output_kind": "text",
+   "attrs": {}
+  },
+  {
+   "id": "ent_data-grounding",
+   "register": "tool",
+   "name": "Grounding with your data",
+   "maker": null,
+   "family": "data",
+   "version": "grounding",
+   "input_kind": "query + corpus",
+   "output_kind": "grounded snippets",
+   "attrs": {}
+  }
+ ],
+ "aliases": [
+  {
+   "source": "prov_google",
+   "alias": "gemini-3.7-flash",
+   "entity": "ent_gemini-3.7-flash"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3.6-flash",
+   "entity": "ent_gemini-3.6-flash"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3.5-flash",
+   "entity": "ent_gemini-3.5-flash"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3.5-live-translate-preview",
+   "entity": "ent_gemini-3.5-live-translate-preview"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3.5-flash-lite",
+   "entity": "ent_gemini-3.5-flash-lite"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3.1-flash-lite",
+   "entity": "ent_gemini-3.1-flash-lite"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-omni-flash-preview",
+   "entity": "ent_gemini-omni-flash-preview"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3.1-pro-preview",
+   "entity": "ent_gemini-3.1-pro-preview"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3.1-flash-live-preview",
+   "entity": "ent_gemini-3.1-flash-live-preview"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3.1-flash-image",
+   "entity": "ent_gemini-3.1-flash-image"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3.1-flash-lite-image",
+   "entity": "ent_gemini-3.1-flash-lite-image"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3.1-flash-tts-preview",
+   "entity": "ent_gemini-3.1-flash-tts-preview"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3-flash-preview",
+   "entity": "ent_gemini-3-flash-preview"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-3-pro-image",
+   "entity": "ent_gemini-3-pro-image"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-2.5-pro",
+   "entity": "ent_gemini-2.5-pro"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-2.5-flash",
+   "entity": "ent_gemini-2.5-flash"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-2.5-flash-lite",
+   "entity": "ent_gemini-2.5-flash-lite"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-2.5-flash-lite-preview-09-2025",
+   "entity": "ent_gemini-2.5-flash-lite-preview-09-2025"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-2.5-flash-native-audio-preview-12-2025",
+   "entity": "ent_gemini-2.5-flash-native-audio-preview-12-2025"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-2.5-flash-image",
+   "entity": "ent_gemini-2.5-flash-image"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-2.5-flash-preview-tts",
+   "entity": "ent_gemini-2.5-flash-preview-tts"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-2.5-pro-preview-tts",
+   "entity": "ent_gemini-2.5-pro-preview-tts"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-2.0-flash",
+   "entity": "ent_gemini-2.0-flash"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-2.0-flash-lite",
+   "entity": "ent_gemini-2.0-flash-lite"
+  },
+  {
+   "source": "prov_google",
+   "alias": "imagen-4.0-fast-generate-001",
+   "entity": "ent_imagen-4.0-fast"
+  },
+  {
+   "source": "prov_google",
+   "alias": "imagen-4.0-generate-001",
+   "entity": "ent_imagen-4.0"
+  },
+  {
+   "source": "prov_google",
+   "alias": "imagen-4.0-ultra-generate-001",
+   "entity": "ent_imagen-4.0-ultra"
+  },
+  {
+   "source": "prov_google",
+   "alias": "veo-3.1-generate-preview",
+   "entity": "ent_veo-3.1"
+  },
+  {
+   "source": "prov_google",
+   "alias": "veo-3.1-fast-generate-preview",
+   "entity": "ent_veo-3.1-fast"
+  },
+  {
+   "source": "prov_google",
+   "alias": "veo-3.1-lite-generate-preview",
+   "entity": "ent_veo-3.1-lite"
+  },
+  {
+   "source": "prov_google",
+   "alias": "veo-3.0-generate-001",
+   "entity": "ent_veo-3"
+  },
+  {
+   "source": "prov_google",
+   "alias": "veo-3.0-fast-generate-001",
+   "entity": "ent_veo-3-fast"
+  },
+  {
+   "source": "prov_google",
+   "alias": "veo-2.0-generate-001",
+   "entity": "ent_veo-2"
+  },
+  {
+   "source": "prov_google",
+   "alias": "lyria-3-clip-preview",
+   "entity": "ent_lyria-3-clip"
+  },
+  {
+   "source": "prov_google",
+   "alias": "lyria-3-pro-preview",
+   "entity": "ent_lyria-3-pro"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-embedding-2",
+   "entity": "ent_gemini-embedding-2"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-embedding-001",
+   "entity": "ent_gemini-embedding-001"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-robotics-er-2-preview",
+   "entity": "ent_gemini-robotics-er-2-preview"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-robotics-er-2-streaming-preview",
+   "entity": "ent_gemini-robotics-er-2-streaming-preview"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-robotics-er-1.6-preview",
+   "entity": "ent_gemini-robotics-er-1.6-preview"
+  },
+  {
+   "source": "prov_google",
+   "alias": "gemini-2.5-computer-use-preview-10-2025",
+   "entity": "ent_gemini-2.5-computer-use-preview-10-2025"
+  },
+  {
+   "source": "prov_google",
+   "alias": "grounding-google-search-gemini-3",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_google",
+   "alias": "grounding-google-search-gemini-2.5",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_google",
+   "alias": "grounding-google-maps-gemini-3",
+   "entity": "ent_maps-grounding"
+  },
+  {
+   "source": "prov_google",
+   "alias": "grounding-google-maps-gemini-2.5",
+   "entity": "ent_maps-grounding"
+  },
+  {
+   "source": "prov_google",
+   "alias": "file-search-embeddings",
+   "entity": "ent_file-search"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 3.1 Pro Preview",
+   "entity": "ent_gemini-3.1-pro-preview"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 3.7 Flash",
+   "entity": "ent_gemini-3.7-flash"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 3.6 Flash",
+   "entity": "ent_gemini-3.6-flash"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 3 Flash Preview",
+   "entity": "ent_gemini-3-flash-preview"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 3.5 Flash",
+   "entity": "ent_gemini-3.5-flash"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 3.5 Flash-Lite",
+   "entity": "ent_gemini-3.5-flash-lite"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 3.1 Flash-Lite",
+   "entity": "ent_gemini-3.1-flash-lite"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 3.1 Flash-Lite Image (Nano Banana 2 Lite)",
+   "entity": "ent_gemini-3.1-flash-lite-image"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 3.1 Flash Image (Nano Banana 2)",
+   "entity": "ent_gemini-3.1-flash-image"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 3 Pro Image (Nano Banana Pro)",
+   "entity": "ent_gemini-3-pro-image"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 2.5 Pro",
+   "entity": "ent_gemini-2.5-pro"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 2.5 Pro Computer Use-Preview",
+   "entity": "ent_gemini-2.5-pro-computer-use-preview"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 2.5 Flash",
+   "entity": "ent_gemini-2.5-flash"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 2.5 Flash Image",
+   "entity": "ent_gemini-2.5-flash-image"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 2.5 Flash Live API",
+   "entity": "ent_gemini-2.5-flash-live-api"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 2.5 Flash Lite",
+   "entity": "ent_gemini-2.5-flash-lite"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 2.0 Flash",
+   "entity": "ent_gemini-2.0-flash"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 2.0 Flash Image Generation",
+   "entity": "ent_gemini-2.0-flash-image-generation"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 2.0 Flash Live API",
+   "entity": "ent_gemini-2.0-flash-live-api"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini 2.0 Flash Lite",
+   "entity": "ent_gemini-2.0-flash-lite"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Imagen 4 Ultra",
+   "entity": "ent_imagen-4-ultra"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Imagen 4",
+   "entity": "ent_imagen-4"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Imagen 4 Fast",
+   "entity": "ent_imagen-4-fast"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Imagen 3",
+   "entity": "ent_imagen-3"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Imagen 3 Fast",
+   "entity": "ent_imagen-3-fast"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Imagen 2, Imagen 1",
+   "entity": "ent_imagen-2--imagen-1"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Imagen Visual Captioning",
+   "entity": "ent_imagen-visual-captioning"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Imagen Visual Q&A",
+   "entity": "ent_imagen-visual-q-a"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Imagen Product Recontext",
+   "entity": "ent_imagen-product-recontext"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Imagen Virtual Try-On",
+   "entity": "ent_imagen-virtual-try-on"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Veo 3.1",
+   "entity": "ent_veo-3.1"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Veo 3.1 Fast",
+   "entity": "ent_veo-3.1-fast"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Veo 3.1 Lite",
+   "entity": "ent_veo-3.1-lite"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Veo 3",
+   "entity": "ent_veo-3"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Veo 3 Fast",
+   "entity": "ent_veo-3-fast"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Veo 2",
+   "entity": "ent_veo-2"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Lyria 3 Pro",
+   "entity": "ent_lyria-3-pro"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Lyria 3",
+   "entity": "ent_lyria-3"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Lyria 2",
+   "entity": "ent_lyria-2"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini Embedding",
+   "entity": "ent_gemini-embedding"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Embeddings for Text (excluding Gemini Embedding)",
+   "entity": "ent_embeddings-for-text"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini Embedding 2 (Unified Multimodal, Preview)",
+   "entity": "ent_gemini-embedding-2-multimodal"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "multimodalembedding",
+   "entity": "ent_multimodal-embedding"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "multilingual-e5-small",
+   "entity": "ent_multilingual-e5-small"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "multilingual-e5-large",
+   "entity": "ent_multilingual-e5-large"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini Omni Flash",
+   "entity": "ent_gemini-omni-flash"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemini Deep Research Agent",
+   "entity": "ent_gemini-deep-research"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Gemma 4 26B",
+   "entity": "ent_gemma-4-26b"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Codey for Code Completion",
+   "entity": "ent_codey-for-code-completion"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "LLM (Translation)",
+   "entity": "ent_translation-llm"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Translation LLM 002",
+   "entity": "ent_translation-llm-002"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "AlphaEvolve (Gemini 3.1 Pro Preview)",
+   "entity": "ent_alphaevolve"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "AlphaEvolve (Gemini 3.5 Flash)",
+   "entity": "ent_alphaevolve"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Opus 5",
+   "entity": "ent_claude-opus-5"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Claude Sonnet 5",
+   "entity": "ent_claude-sonnet-5"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Claude Fable 5",
+   "entity": "ent_claude-fable-5"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Claude Opus 4.8",
+   "entity": "ent_claude-opus-4.8"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Claude Opus 4.7",
+   "entity": "ent_claude-opus-4.7"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Claude Opus 4.6",
+   "entity": "ent_claude-opus-4.6"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Claude Opus 4.5",
+   "entity": "ent_claude-opus-4.5"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Claude Sonnet 4.6",
+   "entity": "ent_claude-sonnet-4.6"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Claude Sonnet 4.5",
+   "entity": "ent_claude-sonnet-4.5"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Claude Haiku 4.5",
+   "entity": "ent_claude-haiku-4.5"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Claude Web Search Request",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Grok 4.20 Reasoning",
+   "entity": "ent_grok-4.20-reasoning"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Grok 4.20 Non-Reasoning",
+   "entity": "ent_grok-4.20-non-reasoning"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Grok 4.3",
+   "entity": "ent_grok-4.3"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Grok 4.1 Fast Reasoning",
+   "entity": "ent_grok-4.1-fast-reasoning"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Grok 4.1 Fast Non-Reasoning",
+   "entity": "ent_grok-4.1-fast-non-reasoning"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "DeepSeek-V3.1",
+   "entity": "ent_deepseek-v3.1"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "DeepSeek-V3.2",
+   "entity": "ent_deepseek-v3.2"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "DeepSeek-R1 (0528)",
+   "entity": "ent_deepseek-r1-0528"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "DeepSeek-OCR",
+   "entity": "ent_deepseek-ocr"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "MiniMax-M2",
+   "entity": "ent_minimax-m2"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Kimi-K2-Thinking",
+   "entity": "ent_kimi-k2-thinking"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Qwen3-Next-80B-Thinking",
+   "entity": "ent_qwen3-next-80b-thinking"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Qwen3-Next-80B-Instruct",
+   "entity": "ent_qwen3-next-80b-instruct"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Qwen3-Coder-480B-A35B-Instruct",
+   "entity": "ent_qwen3-coder-480b-a35b-instruct"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Qwen3-235B-A22B-Instruct-2507",
+   "entity": "ent_qwen3-235b-a22b-instruct-2507"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "GLM-4.7",
+   "entity": "ent_glm-4.7"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "GLM-5",
+   "entity": "ent_glm-5"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "gpt-oss-120b",
+   "entity": "ent_gpt-oss-120b"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "gpt-oss-20b",
+   "entity": "ent_gpt-oss-20b"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Llama 3.3 70B",
+   "entity": "ent_llama-3.3-70b"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Llama 4 Scout",
+   "entity": "ent_llama-4-scout"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Llama 4 Maverick",
+   "entity": "ent_llama-4-maverick"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Mistral OCR (25.05)",
+   "entity": "ent_mistral-ocr-2505"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Mistral Medium 3",
+   "entity": "ent_mistral-medium-3"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Mistral Small 3.1 (25.03)",
+   "entity": "ent_mistral-small-3.1"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Codestral 2",
+   "entity": "ent_codestral-2"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Grounding with Google Search (Gemini 3)",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Grounding with Google Search (Gemini 2.x)",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Web Grounding for Enterprise (Gemini 2.x)",
+   "entity": "ent_web-search"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Grounding with your data",
+   "entity": "ent_data-grounding"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Grounding with Google Maps (Gemini 3)",
+   "entity": "ent_maps-grounding"
+  },
+  {
+   "source": "prov_vertex",
+   "alias": "Grounding with Google Maps (Gemini 2.x)",
+   "entity": "ent_maps-grounding"
+  }
+ ],
+ "offerings": [
+  {
+   "entity": "ent_gemini-3.7-flash",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.7-flash",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.375
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.875
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0375
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.6-flash",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.6-flash",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.375
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.875
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0375
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.5-flash",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 9.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.5-flash",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.5-live-translate-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 21.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.5-flash-lite",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.5-flash-lite",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-lite",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.025
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-lite",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-omni-flash-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 9.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-pro-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-pro-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-live-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-image",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.067
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-image",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.034
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-lite-image",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0336
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-lite-image",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0168
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-tts-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 20.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-tts-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3-flash-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3-flash-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3-pro-image",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.0
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.134
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3-pro-image",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.0
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.067
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-pro",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-pro",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.625
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-lite",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-lite",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-lite-preview-09-2025",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-lite-preview-09-2025",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-native-audio-preview-12-2025",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-image",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.039
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-image",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0195
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-preview-tts",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-preview-tts",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-pro-preview-tts",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 20.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-pro-preview-tts",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.0-flash",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.025
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.0-flash",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.025
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.0-flash-lite",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.0-flash-lite",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0375
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-4.0-fast",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-4.0",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-4.0-ultra",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-3.1",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-3.1-fast",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-3.1-lite",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-3",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-3-fast",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-2",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.35
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_lyria-3-clip",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "result",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_lyria-3-pro",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "result",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.08
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-embedding-2",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-embedding-2",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-embedding-001",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-embedding-001",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-robotics-er-2-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-robotics-er-2-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-robotics-er-2-streaming-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-robotics-er-1.6-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-robotics-er-1.6-preview",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-computer-use-preview-10-2025",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "gemini-3",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.014
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "gemini-2.x",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.035
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_maps-grounding",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "gemini-3",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.014
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_maps-grounding",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "gemini-2.x",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.025
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_file-search",
+   "provider": "prov_google",
+   "way": "api",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-pro-preview",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-pro-preview",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.7-flash",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.7-flash",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.375
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.875
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0375
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.6-flash",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.6-flash",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.375
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.875
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0375
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3-flash-preview",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3-flash-preview",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.5-flash",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 9.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.5-flash",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.5-flash-lite",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.5-flash-lite",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.015
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-lite",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.025
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-lite",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-lite-image",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.034
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-lite-image",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.75
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-image",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.067
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3.1-flash-image",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3-pro-image",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.134
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-3-pro-image",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-pro",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-pro",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.625
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-pro-computer-use-preview",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-image",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.039
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-image",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-live-api",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-lite",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.5-flash-lite",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.0-flash",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.0-flash",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.0-flash-image-generation",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.0-flash-live-api",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.0-flash-lite",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.075
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-2.0-flash-lite",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0375
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-4-ultra",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-4",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-4-fast",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-3",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-3-fast",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-2--imagen-1",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-visual-captioning",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0015
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-visual-q-a",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0015
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-product-recontext",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.12
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_imagen-virtual-try-on",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-3.1",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-3.1-fast",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-3.1-lite",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-3",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-3-fast",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_veo-2",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "second",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_lyria-3-pro",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "result",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.08
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_lyria-3",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "result",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.04
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_lyria-2",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "result",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-embedding",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-embedding",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.12
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_embeddings-for-text",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.025
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_embeddings-for-text",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.02
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-embedding-2-multimodal",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-embedding-2-multimodal",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_multimodal-embedding",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "image",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0001
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_multilingual-e5-small",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.015
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_multilingual-e5-small",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0075
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_multilingual-e5-large",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.025
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_multilingual-e5-large",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-omni-flash",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 9.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemini-deep-research",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gemma-4-26b",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.015
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_codey-for-code-completion",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_translation-llm",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1e-05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_translation-llm-002",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "character",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2e-05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_alphaevolve",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "gemini-3.1-pro",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 36.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_alphaevolve",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "gemini-3.5-flash",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 4.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 27.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-fable-5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 10.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 50.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-fable-5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.8",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.8",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.7",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.7",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.6",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.6",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 25.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 6.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-opus-4.5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 12.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.6",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.6",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.88
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 15.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.75
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-sonnet-4.5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 7.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.88
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-haiku-4.5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.0
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_claude-haiku-4.5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    },
+    {
+     "dimension": "mtok_cache_write",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.625
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.01
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_grok-4.20-reasoning",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_grok-4.20-non-reasoning",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_grok-4.3",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_grok-4.1-fast-reasoning",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_grok-4.1-fast-non-reasoning",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.2
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.05
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v3.1",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.7
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v3.1",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.85
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v3.2",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.56
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.68
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.056
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-v3.2",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.28
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.84
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-r1-0528",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.35
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 5.4
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-r1-0528",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.675
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.7
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_deepseek-ocr",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_minimax-m2",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.03
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_kimi-k2-thinking",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.5
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-next-80b-thinking",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-next-80b-instruct",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.15
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.2
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-coder-480b-a35b-instruct",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.22
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.8
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.022
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-coder-480b-a35b-instruct",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.11
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.9
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-235b-a22b-instruct-2507",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.22
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.88
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_qwen3-235b-a22b-instruct-2507",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.11
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.44
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-4.7",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.6
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.06
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_glm-5",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.0
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 3.2
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-oss-120b",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.09
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.36
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-oss-120b",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.045
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.18
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-oss-20b",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.07
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_cache_read",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.007
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_gpt-oss-20b",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.035
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.3-70b",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.72
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.72
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-3.3-70b",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.36
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.36
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-4-scout",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.25
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.7
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-4-scout",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.125
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.35
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-4-maverick",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.35
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 1.15
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_llama-4-maverick",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "batch",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.175
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.575
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-ocr-2505",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "page",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0005
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-medium-3",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.4
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 2.0
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_mistral-small-3.1",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.1
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_codestral-2",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "mtok_in",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.3
+    },
+    {
+     "dimension": "mtok_out",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.9
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "gemini-3",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.014
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "gemini-2.x",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.035
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_web-search",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "gemini-2.x enterprise",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.045
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_data-grounding",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.0025
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_maps-grounding",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "gemini-3",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.014
+    }
+   ],
+   "metrics": []
+  },
+  {
+   "entity": "ent_maps-grounding",
+   "provider": "prov_vertex",
+   "way": "cloud",
+   "variant": "gemini-2.x",
+   "components": [
+    {
+     "dimension": "call",
+     "source_url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+     "taken_at": "2026-08-24",
+     "usd_per_unit": 0.025
+    }
+   ],
+   "metrics": []
+  }
+ ]
+}

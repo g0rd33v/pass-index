@@ -1,0 +1,1001 @@
+{
+ "providers": [
+  {
+   "id": "prov_writer",
+   "name": "Writer",
+   "url": "https://writer.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_cohere",
+   "name": "Cohere",
+   "url": "https://cohere.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_xai",
+   "name": "xAI",
+   "url": "https://x.ai",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_meta",
+   "name": "Meta",
+   "url": "https://ai.meta.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_minimax",
+   "name": "MiniMax",
+   "url": "https://minimax.io",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_nvidia",
+   "name": "NVIDIA",
+   "url": "https://nvidia.com",
+   "kind": "vendor"
+  },
+  {
+   "id": "prov_microsoft",
+   "name": "Microsoft",
+   "url": "https://microsoft.com/ai",
+   "kind": "vendor"
+  }
+ ],
+ "entities": [
+  {
+   "id": "ent_claude-2.0",
+   "register": "model",
+   "name": "Claude 2.0",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "2.0",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_claude-2.1",
+   "register": "model",
+   "name": "Claude 2.1",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "2.1",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_claude-3-haiku",
+   "register": "model",
+   "name": "Claude 3 Haiku",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "3-haiku",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_claude-3-sonnet",
+   "register": "model",
+   "name": "Claude 3 Sonnet",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "3-sonnet",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_claude-3-opus",
+   "register": "model",
+   "name": "Claude 3 Opus",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "3-opus",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_claude-3.5-sonnet",
+   "register": "model",
+   "name": "Claude 3.5 Sonnet",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "3.5-sonnet",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_claude-3.7-sonnet",
+   "register": "model",
+   "name": "Claude 3.7 Sonnet",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "3.7-sonnet",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_claude-instant",
+   "register": "model",
+   "name": "Claude Instant",
+   "maker": "prov_anthropic",
+   "family": "claude",
+   "version": "instant",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_glm-4.7-flash",
+   "register": "model",
+   "name": "GLM-4.7 Flash",
+   "maker": "prov_zhipu",
+   "family": "glm",
+   "version": "4.7-flash",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_llama-3-70b",
+   "register": "model",
+   "name": "Llama 3 70B",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3-70b",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_llama-3-8b",
+   "register": "model",
+   "name": "Llama 3 8B",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3-8b",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_llama-3.1-405b",
+   "register": "model",
+   "name": "Llama 3.1 405B",
+   "maker": "prov_meta",
+   "family": "llama",
+   "version": "3.1-405b",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_minimax-m2.1",
+   "register": "model",
+   "name": "MiniMax M2.1",
+   "maker": "prov_minimax",
+   "family": "minimax",
+   "version": "m2.1",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_minimax-m2.5",
+   "register": "model",
+   "name": "MiniMax M2.5",
+   "maker": "prov_minimax",
+   "family": "minimax",
+   "version": "m2.5",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_nemotron-3-super-120b",
+   "register": "model",
+   "name": "Nemotron 3 Super 120B A12B",
+   "maker": "prov_nvidia",
+   "family": "nemotron",
+   "version": "3-super-120b",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_qwen3-coder-next",
+   "register": "model",
+   "name": "Qwen3 Coder Next",
+   "maker": "prov_alibaba",
+   "family": "qwen",
+   "version": "3-coder-next",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_palmyra-vision-7b",
+   "register": "model",
+   "name": "Palmyra Vision 7B",
+   "maker": "prov_writer",
+   "family": "palmyra",
+   "version": "vision-7b",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_deepseek-v3",
+   "register": "model",
+   "name": "DeepSeek-V3",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v3",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_deepseek-v3-0324",
+   "register": "model",
+   "name": "DeepSeek-V3 0324",
+   "maker": "prov_deepseek",
+   "family": "deepseek",
+   "version": "v3-0324",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_grok-3",
+   "register": "model",
+   "name": "Grok 3",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "3",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_grok-3-mini",
+   "register": "model",
+   "name": "Grok 3 Mini",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "3-mini",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_grok-4",
+   "register": "model",
+   "name": "Grok 4",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_grok-4-fast",
+   "register": "model",
+   "name": "Grok 4 Fast",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4-fast",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_grok-4.1",
+   "register": "model",
+   "name": "Grok 4.1",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4.1",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_grok-4.2",
+   "register": "model",
+   "name": "Grok 4.2",
+   "maker": "prov_xai",
+   "family": "grok",
+   "version": "4.2",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_command-a",
+   "register": "model",
+   "name": "Command A",
+   "maker": "prov_cohere",
+   "family": "command",
+   "version": "a",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_command-a-plus",
+   "register": "model",
+   "name": "Command A Plus",
+   "maker": "prov_cohere",
+   "family": "command",
+   "version": "a-plus",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_kimi-k2.5-thinking",
+   "register": "model",
+   "name": "Kimi K2.5 Thinking",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k2.5-thinking",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_kimi-k2.6-thinking",
+   "register": "model",
+   "name": "Kimi K2.6 Thinking",
+   "maker": "prov_moonshot",
+   "family": "kimi",
+   "version": "k2.6-thinking",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_mai-ds-r1",
+   "register": "model",
+   "name": "MAI-DS-R1",
+   "maker": "prov_microsoft",
+   "family": "mai",
+   "version": "ds-r1",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_gpt-5-chat",
+   "register": "model",
+   "name": "GPT-5 Chat",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5-chat",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_gpt-5.1-chat",
+   "register": "model",
+   "name": "GPT-5.1 Chat",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.1-chat",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_gpt-5.2-chat",
+   "register": "model",
+   "name": "GPT-5.2 Chat",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.2-chat",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_gpt-5.2-codex",
+   "register": "model",
+   "name": "GPT-5.2 Codex",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.2-codex",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_gpt-5.3-chat",
+   "register": "model",
+   "name": "GPT-5.3 Chat",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.3-chat",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_gpt-5.3-codex",
+   "register": "model",
+   "name": "GPT-5.3 Codex",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.3-codex",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_gpt-5.1-codex",
+   "register": "model",
+   "name": "GPT-5.1 Codex",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.1-codex",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_gpt-5.1-codex-max",
+   "register": "model",
+   "name": "GPT-5.1 Codex Max",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.1-codex-max",
+   "input_kind": "text",
+   "output_kind": "text"
+  },
+  {
+   "id": "ent_gpt-5.1-codex-mini",
+   "register": "model",
+   "name": "GPT-5.1 Codex Mini",
+   "maker": "prov_openai",
+   "family": "gpt",
+   "version": "5.1-codex-mini",
+   "input_kind": "text",
+   "output_kind": "text"
+  }
+ ],
+ "aliases": [
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude 2.0",
+   "entity": "ent_claude-2.0"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude 2.1",
+   "entity": "ent_claude-2.1"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude 3 Haiku",
+   "entity": "ent_claude-3-haiku"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude 3 Sonnet",
+   "entity": "ent_claude-3-sonnet"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude Instant",
+   "entity": "ent_claude-instant"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "DeepSeek v3.2",
+   "entity": "ent_deepseek-v3.2"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Devstral",
+   "entity": "ent_devstral-2"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "GLM 4.7",
+   "entity": "ent_glm-4.7"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "GLM 4.7 Flash",
+   "entity": "ent_glm-4.7-flash"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "GLM 5",
+   "entity": "ent_glm-5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Kimi K2.5",
+   "entity": "ent_kimi-k2.5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 3 70B",
+   "entity": "ent_llama-3-70b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 3 8B",
+   "entity": "ent_llama-3-8b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 3.1 405B",
+   "entity": "ent_llama-3.1-405b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 3.1 70B Latency Optimized",
+   "entity": "ent_llama-3.1-70b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 3.2 11B",
+   "entity": "ent_llama-3.2-11b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 3.2 1B",
+   "entity": "ent_llama-3.2-1b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 3.2 3B",
+   "entity": "ent_llama-3.2-3b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 3.2 90B",
+   "entity": "ent_llama-3.2-90b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "MiniMax M2.5",
+   "entity": "ent_minimax-m2.5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Minimax M2.1",
+   "entity": "ent_minimax-m2.1"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Mistral 7B",
+   "entity": "ent_mistral-7b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Mistral Large",
+   "entity": "ent_mistral-large-2402"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Mixtral 8x7B",
+   "entity": "ent_mixtral-8x7b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "NVIDIA Nemotron 3 Super 120B A12B",
+   "entity": "ent_nemotron-3-super-120b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Nova 2.0 Lite",
+   "entity": "ent_nova-2-lite"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Nova Lite",
+   "entity": "ent_nova-lite"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Nova Micro",
+   "entity": "ent_nova-micro"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Nova Premier",
+   "entity": "ent_nova-premier"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Nova Pro",
+   "entity": "ent_nova-pro"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Nova Pro Latency Optimized",
+   "entity": "ent_nova-pro"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Pixtral Large 25.02",
+   "entity": "ent_pixtral-large"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Qwen3 Coder Next",
+   "entity": "ent_qwen3-coder-next"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "R1",
+   "entity": "ent_deepseek-r1"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Writer Palmyra Vision 7B",
+   "entity": "ent_palmyra-vision-7b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude Opus 4.5",
+   "entity": "ent_claude-opus-4.5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude Sonnet 4.5",
+   "entity": "ent_claude-sonnet-4.5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude Haiku 4.5",
+   "entity": "ent_claude-haiku-4.5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude Sonnet 4",
+   "entity": "ent_claude-sonnet-4"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude Opus 4.1",
+   "entity": "ent_claude-opus-4.1"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude Opus 4",
+   "entity": "ent_claude-opus-4"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude 3.5 Haiku",
+   "entity": "ent_claude-haiku-3.5"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude 3.5 Sonnet",
+   "entity": "ent_claude-3.5-sonnet"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude 3.7 Sonnet",
+   "entity": "ent_claude-3.7-sonnet"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Claude 3 Opus",
+   "entity": "ent_claude-3-opus"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 4 Maverick 17B",
+   "entity": "ent_llama-4-maverick"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 4 Scout 17B",
+   "entity": "ent_llama-4-scout"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 3.3 70B",
+   "entity": "ent_llama-3.3-70b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 3.1 8B",
+   "entity": "ent_llama-3.1-8b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Llama 3.1 70B",
+   "entity": "ent_llama-3.1-70b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Mistral Small",
+   "entity": "ent_mistral-small-2402"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Mistral Large 3",
+   "entity": "ent_mistral-large-3"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Magistral Small 1.2",
+   "entity": "ent_magistral-small-1.2"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Voxtral Mini 1.0",
+   "entity": "ent_voxtral-mini-3b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Voxtral Small 1.0",
+   "entity": "ent_voxtral-small-24b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Ministral 3B 3.0",
+   "entity": "ent_ministral-3-3b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Ministral 8B 3.0",
+   "entity": "ent_ministral-3-8b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Ministral 14B 3.0",
+   "entity": "ent_ministral-3-14b"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "DeepSeek-R1",
+   "entity": "ent_deepseek-r1"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Nova Sonic",
+   "entity": "ent_nova-sonic"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Nova 2 Sonic",
+   "entity": "ent_nova-2-sonic"
+  },
+  {
+   "source": "prov_bedrock",
+   "alias": "Nova Reel",
+   "entity": "ent_nova-reel"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.6 sol",
+   "entity": "ent_gpt-5.6-sol"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.6 luna",
+   "entity": "ent_gpt-5.6-luna"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.6 terra",
+   "entity": "ent_gpt-5.6-terra"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.5",
+   "entity": "ent_gpt-5.5"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.4",
+   "entity": "ent_gpt-5.4"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.4 mini",
+   "entity": "ent_gpt-5.4-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.4 nano",
+   "entity": "ent_gpt-5.4-nano"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.4 pro",
+   "entity": "ent_gpt-5.4-pro"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.3 chat",
+   "entity": "ent_gpt-5.3-chat"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.3 codex",
+   "entity": "ent_gpt-5.3-codex"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.2 chat 0210",
+   "entity": "ent_gpt-5.2-chat"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.2 codex",
+   "entity": "ent_gpt-5.2-codex"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.1 codex",
+   "entity": "ent_gpt-5.1-codex"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.1 codex max",
+   "entity": "ent_gpt-5.1-codex-max"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "5.1 codex mini",
+   "entity": "ent_gpt-5.1-codex-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "GPT 5",
+   "entity": "ent_gpt-5"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "GPT 5 Chat",
+   "entity": "ent_gpt-5-chat"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "GPT 5 Mini",
+   "entity": "ent_gpt-5-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "GPT 5 Nano",
+   "entity": "ent_gpt-5-nano"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "GPT 5.1",
+   "entity": "ent_gpt-5.1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "GPT 5.2",
+   "entity": "ent_gpt-5.2"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "GPT 5.2 chat",
+   "entity": "ent_gpt-5.2-chat"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "GPT 5.2 pro",
+   "entity": "ent_gpt-5.2-pro"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "GPT 5.1 chat",
+   "entity": "ent_gpt-5.1-chat"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 4.1",
+   "entity": "ent_gpt-4.1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 4.1 mini",
+   "entity": "ent_gpt-4.1-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "gpt 4.1 nano",
+   "entity": "ent_gpt-4.1-nano"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Codestral",
+   "entity": "ent_codestral"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Grok 4.1",
+   "entity": "ent_grok-4.1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Grok 4.2",
+   "entity": "ent_grok-4.2"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Grok 4.3",
+   "entity": "ent_grok-4.3"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Grok-3",
+   "entity": "ent_grok-3"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Grok-3 Mini",
+   "entity": "ent_grok-3-mini"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Grok-4",
+   "entity": "ent_grok-4"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Grok4 Fast",
+   "entity": "ent_grok-4-fast"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Command A",
+   "entity": "ent_command-a"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Command A Plus",
+   "entity": "ent_command-a-plus"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "K2 Thinking",
+   "entity": "ent_kimi-k2-thinking"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "K2.5 Thinking",
+   "entity": "ent_kimi-k2.5-thinking"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "K2.6 Thinking",
+   "entity": "ent_kimi-k2.6-thinking"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "K2.7 Code",
+   "entity": "ent_kimi-k2.7-code"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Llama 3.3 70B",
+   "entity": "ent_llama-3.3-70b"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Llama 4 Maverick 17B",
+   "entity": "ent_llama-4-maverick"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "MAI-DS-R1",
+   "entity": "ent_mai-ds-r1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "Large 3",
+   "entity": "ent_mistral-large-3"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "R1",
+   "entity": "ent_deepseek-r1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "V3",
+   "entity": "ent_deepseek-v3"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "V3-0324",
+   "entity": "ent_deepseek-v3-0324"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "V3.1",
+   "entity": "ent_deepseek-v3.1"
+  },
+  {
+   "source": "prov_azure",
+   "alias": "V3.2",
+   "entity": "ent_deepseek-v3.2"
+  }
+ ],
+ "offerings": []
+}

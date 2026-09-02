@@ -1,0 +1,633 @@
+/* Pass Index — one stylesheet, inlined into every page.
+   It is a reference work, so it is set like one: quiet surfaces, one accent,
+   figures in tabular numerals so a column of prices reads down as a column.
+   The page must stay a few kilobytes, and every rule here earns its bytes. */
+
+:root{
+  --paper:#fcfcfb; --sunk:#f4f4f1; --surface:#fff; --line:#e7e7e2; --hair:#f0f0ec;
+  --ink:#16160f; --mid:#5c5c54; --dim:#8a8a80;
+  --accent:#1f6b45; --accent-soft:#e8f2ec; --warm:#8a5a1f;
+  /* The sign-in button is blue on purpose: it leaves the catalogue for the
+     product, and green is what the catalogue uses for its own links. */
+  --cta:#2265b5; --cta-hi:#1c5cab; --cta-lo:#164a8c;
+  --r:10px; --r-lg:14px;
+  --s1:4px; --s2:8px; --s3:12px; --s4:18px; --s5:28px; --s6:44px;
+  --shadow:0 1px 2px rgba(20,20,10,.05), 0 4px 16px -8px rgba(20,20,10,.10);
+}
+/* Dark is the system's choice unless the reader has overruled it, and the
+   reader's choice wins in both directions — hence the same block twice. */
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#101010; --sunk:#171716; --surface:#1a1a19; --line:#2b2b28; --hair:#232321;
+  --ink:#eceae4; --mid:#a6a49c; --dim:#787672;
+  --accent:#6fc79b; --accent-soft:#16241d; --warm:#d0a463;
+  --cta:#3987e5; --cta-hi:#5598e7; --cta-lo:#2c6fc4;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 28px -14px rgba(0,0,0,.8);
+}}
+:root[data-theme="dark"]{
+  --paper:#101010; --sunk:#171716; --surface:#1a1a19; --line:#2b2b28; --hair:#232321;
+  --ink:#eceae4; --mid:#a6a49c; --dim:#787672;
+  --accent:#6fc79b; --accent-soft:#16241d; --warm:#d0a463;
+  --cta:#3987e5; --cta-hi:#5598e7; --cta-lo:#2c6fc4;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 28px -14px rgba(0,0,0,.8);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:16px/1.55 ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+       "Helvetica Neue",Arial,sans-serif;
+  font-feature-settings:"kern" 1;text-rendering:optimizeLegibility}
+h1,h2,h3,p,ul,ol{margin:0}
+h1,.lede,p,li{overflow-wrap:break-word}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.num,.pr,.fig b,.figs b,.score,.place{font-variant-numeric:tabular-nums lining-nums}
+
+/* ---- frame ---------------------------------------------------------- */
+header{position:relative;display:flex;align-items:baseline;gap:var(--s2);
+  padding:var(--s4) var(--s4) var(--s3);max-width:940px;margin:0 auto}
+.brand{font-weight:680;font-size:18px;letter-spacing:-.022em;color:var(--ink)}
+.brand:hover{text-decoration:none;color:var(--accent)}
+.sub{color:var(--dim);font-size:12.5px;letter-spacing:.01em}
+/* Sign in sits at the far right of every page. Pass has one door for both
+   signing in and signing up, so the address carries where the reader came
+   from — the catalogue cannot tell the two apart, and neither can Pass. */
+.cta{margin-left:auto;align-self:center;flex:none;background:var(--cta);
+  color:#fff;font-size:13px;font-weight:600;letter-spacing:-.008em;
+  padding:7px 14px;border-radius:7px;white-space:nowrap;
+  transition:background .12s ease}
+.cta:hover{text-decoration:none;color:#fff;background:var(--cta-hi)}
+.cta:active{background:var(--cta-lo)}
+main{max-width:940px;margin:0 auto;padding:var(--s2) var(--s4) var(--s6)}
+footer{max-width:940px;margin:0 auto;padding:var(--s4);border-top:1px solid var(--hair);
+  color:var(--dim);font-size:12.5px;display:flex;gap:var(--s3);flex-wrap:wrap;align-items:center}
+footer a{color:var(--mid)}
+footer .read{margin-left:auto;color:var(--dim)}
+.read{color:var(--dim);font-size:12.5px;margin-top:var(--s3)}
+#theme{margin-left:auto;display:inline-flex;align-items:center;justify-content:center;
+  border:1px solid var(--line);background:var(--surface);color:var(--mid);
+  border-radius:99px;width:28px;height:28px;padding:0;
+  font:inherit;cursor:pointer;transition:border-color .12s,color .12s}
+#theme:hover{border-color:var(--accent);color:var(--accent)}
+#theme svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;
+  stroke-linecap:round;stroke-linejoin:round}
+
+/* ---- coverage -------------------------------------------------------- */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:var(--r-lg);
+  overflow:hidden;margin-top:var(--s3)}
+.facts div{background:var(--paper);padding:var(--s3) var(--s4)}
+.facts b{display:block;font-size:22px;font-weight:680;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums lining-nums}
+.facts span{color:var(--dim);font-size:12px}
+.gaps li{display:flex;gap:var(--s3);padding:8px 0;border-bottom:1px solid var(--hair);
+  align-items:baseline}
+.gaps li:last-child{border-bottom:0}
+.gaps b{font-variant-numeric:tabular-nums;min-width:4ch;text-align:right}
+.gaps span{color:var(--mid);font-size:14px}
+
+/* ---- the head of a page --------------------------------------------- */
+/* The browsing page needs a heading for what it is, but the list is the
+   thing a reader came for, so it is stated quietly. */
+h1.quiet{font-size:15px;font-weight:600;letter-spacing:-.01em;color:var(--dim);
+  margin:var(--s3) 0 var(--s2);max-width:940px;padding:0 var(--s4)}
+h1{font-size:clamp(28px,4.2vw,38px);line-height:1.08;letter-spacing:-.032em;
+  font-weight:700;margin:var(--s3) 0 var(--s2)}
+.lede{font-size:clamp(16px,2.1vw,18.5px);line-height:1.5;color:var(--mid);
+  max-width:60ch;margin-bottom:var(--s3)}
+.io{color:var(--dim);font-size:13px;letter-spacing:.005em}
+/* What the list is, for someone who arrived from a search result. */
+.intro{font-size:15.5px;line-height:1.6;color:var(--mid);max-width:64ch;margin-top:var(--s3)}
+.intro + .intro{margin-top:var(--s2)}
+.io a{color:var(--mid)}
+h2{font-size:11.5px;text-transform:uppercase;letter-spacing:.11em;color:var(--dim);
+  font-weight:650;margin:var(--s6) 0 var(--s3);display:flex;align-items:baseline;gap:var(--s2)}
+h2 .n{color:var(--ink);font-weight:600;letter-spacing:0;text-transform:none;font-size:13px}
+
+/* ---- the headline figure -------------------------------------------- */
+.hero{margin:var(--s4) 0 var(--s5)}
+.hero .big{font-size:clamp(26px,4vw,34px);font-weight:680;letter-spacing:-.03em;
+  line-height:1.1;font-variant-numeric:tabular-nums lining-nums}
+.hero .big .arrow{color:var(--dim);font-weight:400;margin:0 .18em}
+.hero .unit{color:var(--dim);font-size:13px;font-weight:400;letter-spacing:.01em;
+  display:block;margin-top:2px}
+.hero .said{color:var(--mid);font-size:13px;margin-top:var(--s3)}
+.hero .said b{color:var(--ink);font-weight:600}
+
+/* a price range across sellers, drawn once */
+.range{margin-top:var(--s3)}
+.range .track{position:relative;height:6px;border-radius:99px;
+  background:linear-gradient(90deg,var(--accent-soft),var(--sunk))}
+.range .track i{position:absolute;top:-3px;width:12px;height:12px;border-radius:99px;
+  background:var(--accent);border:2px solid var(--surface);transform:translateX(-50%)}
+.range .ends{display:flex;justify-content:space-between;color:var(--dim);
+  font-size:11.5px;margin-top:5px;font-variant-numeric:tabular-nums}
+
+/* ---- chips ----------------------------------------------------------- */
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:var(--s4)}
+.chip{display:inline-flex;align-items:center;gap:5px;background:var(--sunk);
+  border:1px solid transparent;border-radius:99px;padding:4px 11px;font-size:12.5px;
+  color:var(--mid);line-height:1.3;transition:border-color .12s,color .12s}
+a.chip:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.chip.flat{color:var(--dim)}
+
+/* ---- tables ---------------------------------------------------------- */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 calc(var(--s4) * -1);
+  padding:0 var(--s4)}
+table.grid{width:calc(100% + 20px);min-width:520px;border-collapse:collapse;font-size:14px;margin:0 -10px}
+.grid th:first-child,.grid td:first-child{padding-left:10px}
+.grid th:last-child,.grid td:last-child{padding-right:10px}
+.sortable th button{font:inherit;font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.09em;font-weight:600;color:var(--dim);background:0;border:0;padding:0;
+  cursor:pointer;display:inline-flex;align-items:center;gap:4px}
+.sortable th button:hover{color:var(--ink)}
+.sortable th button.on{color:var(--ink)}
+.sortable th button.on::after{content:"↑";font-size:9px}
+.sortable th button.on[data-desc="1"]::after{content:"↓"}
+.grid th{text-align:left;font-weight:600;color:var(--dim);font-size:10.5px;
+  text-transform:uppercase;letter-spacing:.09em;padding:0 var(--s3) var(--s2) 0;
+  border-bottom:1px solid var(--line);white-space:nowrap}
+.grid td{padding:9px var(--s3) 9px 0;border-bottom:1px solid var(--hair);vertical-align:baseline}
+.grid tbody tr:last-child td{border-bottom:0}
+/* A highlighted row wants a little air at each end, or the eye is thrown
+   to the wall of the tint and back again. */
+.grid tbody tr{transition:background .1s}
+.grid tbody tr:hover{background:var(--sunk)}
+.grid tbody tr:hover td:first-child{border-radius:8px 0 0 8px}
+.grid tbody tr:hover td:last-child{border-radius:0 8px 8px 0}
+.grid td:first-child{font-weight:560;white-space:nowrap}
+.grid td:nth-child(2),.grid td:nth-child(3){white-space:nowrap;color:var(--mid)}
+.figs{white-space:nowrap;text-align:right;width:1%}
+.fig{display:inline-block;margin-left:var(--s3);white-space:nowrap}
+.fig:first-child{margin-left:0}
+.fig .u{color:var(--dim);font-size:11.5px;margin-left:3px}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--dim);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+.cheapest{color:var(--accent);font-weight:650}
+/* Where this seller sits between the cheapest and the dearest on the page.
+   A dot, not a filled bar: a bar that fills as the price rises reads as a
+   score, and the dearest row would look like the best one. */
+.sit{position:relative;display:block;height:3px;border-radius:99px;background:var(--hair);
+  margin-top:7px;min-width:64px;max-width:120px;margin-left:auto}
+.sit i{position:absolute;top:-2.5px;width:8px;height:8px;border-radius:99px;
+  background:var(--mid);transform:translateX(-50%)}
+tr.cheap-row .sit i,.cheapest ~ td .sit i{background:var(--accent)}
+
+/* ---- standings ------------------------------------------------------- */
+.place{font-weight:700;white-space:nowrap;font-size:15px}
+.place .of{display:block;color:var(--dim);font-weight:400;font-size:11px;letter-spacing:.01em}
+.place.top{color:var(--accent)}
+.field{display:block;height:3px;border-radius:99px;background:var(--hair);margin-top:6px}
+.field i{display:block;height:100%;border-radius:99px;background:var(--accent);opacity:.55}
+.score{text-align:right;font-weight:600;white-space:nowrap}
+
+/* ---- plain lists ----------------------------------------------------- */
+.list{list-style:none;padding:0;margin:var(--s2) 0 0}
+.list li{border-bottom:1px solid var(--hair);margin:0 -10px}
+.list li:last-child{border-bottom:0}
+.list a{display:flex;align-items:baseline;gap:var(--s2);padding:9px 10px;
+  border-radius:9px;color:var(--ink);transition:background .1s}
+.list a:hover{text-decoration:none;color:var(--accent);background:var(--sunk)}
+.list.cols{column-width:220px;column-gap:var(--s5)}
+.list.cols li{break-inside:avoid;border-bottom:0}
+.list.cols a{padding:4px 10px}
+.reg{color:var(--dim);font-size:11.5px;margin-left:auto;letter-spacing:.02em}
+.aliases{display:flex;flex-wrap:wrap;gap:5px;margin-top:var(--s2)}
+.aliases code{background:var(--sunk);border-radius:6px;padding:2px 7px;font-size:12px;
+  color:var(--mid);font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.none{color:var(--dim);font-size:14px;padding:var(--s2) 0}
+
+/* ---- the browsing list ---------------------------------------------- */
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--hair)}
+.bar-in{max-width:940px;margin:0 auto;padding:var(--s2) var(--s4) var(--s3);
+  display:flex;flex-direction:column;gap:var(--s2)}
+.top-row{display:flex;align-items:center;gap:var(--s3);flex-wrap:wrap}
+.tabs,.sorts{display:flex;gap:2px;flex-wrap:wrap}
+.tabs a,.sorts button{font:inherit;font-size:13px;padding:5px 11px;border-radius:8px;
+  color:var(--dim);border:0;background:transparent;cursor:pointer;transition:background .12s,color .12s}
+.tabs a:hover,.sorts button:hover{background:var(--sunk);color:var(--ink);text-decoration:none}
+.tabs a.on,.sorts button.on{background:var(--ink);color:var(--paper);font-weight:600}
+.sorts button .dir{opacity:.75;margin-left:3px;font-size:11px}
+#q{width:100%;height:42px;border:1px solid var(--line);border-radius:var(--r);
+  background:var(--surface);color:var(--ink);font:inherit;font-size:16px;padding:0 var(--s3);
+  transition:border-color .12s,box-shadow .12s}
+#q::placeholder{color:var(--dim)}
+#q:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.counts{color:var(--dim);font-size:12px;margin-left:auto;white-space:nowrap}
+.rows{max-width:940px;margin:0 auto;padding:0 var(--s4) var(--s5);list-style:none;
+  content-visibility:auto;contain-intrinsic-size:auto 64px}
+.rows li{border-bottom:1px solid var(--hair);margin:0 -10px}
+/* Two lines, always the same two lines: what it is called and what it costs,
+   then who made it and how many sell it. A row that sometimes wraps and
+   sometimes does not cannot be scanned down a column. */
+.rows a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1px var(--s3);
+  padding:11px 10px;border-radius:9px;color:var(--ink);transition:background .1s}
+.rows a:hover{text-decoration:none;background:var(--sunk)}
+.rows a:hover .nm{color:var(--accent)}
+.rows .nm{grid-area:1/1;font-weight:600;letter-spacing:-.012em;min-width:0}
+.rows .mk{grid-area:2/1;color:var(--dim);font-size:12.5px}
+.rows .pr{grid-area:1/2;font-variant-numeric:tabular-nums lining-nums;text-align:right;
+  white-space:nowrap;font-size:14.5px;font-weight:600}
+.rows .un{color:var(--dim);font-size:11px;font-weight:400;margin-left:5px}
+.rows .to{color:var(--dim);font-weight:400;margin:0 .18em}
+.rows .sc{grid-area:2/2;color:var(--dim);font-size:11.5px;text-align:right;white-space:nowrap}
+.rows.plain{padding-left:0;padding-right:0}
+h1 .pg{font-size:14px;font-weight:500;color:var(--dim);letter-spacing:0}
+.pages{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-top:var(--s4);
+  padding-top:var(--s3);border-top:1px solid var(--hair)}
+.pages a,.pages .here{min-width:30px;text-align:center;padding:5px 7px;border-radius:8px;
+  font-size:13px;font-variant-numeric:tabular-nums}
+.pages a{color:var(--mid)}
+.pages a:hover{background:var(--sunk);color:var(--ink);text-decoration:none}
+.pages .here{background:var(--ink);color:var(--paper);font-weight:600}
+.pages .step{font-weight:600;color:var(--accent);padding:5px 11px}
+.more{display:block;width:100%;max-width:940px;margin:var(--s4) auto;padding:12px;
+  border:1px solid var(--line);border-radius:var(--r);background:var(--surface);
+  color:var(--mid);font:inherit;font-size:14px;cursor:pointer;transition:border-color .12s}
+.more:hover{border-color:var(--accent);color:var(--accent)}
+.hint{color:var(--dim);font-size:13px;padding:var(--s3) var(--s4);max-width:940px;margin:0 auto}
+
+/* On a phone a four-column table puts the rate off the right edge, and the
+   rate is the reason the page exists. Below this width the rows stop being
+   rows and become small records: who, which lane, and then the figures. */
+@media (max-width:600px){
+  .scroll{overflow:visible;margin:0;padding:0}
+  table.grid{min-width:0}
+  .grid thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  .grid,.grid tbody,.grid tr,.grid td{display:block;width:auto}
+  .grid tbody tr{padding:11px 0;border-bottom:1px solid var(--hair)}
+  .grid tbody tr:hover{background:transparent}
+  .grid td{border:0;padding:0}
+  .grid td:first-child{white-space:normal}
+  /* Stacked into records, a cell is a line of its own and must wrap. Held
+     at nowrap — which is right beside a name on a wide screen — a sentence
+     in the second column pushed the whole page 250px off the right edge. */
+  .grid td:nth-child(2),.grid td:nth-child(3){white-space:normal}
+  .grid td:nth-child(2){color:var(--dim);font-size:12px;margin-top:1px}
+  .grid td.figs{text-align:left;width:auto;margin-top:6px;white-space:normal}
+  .fig{margin:0 var(--s3) 0 0}
+  .sit{max-width:200px;margin-left:0}
+  /* A leaderboard on a phone should still read like one: the place on the
+     left, the name beside it, the score on the right, metric underneath. */
+  .grid.rank tbody tr{display:grid;grid-template-columns:auto minmax(0,1fr) auto;
+    column-gap:var(--s3);align-items:baseline;padding:10px 0}
+  .grid.rank td{display:block;padding:0}
+  .grid.rank td:nth-child(1){grid-area:1/1/3/2;font-size:14px;align-self:center}
+  .grid.rank td:nth-child(2){grid-area:1/2/2/3;white-space:normal}
+  .grid.rank td:nth-child(3){grid-area:2/2/3/3;font-size:11.5px;color:var(--dim)}
+  .grid.rank td:nth-child(4){grid-area:1/3/3/4;align-self:center;text-align:right;
+    font-size:15px}
+  .place{font-size:14px}
+  .place .of{display:block;font-size:10.5px}
+  .field{max-width:220px}
+}
+/* With a pair of prices in it the figure is too wide to share a line with a
+   name on a phone, and the name was breaking mid-word. Three lines then:
+   what it is called, what it costs, who made it and how many sell it. */
+@media (max-width:560px){
+  h1.quiet{padding:0 var(--s3)}
+  .rows a{grid-template-columns:minmax(0,1fr) auto}
+  .rows .nm{grid-area:1/1/2/3}
+  .rows .pr{grid-area:2/1/3/3;text-align:left;margin:1px 0 2px}
+  .rows .mk{grid-area:3/1}
+  .rows .sc{grid-area:3/2}
+  /* Models by size carries a longer caption than any other list — maker, the
+     parameter count, what it takes to hold, and the boards. Sharing a line
+     with the seller count, it wrapped around it and split "30 boards" in two.
+     Here the count joins the price and the caption gets the full width. */
+  #srows .pr{grid-area:2/1/3/2}
+  #srows .sc{grid-area:2/2/3/3;align-self:end}
+  #srows .mk{grid-area:3/1/4/3}
+  header{padding:var(--s3) var(--s3) var(--s2)}
+  main{padding:var(--s2) var(--s3) var(--s5)}
+  .bar-in,.rows,.hint{padding-left:var(--s3);padding-right:var(--s3)}
+  .scroll{margin:0 calc(var(--s3) * -1);padding:0 var(--s3)}
+  
+  .counts{margin-left:0;flex-basis:100%}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}}
+@media print{
+  .bar,footer,.more{display:none}
+  body{background:#fff;color:#000}
+  a{color:#000;text-decoration:underline}
+  .hero{box-shadow:none;border:1px solid #ccc}
+}
+
+/* ---- the picks ------------------------------------------------------ */
+/* Set in the same row as every other list on the site — name and price on
+   the first line, maker and reason on the second — with one column added on
+   the left for which question this row answers. The reader is choosing
+   between four answers here, not scanning one list, so the four have to be
+   comparable down the page: same columns, same order, every time. */
+.jump{display:flex;flex-wrap:wrap;gap:var(--s1) var(--s2);margin:var(--s4) 0 var(--s5);
+  padding-bottom:var(--s4);border-bottom:1px solid var(--hair)}
+.jump a{border:1px solid var(--line);background:var(--surface);color:var(--mid);
+  border-radius:99px;padding:5px 12px;font-size:12.5px;white-space:nowrap;
+  transition:border-color .12s,color .12s,background .12s}
+.jump a:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);
+  text-decoration:none}
+
+.niche{margin:0 0 var(--s5);scroll-margin-top:var(--s4)}
+.nh{margin-bottom:var(--s1)}
+.niche h2{font-size:19px;letter-spacing:-.02em;font-weight:660;text-transform:none}
+.niche h2 a{color:var(--ink)}
+.niche h2 a:hover{color:var(--accent);text-decoration:none}
+.niche .q{color:var(--dim);font-size:13px;margin-top:2px}
+.niche .q.solo{margin:var(--s4) 0 var(--s3)}
+
+.rows.picks{padding-left:0;padding-right:0}
+.rows.picks a{grid-template-columns:132px minmax(0,1fr) auto;
+  gap:1px var(--s3);align-items:baseline}
+/* The rail spans both lines so the label reads as a heading for the row
+   rather than as another field in it. */
+.rows.picks .cell{grid-area:1/1/3/2;align-self:center;
+  font-size:10.5px;font-weight:660;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--accent);line-height:1.35}
+.rows.picks .nm{grid-area:1/2;font-size:15.5px}
+.rows.picks .mk{grid-area:2/2}
+.rows.picks .pr{grid-area:1/3;font-size:15.5px}
+.rows.picks .sc{grid-area:2/3}
+/* The first answer is the recommendation; the other three are the ways a
+   reader might reasonably disagree with it. */
+.rows.picks li:first-child a{background:var(--accent-soft)}
+.rows.picks li:first-child .nm{font-weight:680}
+/* One seller means no way out, which is worth a reader's eye. */
+.rows.picks .sc.one{color:var(--warm)}
+@media (max-width:620px){
+  .rows.picks a{grid-template-columns:minmax(0,1fr) auto}
+  .rows.picks .cell{grid-area:1/1/2/3;margin-bottom:2px}
+  .rows.picks .nm{grid-area:2/1}
+  .rows.picks .mk{grid-area:3/1}
+  .rows.picks .pr{grid-area:2/2}
+  .rows.picks .sc{grid-area:3/2}
+}
+.boards li a{font-size:13.5px}
+.note{color:var(--dim);font-size:12.5px;line-height:1.6;margin-top:var(--s4);
+  max-width:62ch}
+.note em{font-style:normal;color:var(--mid);font-weight:560}
+
+/* ---- the families --------------------------------------------------- */
+/* Five subjects, not fourteen headings. The block heading is the loud one;
+   the groups inside it are quieter, because a reader picks the block first
+   and the group second. */
+.fam{margin:0 0 var(--s6)}
+.fam > h2{font-size:13px;font-weight:680;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--mid);padding-bottom:var(--s2);border-bottom:1px solid var(--line)}
+.fam .fb{color:var(--dim);font-size:12.5px;line-height:1.6;max-width:62ch;
+  margin:var(--s2) 0 var(--s5)}
+.niche h3{font-size:19px;letter-spacing:-.02em;font-weight:660}
+.niche h3 a{color:var(--ink)}
+.niche h3 a:hover{color:var(--accent);text-decoration:none}
+.jump{display:block}
+.jg{display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--s1) var(--s2);
+  margin-bottom:var(--s2)}
+.jg b{font-size:10.5px;font-weight:680;letter-spacing:.075em;text-transform:uppercase;
+  color:var(--dim);min-width:152px}
+@media (max-width:560px){.jg b{min-width:100%;margin-bottom:2px}}
+/* The front page is a search box over eighteen hundred things. A reader who
+   does not yet know what they want needs telling that somebody has already
+   chosen. */
+.steer{margin:0 0 var(--s4);color:var(--dim);font-size:13px;line-height:1.6}
+.steer a{font-weight:600}
+/* Where a thing has placed best, on the name line. Quiet, because it is
+   context for the name rather than a figure to compare down the column —
+   the price is that. */
+/* Where a thing has placed best, on the maker's line: the two of them say
+   what it is, while the price and the seller count say what buying it costs.
+   Set between them, a rank read as part of the price. */
+.rows .st{margin-left:7px;padding-left:8px;border-left:1px solid var(--line);
+  white-space:nowrap;font-variant-numeric:tabular-nums lining-nums}
+.rows .st i{font-style:normal;margin-left:5px;opacity:.7}
+.rows a:hover .st{color:var(--mid)}
+@media (max-width:560px){.rows .st i{display:none}}
+
+/* ---- About ----------------------------------------------------------- */
+/* Three parts: a line to quote, a paragraph of what the thing is, and every
+   figure in a form that can be lifted whole. Class names are prefixed because
+   `.fig` and `.figs` already belong to the price cells in the sellers table,
+   and there are a hundred and fifty of those on a busy card. */
+.about{margin:var(--s6) 0 var(--s5);padding-top:var(--s4);
+  border-top:1px solid var(--hair)}
+.about h2{font-size:11.5px;font-weight:680;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--dim);margin:0}
+.aline{font-size:16.5px;line-height:1.52;font-weight:560;letter-spacing:-.012em}
+.apara{margin-top:var(--s3);color:var(--mid);font-size:14px;line-height:1.72;max-width:70ch}
+.cp{flex:none;border:1px solid var(--line);background:var(--paper);color:var(--mid);
+  border-radius:99px;padding:4px 11px;font:inherit;font-size:11.5px;cursor:pointer;
+  white-space:nowrap;transition:border-color .12s,color .12s,background .12s}
+.cp:hover{border-color:var(--accent);color:var(--accent)}
+.cp.done{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.afig{margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid var(--hair)}
+.ahead{display:flex;align-items:center;gap:var(--s3);margin-bottom:var(--s3);min-height:26px}
+.ahead h2,.ahead h3{flex:1;font-size:11.5px;font-weight:660;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--dim)}
+/* Two columns where there is room. The label column is a fixed width so the
+   values line up down the page — ragged values are the difference between a
+   spec sheet and a paragraph broken into pieces. */
+.abt-figs{display:grid;gap:2px var(--s5);
+  grid-template-columns:repeat(auto-fit,minmax(340px,1fr));margin:0}
+.abt-fig{display:grid;grid-template-columns:16px 108px minmax(0,1fr);align-items:baseline;
+  gap:var(--s2);min-width:0;padding:5px 6px;border-radius:7px}
+.abt-fig:hover{background:var(--sunk)}
+/* Aligned with the label, not with the middle of a value that wraps to
+   three lines. */
+.abt-fig svg{align-self:start;margin-top:2px;width:15px;height:15px;fill:none;stroke:var(--dim);
+  stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.abt-fig dt{color:var(--dim);font-size:11.5px;letter-spacing:.01em;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.abt-fig dd{margin:0;font-size:13.5px;font-variant-numeric:tabular-nums lining-nums;
+  overflow-wrap:anywhere}
+@media (max-width:620px){
+  .abt-figs{grid-template-columns:1fr}
+  .abt-fig{grid-template-columns:16px 96px minmax(0,1fr)}
+  .aline{font-size:15.5px}
+}
+
+/* ---- free ------------------------------------------------------------ */
+/* Three groups, each a different promise. The terms sit where a price would
+   be, because on this page the terms are the price. */
+.freeg{margin:0 0 var(--s6)}
+.freeg .intro{margin:var(--s2) 0 var(--s3);max-width:70ch}
+/* An allowance is a sentence, not a figure. Held on one line it made the
+   longest of them — Hugging Face's — set the width of the whole table. */
+.rows .terms{grid-area:1/2;justify-self:end;align-self:baseline;color:var(--mid);
+  font-size:12.5px;text-align:right;white-space:normal;max-width:48ch;line-height:1.45}
+/* One giver to a line, so a model handed out by two sellers reads as one
+   entry with two offers rather than as the same row printed twice. */
+.rows .terms .gift{display:block}
+.rows .terms .gift + .gift{margin-top:2px;padding-top:2px;border-top:1px solid var(--hair)}
+.rows .terms .gift b{font-weight:600;color:var(--ink)}
+@media (max-width:620px){
+  .rows .terms{grid-area:auto;justify-self:start;text-align:left;max-width:none;
+    margin-top:2px}
+}
+/* Given away — its own block, well away from the rate, because a free lane
+   is an arrangement with a cap and not a cheaper price. */
+.gratis .intro{margin:var(--s2) 0 var(--s3);max-width:70ch}
+ul.who{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:var(--s2)}
+ul.who li{display:flex;align-items:baseline;gap:var(--s2);border:1px solid var(--line);
+  background:var(--surface);border-radius:99px;padding:6px 14px;font-size:13px}
+ul.who .who{font-weight:600}
+ul.who .terms{color:var(--dim);font-size:11.5px}
+/* What a plan allows, in the column a seller count would use. It runs longer
+   than a count, so it wraps rather than pushing the row wide. */
+.rows .sc.terms{white-space:normal;text-align:right;max-width:44ch;line-height:1.45;
+  color:var(--mid)}
+@media (max-width:560px){.rows .sc.terms{max-width:none;text-align:left;grid-area:auto}}
+
+/* A tab tapped before the index arrived: it will happen, and the reader
+   should see that it was heard. */
+.tabs a.waiting{opacity:.55}
+.tabs a.on{cursor:pointer}
+
+/* What a day of free access adds up to, at the foot of each block. It is a
+   sum, so it is set like one: the figures loud, the arithmetic quiet. */
+.tally{margin-top:var(--s3);padding:var(--s3) var(--s4);border:1px solid var(--line);
+  border-radius:var(--r-lg);background:var(--sunk)}
+.tally h3{font-size:11px;font-weight:680;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--dim)}
+.amts{display:flex;flex-wrap:wrap;gap:var(--s2) var(--s5);margin-top:var(--s2)}
+.amts .a{font-size:14px;color:var(--mid);font-variant-numeric:tabular-nums lining-nums}
+.amts .a b{font-size:17px;font-weight:660;color:var(--ink);letter-spacing:-.015em}
+.amts .a.day b{color:var(--accent)}
+.tally .why{margin-top:var(--s2);color:var(--dim);font-size:11.5px;line-height:1.55;
+  max-width:76ch}
+
+/* ---- the self-check -------------------------------------------------- */
+/* A mark a reader trusts has to be able to go red, so the failing state is
+   drawn as plainly as the passing one. */
+.selfcheck{margin-top:var(--s6)}
+.selfcheck h3{font-size:13px;font-weight:660;letter-spacing:.02em;color:var(--ink);
+  margin-top:var(--s5)}
+.verdict{margin:var(--s3) 0;padding:10px 14px;border-radius:var(--r);
+  border:1px solid var(--line);background:var(--surface);font-size:13.5px;color:var(--mid)}
+.verdict.all-clear{border-color:var(--accent);background:var(--accent-soft);color:var(--ink)}
+ul.checks{list-style:none;padding:0;margin:var(--s2) 0 0}
+ul.checks li{display:grid;grid-template-columns:20px minmax(0,1fr) auto;gap:var(--s2) var(--s3);
+  align-items:baseline;padding:7px 0;border-bottom:1px solid var(--hair)}
+ul.checks .mk{font-weight:700;font-size:13px;text-align:center}
+ul.checks li.pass .mk{color:var(--accent)}
+ul.checks li.warn .mk{color:var(--warm)}
+ul.checks li.fail .mk{color:#d2564b}
+ul.checks .ck b{display:block;font-weight:600;font-size:13.5px;letter-spacing:-.008em}
+ul.checks .ck i{display:block;font-style:normal;color:var(--dim);font-size:12px;
+  line-height:1.5;margin-top:1px}
+ul.checks .vd{color:var(--dim);font-size:12px;white-space:nowrap}
+ul.checks li.fail .vd{color:#d2564b}
+ul.checks li.warn .vd{color:var(--warm)}
+@media (max-width:560px){
+  ul.checks li{grid-template-columns:20px minmax(0,1fr)}
+  ul.checks .vd{grid-column:2}
+}
+.verdict.bad{border-color:#d2564b;color:#d2564b}
+.ranat{margin-top:var(--s5);padding-top:var(--s3);border-top:1px solid var(--hair);
+  color:var(--dim);font-size:12.5px}
+.ranat b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums lining-nums}
+/* A disputed rate is not an error to hide; it is the most useful thing on the
+   card, so it is marked and not tinted like a footnote. */
+.gratis.disputed ul.who li{border-color:var(--warm)}
+.gratis.disputed ul.who .who{color:var(--warm)}
+/* A name nobody has justified: shown, because hiding it would be how it
+   survives, but not linked, because its page holds nothing. */
+.rows li.unjustified{padding:11px 10px;color:var(--dim)}
+.rows li.unjustified .nm{font-weight:500;color:var(--mid)}
+
+/* Aggregators resell what somebody else runs, and nine of them quoting the
+   same rate bury the companies that actually serve the model. One line, from
+   the cheapest of them to the dearest; it opens when a reader asks. */
+tr.agg{display:none}
+tr.agg.shown{display:table-row}
+tr.agg-head{cursor:pointer}
+tr.agg-head td:first-child::before{content:"▸";display:inline-block;width:1em;
+  color:var(--dim);font-size:11px}
+tr.agg-head.open td:first-child::before{content:"▾"}
+tr.agg-head:hover td:first-child{color:var(--accent)}
+tr.agg td:first-child{padding-left:1.6em}
+@media (max-width:600px){tr.agg td:first-child{padding-left:1.2em}}
+
+/* ---- the vocabulary -------------------------------------------------- */
+/* A to Z, and under each letter a word with the sentence that answers it.
+   The answer is the row, so it wraps rather than being cut: a definition
+   truncated at the column edge is worse than no definition. */
+.jump.atoz{display:flex;flex-wrap:wrap;gap:4px;margin:var(--s4) 0 var(--s5);
+  padding-bottom:var(--s3);border-bottom:1px solid var(--hair)}
+.jump.atoz a{min-width:28px;text-align:center;padding:4px 6px;border-radius:8px;
+  font-weight:600;font-variant-numeric:tabular-nums}
+.rows.terms li{border-bottom:1px solid var(--hair)}
+.rows.terms a{display:block;padding:10px 10px}
+.rows.terms .nm{display:block;font-weight:600;letter-spacing:-.012em}
+.rows.terms .mk{display:block;color:var(--mid);font-size:13.5px;line-height:1.55;
+  margin-top:2px;max-width:78ch;white-space:normal}
+.rows.terms a:hover .mk{color:var(--mid)}
+h2[id]{scroll-margin-top:var(--s4)}
+
+/* A roll of names, which is what an investor list is: read as a sentence,
+   scanned for one name, and useless as a hundred-row table. */
+.roll{font-size:var(--t-body);line-height:1.85;color:var(--mid);max-width:none;
+  margin-top:var(--s2)}
+.roll a{color:var(--ink);text-decoration:none;
+  box-shadow:inset 0 -1px 0 var(--hair);transition:box-shadow .12s,color .12s}
+.roll a:hover{color:var(--accent);box-shadow:inset 0 -1px 0 var(--accent)}
+
+/* ---- what you might have meant ---------------------------------------- */
+/* The list below the box answers "what is there"; this answers "take me to
+   the one I named". Set as the rows are set, because it is the same thing:
+   a name and who makes it. */
+.seek{position:relative}
+.hits{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:20;margin:0;padding:4px;
+  list-style:none;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r);box-shadow:var(--shadow);max-height:min(58vh,420px);overflow:auto}
+.hits li{display:flex;align-items:baseline;gap:var(--s3);padding:8px 10px;
+  border-radius:8px;cursor:pointer}
+.hits li.on,.hits li:hover{background:var(--sunk)}
+.hits li.on .nm{color:var(--accent)}
+.hits .nm{font-weight:600;letter-spacing:-.012em;min-width:0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hits .mk{color:var(--dim);font-size:var(--t-cap);margin-left:auto;white-space:nowrap}
+
+/* ---- models by size --------------------------------------------------- */
+/* The band is a filter and the sort is an order, so they are drawn as two
+   different things: the bands are a row of cards a reader picks one of, the
+   sorts are the same quiet text control the rest of the site uses. */
+.bands{display:flex;flex-wrap:wrap;gap:var(--s2);margin:var(--s4) 0 var(--s3)}
+.bands button{font:inherit;text-align:left;cursor:pointer;padding:8px 13px;
+  border:1px solid var(--line);background:var(--surface);border-radius:var(--r);
+  color:var(--mid);font-size:var(--t-meta);font-weight:600;line-height:1.25;
+  transition:border-color .12s,color .12s,background .12s}
+.bands button i{display:block;font-style:normal;font-weight:400;color:var(--dim);
+  font-size:var(--t-label);letter-spacing:.01em;margin-top:2px;
+  font-variant-numeric:tabular-nums}
+.bands button:hover:not(:disabled){border-color:var(--accent);color:var(--ink)}
+.bands button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.bands button.on i{color:var(--paper);opacity:.65}
+.bands button:disabled{opacity:.4;cursor:default}
+.rows .mk b{font-weight:600;color:var(--mid);font-variant-numeric:tabular-nums}
+
+/* Bang for the buck: four category cards, each with its average and top three */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:var(--s3);margin:var(--s4) 0}
+.cards .card{border:1px solid var(--line);border-radius:8px;padding:var(--s3)}
+.cards .card h3{margin:0;font-size:15px}
+.cards .big{font-size:26px;font-weight:680;letter-spacing:-.02em;margin:6px 0 0}
+.cards .cap{color:var(--dim);font-size:12px;margin:0 0 var(--s3)}
+.cards .picks{list-style:none;margin:0;padding:0}
+.cards .picks li{display:flex;gap:8px;align-items:baseline;padding:4px 0;border-top:1px solid var(--line)}
+.cards .picks .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cards .picks .sz{color:var(--dim);white-space:nowrap}
+.cards .picks .sz.est{font-style:italic}
+.cards .picks .px{font-variant-numeric:tabular-nums;white-space:nowrap}
+.cards .io{margin:var(--s3) 0 0}
+.cards .picks .nm{color:var(--ink)}
+.cards .picks .nm:hover{color:var(--accent);text-decoration:none}
+.cards h3 a{color:var(--ink)}
+.cards h3 a:hover{color:var(--accent);text-decoration:none}
+
+/* People and news: one line per row, name left, links right */
+.rows.people{list-style:none;margin:var(--s4) 0;padding:0}
+.rows.people li{display:flex;gap:12px;align-items:baseline;padding:7px 0;border-top:1px solid var(--line)}
+.rows.people .nm{flex:1;min-width:0}
+.rows.people .mk{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:46%}
+
+/* Lazy images keep their aspect ratio; a fixed height attribute breaks it */
+img{height:auto}
