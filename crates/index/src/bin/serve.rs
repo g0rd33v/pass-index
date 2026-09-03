@@ -274,6 +274,7 @@ else if(localStorage.getItem("style")==="v1"){{e.media="not all"}}</script>
  · <a href="/index/top">Top</a>
  · <a href="/index/free">Free</a>
  · <a href="/index/sizes">Sizes</a>
+ · <a href="/index/tee">TEE</a>
  · <a href="/index/lists">Lists</a>
  · <a href="/index/providers">Companies</a>
  · <a href="/index/models">Models</a>
@@ -2927,6 +2928,101 @@ async fn sizes() -> impl IntoResponse {
     }
 }
 
+async fn tee() -> impl IntoResponse {
+    let render = || -> anyhow::Result<String> {
+        let ix = open()?;
+        let rows = ix.tee_models()?;
+        let n = rows.len();
+        let body_rows: String = rows
+            .iter()
+            .map(|r| {
+                let price = match (r["in"].as_i64(), r["out"].as_i64()) {
+                    (Some(i), Some(o)) => format!(
+                        "<span class=\"pr\">{}<span class=\"to\">→</span>{}\
+                         <span class=\"un\">per Mtok in / out</span></span>",
+                        money(i), money(o)),
+                    (Some(i), None) => format!(
+                        "<span class=\"pr\">{}<span class=\"un\">per Mtok in</span></span>",
+                        money(i)),
+                    _ => String::new(),
+                };
+                let boards = r["boards"].as_i64().unwrap_or(0);
+                let sellers = r["sellers"].as_i64().unwrap_or(0);
+                let base = r["base"].as_str().unwrap_or("");
+                let base_bit = match r["base_href"].as_str() {
+                    Some(h) => format!(
+                        "confidential build of <a href=\"{}\">{}</a>",
+                        esc(h), esc(base)),
+                    None => format!("confidential build of {}", esc(base)),
+                };
+                format!(
+                    "<li>\
+                     <a href=\"{}\"><span class=\"nm\">{}</span>\
+                     <span class=\"mk\">{}{}{}</span>{price}\
+                     <span class=\"sc\">{}</span></a></li>",
+                    esc(r["href"].as_str().unwrap_or("#")),
+                    esc(r["name"].as_str().unwrap_or("")),
+                    match r["maker"].as_str().unwrap_or("") {
+                        "" => String::new(),
+                        m => format!("{} · ", esc(m)),
+                    },
+                    base_bit,
+                    if boards > 0 {
+                        format!(" · {}", plural_n(boards, "board"))
+                    } else {
+                        String::new()
+                    },
+                    match sellers {
+                        0 => "nobody sells it".to_string(),
+                        s => format!("{s} selling"),
+                    },
+                )
+            })
+            .collect();
+
+        let body = if n == 0 {
+            "<h1>Confidential models · TEE</h1>\
+             <p class=\"none\">No model in the catalogue is currently served in a Trusted \
+              Execution Environment.</p>"
+                .to_string()
+        } else {
+            format!(
+                "<h1>Confidential models · TEE</h1>\
+                 <p class=\"lede\">The {} models served inside a <b>Trusted Execution \
+                 Environment</b> — a hardware enclave where the company running the model \
+                 cannot read your prompt or the weights in the clear. Sellers list these as \
+                 their own model names, suffixed <code>-TEE</code>; each is the confidential \
+                 build of a plain sibling in the catalogue. Ordered by how many \
+                 companies serve each.</p>\
+                 <ul class=\"rows plain\" id=\"trows\">{body_rows}</ul>",
+                grouped(n as i64)
+            )
+        };
+        Ok(shell(
+            "Confidential models — served in a TEE",
+            "Every model the catalogue sees served inside a Trusted Execution Environment, \
+             where the host cannot read the prompt or the weights in the clear.",
+            "/index/tee", body, String::new(),
+        ))
+    };
+    match render() {
+        Ok(page) => html(page),
+        Err(e) => html(format!(
+            "<h1>Confidential models · TEE</h1><p class=\"none\">{}</p>",
+            esc(&e.to_string())
+        )),
+    }
+}
+
+async fn tee_json() -> impl IntoResponse {
+    match open().and_then(|ix| ix.tee_models()) {
+        Ok(rows) => live_json(serde_json::json!({
+            "href": "/index/tee", "kind": "tee-models",
+            "count": rows.len(), "models": rows})),
+        Err(e) => live_json(serde_json::json!({"error": e.to_string()})),
+    }
+}
+
 async fn sizes_json() -> impl IntoResponse {
     match open().and_then(|ix| ix.sized_models()) {
         Ok(rows) => live_json(serde_json::json!({
@@ -4215,6 +4311,8 @@ async fn main() -> anyhow::Result<()> {
         .route("/index/startups.json", get(startups_json))
         .route("/index/sizes", get(sizes))
         .route("/index/sizes.json", get(sizes_json))
+        .route("/index/tee", get(tee))
+        .route("/index/tee.json", get(tee_json))
         .route("/index/tech", get(tech))
         .route("/index/tech.json", get(tech_json))
         .route("/index/tech/{slug}", get(tech_one))

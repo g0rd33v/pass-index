@@ -3069,6 +3069,77 @@ impl Index {
         Ok(out)
     }
 
+    /// Models served inside a Trusted Execution Environment — a confidential
+    /// variant where the host cannot read the prompt or the weights in the
+    /// clear. Sellers list them as their own model names, suffixed `-TEE`, so
+    /// that is the signal; each is matched back to its plain sibling by name.
+    pub fn tee_models(&self) -> Result<Vec<Value>> {
+        let addr: HashMap<String, (String, String)> = self
+            .entity_addresses()?
+            .into_iter()
+            .map(|(id, name, head, tail)| (id, (name, format!("/index/{head}/{tail}"))))
+            .collect();
+        // The plain sibling a `-TEE` name points back to, so the page can link
+        // "the confidential build of X" to X.
+        let base_href: HashMap<String, String> = addr
+            .values()
+            .map(|(name, href)| (name.to_lowercase(), href.clone()))
+            .collect();
+        let mut q = self.conn.prepare(
+            "SELECT e.id, e.name, COALESCE(p.name,''), \
+                    COALESCE(json_extract(e.attrs,'$.context'),0), \
+                    (SELECT COUNT(DISTINCT o.provider_id) FROM offerings o \
+                      WHERE o.entity_id = e.id AND o.status = 'live'), \
+                    (SELECT COUNT(DISTINCT b.suite) FROM benchmarks b \
+                      WHERE b.entity_id = e.id), \
+                    (SELECT MIN(pr.micros_per_unit) FROM current_prices pr \
+                       JOIN offerings o2 ON o2.id = pr.offering_id \
+                      WHERE o2.entity_id = e.id AND COALESCE(o2.variant,'') = '' \
+                        AND o2.status = 'live' AND pr.dimension = 'mtok_in'), \
+                    (SELECT MIN(pr.micros_per_unit) FROM current_prices pr \
+                       JOIN offerings o2 ON o2.id = pr.offering_id \
+                      WHERE o2.entity_id = e.id AND COALESCE(o2.variant,'') = '' \
+                        AND o2.status = 'live' AND pr.dimension = 'mtok_out') \
+               FROM entities e LEFT JOIN providers p ON p.id = e.maker \
+              WHERE e.register = 'model' AND UPPER(e.name) LIKE '%-TEE' \
+              ORDER BY (SELECT COUNT(DISTINCT o.provider_id) FROM offerings o \
+                          WHERE o.entity_id = e.id AND o.status = 'live') DESC, \
+                       e.name COLLATE NOCASE",
+        )?;
+        let rows = q.query_map([], |r| {
+            let name: String = r.get(1)?;
+            let base = name
+                .strip_suffix("-TEE")
+                .or_else(|| name.strip_suffix("-tee"))
+                .unwrap_or(&name)
+                .to_string();
+            Ok(json!({
+                "entity": r.get::<_, String>(0)?,
+                "name": name,
+                "base": base,
+                "maker": r.get::<_, String>(2)?,
+                "context": r.get::<_, i64>(3)?,
+                "sellers": r.get::<_, i64>(4)?,
+                "boards": r.get::<_, i64>(5)?,
+                "in": r.get::<_, Option<i64>>(6)?,
+                "out": r.get::<_, Option<i64>>(7)?,
+            }))
+        })?;
+        let mut out: Vec<Value> = rows.collect::<std::result::Result<_, _>>()?;
+        out.retain(|r| addr.contains_key(r["entity"].as_str().unwrap_or("")));
+        for row in out.iter_mut() {
+            let eid = row["entity"].as_str().unwrap_or("").to_string();
+            if let Some((_, h)) = addr.get(&eid) {
+                row["href"] = json!(h);
+            }
+            let base = row["base"].as_str().unwrap_or("").to_lowercase();
+            if let Some(h) = base_href.get(&base) {
+                row["base_href"] = json!(h);
+            }
+        }
+        Ok(out)
+    }
+
     pub fn free_page(&self) -> Result<Value> {
         let addr: HashMap<String, (String, String)> = self
             .entity_addresses()?
@@ -3604,6 +3675,39 @@ mod tests {
         let rows = ix.benchmarks_of("ent_m").unwrap();
         assert_eq!(rows.len(), 1);
         assert_eq!(rows[0]["rank"], 9, "best config of the current reading, not the last inserted");
+    }
+
+    #[test]
+    fn tee_page_lists_only_confidential_variants_and_links_the_plain_one() {
+        // /index/tee: a model served in a Trusted Execution Environment is
+        // listed by its own -TEE name, matched back to its plain sibling.
+        let (_d, ix) = index();
+        provider(&ix, "prov_ds");
+        for (id, name) in [
+            ("ent_ds", "DeepSeek-V3.2"),
+            ("ent_ds_tee", "DeepSeek-V3.2-TEE"),
+            ("ent_llama", "Llama-4"),
+        ] {
+            ix.insert_entity(&Entity {
+                id: id.into(),
+                register: "model".into(),
+                name: name.into(),
+                maker: Some("prov_ds".into()),
+                input_kind: "text".into(),
+                output_kind: "text".into(),
+                attrs: "{}".into(),
+                ..Default::default()
+            })
+            .unwrap();
+        }
+        let rows = ix.tee_models().unwrap();
+        assert_eq!(rows.len(), 1, "only the -TEE variant is a TEE model");
+        assert_eq!(rows[0]["name"], "DeepSeek-V3.2-TEE");
+        assert_eq!(rows[0]["base"], "DeepSeek-V3.2");
+        assert!(
+            rows[0]["base_href"].as_str().is_some(),
+            "the plain sibling exists, so the page can link to it"
+        );
     }
 
     #[test]
